@@ -1,0 +1,21 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:poisonous_potato"
+        },
+        "title": {
+            "translate": "Risky Business"
+        },
+        "description": {
+            "translate": "Agree on a deal with a witch"
+        },
+		"background": "minecraft:textures/blocks/mossy_cobblestone.png",
+        "show_toast": true,
+        "announce_to_chat": true,
+		"hidden": true
+    },
+	"requirements":[["observer"]],
+    "criteria": {
+		"observer":{"trigger":"minecraft:impossible"}
+    }
+}

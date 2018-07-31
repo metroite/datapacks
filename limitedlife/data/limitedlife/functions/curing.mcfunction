@@ -47,6 +47,6 @@ execute as @s[scores={ll.cookingapple=3000}] run scoreboard players remove @e[ta
 execute as @s[scores={ll.cookingapple=3000}] if entity @e[tag=ll.bat,limit=1,sort=nearest,type=minecraft:bat] at @e[type=minecraft:end_crystal,limit=1,sort=nearest] positioned ~ ~-1 ~ if entity @e[distance=..1,type=minecraft:item,nbt={Item:{Count:1b,id:"minecraft:golden_apple"}}] run summon minecraft:tnt ~ ~1 ~
 execute as @s[scores={ll.cookingapple=3000}] run kill @e[tag=ll.bat,limit=1,sort=nearest,type=minecraft:bat]
 execute as @s[scores={ll.cookingapple=3000}] run tag @e[tag=ll.bat,limit=1,sort=nearest] remove ll.bat
-scoreboard players add @a[scores={lldeaths=..-1}] ll.deaths 1
+scoreboard players add @a[scores={ll.deaths=..-1}] ll.deaths 1
 execute as @s[scores={ll.cookingapple=3000}] at @s run fill ~ ~ ~ ~ ~ ~ minecraft:cauldron[level=0] replace minecraft:cauldron
 kill @s[scores={ll.cookingapple=3000..}]

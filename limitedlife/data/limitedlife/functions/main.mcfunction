@@ -17,6 +17,6 @@ scoreboard players reset @e[tag=!ll.tired,type=minecraft:end_crystal,scores={ll.
 #Bat Wings
 data merge entity @e[type=minecraft:bat,nbt=!{DeathLootTable:"limitedlife:entities/bat"},limit=1,sort=random] {DeathLootTable:"limitedlife:entities/bat"}
 
-#enchant and coloing is not really possible without /modifyitem since you can't change the nbt that easily:
+#enchant and coloing is not really possible without /modifyitem since you can't change the nbt that easily. Will add it later if won't forget it
 #function limitedlife:enchanting
 #function limitedlife:coloring

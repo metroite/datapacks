@@ -20,17 +20,18 @@ execute as @s[scores={ll.cookingapple=110..}] run playsound minecraft:ambient.un
 #summoning bat
 execute as @s[scores={ll.cookingapple=2000}] at @e[type=minecraft:end_crystal,limit=1,sort=nearest] run summon bat ~ ~1 ~ {ActiveEffects:[{Id:14b,Amplifier:0b,Duration:100000,ShowParticles:0b}],Tags:["ll.bat"],Silent:1b,Invulnerable:1b}
 execute as @s[scores={ll.cookingapple=2000}] at @e[type=minecraft:end_crystal,limit=1,sort=nearest] run playsound minecraft:block.conduit.attack.target ambient @a[distance=..32] ~ ~ ~ 2 1.5
-execute as @s[scores={ll.cookingapple=2000}] run summon endermite ~ ~0.25 ~
-execute as @s[scores={ll.cookingapple=2000}] run summon endermite ~ ~0.25 ~
-execute as @s[scores={ll.cookingapple=2000}] run summon endermite ~ ~0.25 ~
-execute at @e[tag=ll.bat] run particle minecraft:portal ~ ~1 ~ 0 0 0 0.075 1 force
+execute as @s[scores={ll.cookingapple=2000}] run summon endermite ~ ~0.8 ~ {Motion:[0.5d,0d,0.5d]}
+execute as @s[scores={ll.cookingapple=2010}] run summon endermite ~ ~0.8 ~ {Motion:[0d,0d,-0.5d]}
+execute as @s[scores={ll.cookingapple=2020}] run summon endermite ~ ~0.8 ~ {Motion:[-0.5d,0d,0d]}
+execute at @e[tag=ll.bat] run particle minecraft:portal ~ ~1 ~ 0 0 0 0.2 1 force
 #transfering ll.bat to player
 execute at @e[tag=ll.bat,type=minecraft:bat] as @p[distance=..2,scores={ll.deaths=1..},tag=!ll.bat] run tag @s add ll.bat
 execute at @e[tag=ll.bat,type=minecraft:bat] as @p[distance=..2,scores={ll.deaths=1..},tag=ll.bat] run kill @e[type=minecraft:bat,tag=ll.bat]
 #performance? better with area_effect_clouds and less @e
 execute as @e[type=minecraft:end_crystal] positioned ~ ~-1 ~ if entity @e[distance=..1,type=minecraft:item,nbt={Item:{Count:1b,id:"minecraft:golden_apple"}}] as @e[tag=ll.bat,limit=1,sort=nearest] as @e[type=minecraft:end_crystal,limit=1,sort=nearest] at @s run summon armor_stand ~ ~ ~ {NoGravity:1b,Tags:["ll.beam"],Small:1b,Invisible:1b,Marker:1b}
 #goto function beam
-execute as @e[type=minecraft:armor_stand,tag=ll.beam] at @e[type=minecraft:end_crystal,limit=1,sort=nearest] positioned ~ ~-1 ~ if entity @e[distance=..1,type=minecraft:item,nbt={Item:{Count:1b,id:"minecraft:golden_apple"}}] at @s run function limitedlife:beam
+execute as @e[type=minecraft:armor_stand,tag=ll.beam] at @s run function limitedlife:beam
+execute as @e[type=minecraft:armor_stand,tag=ll.beam] at @s if entity @e[tag=ll.bat,distance=..1] run kill @s
 
 #curing effect if at ll.cookingapple=3000
 execute as @s[scores={ll.cookingapple=2700..2705}] run particle minecraft:dragon_breath ~ ~2 ~ 0.1 0.1 0.1 1 100 force

@@ -8,7 +8,7 @@ execute as @a[tag=cured] run function limitedlife:helmet
 #curing
 execute as @e[type=minecraft:item,nbt={Item:{Count:1b,id:"minecraft:golden_apple"}}] at @s if block ~ ~ ~ minecraft:cauldron[level=3] positioned ~ ~1 ~ if entity @e[type=minecraft:end_crystal,limit=1,sort=nearest,distance=..1,tag=!ll.tired] run function limitedlife:curing
 #make sure ll.beam entity dies
-execute as @e[type=minecraft:armor_stand,tag=ll.beam] at @e[type=minecraft:end_crystal] positioned ~ ~-1 ~ unless entity @e[distance=..1,type=minecraft:item,nbt={Item:{Count:1b,id:"minecraft:golden_apple"}}] at @s run kill @s
+execute as @e[type=minecraft:armor_stand,tag=ll.beam] at @s unless entity @e[tag=ll.bat,limit=1,sort=nearest,distance=..64] run kill @s
 #tired effect
 execute at @e[tag=ll.tired] run particle minecraft:dripping_water ~ ~1 ~ 0.3 0.3 0.3 1 1 normal
 scoreboard players add @e[tag=ll.tired] ll.cookingapple 1

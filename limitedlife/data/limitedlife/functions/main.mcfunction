@@ -14,6 +14,8 @@ execute at @e[tag=ll.tired] run particle minecraft:dripping_water ~ ~1 ~ 0.3 0.3
 scoreboard players add @e[tag=ll.tired] ll.cookingapple 1
 tag @e[tag=ll.tired,scores={ll.cookingapple=10000..}] remove ll.tired
 scoreboard players reset @e[tag=!ll.tired,type=minecraft:end_crystal,scores={ll.cookingapple=1..}] ll.cookingapple
+#Bat Wings
+data merge entity @e[type=minecraft:bat,nbt=!{DeathLootTable:"limitedlife:entities/bat"},limit=1,sort=random] {DeathLootTable:"limitedlife:entities/bat"}
 
 #enchant and coloing is not really possible without /modifyitem since you can't change the nbt that easily:
 #function limitedlife:enchanting

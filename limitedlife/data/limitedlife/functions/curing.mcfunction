@@ -34,7 +34,7 @@ execute as @e[type=minecraft:end_crystal] positioned ~ ~-1 ~ if entity @e[distan
 execute as @e[type=minecraft:armor_stand,tag=ll.beam] at @s run function limitedlife:beam
 execute as @e[type=minecraft:armor_stand,tag=ll.beam] at @s if entity @e[tag=ll.bat,distance=..1] run kill @s
 
-#curing effect if at ll.cookingapple=3000
+#particle and sound effects
 execute as @s[scores={ll.cookingapple=2700..2705}] run particle minecraft:dragon_breath ~ ~2 ~ 0.1 0.1 0.1 1 100 force
 execute as @s[scores={ll.cookingapple=2700..2705}] run playsound minecraft:block.conduit.ambient ambient @a[distance=..32] ~ ~ ~ 2 0.7
 execute as @s[scores={ll.cookingapple=2800..2805}] run particle minecraft:dragon_breath ~ ~2 ~ 0.1 0.1 0.1 1 100 force
@@ -42,16 +42,24 @@ execute as @s[scores={ll.cookingapple=2800..2805}] run playsound minecraft:block
 execute as @s[scores={ll.cookingapple=2900..2905}] run particle minecraft:dragon_breath ~ ~2 ~ 0.1 0.1 0.1 1 100 force
 execute as @s[scores={ll.cookingapple=2900..2905}] run playsound minecraft:block.conduit.ambient ambient @a[distance=..32] ~ ~ ~ 2 0.7
 execute as @s[scores={ll.cookingapple=2999..3000}] run playsound minecraft:block.conduit.deactivate ambient @a[distance=..64] ~ ~ ~ 2 0.7
+#curing effect if at ll.cookingapple=3000
+#tired mechanic
 execute as @s[scores={ll.cookingapple=3000}] at @s as @e[type=minecraft:end_crystal,limit=1,sort=nearest,distance=..2] run tag @s add ll.tired
+#ll.cured mechanic to update-replace the helmet (no need to die)
 execute as @s[scores={ll.cookingapple=3000}] run tag @p[tag=ll.bat,limit=1,sort=nearest,nbt={ActiveEffects:[{Id:22b}]}] add ll.cured
+#the actual curing effect
 execute as @s[scores={ll.cookingapple=3000}] run scoreboard players remove @p[tag=ll.bat,limit=1,sort=nearest,nbt={ActiveEffects:[{Id:22b}]}] ll.deaths 1
+#failing conditions - exploding crystal
 execute as @s[scores={ll.cookingapple=3000}] if entity @e[tag=ll.bat,limit=1,sort=nearest,type=minecraft:bat] at @e[type=minecraft:end_crystal,limit=1,sort=nearest] positioned ~ ~-1 ~ if entity @e[distance=..1,type=minecraft:item,nbt={Item:{Count:1b,id:"minecraft:dried_kelp",tag:{CanPlaceOn:["minecraft:void_air"]}}}] run summon minecraft:tnt ~ ~1 ~
 execute as @s[scores={ll.cookingapple=3000}] as @e[tag=ll.bat,limit=1,sort=nearest,nbt=!{ActiveEffects:[{Id:22b}]}] as @s[type=minecraft:player] at @e[type=minecraft:end_crystal,limit=1,sort=nearest] positioned ~ ~-1 ~ if entity @e[distance=..1,type=minecraft:item,nbt={Item:{Count:1b,id:"minecraft:dried_kelp",tag:{CanPlaceOn:["minecraft:void_air"]}}}] run summon minecraft:tnt ~ ~1 ~
+#removing ll.bat and killing the bat
 execute as @s[scores={ll.cookingapple=3000}] run tag @e[tag=ll.bat,limit=1,sort=nearest] remove ll.bat
 execute as @s[scores={ll.cookingapple=3000}] run kill @e[tag=ll.bat,limit=1,sort=nearest,type=minecraft:bat]
+#makes sure to not go into negative ll.deaths
 scoreboard players add @a[scores={ll.deaths=..-1}] ll.deaths 1
+#emptying the cauldron and finally killing the Bat Wing
 execute as @s[scores={ll.cookingapple=3000}] at @s run fill ~ ~ ~ ~ ~ ~ minecraft:cauldron[level=0] replace minecraft:cauldron
 kill @s[scores={ll.cookingapple=3000..}]
 
-#make sure there is only one ll.cookingapple in the cauldron
+#make sure there is only one ll.cookingapple (Bat Wing) in the cauldron
 execute as @s at @s as @e[distance=0.1..2,type=minecraft:item,nbt={Item:{Count:1b,id:"minecraft:dried_kelp",tag:{CanPlaceOn:["minecraft:void_air"]}}}] run tag @s add ll.blocked

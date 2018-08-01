@@ -32,7 +32,3 @@ execute as @e[type=minecraft:item_frame,scores={mc.itemrotation=0..},tag=mc.send
 
 #Receiver blocks ongoing redstone power
 execute as @e[type=minecraft:item_frame,scores={mc.itemrotation=0..},tag=mc.receiver] at @s if block ~ ~ ~ minecraft:redstone_wire[power=1] run fill ~ ~ ~ ~ ~ ~ minecraft:redstone_wire[power=0] replace minecraft:redstone_wire[power=1]
-
-#Blocked ongoing redstone power (not needed because of replacing redstone_wire with stone_button)
-#execute as @e[tag=!mc.blocked,type=minecraft:item_frame,scores={mc.itemrotation=0..},nbt={Facing:1b,Item:{id:"minecraft:redstone_torch"}},tag=mc.sender] at @s if block ~ ~ ~ minecraft:stone_button[powered=true] if block ~ ~-1 ~ minecraft:gold_block run tag @s add mc.blocked
-#execute as @e[tag=mc.blocked,type=minecraft:item_frame,scores={mc.itemrotation=0..},nbt={Facing:1b,Item:{id:"minecraft:redstone_torch"}},tag=mc.sender] at @s if block ~ ~ ~ minecraft:stone_button[powered=false] if block ~ ~-1 ~ minecraft:gold_block run tag @s remove mc.blocked

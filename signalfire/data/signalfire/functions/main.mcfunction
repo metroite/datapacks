@@ -1,3 +1,4 @@
+#detect blocks
 execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:jungle_leaves"}}] at @s unless entity @e[tag=sf.signalfire,distance=..86] if block ~ ~ ~ minecraft:fire if block ~ ~-1 ~ #minecraft:logs run summon minecraft:armor_stand ~ ~ ~ {Small:1b,Marker:1b,NoGravity:0b,Tags:["sf.signalfire"],Invisible:1b}
 execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:oak_leaves"}}] at @s unless entity @e[tag=sf.signalfire,distance=..86] if block ~ ~ ~ minecraft:fire if block ~ ~-1 ~ #minecraft:logs run summon minecraft:armor_stand ~ ~ ~ {Small:1b,Marker:1b,NoGravity:0b,Tags:["sf.signalfire"],Invisible:1b}
 execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:spruce_leaves"}}] at @s unless entity @e[tag=sf.signalfire,distance=..86] if block ~ ~ ~ minecraft:fire if block ~ ~-1 ~ #minecraft:logs run summon minecraft:armor_stand ~ ~ ~ {Small:1b,Marker:1b,NoGravity:0b,Tags:["sf.signalfire"],Invisible:1b}
@@ -5,6 +6,7 @@ execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:birch_leaves"}}] at @
 execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:acacia_leaves"}}] at @s unless entity @e[tag=sf.signalfire,distance=..86] if block ~ ~ ~ minecraft:fire if block ~ ~-1 ~ #minecraft:logs run summon minecraft:armor_stand ~ ~ ~ {Small:1b,Marker:1b,NoGravity:0b,Tags:["sf.signalfire"],Invisible:1b}
 execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:dark_oak_leaves"}}] at @s unless entity @e[tag=sf.signalfire,distance=..86] if block ~ ~ ~ minecraft:fire if block ~ ~-1 ~ #minecraft:logs run summon minecraft:armor_stand ~ ~ ~ {Small:1b,Marker:1b,NoGravity:0b,Tags:["sf.signalfire"],Invisible:1b}
 
+#effects - replacing armor_stands with area_effect clouds could increase performance
 execute as @e[type=minecraft:armor_stand,tag=sf.signalfire] at @s run data merge entity @s {Motion:[0.0d,0.32d,0.0d]}
 scoreboard players add @e[type=minecraft:armor_stand,tag=sf.signalfire] sf.signalfire 1
 execute at @e[type=minecraft:armor_stand,tag=sf.signalfire,scores={sf.signalfire=0..5}] run playsound minecraft:block.fire.extinguish player @a[distance=..32] ~ ~ ~ 2 0.5

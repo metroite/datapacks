@@ -1,1 +1,1 @@
-scoreboard objectives add signalfire dummy
+scoreboard objectives add sf.signalfire dummy

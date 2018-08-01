@@ -7,12 +7,13 @@ scoreboard objectives add witchtrading.twv minecraft.custom:minecraft.traded_wit
 scoreboard objectives add rng minecraft.custom:minecraft.play_one_minute
 
 #What you shouldn't do:
-#Don't move away and don't wait too long after you initialized the trade. The witch will be very mad.
+#Don't move away.
+#Don't wait too long after you initialized the trade.
 #Don't hit the witch.
 #Don't go away after you showed her your poisonous potatoes.
 #Don't switch out your poisonous potato after you showed it.
 #
-#All those will block trading
+#All those will block trading and the witch will be very mad.
 ##############################################################
 #Used Tags:
 #"setup", "blocked", "traded"

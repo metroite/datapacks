@@ -43,7 +43,7 @@ execute as @s[scores={ll.cookingapple=2900..2905}] run particle minecraft:dragon
 execute as @s[scores={ll.cookingapple=2900..2905}] run playsound minecraft:block.conduit.ambient ambient @a[distance=..32] ~ ~ ~ 2 0.7
 execute as @s[scores={ll.cookingapple=2999..3000}] run playsound minecraft:block.conduit.deactivate ambient @a[distance=..64] ~ ~ ~ 2 0.7
 execute as @s[scores={ll.cookingapple=3000}] at @s as @e[type=minecraft:end_crystal,limit=1,sort=nearest,distance=..2] run tag @s add ll.tired
-execute as @s[scores={ll.cookingapple=3000}] run tag @p[tag=ll.bat,limit=1,sort=nearest,nbt={ActiveEffects:[{Id:22b}]}] add cured
+execute as @s[scores={ll.cookingapple=3000}] run tag @p[tag=ll.bat,limit=1,sort=nearest,nbt={ActiveEffects:[{Id:22b}]}] add ll.cured
 execute as @s[scores={ll.cookingapple=3000}] run scoreboard players remove @p[tag=ll.bat,limit=1,sort=nearest,nbt={ActiveEffects:[{Id:22b}]}] ll.deaths 1
 execute as @s[scores={ll.cookingapple=3000}] if entity @e[tag=ll.bat,limit=1,sort=nearest,type=minecraft:bat] at @e[type=minecraft:end_crystal,limit=1,sort=nearest] positioned ~ ~-1 ~ if entity @e[distance=..1,type=minecraft:item,nbt={Item:{Count:1b,id:"minecraft:dried_kelp",tag:{CanPlaceOn:["minecraft:void_air"]}}}] run summon minecraft:tnt ~ ~1 ~
 execute as @s[scores={ll.cookingapple=3000}] as @e[tag=ll.bat,limit=1,sort=nearest,nbt=!{ActiveEffects:[{Id:22b}]}] as @s[type=minecraft:player] at @e[type=minecraft:end_crystal,limit=1,sort=nearest] positioned ~ ~-1 ~ if entity @e[distance=..1,type=minecraft:item,nbt={Item:{Count:1b,id:"minecraft:dried_kelp",tag:{CanPlaceOn:["minecraft:void_air"]}}}] run summon minecraft:tnt ~ ~1 ~

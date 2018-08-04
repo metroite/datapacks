@@ -2,7 +2,7 @@ scoreboard players add @a[limit=1,sort=random] ll.deaths 0
 scoreboard players remove @a[scores={ll.deaths=10..}] ll.deaths 1
 
 #helmet
-execute as @a[nbt=!{Inventory:[{Slot:103b,id:"minecraft:leather_helmet",Count:1b,tag:{display:{Name:"{\"text\":\"Lebenserhaltungshelm\",\"color\":\"aqua\",\"italic\":false}"}}}]}] run function limitedlife:helmet
+execute as @a[nbt=!{Inventory:[{Slot:103b,id:"minecraft:leather_helmet",Count:1b,tag:{display:{Name:"{\"text\":\"Life Support Helmet\",\"color\":\"aqua\",\"italic\":false}"}}}]}] run function limitedlife:helmet
 execute as @a[tag=ll.cured] run function limitedlife:helmet
 
 #curing

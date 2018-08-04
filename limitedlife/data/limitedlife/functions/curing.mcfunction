@@ -1,4 +1,5 @@
 #particles and ll.cookingapple
+tag @s[tag=ll.blockeddone] remove ll.blockeddone
 scoreboard players add @s ll.cookingapple 1
 data merge entity @s[scores={ll.cookingapple=1..10}] {PickupDelay:32767}
 execute as @s[scores={ll.cookingapple=100..}] run particle minecraft:bubble_pop ~ ~-0.12 ~ 0.15 0 0.15 0.1 1

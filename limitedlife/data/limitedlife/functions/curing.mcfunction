@@ -58,5 +58,5 @@ execute as @s[scores={ll.cookingapple=3000}] run kill @e[tag=ll.bat,limit=1,sort
 execute as @s[scores={ll.cookingapple=3000}] at @s run fill ~ ~ ~ ~ ~ ~ minecraft:cauldron[level=0] replace minecraft:cauldron
 kill @s[scores={ll.cookingapple=3000..}]
 
-#make sure there is only one ll.cookingapple (Bat Wing) in the cauldron
+#make sure there is only one ll.cookingapple in the cauldron
 execute as @s at @s as @e[distance=0.1..2,type=minecraft:item,tag=ll.heal] run tag @s add ll.blocked

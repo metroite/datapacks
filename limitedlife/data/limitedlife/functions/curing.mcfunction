@@ -13,7 +13,7 @@ execute as @s[scores={ll.cookingapple=900..}] run particle minecraft:bubble_pop 
 execute as @s[scores={ll.cookingapple=1000..}] run particle minecraft:bubble_pop ~ ~-0.12 ~ 0.24 0 0.24 0.1 1
 execute as @s[scores={ll.cookingapple=1100..}] run particle minecraft:bubble_pop ~ ~-0.12 ~ 0.25 0 0.25 0.1 1
 execute as @s[scores={ll.cookingapple=1200..}] run particle minecraft:bubble_pop ~ ~-0.12 ~ 0.26 0 0.26 0.1 1
-execute as @s[scores={ll.cookingapple=1200..}] at @e[type=minecraft:end_crystal,limit=1,sort=nearest] positioned ~ ~-1 ~ if entity @e[distance=..1,type=minecraft:item,nbt={Item:{Count:1b,id:"minecraft:dried_kelp",tag:{CanPlaceOn:["minecraft:void_air"]}}}] run particle minecraft:dragon_breath ~ ~1.5 ~ 0 0.25 0 0.0001 5
+execute as @s[scores={ll.cookingapple=1200..}] at @e[type=minecraft:end_crystal,limit=1,sort=nearest] positioned ~ ~-1 ~ if entity @e[distance=..1,type=minecraft:item,nbt={Item:{Count:1b,id:"minecraft:dried_kelp",tag:{HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:1}],CanPlaceOn:["minecraft:void_air"]}}}] run particle minecraft:dragon_breath ~ ~1.5 ~ 0 0.25 0 0.0001 5
 execute as @s[scores={ll.cookingapple=110..}] run playsound minecraft:ambient.underwater.loop.additions ambient @p ~ ~ ~ 0.05 2
 
 #The beam
@@ -29,7 +29,7 @@ execute at @e[tag=ll.bat,type=minecraft:bat] as @p[distance=..2,scores={ll.death
 execute at @e[tag=ll.bat,type=minecraft:bat] as @p[distance=..2,scores={ll.deaths=1..},tag=!ll.bat,nbt={ActiveEffects:[{Id:22b}]}] run playsound minecraft:entity.player.levelup ambient @a[distance=..8] ~ ~ ~ 1 1.7
 execute at @e[tag=ll.bat,type=minecraft:bat] as @p[distance=..2,scores={ll.deaths=1..},tag=ll.bat,nbt={ActiveEffects:[{Id:22b}]}] run kill @e[type=minecraft:bat,tag=ll.bat]
 #performance? better with area_effect_clouds and less @e
-execute as @e[type=minecraft:end_crystal] positioned ~ ~-1 ~ if entity @e[distance=..1,type=minecraft:item,nbt={Item:{Count:1b,id:"minecraft:dried_kelp",tag:{CanPlaceOn:["minecraft:void_air"]}}}] as @e[tag=ll.bat,limit=1,sort=nearest] as @e[type=minecraft:end_crystal,limit=1,sort=nearest] at @s run summon armor_stand ~ ~ ~ {NoGravity:1b,Tags:["ll.beam"],Small:1b,Invisible:1b,Marker:1b}
+execute as @e[type=minecraft:end_crystal] positioned ~ ~-1 ~ if entity @e[distance=..1,type=minecraft:item,nbt={Item:{Count:1b,id:"minecraft:dried_kelp",tag:{HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:1}],CanPlaceOn:["minecraft:void_air"]}}}] as @e[tag=ll.bat,limit=1,sort=nearest] as @e[type=minecraft:end_crystal,limit=1,sort=nearest] at @s run summon armor_stand ~ ~ ~ {NoGravity:1b,Tags:["ll.beam"],Small:1b,Invisible:1b,Marker:1b}
 #goto function beam
 execute as @e[type=minecraft:armor_stand,tag=ll.beam] at @s run function limitedlife:beam
 execute as @e[type=minecraft:armor_stand,tag=ll.beam] at @s if entity @e[tag=ll.bat,distance=..1] run kill @s
@@ -50,8 +50,8 @@ execute as @s[scores={ll.cookingapple=3000}] run tag @p[tag=ll.bat,limit=1,sort=
 #the actual curing effect
 execute as @s[scores={ll.cookingapple=3000}] run scoreboard players remove @p[tag=ll.bat,limit=1,sort=nearest,nbt={ActiveEffects:[{Id:22b}]}] ll.deaths 1
 #failing conditions - exploding crystal
-execute as @s[scores={ll.cookingapple=3000}] if entity @e[tag=ll.bat,limit=1,sort=nearest,type=minecraft:bat] at @e[type=minecraft:end_crystal,limit=1,sort=nearest] positioned ~ ~-1 ~ if entity @e[distance=..1,type=minecraft:item,nbt={Item:{Count:1b,id:"minecraft:dried_kelp",tag:{CanPlaceOn:["minecraft:void_air"]}}}] run summon minecraft:tnt ~ ~1 ~
-execute as @s[scores={ll.cookingapple=3000}] as @e[tag=ll.bat,limit=1,sort=nearest,nbt=!{ActiveEffects:[{Id:22b}]}] as @s[type=minecraft:player] at @e[type=minecraft:end_crystal,limit=1,sort=nearest] positioned ~ ~-1 ~ if entity @e[distance=..1,type=minecraft:item,nbt={Item:{Count:1b,id:"minecraft:dried_kelp",tag:{CanPlaceOn:["minecraft:void_air"]}}}] run summon minecraft:tnt ~ ~1 ~
+execute as @s[scores={ll.cookingapple=3000}] if entity @e[tag=ll.bat,limit=1,sort=nearest,type=minecraft:bat] at @e[type=minecraft:end_crystal,limit=1,sort=nearest] positioned ~ ~-1 ~ if entity @e[distance=..1,type=minecraft:item,nbt={Item:{Count:1b,id:"minecraft:dried_kelp",tag:{HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:1}],CanPlaceOn:["minecraft:void_air"]}}}] run summon minecraft:tnt ~ ~1 ~
+execute as @s[scores={ll.cookingapple=3000}] as @e[tag=ll.bat,limit=1,sort=nearest] as @s[type=minecraft:player,nbt=!{ActiveEffects:[{Id:22b}]}] at @e[type=minecraft:end_crystal,limit=1,sort=nearest] positioned ~ ~-1 ~ if entity @e[distance=..1,type=minecraft:item,nbt={Item:{Count:1b,id:"minecraft:dried_kelp",tag:{HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:1}],CanPlaceOn:["minecraft:void_air"]}}}] run summon minecraft:tnt ~ ~1 ~
 #removing ll.bat and killing the bat
 execute as @s[scores={ll.cookingapple=3000}] run tag @e[tag=ll.bat,limit=1,sort=nearest] remove ll.bat
 execute as @s[scores={ll.cookingapple=3000}] run kill @e[tag=ll.bat,limit=1,sort=nearest,type=minecraft:bat]
@@ -62,4 +62,4 @@ execute as @s[scores={ll.cookingapple=3000}] at @s run fill ~ ~ ~ ~ ~ ~ minecraf
 kill @s[scores={ll.cookingapple=3000..}]
 
 #make sure there is only one ll.cookingapple (Bat Wing) in the cauldron
-execute as @s at @s as @e[distance=0.1..2,type=minecraft:item,nbt={Item:{Count:1b,id:"minecraft:dried_kelp",tag:{CanPlaceOn:["minecraft:void_air"]}}}] run tag @s add ll.blocked
+execute as @s at @s as @e[distance=0.1..2,type=minecraft:item,nbt={Item:{Count:1b,id:"minecraft:dried_kelp",tag:{HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:1}],CanPlaceOn:["minecraft:void_air"]}}}] run tag @s add ll.blocked

@@ -17,7 +17,7 @@
                         },
 						{
                             "function": "set_nbt",
-                            "tag": "{CanPlaceOn:[\"minecraft:void_air\"],display:{Name:\"{\\\"text\\\":\\\"Bat Wings\\\",\\\"color\\\":\\\"aqua\\\",\\\"italic\\\":false}\"},HideFlags:16}"
+                            "tag": "{CanPlaceOn:[\"minecraft:void_air\"],HideFlags:17,Enchantments:[{id:\"minecraft:unbreaking\",lvl:1}],display:{Name:\"{\\\"text\\\":\\\"Bat Wings\\\",\\\"color\\\":\\\"aqua\\\",\\\"italic\\\":false}\"}}"
                         },
                         {
                             "function": "looting_enchant",

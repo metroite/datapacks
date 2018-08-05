@@ -1,11 +1,17 @@
 scoreboard players add @a[limit=1,sort=random] ll.deaths 0
-scoreboard players remove @a[scores={ll.deaths=10..}] ll.deaths 1
+scoreboard players remove @a[scores={ll.deaths=11..}] ll.deaths 1
+
+#Tp to the Void
+execute as @a[scores={ll.deaths=10}] positioned 0 1 -30 unless entity @s[dx=5,dy=5,dz=-5] run tp @s 3.0 3 -32.0
+execute as @a[scores={ll.deaths=10}] positioned 0 1 -30 if entity @s[dx=5,dy=5,dz=-5] run effect give @s minecraft:regeneration 1 255 true
+execute as @a[scores={ll.deaths=10}] positioned 0 1 -30 if entity @s[dx=5,dy=5,dz=-5] run effect give @s minecraft:wither 1 0 true
+title @a[scores={ll.deaths=10}] actionbar ["",{"text":"Th","bold":true,"color":"dark_blue"},{"text":"e","bold":true,"obfuscated":true,"color":"dark_blue"},{"text":" V","bold":true,"color":"dark_blue"},{"text":"o","bold":true,"obfuscated":true,"color":"dark_blue"},{"text":"id","bold":true,"color":"dark_blue"}]
 
 #compatibility to graves
 function graves:limitedlife
 
 #helmet
-execute as @a[nbt=!{Inventory:[{Slot:103b,id:"minecraft:leather_helmet",Count:1b,tag:{display:{Name:"{\"text\":\"Life Support Helmet\",\"color\":\"aqua\",\"italic\":false}"}}}]}] run function limitedlife:helmet
+execute as @a[nbt=!{Inventory:[{Slot:103b,id:"minecraft:glass",Count:1b,tag:{display:{Name:"{\"text\":\"Life Support Helmet\",\"color\":\"aqua\",\"italic\":false}"}}}]}] run function limitedlife:helmet
 execute as @a[tag=ll.cured] run function limitedlife:helmet
 #players need to be damaged to update to their real health value
 effect give @a[scores={ll.deaths=1..,ll.health=20,ll.sincedeath=..100}] minecraft:wither 1 1 true

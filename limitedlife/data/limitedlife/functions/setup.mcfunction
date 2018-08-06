@@ -3,7 +3,8 @@ scoreboard objectives add ll.cookingapple dummy
 scoreboard objectives add ll.health health "❤"
 scoreboard objectives setdisplay belowName ll.health
 scoreboard objectives add ll.sincedeath minecraft.custom:minecraft.time_since_death
-
+scoreboard players set max_daytime ll.sincedeath 13000
+scoreboard objectives add ll.craftbatwing minecraft.crafted:minecraft.milk_bucket
 
 #The Void
 #end_gateway -z/+x/+z/-x/-y/+y

@@ -1,0 +1,23 @@
+{
+    "type": "crafting_shaped",
+    "pattern": [
+        "BMB",
+        "BMB",
+        "BUB"
+    ],
+    "key": {
+        "B": {
+            "item": "minecraft:bat_spawn_egg"
+        },
+        "U": {
+            "item": "minecraft:bucket"
+        },
+        "M": {
+            "item": "minecraft:phantom_membrane"
+        }
+    },
+    "result": {
+        "item": "minecraft:milk_bucket",
+        "count": 1
+    }
+}

@@ -1,7 +1,8 @@
+#ll.deaths
 scoreboard players add @a[limit=1,sort=random] ll.deaths 0
 scoreboard players remove @a[scores={ll.deaths=11..}] ll.deaths 1
 
-#Tp to the Void
+#tp to the Void
 execute as @a[scores={ll.deaths=10}] positioned 0 1 -30 unless entity @s[dx=5,dy=5,dz=-5] run tp @s 3.0 3 -32.0
 execute as @a[scores={ll.deaths=10}] positioned 0 1 -30 if entity @s[dx=5,dy=5,dz=-5] run effect give @s minecraft:regeneration 1 255 true
 execute as @a[scores={ll.deaths=10}] positioned 0 1 -30 if entity @s[dx=5,dy=5,dz=-5] run effect give @s minecraft:wither 1 0 true

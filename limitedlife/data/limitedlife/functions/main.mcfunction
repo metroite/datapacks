@@ -23,22 +23,22 @@ effect give @a[scores={ll.deaths=1..,ll.health=20,ll.sincedeath=..100}] minecraf
 
 #calling curing
 execute as @e[type=minecraft:item,tag=!ll.blocked,nbt={Item:{Count:1b,id:"minecraft:bat_spawn_egg",tag:{HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:1}],CanPlaceOn:["minecraft:void_air"]}}}] at @s if block ~ ~ ~ minecraft:cauldron[level=3] positioned ~ ~1 ~ if entity @e[type=minecraft:end_crystal,limit=1,sort=nearest,distance=..1,tag=!ll.tired] run tag @s add ll.heal
-execute as @e[tag=ll.heal] at @s positioned ~ ~1 ~ run function limitedlife:curing
+execute as @e[tag=ll.healingredient] at @s positioned ~ ~1 ~ run function limitedlife:curing
 #call unmetconditions
 execute as @e[type=minecraft:item,tag=!ll.blocked,nbt={Item:{Count:1b,id:"minecraft:bat_spawn_egg",tag:{HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:1}],CanPlaceOn:["minecraft:void_air"]}}}] at @s unless block ~ ~ ~ minecraft:cauldron[level=3] run function limitedlife:unmetconditions
 execute as @e[type=minecraft:item,tag=!ll.blocked,nbt={Item:{Count:1b,id:"minecraft:bat_spawn_egg",tag:{HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:1}],CanPlaceOn:["minecraft:void_air"]}}}] at @s positioned ~ ~1 ~ unless entity @e[type=minecraft:end_crystal,limit=1,sort=nearest,distance=..1,tag=!ll.tired] run function limitedlife:unmetconditions
 #remove ll.bat if canceled
-execute as @a[tag=ll.bat] at @s at @e[type=minecraft:item,tag=ll.heal,sort=nearest,limit=1] positioned ~ ~1 ~ unless entity @e[type=minecraft:end_crystal,sort=nearest,limit=1,distance=..1] run tag @s remove ll.bat
+execute as @a[tag=ll.bat] at @s at @e[type=minecraft:item,tag=ll.healingredient,sort=nearest,limit=1] positioned ~ ~1 ~ unless entity @e[type=minecraft:end_crystal,sort=nearest,limit=1,distance=..1] run tag @s remove ll.bat
 #ll.blocked should be pickupable
 data merge entity @e[tag=ll.blocked,tag=!ll.blockeddone,limit=1,sort=random] {PickupDelay:20,Tags:["ll.blocked","ll.blockeddone"]}
 #make sure ll.beam entities die
 execute as @e[type=minecraft:armor_stand,tag=ll.beam] at @s unless entity @e[tag=ll.bat,limit=1,sort=nearest,distance=..64] run kill @s
 #tired effect
 execute at @e[tag=ll.tired] run particle minecraft:dripping_water ~ ~1 ~ 0.3 0.3 0.3 1 1 normal
-scoreboard players add @e[tag=ll.tired] ll.cookingapple 1
-execute at @e[tag=ll.tired,scores={ll.cookingapple=9999}] run playsound minecraft:ambient.underwater.exit ambient @a[distance=..32] ~ ~ ~ 0.1 0.5
-tag @e[tag=ll.tired,scores={ll.cookingapple=10000..}] remove ll.tired
-scoreboard players reset @e[tag=!ll.tired,type=minecraft:end_crystal,scores={ll.cookingapple=1..}] ll.cookingapple
+scoreboard players add @e[tag=ll.tired] ll.cooking 1
+execute at @e[tag=ll.tired,scores={ll.cooking=9999}] run playsound minecraft:ambient.underwater.exit ambient @a[distance=..32] ~ ~ ~ 0.1 0.5
+tag @e[tag=ll.tired,scores={ll.cooking=10000..}] remove ll.tired
+scoreboard players reset @e[tag=!ll.tired,type=minecraft:end_crystal,scores={ll.cooking=1..}] ll.cooking
 
 #Bat Wings
 data merge entity @e[type=minecraft:bat,nbt=!{DeathLootTable:"limitedlife:entities/bat"},limit=1,sort=random,tag=!ll.bat,tag=!ll.spawnbat] {DeathLootTable:"limitedlife:entities/bat"}

@@ -1,3 +1,6 @@
+#g.deaths
+scoreboard players add @a[limit=1,sort=random] g.deaths 0
+
 #detecting direction
 execute at @a[scores={g.deaths=1..},y_rotation=-45..45] run summon armor_stand ~ ~1 ~ {Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:skeleton_skull",Count:1b}],Invulnerable:1b,Tags:["g.drop","g.south"],NoGravity:0b,NoBasePlate:1b,Marker:1b}
 execute at @a[scores={g.deaths=1..},y_rotation=-135..-45] run summon armor_stand ~ ~1 ~ {Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:skeleton_skull",Count:1b}],Invulnerable:1b,Tags:["g.drop","g.east"],NoGravity:0b,NoBasePlate:1b,Marker:1b}
@@ -10,7 +13,7 @@ execute as @e[tag=g.drop,tag=!g.skull,nbt={OnGround:1b}] at @s if block ~ ~-0.5 
 kill @e[tag=g.bone,nbt=!{ArmorItems:[{},{},{},{}],HandItems:[{id:"minecraft:bone",Count:1b},{}]}]
 
 #stops looping
-scoreboard players reset @a[scores={g.deaths=1..}] g.deaths
+scoreboard players set @a[scores={g.deaths=1..}] g.deaths 0
 
 #"Skull Dust" g.drop:
 execute as @e[tag=g.drop,nbt={OnGround:1b},tag=!g.skull] at @s run data merge entity @s {NoGravity:1b,Tags:["g.drop","g.skull"],ArmorItems:[{},{},{},{}]}

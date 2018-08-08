@@ -1,4 +1,4 @@
-## growontoptree
+## witchtrading
 
 Trade your poisonous potatoes with witches. Don't play with them though!
 

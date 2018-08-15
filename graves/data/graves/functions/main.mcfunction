@@ -15,6 +15,9 @@ execute as @e[tag=g.drop,tag=!g.skull,nbt={OnGround:1b}] at @s unless block ~ ~-
 execute as @e[tag=g.drop,tag=!g.skull,nbt={OnGround:1b}] at @s if block ~ ~-0.5 ~ #graves:generatable positioned ~ ~1 ~ run function graves:grave
 kill @e[tag=g.bone,nbt=!{ArmorItems:[{},{},{},{}],HandItems:[{id:"minecraft:bone",Count:1b},{}]}]
 
+#calling groundgbone.mcfunction: move g.bones to the ground if OnGround
+execute as @e[tag=g.bone,tag=g.nogravity,nbt={OnGround:1b}] at @s run function graves:groundgbone
+
 #stops looping
 scoreboard players set @a[scores={g.deaths=1..}] g.deaths 0
 
@@ -23,5 +26,15 @@ execute as @e[tag=g.drop,nbt={OnGround:1b},tag=!g.skull] at @s run data merge en
 execute as @e[tag=g.drop,nbt={OnGround:1b},tag=g.skull] at @s unless block ~ ~0.5 ~ minecraft:skeleton_skull run data merge entity @e[type=minecraft:item,limit=1,sort=nearest,nbt={Item:{id:"minecraft:skeleton_skull",Count:1b}}] {Item:{id:"minecraft:bone_meal",Count:1b,tag:{CanPlaceOn:["minecraft:void_air"],HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:1}],display:{Name:"{\"text\":\"Skull Dust\",\"color\":\"yellow\",\"italic\":false}"}}}}
 execute as @e[tag=g.drop,nbt={OnGround:1b},tag=g.skull] at @s unless block ~ ~0.5 ~ minecraft:skeleton_skull run kill @s
 
-#move g.bones to the ground if OnGround
-execute as @e[tag=g.bone,tag=g.nogravity,nbt={OnGround:1b}] at @s run function graves:groundgbone
+#"Skull Dust" as bone meal
+execute as @a[nbt={SelectedItem:{id:"minecraft:bone_meal",tag:{CanPlaceOn:["minecraft:void_air"],HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:1}]}}},tag=!g.usebonemeal] run tag @s add g.usebonemeal
+#Tall grass placement
+execute at @a[tag=g.usebonemeal,scores={g.usebonemeal=1..}] run fill ~4 ~-2 ~4 ~-4 ~2 ~-4 minecraft:tall_grass[half=lower] replace minecraft:grass
+execute at @a[tag=g.usebonemeal,scores={g.usebonemeal=1..}] run fill ~4 ~-2 ~4 ~-4 ~2 ~-4 minecraft:tall_grass[half=upper] replace minecraft:air
+#calling skullmeal.mcfunction
+execute at @a[tag=g.usebonemeal,scores={g.usebonemeal=1..}] run function graves:skullmeal
+scoreboard players reset @a[scores={g.usebonemeal=1..}] g.usebonemeal
+tag @a[nbt=!{SelectedItem:{id:"minecraft:bone_meal",tag:{CanPlaceOn:["minecraft:void_air"],HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:1}]}}},tag=g.usebonemeal] remove g.usebonemeal
+
+#calling groundgflower.mcfunction: kill g.flowers if OnGround and place random tall_flower
+execute as @e[tag=g.flower,nbt={OnGround:1b}] at @s run function graves:groundgflower

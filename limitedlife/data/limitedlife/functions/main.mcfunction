@@ -48,10 +48,10 @@ execute as @e[type=minecraft:bat,tag=ll.spawnbat] run kill @s
 #calling beam
 execute as @e[type=minecraft:armor_stand,tag=ll.beam] at @s run function limitedlife:beam
 
-#calling batwing
-execute as @a[nbt={Inventory:[{id:"minecraft:elytra",Count:1b,tag:{HideFlags:16,CanPlaceOn:["minecraft:void_air"]}}]}] in overworld run function limitedlife:batwing
-execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:elytra",Count:1b,tag:{HideFlags:16,CanPlaceOn:["minecraft:void_air"]}}}] in overworld run function limitedlife:batwing
-#crafting batwing (Inventory)
+#calling batwingsuit
+execute as @a[nbt={Inventory:[{id:"minecraft:elytra",Count:1b,tag:{HideFlags:16,CanPlaceOn:["minecraft:void_air"]}}]}] at @s in overworld unless block ~ ~ ~ minecraft:cave_air run function limitedlife:batwingsuit
+execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:elytra",Count:1b,tag:{HideFlags:16,CanPlaceOn:["minecraft:void_air"]}}}] at @s in overworld unless block ~ ~ ~ minecraft:cave_air run function limitedlife:batwingsuit
+#crafting batwingsuit (Inventory)
 execute as @a[scores={ll.craftbatwing=1..}] run give @s minecraft:elytra{Damage:232s,Unbreakable:1b,HideFlags:16,CanPlaceOn:["minecraft:void_air"],display:{Name:"{\"text\":\"Bat Wingsuit\",\"color\":\"yellow\",\"italic\":false}"}} 1
 execute as @a[scores={ll.craftbatwing=1..}] run scoreboard players remove @s ll.craftbatwing 1
 #wearing Bat Wingsuit

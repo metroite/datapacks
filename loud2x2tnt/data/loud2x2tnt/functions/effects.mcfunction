@@ -1,5 +1,6 @@
 #effects
 particle minecraft:angry_villager ~ ~0.1 ~ 0 0.2 0 1 1 force
+tag @s add l2t.fused
 execute at @s[nbt={Fuse:3s}] at @a[distance=0..16] run playsound minecraft:entity.generic.explode block @a ~ ~ ~ 2 0.6
 execute at @s[nbt={Fuse:3s}] at @a[distance=17..32] run playsound minecraft:entity.generic.explode block @a ~ ~ ~ 1.7 0.6
 execute at @s[nbt={Fuse:3s}] at @a[distance=33..64] run playsound minecraft:entity.generic.explode block @a ~ ~ ~ 1.4 0.6

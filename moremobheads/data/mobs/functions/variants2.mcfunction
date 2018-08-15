@@ -1,0 +1,11 @@
+execute as @e[type=rabbit,tag=!loot,nbt={RabbitType:0}] at @s run data merge entity @s {Tags:["loot"],DeathLootTable:"mobs:mobs/rabbit/brown"}
+execute as @e[type=rabbit,tag=!loot,nbt={RabbitType:1}] at @s run data merge entity @s {Tags:["loot"],DeathLootTable:"mobs:mobs/rabbit/white"}
+execute as @e[type=rabbit,tag=!loot,nbt={RabbitType:2}] at @s run data merge entity @s {Tags:["loot"],DeathLootTable:"mobs:mobs/rabbit/black"}
+execute as @e[type=rabbit,tag=!loot,nbt={RabbitType:3}] at @s run data merge entity @s {Tags:["loot"],DeathLootTable:"mobs:mobs/rabbit/blackandwhite"}
+execute as @e[type=rabbit,tag=!loot,nbt={RabbitType:4}] at @s run data merge entity @s {Tags:["loot"],DeathLootTable:"mobs:mobs/rabbit/gold"}
+execute as @e[type=rabbit,tag=!loot,nbt={RabbitType:5}] at @s run data merge entity @s {Tags:["loot"],DeathLootTable:"mobs:mobs/rabbit/saltandpepper"}
+execute as @e[type=parrot,tag=!loot,nbt={Variant:0}] at @s run data merge entity @s {Tags:["loot"],DeathLootTable:"mobs:mobs/parrot/red"}
+execute as @e[type=parrot,tag=!loot,nbt={Variant:1}] at @s run data merge entity @s {Tags:["loot"],DeathLootTable:"mobs:mobs/parrot/blue"}
+execute as @e[type=parrot,tag=!loot,nbt={Variant:2}] at @s run data merge entity @s {Tags:["loot"],DeathLootTable:"mobs:mobs/parrot/green"}
+execute as @e[type=parrot,tag=!loot,nbt={Variant:3}] at @s run data merge entity @s {Tags:["loot"],DeathLootTable:"mobs:mobs/parrot/cyan"}
+execute as @e[type=parrot,tag=!loot,nbt={Variant:4}] at @s run data merge entity @s {Tags:["loot"],DeathLootTable:"mobs:mobs/parrot/gray"}

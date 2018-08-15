@@ -1,0 +1,10 @@
+execute as @e[type=horse,tag=!loot,nbt={Variant:3}] at @s run data merge entity @s {Tags:["loot"],DeathLootTable:"mobs:mobs/horse/brown"}
+execute as @e[type=horse,tag=!loot,nbt={Variant:259}] at @s run data merge entity @s {Tags:["loot"],DeathLootTable:"mobs:mobs/horse/brown"}
+execute as @e[type=horse,tag=!loot,nbt={Variant:515}] at @s run data merge entity @s {Tags:["loot"],DeathLootTable:"mobs:mobs/horse/brown"}
+execute as @e[type=horse,tag=!loot,nbt={Variant:771}] at @s run data merge entity @s {Tags:["loot"],DeathLootTable:"mobs:mobs/horse/brown"}
+execute as @e[type=horse,tag=!loot,nbt={Variant:1027}] at @s run data merge entity @s {Tags:["loot"],DeathLootTable:"mobs:mobs/horse/brown"}
+execute as @e[type=horse,tag=!loot,nbt={Variant:4}] at @s run data merge entity @s {Tags:["loot"],DeathLootTable:"mobs:mobs/horse/black"}
+execute as @e[type=horse,tag=!loot,nbt={Variant:260}] at @s run data merge entity @s {Tags:["loot"],DeathLootTable:"mobs:mobs/horse/black"}
+execute as @e[type=horse,tag=!loot,nbt={Variant:516}] at @s run data merge entity @s {Tags:["loot"],DeathLootTable:"mobs:mobs/horse/black"}
+execute as @e[type=horse,tag=!loot,nbt={Variant:772}] at @s run data merge entity @s {Tags:["loot"],DeathLootTable:"mobs:mobs/horse/black"}
+execute as @e[type=horse,tag=!loot,nbt={Variant:1028}] at @s run data merge entity @s {Tags:["loot"],DeathLootTable:"mobs:mobs/horse/black"}

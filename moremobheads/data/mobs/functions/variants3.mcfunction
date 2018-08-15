@@ -1,0 +1,15 @@
+execute as @e[type=horse,tag=!loot,nbt={Variant:0}] at @s run data merge entity @s {Tags:["loot"],DeathLootTable:"mobs:mobs/horse/white"}
+execute as @e[type=horse,tag=!loot,nbt={Variant:256}] at @s run data merge entity @s {Tags:["loot"],DeathLootTable:"mobs:mobs/horse/white"}
+execute as @e[type=horse,tag=!loot,nbt={Variant:512}] at @s run data merge entity @s {Tags:["loot"],DeathLootTable:"mobs:mobs/horse/white"}
+execute as @e[type=horse,tag=!loot,nbt={Variant:768}] at @s run data merge entity @s {Tags:["loot"],DeathLootTable:"mobs:mobs/horse/white"}
+execute as @e[type=horse,tag=!loot,nbt={Variant:1024}] at @s run data merge entity @s {Tags:["loot"],DeathLootTable:"mobs:mobs/horse/white"}
+execute as @e[type=horse,tag=!loot,nbt={Variant:1}] at @s run data merge entity @s {Tags:["loot"],DeathLootTable:"mobs:mobs/horse/creamy"}
+execute as @e[type=horse,tag=!loot,nbt={Variant:257}] at @s run data merge entity @s {Tags:["loot"],DeathLootTable:"mobs:mobs/horse/creamy"}
+execute as @e[type=horse,tag=!loot,nbt={Variant:513}] at @s run data merge entity @s {Tags:["loot"],DeathLootTable:"mobs:mobs/horse/creamy"}
+execute as @e[type=horse,tag=!loot,nbt={Variant:769}] at @s run data merge entity @s {Tags:["loot"],DeathLootTable:"mobs:mobs/horse/creamy"}
+execute as @e[type=horse,tag=!loot,nbt={Variant:1025}] at @s run data merge entity @s {Tags:["loot"],DeathLootTable:"mobs:mobs/horse/creamy"}
+execute as @e[type=horse,tag=!loot,nbt={Variant:2}] at @s run data merge entity @s {Tags:["loot"],DeathLootTable:"mobs:mobs/horse/chestnut"}
+execute as @e[type=horse,tag=!loot,nbt={Variant:258}] at @s run data merge entity @s {Tags:["loot"],DeathLootTable:"mobs:mobs/horse/chestnut"}
+execute as @e[type=horse,tag=!loot,nbt={Variant:514}] at @s run data merge entity @s {Tags:["loot"],DeathLootTable:"mobs:mobs/horse/chestnut"}
+execute as @e[type=horse,tag=!loot,nbt={Variant:770}] at @s run data merge entity @s {Tags:["loot"],DeathLootTable:"mobs:mobs/horse/chestnut"}
+execute as @e[type=horse,tag=!loot,nbt={Variant:1026}] at @s run data merge entity @s {Tags:["loot"],DeathLootTable:"mobs:mobs/horse/chestnut"}

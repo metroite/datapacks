@@ -1,0 +1,14 @@
+execute as @e[type=horse,tag=!loot,nbt={Variant:5}] at @s run data merge entity @s {Tags:["loot"],DeathLootTable:"mobs:mobs/horse/gray"}
+execute as @e[type=horse,tag=!loot,nbt={Variant:261}] at @s run data merge entity @s {Tags:["loot"],DeathLootTable:"mobs:mobs/horse/gray"}
+execute as @e[type=horse,tag=!loot,nbt={Variant:517}] at @s run data merge entity @s {Tags:["loot"],DeathLootTable:"mobs:mobs/horse/gray"}
+execute as @e[type=horse,tag=!loot,nbt={Variant:773}] at @s run data merge entity @s {Tags:["loot"],DeathLootTable:"mobs:mobs/horse/gray"}
+execute as @e[type=horse,tag=!loot,nbt={Variant:1029}] at @s run data merge entity @s {Tags:["loot"],DeathLootTable:"mobs:mobs/horse/gray"}
+execute as @e[type=horse,tag=!loot,nbt={Variant:6}] at @s run data merge entity @s {Tags:["loot"],DeathLootTable:"mobs:mobs/horse/dark_brown"}
+execute as @e[type=horse,tag=!loot,nbt={Variant:262}] at @s run data merge entity @s {Tags:["loot"],DeathLootTable:"mobs:mobs/horse/dark_brown"}
+execute as @e[type=horse,tag=!loot,nbt={Variant:518}] at @s run data merge entity @s {Tags:["loot"],DeathLootTable:"mobs:mobs/horse/dark_brown"}
+execute as @e[type=horse,tag=!loot,nbt={Variant:774}] at @s run data merge entity @s {Tags:["loot"],DeathLootTable:"mobs:mobs/horse/dark_brown"}
+execute as @e[type=horse,tag=!loot,nbt={Variant:1030}] at @s run data merge entity @s {Tags:["loot"],DeathLootTable:"mobs:mobs/horse/dark_brown"}
+execute as @e[type=rabbit,tag=!loot,nbt={CustomName:"{\"text\":\"Toast\"}"}] at @s run data merge entity @s {Tags:["loot"],DeathLootTable:"mobs:mobs/rabbit/toast"}
+execute as @e[type=wither,tag=!loot] at @s run data merge entity @s {Tags:["loot"],DeathLootTable:"mobs:mobs/wither"}
+execute as @e[type=creeper,tag=!loot,nbt={powered:1b}] at @s run data merge entity @s {Tags:["loot"],DeathLootTable:"mobs:mobs/chargedcreeper"}
+execute as @e[type=sheep,tag=!loot,nbt={CustomName:"{\"text\":\"jeb_\"}"}] at @s run data merge entity @s {Tags:["loot"],DeathLootTable:"mobs:mobs/jebsheep"}

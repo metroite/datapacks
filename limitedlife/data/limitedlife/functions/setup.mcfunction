@@ -25,3 +25,5 @@ fill 0 1 -29 5 6 -29 minecraft:bedrock
 fill -1 1 -30 -1 6 -35 minecraft:bedrock
 fill 0 0 -30 5 0 -35 minecraft:bedrock
 fill 0 7 -30 5 7 -35 minecraft:bedrock
+
+tellraw @a ["",{"text":"limitedlife","color":"green","clickEvent":{"action":"open_url","value":"https://github.com/Metroite/datapacks/tree/master/limitedlife"},"hoverEvent":{"action":"show_text","value":"every death you lose one heart"}},{"text":" by "},{"text":"Metroite","color":"aqua","clickEvent":{"action":"open_url","value":"https://github.com/Metroite"}},{"text":" loaded!"}]

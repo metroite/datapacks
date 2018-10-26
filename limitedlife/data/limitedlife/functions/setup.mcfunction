@@ -27,3 +27,6 @@ fill 0 0 -30 5 0 -35 minecraft:bedrock
 fill 0 7 -30 5 7 -35 minecraft:bedrock
 
 tellraw @a ["",{"text":"limitedlife","color":"green","clickEvent":{"action":"open_url","value":"https://github.com/Metroite/datapacks/tree/master/limitedlife"},"hoverEvent":{"action":"show_text","value":"every death you lose one heart"}},{"text":" by "},{"text":"Metroite","color":"aqua","clickEvent":{"action":"open_url","value":"https://github.com/Metroite"}},{"text":" loaded!"}]
+
+#ventilators[STANDALONE] is unnecessary
+function ventilators:limitedlife

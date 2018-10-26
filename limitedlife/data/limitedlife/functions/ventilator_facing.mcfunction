@@ -14,5 +14,9 @@ execute as @s[tag=ll.faneast] run setblock ~ ~ ~ minecraft:observer[facing=east,
 execute as @s[tag=ll.fanup] run setblock ~ ~ ~ minecraft:observer[facing=up,powered=true] replace
 execute as @s[tag=ll.fandown] run setblock ~ ~ ~ minecraft:observer[facing=down,powered=true] replace
 
+#placement effects
+particle minecraft:poof ~ ~ ~ 0.15 0.15 0.15 0.15 24
+execute as @s run playsound minecraft:entity.bat.takeoff ambient @a[distance=..16] ~ ~ ~ 2 0.75
+
 #ends the fansetul cycle
 tag @s remove ll.fansetup

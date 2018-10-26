@@ -40,7 +40,7 @@ execute at @e[tag=ll.tired,scores={ll.cooking=9999}] run playsound minecraft:amb
 tag @e[tag=ll.tired,scores={ll.cooking=10000..}] remove ll.tired
 scoreboard players reset @e[tag=!ll.tired,type=minecraft:end_crystal,scores={ll.cooking=1..}] ll.cooking
 
-#Bat Wings
+#Bat Wings: loottable for all bats
 data merge entity @e[type=minecraft:bat,nbt=!{DeathLootTable:"limitedlife:entities/bat"},limit=1,sort=random,tag=!ll.bat,tag=!ll.spawnbat] {DeathLootTable:"limitedlife:entities/bat"}
 
 #call (BatWing) Ventilator

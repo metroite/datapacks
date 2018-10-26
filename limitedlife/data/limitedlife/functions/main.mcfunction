@@ -42,7 +42,10 @@ scoreboard players reset @e[tag=!ll.tired,type=minecraft:end_crystal,scores={ll.
 
 #Bat Wings
 data merge entity @e[type=minecraft:bat,nbt=!{DeathLootTable:"limitedlife:entities/bat"},limit=1,sort=random,tag=!ll.bat,tag=!ll.spawnbat] {DeathLootTable:"limitedlife:entities/bat"}
-execute at @e[type=minecraft:bat,tag=ll.spawnbat] run give @p minecraft:bat_spawn_egg{EntityTag:{Tags:["ll.spawnbat"],Silent:1b,NoAI:1b,ActiveEffects:[{Id:14b,Amplifier:0b,Duration:100000,ShowParticles:0b}]},CanPlaceOn:["minecraft:void_air"],HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:1}],display:{Name:"{\"text\":\"Bat Wings\",\"color\":\"yellow\",\"italic\":false}"}} 1
+
+#call (BatWing) Ventilator
+function limitedlife:ventilator
+execute as @e[type=minecraft:bat,tag=ll.spawnbat] run tp 0 -200 0
 execute as @e[type=minecraft:bat,tag=ll.spawnbat] run kill @s
 
 #calling beam

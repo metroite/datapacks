@@ -9,6 +9,7 @@ limitedlife
 loud2x2tnt
 morsecode
 signalfire
+ventilators[STANDALONE]
 witchtrading
 ```
 
@@ -35,7 +36,7 @@ Every folder in here is its own datapack. Datapack specific information can be f
 
 Its easy.
 
-Move the datapack you wish to use inside your "datapacks" folder of your wished save file found in .minecraft\saves.
+Move the datapack(s) you wish to use inside your "datapacks" folder of your wished save file found in .minecraft\saves.
 
 ```
 C:\Users\<User>\AppData\Roaming\.minecraft\saves\<world name>\datapacks
@@ -51,7 +52,11 @@ Have fun trying out the new stuff you've added!
 
 ## Version
 
-These datapacks were created in 1.13, they might be working in newer versions of Minecraft.
+These datapacks were created in Minecraft 1.13.X, they might be working in newer versions of Minecraft.
+
+## [Feedback](https://github.com/Metroite/datapacks/issues)
+
+Please report any **bugs** you may find, any **suggestions** you might have and any possible **feedback** on the [Issues](https://github.com/Metroite/datapacks/issues) page! They are all welcome.
 
 ## Authors
 

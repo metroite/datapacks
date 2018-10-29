@@ -3,7 +3,6 @@
 As the name suggests, this datapacks makes leather armor actually worth crafting.
 
 */ - Stick*
-
 *L - Leather*
 
 **Leather Helmet:**

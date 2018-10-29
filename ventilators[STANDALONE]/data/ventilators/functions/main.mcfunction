@@ -17,8 +17,7 @@ execute as @e[type=armor_stand,tag=ll.fanup] at @s if block ~ ~ ~ minecraft:obse
 execute as @e[type=armor_stand,tag=ll.fandown] at @s if block ~ ~ ~ minecraft:observer[powered=true] positioned ~-0.5 ~ ~-0.5 run data merge entity @e[dy=4,limit=1,sort=nearest] {Motion:[0.0d,0.5d,0.0d]}
 
 #kill ll.fan armor_stands
-execute as @e[type=armor_stand,tag=ll.fan] at @s unless block ~ ~ ~ minecraft:observer run summon minecraft:bat ~ ~ ~
-execute as @e[type=armor_stand,tag=ll.fan] at @s unless block ~ ~ ~ minecraft:observer run kill @s
+execute as @e[type=armor_stand,tag=ll.fan] at @s unless block ~ ~ ~ minecraft:observer run function ventilators:ventilatorcleanup
 
 #kill bats, prevent looping
 execute as @e[type=minecraft:bat,tag=ll.spawnbat] run tp 0 -200 0

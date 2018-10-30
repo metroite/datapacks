@@ -46,7 +46,9 @@ scoreboard players reset @e[tag=!ll.tired,type=minecraft:end_crystal,scores={ll.
 data merge entity @e[type=minecraft:bat,nbt=!{DeathLootTable:"limitedlife:entities/bat"},limit=1,sort=random,tag=!ll.bat,tag=!ll.spawnbat] {DeathLootTable:"limitedlife:entities/bat"}
 
 #call (BatWing) Ventilator
-function limitedlife:ventilators/ventilator
+execute as @e[type=armor_stand,tag=ll.fan] at @s run function limitedlife:ventilators/ventilator
+#calls ventilator_placement
+execute as @e[type=minecraft:bat,tag=ll.spawnbat,tag=ll.valid] at @s run function limitedlife:ventilators/ventilator_placement
 execute as @e[type=minecraft:bat,tag=ll.spawnbat] run tp 0 -200 0
 execute as @e[type=minecraft:bat,tag=ll.spawnbat] run kill @s
 

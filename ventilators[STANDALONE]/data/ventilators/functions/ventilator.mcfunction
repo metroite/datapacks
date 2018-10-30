@@ -14,4 +14,4 @@ execute as @s[tag=ll.fanup] at @s if block ~ ~ ~ minecraft:observer[powered=true
 execute as @s[tag=ll.fandown] at @s if block ~ ~ ~ minecraft:observer[powered=true] positioned ~-0.5 ~ ~-0.5 run data merge entity @e[dy=4,limit=1,sort=nearest] {Motion:[0.0d,0.5d,0.0d]}
 
 #kill ll.fan armor_stands
-execute unless block ~ ~ ~ minecraft:observer run function limitedlife:ventilators/ventilatorcleanup
+execute unless block ~ ~ ~ minecraft:observer run function ventilators:ventilatorcleanup

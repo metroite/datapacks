@@ -13,4 +13,4 @@ execute unless entity @e[type=armor_stand,limit=1,sort=nearest,distance=..1.25,t
 execute as @e[type=armor_stand,limit=1,sort=random,distance=..1.25,tag=ll.fan,tag=ll.fansetup] at @s run kill @e[type=armor_stand,distance=0.1..3,tag=ll.fan,tag=ll.fansetup]
 
 #setup ll.fan
-execute as @e[type=armor_stand,tag=ll.fan,tag=ll.fansetup] at @s run function limitedlife:ventilator_facing
+execute as @e[type=armor_stand,tag=ll.fan,tag=ll.fansetup] at @s run function limitedlife:ventilators/ventilator_facing

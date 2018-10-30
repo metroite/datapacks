@@ -5,6 +5,7 @@ scoreboard objectives setdisplay belowName ll.health
 scoreboard objectives add ll.sincedeath minecraft.custom:minecraft.time_since_death
 scoreboard players set max_daytime ll.sincedeath 13000
 scoreboard objectives add ll.craftbatwing minecraft.crafted:minecraft.milk_bucket
+scoreboard players set 0 ll.deaths 0
 
 #The Void
 #air

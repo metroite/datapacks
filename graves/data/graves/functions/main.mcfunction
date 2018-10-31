@@ -5,10 +5,10 @@ scoreboard players add @a[limit=1,sort=random] g.deaths 0
 function loud2x2tnt:graves
 
 #detecting direction
-execute at @a[scores={g.deaths=1..},y_rotation=-45..45] run summon armor_stand ~ ~1 ~ {Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:skeleton_skull",Count:1b}],Invulnerable:1b,Tags:["g.drop","g.south"],NoGravity:0b,NoBasePlate:1b,Marker:1b}
-execute at @a[scores={g.deaths=1..},y_rotation=-135..-45] run summon armor_stand ~ ~1 ~ {Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:skeleton_skull",Count:1b}],Invulnerable:1b,Tags:["g.drop","g.east"],NoGravity:0b,NoBasePlate:1b,Marker:1b}
-execute at @a[scores={g.deaths=1..},y_rotation=135..-135] run summon armor_stand ~ ~1 ~ {Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:skeleton_skull",Count:1b}],Invulnerable:1b,Tags:["g.drop","g.north"],NoGravity:0b,NoBasePlate:1b,Marker:1b}
-execute at @a[scores={g.deaths=1..},y_rotation=45..135] run summon armor_stand ~ ~1 ~ {Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:skeleton_skull",Count:1b}],Invulnerable:1b,Tags:["g.drop","g.west"],NoGravity:0b,NoBasePlate:1b,Marker:1b}
+execute at @a[scores={g.deaths=1..},y_rotation=-45..45] run summon armor_stand ~ ~1 ~ {Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:skeleton_skull",Count:1b}],Invulnerable:1b,Tags:["g.dropskull","g.drop","g.south"],NoGravity:0b,NoBasePlate:1b,Marker:1b}
+execute at @a[scores={g.deaths=1..},y_rotation=-135..-45] run summon armor_stand ~ ~1 ~ {Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:skeleton_skull",Count:1b}],Invulnerable:1b,Tags:["g.dropskull","g.drop","g.east"],NoGravity:0b,NoBasePlate:1b,Marker:1b}
+execute at @a[scores={g.deaths=1..},y_rotation=135..-135] run summon armor_stand ~ ~1 ~ {Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:skeleton_skull",Count:1b}],Invulnerable:1b,Tags:["g.dropskull","g.drop","g.north"],NoGravity:0b,NoBasePlate:1b,Marker:1b}
+execute at @a[scores={g.deaths=1..},y_rotation=45..135] run summon armor_stand ~ ~1 ~ {Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:skeleton_skull",Count:1b}],Invulnerable:1b,Tags:["g.dropskull","g.drop","g.west"],NoGravity:0b,NoBasePlate:1b,Marker:1b}
 
 #calling grave.mcfunction and killing leftover armor_stands
 execute as @e[tag=g.drop,tag=!g.skull,nbt={OnGround:1b}] at @s unless block ~ ~-0.5 ~ #graves:generatable run function graves:grave
@@ -22,8 +22,7 @@ execute as @e[tag=g.bone,tag=g.nogravity,nbt={OnGround:1b}] at @s run function g
 scoreboard players set @a[scores={g.deaths=1..}] g.deaths 0
 
 #call skulldrop "Skull Dust" g.drop:
-execute as @e[tag=g.drop,nbt={OnGround:1b}] at @s run function graves:skulldrop
-execute as @e[tag=g.skull] at @s run function graves:skulldrop
+execute as @e[tag=g.dropskull] at @s run function graves:skulldrop
 
 #"Skull Dust" as bone meal
 execute as @a[nbt={SelectedItem:{id:"minecraft:bone_meal",tag:{CanPlaceOn:["minecraft:void_air"],HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:1}]}}},tag=!g.usebonemeal] run tag @s add g.usebonemeal

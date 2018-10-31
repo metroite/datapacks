@@ -32,7 +32,7 @@ execute as @e[tag=ll.beam] at @s run function limitedlife:curing/beam
 data merge entity @e[type=minecraft:bat,nbt=!{DeathLootTable:"limitedlife:entities/bat"},limit=1,sort=random,tag=!ll.bat,tag=!ll.spawnbat] {DeathLootTable:"limitedlife:entities/bat"}
 
 #call (BatWing) Ventilator
-execute as @e[type=armor_stand,tag=ll.fan] at @s run function limitedlife:ventilators/ventilator
+execute as @e[tag=ll.fan] at @s run function limitedlife:ventilators/ventilator
 #calls ventilator_placement and spawnbat
 execute as @e[type=minecraft:bat,tag=ll.spawnbat] run function limitedlife:ventilators/spawnbat
 

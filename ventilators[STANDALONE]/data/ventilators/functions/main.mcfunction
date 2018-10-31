@@ -1,5 +1,5 @@
 #call ventilator
-execute as @e[type=armor_stand,tag=ll.fan] at @s run function ventilators:ventilator
+execute as @e[tag=ll.fan] at @s run function ventilators:ventilator
 
 #calls ventilator_placement
 execute as @e[type=minecraft:bat,tag=ll.spawnbat,tag=ll.valid] at @s run function ventilators:ventilator_placement

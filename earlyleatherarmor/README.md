@@ -3,13 +3,14 @@
 As the name suggests, this datapacks makes leather armor actually worth crafting.
 
 */ - Stick*
+
 *L - Leather*
 
 **Leather Helmet:**
 ```
 /L/
 / /
-   
+
 ```
 
 **Leather Chestplate:**
@@ -28,7 +29,7 @@ As the name suggests, this datapacks makes leather armor actually worth crafting
 
 **Leather Boots:**
 ```
-   
+
 / /
 L/L
 ```

@@ -11,6 +11,7 @@ morsecode
 signalfire
 ventilators[STANDALONE]
 witchtrading
+sapphire
 ```
 
 These were just modified by me:

@@ -3,8 +3,11 @@
 Sapphire gems will be generated in the ocean deep down. Detect weather, attract lightning and create decorative particles.
 
 *S - Sapphire*
+
 *G - Glass*
+
 *I - Iron*
+
 *B - Bucket*
 
 **Weather Detector:**

@@ -14,7 +14,7 @@ execute as @e[tag=sp.sapphire_main] at @s if block ~ ~ ~ minecraft:redstone_ore 
 execute as @a[tag=sp.deep_ocean] at @s unless entity @e[tag=sp.sapphire_main,distance=..320] unless entity @e[tag=sp.oredrop,distance=..320] run function sapphire:generator/revoke_deep_ocean
 
 #call particle_generator
-execute as @e[type=armor_stand,tag=sp.particle] at @s run function sapphire:particle_generator/particle
+execute as @e[tag=sp.particle] at @s run function sapphire:particle_generator/particle
 #calls ventilator_placement
 execute as @e[type=minecraft:squid,tag=sp.spawnsquid,tag=sp.valid] at @s run function sapphire:particle_generator/placement
 execute as @e[type=minecraft:squid,tag=sp.spawnsquid] run tp 0 -200 0

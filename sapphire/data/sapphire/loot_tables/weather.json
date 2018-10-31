@@ -1,0 +1,49 @@
+{
+	"type": "minecraft:entity",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:paper",
+					"functions": [
+						{
+							"function": "set_name",
+							"name": "Clear",
+							"conditions": [
+								{
+									"condition": "weather_check",
+									"raining": false,
+									"thundering": false
+								}
+							]
+						},
+						{
+							"function": "set_name",
+							"name": "Rain",
+							"conditions": [
+								{
+									"condition": "weather_check",
+									"raining": true,
+									"thundering": false
+								}
+							]
+						},
+						{
+							"function": "set_name",
+							"name": "Thunder",
+							"conditions": [
+								{
+									"condition": "weather_check",
+									"raining": true,
+									"thundering": true
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

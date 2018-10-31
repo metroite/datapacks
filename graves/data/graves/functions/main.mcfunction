@@ -21,10 +21,9 @@ execute as @e[tag=g.bone,tag=g.nogravity,nbt={OnGround:1b}] at @s run function g
 #stops looping
 scoreboard players set @a[scores={g.deaths=1..}] g.deaths 0
 
-#"Skull Dust" g.drop:
-execute as @e[tag=g.drop,nbt={OnGround:1b},tag=!g.skull] at @s run data merge entity @s {NoGravity:1b,Tags:["g.drop","g.skull"],ArmorItems:[{},{},{},{}]}
-execute as @e[tag=g.drop,nbt={OnGround:1b},tag=g.skull] at @s unless block ~ ~0.5 ~ minecraft:skeleton_skull run data merge entity @e[type=minecraft:item,limit=1,sort=nearest,nbt={Item:{id:"minecraft:skeleton_skull",Count:1b}}] {Item:{id:"minecraft:bone_meal",Count:1b,tag:{CanPlaceOn:["minecraft:void_air"],HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:1}],display:{Name:"{\"text\":\"Skull Dust\",\"color\":\"yellow\",\"italic\":false}"}}}}
-execute as @e[tag=g.drop,nbt={OnGround:1b},tag=g.skull] at @s unless block ~ ~0.5 ~ minecraft:skeleton_skull run kill @s
+#call skulldrop "Skull Dust" g.drop:
+execute as @e[tag=g.drop,nbt={OnGround:1b}] at @s run function graves:skulldrop
+execute as @e[tag=g.skull] at @s run function graves:skulldrop
 
 #"Skull Dust" as bone meal
 execute as @a[nbt={SelectedItem:{id:"minecraft:bone_meal",tag:{CanPlaceOn:["minecraft:void_air"],HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:1}]}}},tag=!g.usebonemeal] run tag @s add g.usebonemeal

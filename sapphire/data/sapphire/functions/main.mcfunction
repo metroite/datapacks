@@ -1,8 +1,8 @@
 #Revoke sapphire:deep_ocean if sp.oredrop is 2x the distance
 #calls x and z oredrop
-execute as @e[tag=sp.oredrop] at @s unless score x_random sp.sapphire = 0 sp.sapphire run function sapphire:generator/x_oredrop
-execute as @e[tag=sp.oredrop] at @s if score x_random sp.sapphire = 0 sp.sapphire unless score z_random sp.sapphire = 0 sp.sapphire run function sapphire:generator/z_oredrop
-execute as @e[tag=sp.oredrop,nbt={OnGround:0b}] at @s if score x_random sp.sapphire = 0 sp.sapphire if score z_random sp.sapphire = 0 sp.sapphire run data merge entity @s {Motion:[0.0d,-5.0d,0.0d]}
+execute as @e[tag=sp.oredrop,tag=sp.lr.timer] at @s unless score x_random sp.sapphire = 0 sp.sapphire run function sapphire:generator/x_oredrop
+execute as @e[tag=sp.oredrop,tag=sp.lr.timer] at @s if score x_random sp.sapphire = 0 sp.sapphire unless score z_random sp.sapphire = 0 sp.sapphire run function sapphire:generator/z_oredrop
+execute as @e[tag=sp.oredrop,nbt={OnGround:0b},tag=!sp.valid] at @s if score x_random sp.sapphire = 0 sp.sapphire if score z_random sp.sapphire = 0 sp.sapphire run data merge entity @s {Motion:[0.0d,-5.0d,0.0d],Tags:["sp.oredrop"]}
 #call ore_placement
 execute as @e[tag=sp.oredrop,nbt={OnGround:1b}] at @s if block ~ ~ ~ minecraft:water if score x_random sp.sapphire = 0 sp.sapphire if score z_random sp.sapphire = 0 sp.sapphire run function sapphire:generator/ore_placement
 execute as @e[tag=sp.oredrop,tag=sp.valid] at @s run function sapphire:generator/ore_placement
@@ -25,12 +25,8 @@ execute as @a[scores={sp.craftlight=1..}] run give @s minecraft:armor_stand{CanP
 execute as @a[scores={sp.craftlight=1..}] run scoreboard players remove @s sp.craftlight 1
 execute as @e[tag=sp.lightning_rod,tag=sp.valid] at @s run function sapphire:lightning_rod/placement
 execute as @e[tag=sp.lr.attractor] at @s run function sapphire:lightning_rod/particle
-#timer
-scoreboard players add timer sp.sapphire 1
-execute as @p if score timer sp.sapphire = 65 sp.sapphire run scoreboard players set timer sp.sapphire 0
 
-
-##Possible in 1.14
+##Possible in 1.14 weather_detector
 #data merge entity @e {DeathLootTable:"sapphire:weather"}
 #summon armor_stand ~ ~ ~ {NoGravity:1b,Tags:["sp.weather","sp.weathersetup"],Small:1b,Invisible:1b,Marker:1b,ArmorItems:[{},{},{},{id:"daylight_sensor",Count:1b}],HandItems:[{},{}],DisabledSlots:2039583,}
 #crafting weather_detector (Inventory)

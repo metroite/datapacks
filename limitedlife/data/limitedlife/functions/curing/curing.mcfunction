@@ -35,7 +35,7 @@ execute at @e[tag=ll.bat,type=minecraft:bat] as @p[distance=..2,scores={ll.death
 execute at @e[tag=ll.bat,type=minecraft:bat] as @p[distance=..2,scores={ll.deaths=1..},tag=!ll.bat,nbt={ActiveEffects:[{Id:22b}]}] run playsound minecraft:entity.player.levelup ambient @a[distance=..8] ~ ~ ~ 1 1.7
 execute at @e[tag=ll.bat,type=minecraft:bat] as @p[distance=..2,scores={ll.deaths=1..},tag=ll.bat,nbt={ActiveEffects:[{Id:22b}]}] run kill @e[type=minecraft:bat,tag=ll.bat]
 #performance? better with area_effect_clouds and less @e
-execute as @e[type=minecraft:end_crystal] positioned ~ ~-1 ~ if entity @e[distance=..1,type=minecraft:item,tag=ll.healingredient] as @e[tag=ll.bat,limit=1,sort=nearest] as @e[type=minecraft:end_crystal,limit=1,sort=nearest] at @s run summon armor_stand ~ ~0.5 ~-1 {NoGravity:1b,Tags:["ll.beam"],Small:1b,Invisible:1b,Marker:1b}
+execute as @e[type=minecraft:end_crystal] positioned ~ ~-1 ~ if entity @e[distance=..1,type=minecraft:item,tag=ll.healingredient] as @e[tag=ll.bat,limit=1,sort=nearest] as @e[type=minecraft:end_crystal,limit=1,sort=nearest] at @s run summon minecraft:area_effect_cloud ~ ~1 ~-1 {Tags:["ll.beam"],Duration:200}
 
 #particle and sound effects
 execute as @s[scores={ll.cooking=2700..2705}] run particle minecraft:dragon_breath ~ ~2 ~ 0.1 0.1 0.1 1 100 force
@@ -55,7 +55,7 @@ execute as @s[scores={ll.cooking=2900..2905}] if entity @e[tag=ll.bat,limit=1,so
 
 #curing effect if at ll.cooking=3000
 #tired mechanic
-execute as @s[scores={ll.cooking=3000}] at @s as @e[type=minecraft:end_crystal,limit=1,sort=nearest,distance=..2] run tag @s add ll.tired
+execute as @s[scores={ll.cooking=3000}] run tag @e[type=minecraft:end_crystal,limit=1,sort=nearest,distance=..2] add ll.tired
 #ll.cured mechanic to update-replace the helmet (no need to die)
 execute as @s[scores={ll.cooking=3000}] run tag @p[tag=ll.bat,limit=1,sort=nearest,nbt={ActiveEffects:[{Id:22b}]}] add ll.cured
 #the actual curing effect
@@ -69,9 +69,12 @@ execute at @s[scores={ll.cooking=2100..}] unless entity @e[tag=ll.bat,limit=1,so
 #removing ll.bat and killing the bat
 execute as @s[scores={ll.cooking=3000}] run tag @e[tag=ll.bat,limit=1,sort=nearest] remove ll.bat
 execute as @s[scores={ll.cooking=3000}] run kill @e[tag=ll.bat,limit=1,sort=nearest,type=minecraft:bat]
-#emptying the cauldron and finally killing the Bat Wing
+#emptying the cauldron and finally killing the ll.healingredient
 execute as @s[scores={ll.cooking=3000}] at @s run fill ~ ~ ~ ~ ~ ~ minecraft:cauldron[level=0] replace minecraft:cauldron
 kill @s[scores={ll.cooking=3000..}]
 
-#make sure there is only one ll.cooking in the cauldron
-execute as @s at @s as @e[distance=0.1..2,type=minecraft:item,tag=ll.healingredient] run tag @s add ll.blocked
+#call unmetconditions
+execute unless block ~ ~-1 ~ minecraft:cauldron[level=3] run function limitedlife:curing/unmetconditions
+execute unless entity @e[type=minecraft:end_crystal,limit=1,sort=nearest,distance=..1,tag=!ll.tired] run function limitedlife:curing/unmetconditions
+#make sure there is only one ll.healingredient in the cauldron
+execute at @s if entity @e[distance=0.1..1,tag=ll.healingredient] run function limitedlife:curing/unmetconditions

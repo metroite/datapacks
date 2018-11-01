@@ -13,9 +13,15 @@ execute as @e[tag=sp.sapphire_main] at @s if block ~ ~ ~ minecraft:redstone_ore 
 #calling Revoke (therefore make it possible to spawn a new sapphire ore) deep_ocean advancement
 execute as @a[tag=sp.deep_ocean] at @s unless entity @e[tag=sp.sapphire_main,distance=..320] unless entity @e[tag=sp.oredrop,distance=..320] run function sapphire:generator/revoke_deep_ocean
 
-#call particle_generator
+#anti_duplication (max 2 custom blocks: more would require change in anti_duplication)
+execute as @e[limit=1,sort=random,tag=sp.anti_duplication] at @s run function sapphire:particle_generator/anti_duplication1
+
+#feature-compatibility: limitedlife
+function limitedlife:sapphire/main
+
+#calls particle_generator
 execute as @e[tag=sp.particle] at @s run function sapphire:particle_generator/particle
-#calls ventilator_placement
+#calls particle_generator placement
 execute as @e[type=minecraft:squid,tag=sp.spawnsquid,tag=sp.valid] at @s run function sapphire:particle_generator/placement
 execute as @e[type=minecraft:squid,tag=sp.spawnsquid] run tp 0 -200 0
 execute as @e[type=minecraft:squid,tag=sp.spawnsquid] run kill @s
@@ -25,6 +31,7 @@ execute as @a[scores={sp.craftlight=1..}] run give @s minecraft:armor_stand{CanP
 execute as @a[scores={sp.craftlight=1..}] run scoreboard players remove @s sp.craftlight 1
 execute as @e[tag=sp.lightning_rod,tag=sp.valid] at @s run function sapphire:lightning_rod/placement
 execute as @e[tag=sp.lr.attractor] at @s run function sapphire:lightning_rod/particle
+
 
 ##Possible in 1.14 weather_detector
 #data merge entity @e {DeathLootTable:"sapphire:weather"}

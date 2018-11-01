@@ -16,7 +16,7 @@ execute as @s[tag=sp.particledown] run setblock ~ ~ ~ minecraft:observer[facing=
 
 #placement effects
 particle minecraft:effect ~ ~ ~ 0.15 0.15 0.15 0.5 24
-playsound minecraft:entity.player.levelup ambient @a[distance=..16] ~ ~ ~ 2 2
+playsound minecraft:entity.player.levelup block @a[distance=..16] ~ ~ ~ 2 2
 
 #ends the particlesetup cycle
 tag @s remove sp.particlesetup

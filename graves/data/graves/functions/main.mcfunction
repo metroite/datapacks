@@ -16,9 +16,7 @@ execute as @e[tag=g.drop,tag=!g.skull,nbt={OnGround:1b}] at @s if block ~ ~-0.5 
 kill @e[tag=g.bone,nbt=!{ArmorItems:[{},{},{},{}],HandItems:[{id:"minecraft:bone",Count:1b},{}]}]
 
 #calling groundgbone.mcfunction: move g.bones to the ground if OnGround
-execute as @e[tag=g.bone,nbt={NoGravity:1b}] at @s if block ~ ~1 ~ minecraft:air run data merge entity @s {NoGravity:0b,Tags:["g.bone","g.nogravity"]}
-execute as @e[tag=g.bone,nbt={NoGravity:1b}] at @s unless block ~ ~1.42 ~ minecraft:air run tp ~ ~0.01 ~
-execute as @e[tag=g.bone,tag=g.nogravity,nbt={OnGround:1b}] at @s run function graves:groundgbone
+execute as @e[tag=g.bone] at @s run function graves:groundbone
 
 #stops looping
 scoreboard players set @a[scores={g.deaths=1..}] g.deaths 0

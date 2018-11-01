@@ -22,9 +22,7 @@ function limitedlife:sapphire/main
 #calls particle_generator
 execute as @e[tag=sp.particle] at @s run function sapphire:particle_generator/particle
 #calls particle_generator placement
-execute as @e[type=minecraft:squid,tag=sp.spawnsquid,tag=sp.valid] at @s run function sapphire:particle_generator/placement
-execute as @e[type=minecraft:squid,tag=sp.spawnsquid] run tp 0 -200 0
-execute as @e[type=minecraft:squid,tag=sp.spawnsquid] run kill @s
+execute as @e[type=minecraft:squid,tag=sp.spawnsquid] at @s run function sapphire:particle_generator/placement
 
 #crafting lightning rod
 execute as @a[scores={sp.craftlight=1..}] run give @s minecraft:armor_stand{CanPlaceOn:["minecraft:void_air"],HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:1}],EntityTag:{Tags:["sp.lightning_rod","sp.valid"]},display:{Name:"{\"text\":\"Lightning Rod\",\"color\":\"yellow\",\"italic\":false}"}} 1

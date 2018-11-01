@@ -15,7 +15,7 @@ execute as @e[tag=g.drop,tag=!g.skull,nbt={OnGround:1b}] at @s unless block ~ ~-
 execute as @e[tag=g.drop,tag=!g.skull,nbt={OnGround:1b}] at @s if block ~ ~-0.5 ~ #graves:generatable positioned ~ ~1 ~ run function graves:grave
 kill @e[tag=g.bone,nbt=!{ArmorItems:[{},{},{},{}],HandItems:[{id:"minecraft:bone",Count:1b},{}]}]
 
-#calling groundgbone.mcfunction: move g.bones to the ground if OnGround
+#calling groundbone and groundgbone.mcfunction: move g.bones to the ground if OnGround
 execute as @e[tag=g.bone] at @s run function graves:groundbone
 
 #stops looping

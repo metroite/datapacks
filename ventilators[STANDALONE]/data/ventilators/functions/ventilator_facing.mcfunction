@@ -20,3 +20,4 @@ playsound minecraft:entity.bat.takeoff ambient @a[distance=..16] ~ ~ ~ 2 0.75
 
 #ends the fansetup cycle
 tag @s remove ll.fansetup
+tag @s remove metroite.placement

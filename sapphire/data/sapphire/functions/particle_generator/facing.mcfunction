@@ -20,3 +20,4 @@ playsound minecraft:entity.player.levelup block @a[distance=..16] ~ ~ ~ 2 2
 
 #ends the particlesetup cycle
 tag @s remove sp.particlesetup
+tag @s remove metroite.placement

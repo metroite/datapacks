@@ -1,10 +1,10 @@
 #Creates the  objectives and teams
-team add friendly
-team option friendly collisionRule pushOwnTeam
-team option friendly seeFriendlyInvisibles false
-scoreboard objectives add witchtrading.ttv minecraft.custom:minecraft.talked_to_villager
-scoreboard objectives add witchtrading.twv minecraft.custom:minecraft.traded_with_villager
-scoreboard objectives add rng minecraft.custom:minecraft.play_one_minute
+team add wt.friendly
+team modify wt.friendly collisionRule pushOwnTeam
+team modify wt.friendly seeFriendlyInvisibles false
+scoreboard objectives add wt.ttv minecraft.custom:minecraft.talked_to_villager
+scoreboard objectives add wt.twv minecraft.custom:minecraft.traded_with_villager
+scoreboard objectives add wt.rng minecraft.custom:minecraft.play_one_minute
 
 #What you shouldn't do:
 #Don't move away.
@@ -16,9 +16,9 @@ scoreboard objectives add rng minecraft.custom:minecraft.play_one_minute
 #All those will block trading and the witch will be very mad.
 ##############################################################
 #Used Tags:
-#"setup", "blocked", "traded"
+#"wt.setup", "wt.blocked", "wt.traded"
 #
 #Used Teams:
-#"friendly"
+#"wt.friendly"
 
 tellraw @a ["",{"text":" "},{"text":"witchtrading","color":"green","clickEvent":{"action":"open_url","value":"https://github.com/Metroite/datapacks/tree/master/witchtrading"},"hoverEvent":{"action":"show_text","value":"trade your poisonous potatoes with witches"}},{"text":" by "},{"text":"Metroite","color":"aqua","clickEvent":{"action":"open_url","value":"https://github.com/Metroite"}},{"text":" loaded!"}]

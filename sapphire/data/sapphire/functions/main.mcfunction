@@ -13,9 +13,6 @@ execute as @e[tag=sp.sapphire_main] at @s if block ~ ~ ~ minecraft:redstone_ore 
 #calling Revoke (therefore make it possible to spawn a new sapphire ore) deep_ocean advancement
 execute as @a[tag=sp.deep_ocean] at @s unless entity @e[tag=sp.sapphire_main,distance=..320] unless entity @e[tag=sp.oredrop,distance=..320] run function sapphire:generator/revoke_deep_ocean
 
-#anti_duplication (max 2 custom blocks: more would require change in anti_duplication)
-#execute as @e[limit=1,sort=random,tag=sp.anti_duplication] at @s run function sapphire:particle_generator/anti_duplication1
-
 #feature-compatibility: limitedlife
 function limitedlife:sapphire/main
 

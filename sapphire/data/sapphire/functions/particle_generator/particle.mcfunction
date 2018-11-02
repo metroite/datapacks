@@ -112,14 +112,6 @@ execute as @s[tag=sp.particle_white,tag=sp.particleeast] at @s if block ~ ~ ~ mi
 execute as @s[tag=sp.particle_white,tag=sp.particleup] at @s if block ~ ~ ~ minecraft:observer[powered=true] run particle minecraft:dust 1 1 1 2 ~ ~-3 ~ 0.75 1.5 0.75 1 1 normal
 execute as @s[tag=sp.particle_white,tag=sp.particledown] at @s if block ~ ~ ~ minecraft:observer[powered=true] run particle minecraft:dust 1 1 1 2 ~ ~3 ~ 0.75 1.5 0.75 1 1 normal
 
-#any NBT-Effects?
-#execute as @e[type=armor_stand,tag=sp.particlesouth] at @s if block ~ ~ ~ minecraft:observer[powered=true] positioned ~-0.5 ~ ~-0.5 run data merge entity @e[dz=-4,limit=1,sort=nearest] {Motion:[0.0d,0.0d,-0.5d]}
-#execute as @e[type=armor_stand,tag=sp.particlewest] at @s if block ~ ~ ~ minecraft:observer[powered=true] positioned ~-0.5 ~ ~-0.5 run data merge entity @e[dx=4,limit=1,sort=nearest] {Motion:[0.5d,0.0d,0.0d]}
-#execute as @e[type=armor_stand,tag=sp.particlenorth] at @s if block ~ ~ ~ minecraft:observer[powered=true] positioned ~-0.5 ~ ~-0.5 run data merge entity @e[dz=4,limit=1,sort=nearest] {Motion:[0.0d,0.0d,0.5d]}
-#execute as @e[type=armor_stand,tag=sp.particleeast] at @s if block ~ ~ ~ minecraft:observer[powered=true] positioned ~-0.5 ~ ~-0.5 run data merge entity @e[dx=-4,limit=1,sort=nearest] {Motion:[-0.5d,0.0d,0.0d]}
-#execute as @e[type=armor_stand,tag=sp.particleup] at @s if block ~ ~ ~ minecraft:observer[powered=true] positioned ~-0.5 ~-4 ~-0.5 run data merge entity @e[dy=4,limit=1,sort=nearest] {Motion:[0.0d,-0.5d,0.0d]}
-#execute as @e[type=armor_stand,tag=sp.particledown] at @s if block ~ ~ ~ minecraft:observer[powered=true] positioned ~-0.5 ~ ~-0.5 run data merge entity @e[dy=4,limit=1,sort=nearest] {Motion:[0.0d,0.5d,0.0d]}
-
 #kill sp.particle armor_stands
 execute unless block ~ ~ ~ minecraft:observer run function sapphire:particle_generator/cleanup
 

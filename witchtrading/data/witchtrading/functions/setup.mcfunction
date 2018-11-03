@@ -5,6 +5,11 @@ team modify wt.friendly seeFriendlyInvisibles false
 scoreboard objectives add wt.ttv minecraft.custom:minecraft.talked_to_villager
 scoreboard objectives add wt.twv minecraft.custom:minecraft.traded_with_villager
 scoreboard objectives add wt.rng minecraft.custom:minecraft.play_one_minute
+scoreboard players set rngmax wt.rng 15
+scoreboard players set 15 wt.rng 15
+
+#feature-compatibility
+function graves:witchtrading
 
 #What you shouldn't do:
 #Don't move away.

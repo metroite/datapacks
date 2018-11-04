@@ -4,4 +4,5 @@ execute as @s[tag=sp.sapphire_main] run data merge entity @e[type=minecraft:item
 execute as @s[tag=sp.sapphire_main] run recipe give @p[distance=..6] sapphire:weather_detector
 execute as @s[tag=sp.sapphire_main] run recipe give @p[distance=..6] sapphire:lightning_rod
 
+execute as @s[tag=sp.sapphire_main,tag=!sp.valid] run summon area_effect_cloud ~ ~1 ~ {Duration:2147483637,Tags:["sp.noore"]}
 kill @s

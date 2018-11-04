@@ -1,4 +1,4 @@
 data merge entity @e[type=minecraft:item,limit=1,sort=nearest,distance=..2,nbt={Item:{id:"minecraft:light_blue_stained_glass"}}] {Item:{id:"minecraft:light_blue_stained_glass",Count:1b,tag:{display:{Lore:["sapphire glass will lose its properties when placed"],Name:"{\"text\":\"Life Support Sapphire Glass\",\"color\":\"aqua\",\"italic\":false}"},Enchantments:[{lvl:1s,id:"minecraft:binding_curse"},{lvl:1s,id:"minecraft:vanishing_curse",AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:2,Operation:0,UUIDLeast:897636,UUIDMost:510691,Slot:"head"},{AttributeName:"generic.armorToughness",Name:"generic.armorToughness",Amount:2,Operation:0,UUIDLeast:584132,UUIDMost:458804,Slot:"head"}]}]}}}
-playsound minecraft:block.anvil.use block @a ~ ~ ~ 0.75 2
+execute unless entity @e[tag=sp.sapphire_glasssetup,distance=..2] run playsound minecraft:block.anvil.use block @a ~ ~ ~ 0.75 2
 particle minecraft:dust 0.25 0.1 1 1.25 ~ ~0.5 ~ 0.4 0.4 0.4 2 24
 kill @s

@@ -4,14 +4,17 @@ execute as @e[tag=sp.oredrop,tag=sp.lr.timer] at @s unless score x_random sp.sap
 execute as @e[tag=sp.oredrop,tag=sp.lr.timer] at @s if score x_random sp.sapphire = 0 sp.sapphire unless score z_random sp.sapphire = 0 sp.sapphire run function sapphire:generator/z_oredrop
 execute as @e[tag=sp.oredrop,nbt={OnGround:0b},tag=!sp.valid] at @s if score x_random sp.sapphire = 0 sp.sapphire if score z_random sp.sapphire = 0 sp.sapphire run data merge entity @s {Motion:[0.0d,-5.0d,0.0d],Tags:["sp.oredrop"]}
 #call ore_placement
-execute as @e[tag=sp.oredrop,nbt={OnGround:1b}] at @s if block ~ ~ ~ minecraft:water if score x_random sp.sapphire = 0 sp.sapphire if score z_random sp.sapphire = 0 sp.sapphire run function sapphire:generator/ore_placement
+execute as @e[tag=sp.oredrop,nbt={OnGround:1b},tag=!sp.valid] at @s if block ~ ~ ~ minecraft:water if score x_random sp.sapphire = 0 sp.sapphire if score z_random sp.sapphire = 0 sp.sapphire run function sapphire:generator/ore_placement
+execute as @e[tag=sp.oredrop,nbt={OnGround:1b},tag=!sp.valid] at @s unless block ~ ~ ~ minecraft:water if score x_random sp.sapphire = 0 sp.sapphire if score z_random sp.sapphire = 0 sp.sapphire run kill @s
 execute as @e[tag=sp.oredrop,tag=sp.valid] at @s run function sapphire:generator/ore_placement
 #call farm_ore
 execute as @e[tag=sp.sapphire_ore] at @s unless block ~ ~ ~ minecraft:redstone_ore run function sapphire:sapphire_ore/farm_ore
 #call sapphire_ore
 execute as @e[tag=sp.sapphire_main] at @s if block ~ ~ ~ minecraft:redstone_ore run function sapphire:sapphire_ore/sapphire_ore
+#area_effect_cloud sp.noore
+execute as @e[tag=sp.noore] at @s run kill @e[tag=sp.oredrop,distance=..128]
 #calling Revoke (therefore make it possible to spawn a new sapphire ore) deep_ocean advancement
-execute as @a[tag=sp.deep_ocean] at @s unless entity @e[tag=sp.sapphire_main,distance=..320] unless entity @e[tag=sp.oredrop,distance=..320] run function sapphire:generator/revoke_deep_ocean
+execute as @a[tag=sp.deep_ocean] at @s unless entity @e[tag=sp.sapphire_main,tag=!sp.valid,distance=..320] unless entity @e[tag=sp.oredrop,tag=!sp.valid,distance=..320] unless entity @e[tag=sp.noore,distance=..320] run function sapphire:generator/revoke_deep_ocean
 
 #feature-compatibility: limitedlife
 function limitedlife:sapphire/main
@@ -26,7 +29,6 @@ execute as @a[scores={sp.craftlight=1..}] run give @s minecraft:armor_stand{CanP
 execute as @a[scores={sp.craftlight=1..}] run scoreboard players remove @s sp.craftlight 1
 execute as @e[tag=sp.lightning_rod,tag=sp.valid] at @s run function sapphire:lightning_rod/placement
 execute as @e[tag=sp.lr.attractor] at @s run function sapphire:lightning_rod/particle
-
 
 ##Possible in 1.14 weather_detector
 #data merge entity @e {DeathLootTable:"sapphire:weather"}

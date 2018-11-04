@@ -1,9 +1,9 @@
 {
     "criteria": {
-        "deep_ocean": {
+        "biome": {
             "trigger": "minecraft:location",
             "conditions": {
-                "biome": "deep_lukewarm_ocean",
+                "biome": "deep_ocean",
                 "position": {
                     "x": {
                         "min": -30000000,
@@ -24,4 +24,5 @@
     "rewards": {
         "function": "sapphire:generator/deep_ocean"
     }
+
 }

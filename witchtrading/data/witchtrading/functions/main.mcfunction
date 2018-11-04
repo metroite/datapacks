@@ -31,6 +31,9 @@ tag @a[tag=wt.setup,team=!wt.friendly] remove wt.setup
 execute as @a[tag=wt.setup] at @s unless entity @e[type=area_effect_cloud,distance=..1,name=wt.friendly] run tag @e[team=wt.friendly,type=minecraft:witch,distance=..6,limit=1,sort=nearest,tag=!wt.traded] add wt.blocked
 execute as @a[tag=wt.setup] at @s unless entity @e[type=area_effect_cloud,distance=..1,name=wt.friendly] run team leave @s
 
+#Sad blue_orchid
+execute as @a[scores={wt.rng=1},nbt={Inventory:[{id:"minecraft:blue_orchid",tag:{HideFlags:3,AttributeModifiers:[{AttributeName:"generic.luck",Name:"generic.luck",Amount:2,Operation:2}]}}]}] at @s positioned ~ ~1.35 ~ run particle minecraft:dripping_water ^-0.15 ^ ^0.275 0 0 0 1 1 normal
+
 #feature-compatibility: graves
 execute at @e[tag=wt.shinigami] run particle minecraft:dust 0.2314 0.2314 0.25098 2 ~ ~1 ~ 3 2 3 1 2 normal
 execute at @e[tag=wt.shinigami] run effect give @a[distance=..6] blindness 2 0 true

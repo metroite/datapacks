@@ -1,0 +1,4 @@
+execute if block ~ ~ ~ minecraft:stone_button[powered=true,facing=north] run fill ~ ~ ~ ~ ~ ~ minecraft:stone_button[powered=false,face=floor,facing=north] replace minecraft:stone_button[powered=true,face=floor]
+execute if block ~ ~ ~ minecraft:stone_button[powered=true,facing=south] run fill ~ ~ ~ ~ ~ ~ minecraft:stone_button[powered=false,face=floor,facing=south] replace minecraft:stone_button[powered=true,face=floor]
+execute if block ~ ~ ~ minecraft:stone_button[powered=true,facing=west] run fill ~ ~ ~ ~ ~ ~ minecraft:stone_button[powered=false,face=floor,facing=west] replace minecraft:stone_button[powered=true,face=floor]
+execute if block ~ ~ ~ minecraft:stone_button[powered=true,facing=east] run fill ~ ~ ~ ~ ~ ~ minecraft:stone_button[powered=false,face=floor,facing=east] replace minecraft:stone_button[powered=true,face=floor]

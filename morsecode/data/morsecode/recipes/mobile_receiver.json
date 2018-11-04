@@ -1,0 +1,23 @@
+{
+    "type": "crafting_shaped",
+    "pattern": [
+        "IRI",
+        "IEI",
+        " I "
+    ],
+    "key": {
+        "R": {
+            "item": "minecraft:redstone_torch"
+        },
+        "E": {
+            "item": "minecraft:ender_eye"
+        },
+		    "I": {
+            "item": "minecraft:iron_block"
+        }
+    },
+    "result": {
+        "item": "minecraft:feather",
+        "count": 1
+    }
+}

@@ -3,6 +3,10 @@ execute as @s[tag=g.north] run fill ~ ~ ~ ~ ~ ~ minecraft:skeleton_skull[rotatio
 execute as @s[tag=g.east] run fill ~ ~ ~ ~ ~ ~ minecraft:skeleton_skull[rotation=4] replace #graves:generatable
 execute as @s[tag=g.south] run fill ~ ~ ~ ~ ~ ~ minecraft:skeleton_skull[rotation=8] replace #graves:generatable
 execute as @s[tag=g.west] run fill ~ ~ ~ ~ ~ ~ minecraft:skeleton_skull[rotation=12] replace #graves:generatable
+execute as @s[tag=g.south-west] run fill ~ ~ ~ ~ ~ ~ minecraft:skeleton_skull[rotation=10] replace #graves:generatable
+execute as @s[tag=g.north-west] run fill ~ ~ ~ ~ ~ ~ minecraft:skeleton_skull[rotation=14] replace #graves:generatable
+execute as @s[tag=g.north-east] run fill ~ ~ ~ ~ ~ ~ minecraft:skeleton_skull[rotation=2] replace #graves:generatable
+execute as @s[tag=g.south-east] run fill ~ ~ ~ ~ ~ ~ minecraft:skeleton_skull[rotation=6] replace #graves:generatable
 
 #summoning the bones
 execute as @s unless block ~ ~-0.5 ~ #graves:generatable run summon armor_stand ~-0.2 ~2 ~0.8 {Invisible:1b,Invulnerable:1b,Tags:["g.bone","g.nogravity"],NoGravity:0b,NoBasePlate:1b,ShowArms:1b,ArmorItems:[{},{},{},{}],HandItems:[{id:"minecraft:bone",Count:1b},{}],DisabledSlots:2039326,Rotation:[131f],Pose:{RightArm:[230f,0f,90f]}}

@@ -1,33 +1,27 @@
 # Metroites Datapacks
 
-These are my datapacks for Minecraft which I have coded:
-```
-earlyleatherarmor
-graves
-growontoptree
-limitedlife
-loud2x2tnt
-morsecode
-signalfire
-ventilators[STANDALONE]
-witchtrading
-sapphire
-```
+* [earlyleatherarmor](https://github.com/Metroite/datapacks/tree/master/earlyleatherarmor)
+* [graves](https://github.com/Metroite/datapacks/tree/master/graves)
+* [growontoptree](https://github.com/Metroite/datapacks/tree/master/growontoptree)
+* [limitedlife](https://github.com/Metroite/datapacks/tree/master/limitedlife)
+* [loud2x2tnt](https://github.com/Metroite/datapacks/tree/master/loud2x2tnt)
+* [morsecode](https://github.com/Metroite/datapacks/tree/master/morsecode)
+* [signalfire](https://github.com/Metroite/datapacks/tree/master/signalfire)
+* [ventilators(STANDALONE)](https://github.com/Metroite/datapacks/tree/master/ventilators[STANDALONE])
+* [witchtrading](https://github.com/Metroite/datapacks/tree/master/witchtrading)
+* [sapphire](https://github.com/Metroite/datapacks/tree/master/sapphire)
 
-These were just modified by me:
-```
-doubleslabcrafting - MSpaceDev
-endermangrief - MSpaceDev
-moremobheads - MSpaceDev
-universaldyeing - MSpaceDev
-```
+You could always find more useful information inside every datapack and chronologically inside of every [release post](https://github.com/Metroite/datapacks/releases):
+* [r1](https://github.com/Metroite/datapacks/releases/tag/r1)
+* r2 (coming soon)
 
-These have nothing to do with me and I should actually remove them:
-```
-minecraft - Mojang
-```
+### To-Do-List:
 
-You could alway find more useful information inside every datapack.
+* [] Cauldrons like in Bedrock Edition
+* [] Wild Caves in Vanilla
+* [] Meteorites
+* [] Big Tree using "Sull Dust"
+* [] Weather Detectors
 
 ## Getting Started
 
@@ -37,19 +31,20 @@ Every folder in here is its own datapack. Datapack specific information can be f
 
 Its easy.
 
-Move the datapack(s) you wish to use inside your "datapacks" folder of your wished save file found in .minecraft\saves.
+Move the datapack(s) you wish to use inside your "datapacks" folder of your save file found in `.minecraft\saves`.
 
 ```
 C:\Users\<User>\AppData\Roaming\.minecraft\saves\<world name>\datapacks
 ```
 
-Now just load your save file in your Minecraft client and execute the following command:
+Now just join the world you put the datapacks in and execute the following command:
 
 ```
 /datapack enable <name of the added datapack>
 ```
+A "loaded"-text should appear, assuring you that its up and running.
 
-Have fun trying out the new stuff you've added!
+Have fun trying out the new stuff you have added!
 
 ## Version
 
@@ -61,7 +56,7 @@ Please report any **bugs** you may find, any **suggestions** you might have and 
 
 ## Authors
 
-**Metroite**
+* [**Metroite**](https://github.com/Metroite)
 
 ## License
 

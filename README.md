@@ -17,11 +17,11 @@ You could always find more useful information inside every datapack and chronolo
 
 ### To-Do-List:
 
-* [] Cauldrons like in Bedrock Edition
-* [] Wild Caves in Vanilla
-* [] Meteorites
-* [] Big Tree using "Sull Dust"
-* [] Weather Detectors
+- [] Cauldrons like in Bedrock Edition
+- [] Wild Caves in Vanilla
+- [] Meteorites
+- [] Big Tree using "Sull Dust"
+- [] Weather Detectors
 
 ## Getting Started
 

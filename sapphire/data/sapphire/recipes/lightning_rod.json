@@ -14,7 +14,7 @@
         }
     },
     "result": {
-        "item": "minecraft:stick",
+        "item": "minecraft:lit_redstone_ore",
         "count": 1
     }
 }

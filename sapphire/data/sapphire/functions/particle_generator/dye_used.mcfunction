@@ -18,5 +18,5 @@ execute as @s[nbt={Item:{Count:1b,id:"minecraft:cactus_green"}}] run particle mi
 execute as @s[nbt={Item:{Count:1b,id:"minecraft:rose_red"}}] run particle minecraft:dust 0.7098 0.25098 0.25098 2 ~ ~0.25 ~ 0 0 0 2 3 normal
 execute as @s[nbt={Item:{Count:1b,id:"minecraft:ink_sac"}}] run particle minecraft:dust 0.2314 0.2314 0.25098 2 ~ ~0.25 ~ 0 0 0 2 3 normal
 execute as @s[nbt={Item:{Count:1b,id:"minecraft:black_dye"}}] run particle minecraft:dust 0.2314 0.2314 0.25098 2 ~ ~0.25 ~ 0 0 0 2 3 normal
-playsound minecraft:entity.player.levelup ambient @a[distance=..8] ~ ~ ~ 1 2
+playsound minecraft:entity.player.levelup block @a[distance=..8] ~ ~ ~ 1 2
 kill @s

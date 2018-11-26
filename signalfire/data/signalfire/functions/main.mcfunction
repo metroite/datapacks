@@ -9,7 +9,7 @@ execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:dark_oak_leaves"}}] a
 #effects - replacing armor_stands with area_effect clouds could increase performance
 execute as @e[type=minecraft:armor_stand,tag=sf.signalfire] at @s run data merge entity @s {Motion:[0.0d,0.32d,0.0d]}
 scoreboard players add @e[type=minecraft:armor_stand,tag=sf.signalfire] sf.signalfire 1
-execute at @e[type=minecraft:armor_stand,tag=sf.signalfire,scores={sf.signalfire=0..5}] run playsound minecraft:block.fire.extinguish player @a[distance=..32] ~ ~ ~ 2 0.5
+execute at @e[type=minecraft:armor_stand,tag=sf.signalfire,scores={sf.signalfire=0..5}] run playsound minecraft:block.fire.extinguish block @a[distance=..32] ~ ~ ~ 2 0.5
 execute at @e[type=minecraft:armor_stand,tag=sf.signalfire,scores={sf.signalfire=0..20}] run particle minecraft:large_smoke ~ ~ ~ 0.1 0.2 0.1 0.05 10 force
 execute at @e[type=minecraft:armor_stand,tag=sf.signalfire,scores={sf.signalfire=21..40}] run particle minecraft:large_smoke ~ ~ ~ 0.2 0.2 0.2 0.06 12 force
 execute at @e[type=minecraft:armor_stand,tag=sf.signalfire,scores={sf.signalfire=41..60}] run particle minecraft:large_smoke ~ ~ ~ 0.3 0.2 0.3 0.07 14 force

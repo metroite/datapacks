@@ -11,6 +11,3 @@ execute as @s[nbt={Age:64}] if block ~ ~ ~ minecraft:redstone_torch[lit=true] un
 
 #call cleanup
 execute unless block ~ ~ ~ minecraft:redstone_torch run function sapphire:lightning_rod/cleanup
-
-##cool
-#playsound minecraft:entity.lightning_bolt.thunder master @a ~ ~ ~ 1 2

@@ -1,4 +1,3 @@
-
 scoreboard objectives add sp.sapphire dummy
 scoreboard players set c1 sp.sapphire 195287
 scoreboard players set c2 sp.sapphire -3548
@@ -20,7 +19,7 @@ scoreboard players set z_random sp.sapphire 0
 function limitedlife:sapphire/setup
 
 #scoreboard objectives add sp.craftdetector minecraft.crafted:minecraft.water_bucket
-scoreboard objectives add sp.craftlight minecraft.crafted:minecraft.lit_redstone_ore
+scoreboard objectives add sp.craftlight minecraft.crafted:minecraft.redstone_ore
 
 
 tellraw @a ["",{"text":"sapphire","color":"green","clickEvent":{"action":"open_url","value":"https://github.com/Metroite/datapacks/tree/master/sapphire"},"hoverEvent":{"action":"show_text","value":"sapphire now spawning in deep water, useful to play with the weather"}},{"text":"  by "},{"text":"Metroite","color":"aqua","clickEvent":{"action":"open_url","value":"https://github.com/Metroite"}},{"text":" loaded!"}]

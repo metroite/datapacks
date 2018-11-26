@@ -14,7 +14,7 @@
         }
     },
     "result": {
-        "item": "minecraft:lit_redstone_ore",
+        "item": "minecraft:redstone_ore",
         "count": 1
     }
 }

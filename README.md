@@ -12,16 +12,20 @@
 * [sapphire](https://github.com/Metroite/datapacks/tree/master/sapphire)
 
 You could always find more useful information inside every datapack and chronologically inside of every [release post](https://github.com/Metroite/datapacks/releases):
+
+### Releases:
+
 * [r1](https://github.com/Metroite/datapacks/releases/tag/r1)
 * r2 (coming soon)
 
 ### To-Do-List:
 
-- [] Cauldrons like in Bedrock Edition
+- [x] global sound when someone dies
+- [] big tree using "Sull Dust"
 - [] Wild Caves in Vanilla
-- [] Meteorites
-- [] Big Tree using "Sull Dust"
-- [] Weather Detectors
+- [] new potions
+- [] meteorites
+- [] weather detectors
 
 ## Getting Started
 

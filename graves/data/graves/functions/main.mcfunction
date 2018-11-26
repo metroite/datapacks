@@ -1,5 +1,5 @@
 #g.deaths
-scoreboard players add @a[limit=1,sort=random] g.deaths 0
+execute as @p[limit=1,sort=random] unless score @s g.deaths >= ZERO g.deaths run scoreboard players add @s g.deaths 0
 
 #compatibility to loud2x2tnt
 function loud2x2tnt:graves
@@ -22,8 +22,10 @@ kill @e[tag=g.bone,nbt=!{ArmorItems:[{},{},{},{}],HandItems:[{id:"minecraft:bone
 #calling groundbone and groundgbone.mcfunction: move g.bones to the ground if OnGround
 execute as @e[tag=g.bone] at @s run function graves:groundbone
 
+#global playound if a player dies
+execute as @p[scores={g.deaths=1..}] run playsound minecraft:item.elytra.flying block @a ~ ~ ~ 0.25 0.5 0.25
 #stops looping
-scoreboard players set @a[scores={g.deaths=1..}] g.deaths 0
+scoreboard players set @p[scores={g.deaths=1..}] g.deaths 0
 
 #call skulldrop "Skull Dust" g.drop:
 execute as @e[tag=g.dropskull] at @s run function graves:skulldrop

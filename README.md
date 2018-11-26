@@ -21,11 +21,11 @@ You could always find more useful information inside every datapack and chronolo
 ### To-Do-List:
 
 - [x] global sound when someone dies
-- [] big tree using "Sull Dust"
-- [] Wild Caves in Vanilla
-- [] new potions
-- [] meteorites
-- [] weather detectors
+- [ ] big tree using "Sull Dust"
+- [ ] Wild Caves in Vanilla
+- [ ] new potions
+- [ ] meteorites
+- [ ] weather detectors
 
 ## Getting Started
 

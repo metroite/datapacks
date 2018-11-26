@@ -14,9 +14,13 @@ execute at @a[scores={g.deaths=1..},y_rotation=112.5..157.5] run summon armor_st
 execute at @a[scores={g.deaths=1..},y_rotation=-157.5..-112.5] run summon armor_stand ~ ~1 ~ {Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:skeleton_skull",Count:1b}],Invulnerable:1b,Tags:["g.dropskull","g.drop","g.north-east"],NoGravity:0b,NoBasePlate:1b,Marker:1b}
 execute at @a[scores={g.deaths=1..},y_rotation=-67.5..-22.5] run summon armor_stand ~ ~1 ~ {Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:skeleton_skull",Count:1b}],Invulnerable:1b,Tags:["g.dropskull","g.drop","g.south-east"],NoGravity:0b,NoBasePlate:1b,Marker:1b}
 
-#calling grave.mcfunction and killing leftover armor_stands
+#calling grave.mcfunction
 execute as @e[tag=g.drop,tag=!g.skull,nbt={OnGround:1b}] at @s unless block ~ ~-0.5 ~ #graves:generatable run function graves:grave
 execute as @e[tag=g.drop,tag=!g.skull,nbt={OnGround:1b}] at @s if block ~ ~-0.5 ~ #graves:generatable positioned ~ ~1 ~ run function graves:grave
+
+#killing leftover armor_stands
+execute at @e[tag=g.bone,nbt={HurtTime:0s}] run summon minecraft:item ~ ~1.42 ~ {Motion:[0.0d,0.25d,0.0d],Item:{id:"minecraft:bone",Count:1}}
+kill @e[tag=g.bone,nbt={HurtTime:0s}]
 kill @e[tag=g.bone,nbt=!{ArmorItems:[{},{},{},{}],HandItems:[{id:"minecraft:bone",Count:1b},{}]}]
 
 #calling groundbone and groundgbone.mcfunction: move g.bones to the ground if OnGround

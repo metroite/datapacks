@@ -61,7 +61,7 @@ execute as @s[scores={ll.cooking=3000}] run tag @p[tag=ll.bat,limit=1,sort=neare
 #the actual curing effect
 execute as @s[scores={ll.cooking=3000}] run scoreboard players remove @p[tag=ll.bat,limit=1,sort=nearest,nbt={ActiveEffects:[{Id:22b}]},scores={ll.deaths=1..}] ll.deaths 1
 #calling curingvoid.mcfunction
-execute as @s[scores={ll.cooking=3000}] if entity @e[tag=ll.bat,limit=1,sort=nearest,type=minecraft:bat] at @e[type=minecraft:end_crystal,limit=1,sort=nearest] positioned ~ ~-1 ~ if entity @e[distance=..1,type=minecraft:item,tag=ll.healingredient] as @a[scores={ll.deaths=10},limit=1,sort=random] run function limitedlife:curing/curingvoid
+execute as @s[scores={ll.cooking=3000}] if entity @e[tag=ll.bat,limit=1,sort=nearest,type=minecraft:bat] as @a[scores={ll.deaths=10},limit=1,sort=random] run function limitedlife:curing/curingvoid
 #failing conditions - exploding crystal
 execute as @s[scores={ll.cooking=3000}] if entity @e[tag=ll.bat,limit=1,sort=nearest,type=minecraft:bat] at @e[type=minecraft:end_crystal,limit=1,sort=nearest] positioned ~ ~-1 ~ if entity @e[distance=..1,type=minecraft:item,tag=ll.healingredient] run summon minecraft:tnt ~ ~1 ~
 execute as @s[scores={ll.cooking=3000}] as @e[tag=ll.bat,limit=1,sort=nearest] as @s[type=minecraft:player,nbt=!{ActiveEffects:[{Id:22b}]}] at @e[type=minecraft:end_crystal,limit=1,sort=nearest] run summon minecraft:tnt ~ ~1 ~

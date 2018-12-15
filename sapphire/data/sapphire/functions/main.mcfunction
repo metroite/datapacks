@@ -27,7 +27,7 @@ execute as @e[type=minecraft:squid,tag=sp.spawnsquid] at @s run function sapphir
 #crafting lightning rod
 execute as @a[scores={sp.craftlight=1..}] run give @s minecraft:armor_stand{CanPlaceOn:["minecraft:void_air"],HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:1}],EntityTag:{Small:1b,Tags:["sp.lightning_rod","sp.valid"]},display:{Name:"{\"text\":\"Lightning Rod\",\"color\":\"yellow\",\"italic\":false}"}} 1
 execute as @a[scores={sp.craftlight=1..}] run scoreboard players remove @s sp.craftlight 1
-execute as @e[tag=sp.lightning_rod,tag=sp.valid] at @s run function sapphire:lightning_rod/placement
+execute as @e[tag=sp.lightning_rod,tag=sp.valid,nbt={OnGround:1b}] at @s run function sapphire:lightning_rod/placement
 execute as @e[tag=sp.lr.attractor] at @s run function sapphire:lightning_rod/particle
 
 ##Possible in 1.14 weather_detector

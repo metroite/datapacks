@@ -22,6 +22,9 @@ execute as @e[type=minecraft:item,tag=!ll.blocked,nbt={Item:{Count:1b,id:"minecr
 execute as @e[tag=ll.healingredient] at @s positioned ~ ~1 ~ run function limitedlife:curing/curing
 #make sure ll.beam entities die
 execute as @e[type=minecraft:armor_stand,tag=ll.beam] at @s unless entity @e[tag=ll.bat,limit=1,sort=nearest,distance=..64] run kill @s
+#calling curedvoid
+execute as @a[tag=ll.curedvoid] at @s run function limitedlife:curing/curedvoid
+execute unless entity @a[tag=ll.curedvoid] run kill @e[type=minecraft:bat,tag=ll.curedvoid]
 #calling tired
 execute as @e[tag=ll.tired] at @s run function limitedlife:curing/tired
 scoreboard players reset @e[tag=!ll.tired,type=minecraft:end_crystal,scores={ll.cooking=1..}] ll.cooking

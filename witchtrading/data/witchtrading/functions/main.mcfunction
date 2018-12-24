@@ -39,7 +39,7 @@ execute as @a[tag=wt.sad_orchid] at @s run function witchtrading:sad_orchid/effe
 execute as @a[scores={wt.sad_orchid=1..}] at @s run function witchtrading:sad_orchid/effects
 #calling sad_orchid:placement
 execute as @e[tag=wt.R.sad_orchid,type=minecraft:area_effect_cloud] at @s run function witchtrading:sad_orchid/placement
-title @a[scores={wt.sad_orchid=1..,wt.rng=15}] subtitle ["",{"text":"please ","color":"red"},{"text":"look at","italic":true,"color":"red"},{"text":" the ","color":"red"},{"text":"placed block","italic":true,"color":"red"}]
+title @a[scores={wt.sad_orchid=1..,wt.rng=15}] subtitle ["",{"text":"please ","color":"red"},{"text":"look at","italic":true,"color":"red"},{"text":" the ","color":"red"},{"text":"placed blue_orchid","italic":true,"color":"red"}]
 title @a[scores={wt.sad_orchid=1..,wt.rng=15}] title {"text":"error","bold":true,"color":"dark_red"}
 #calling sad_orchid:sad_orchid
 execute as @e[tag=wt.sad_orchid,type=minecraft:area_effect_cloud] at @s run function witchtrading:sad_orchid/sad_orchid

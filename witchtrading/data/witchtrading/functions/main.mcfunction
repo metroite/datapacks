@@ -31,15 +31,16 @@ tag @a[tag=wt.setup,team=!wt.friendly] remove wt.setup
 execute as @a[tag=wt.setup] at @s unless entity @e[type=area_effect_cloud,distance=..1,name=wt.friendly] run tag @e[team=wt.friendly,type=minecraft:witch,distance=..6,limit=1,sort=nearest,tag=!wt.traded] add wt.blocked
 execute as @a[tag=wt.setup] at @s unless entity @e[type=area_effect_cloud,distance=..1,name=wt.friendly] run team leave @s
 
-##SAD ORCHID
-#calling sad_orchid:effects if sad orchid is selected
+#####placement-API: SAD ORCHID
+#calling sad_orchid:effects if sad orchid is SelectedItem
 tag @a[nbt={SelectedItem:{id:"minecraft:blue_orchid",tag:{HideFlags:1,AttributeModifiers:[{AttributeName:"generic.luck",Name:"generic.luck",Amount:1,Operation:0}]}}}] add wt.sad_orchid
 tag @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:blue_orchid",tag:{HideFlags:1,AttributeModifiers:[{AttributeName:"generic.luck",Name:"generic.luck",Amount:1,Operation:0}]}}]}] add wt.sad_orchid
 execute as @a[tag=wt.sad_orchid] at @s run function witchtrading:sad_orchid/effects
-execute as @a[scores={wt.sad_orchid=1..}] at @s run function witchtrading:sad_orchid/effects
 #calling sad_orchid:placement
 execute as @e[tag=wt.R.sad_orchid,type=minecraft:area_effect_cloud] at @s run function witchtrading:sad_orchid/placement
-title @a[scores={wt.sad_orchid=1..,wt.rng=15}] subtitle ["",{"text":"please ","color":"red"},{"text":"look at","italic":true,"color":"red"},{"text":" the ","color":"red"},{"text":"placed block","italic":true,"color":"red"}]
+#error message if it fails
+execute as @a[scores={wt.sad_orchid=1..}] at @s run function witchtrading:sad_orchid/effects
+title @a[scores={wt.sad_orchid=1..,wt.rng=15}] subtitle ["",{"text":"please ","color":"red"},{"text":"look at","italic":true,"color":"red"},{"text":" the ","color":"red"},{"text":"placed blue_orchid","italic":true,"color":"red"}]
 title @a[scores={wt.sad_orchid=1..,wt.rng=15}] title {"text":"error","bold":true,"color":"dark_red"}
 #calling sad_orchid:sad_orchid
 execute as @e[tag=wt.sad_orchid,type=minecraft:area_effect_cloud] at @s run function witchtrading:sad_orchid/sad_orchid

@@ -16,6 +16,9 @@ team leave @e[type=minecraft:witch,tag=wt.blocked]
 #Witches get moved into the same team as the player
 execute at @a[nbt={SelectedItem:{id:"minecraft:poisonous_potato"}}] run team join wt.friendly @e[distance=..6,type=minecraft:witch,tag=!wt.traded,tag=!wt.blocked]
 
+#if witches get hurt
+tag @e[type=minecraft:witch,nbt={HurtTime:10s}] add wt.blocked
+
 #Invisible Villager:
 execute as @e[type=minecraft:villager,team=wt.friendly,nbt={Silent:1b}] at @s run function witchtrading:witchvillager
 
@@ -47,5 +50,4 @@ execute as @e[tag=wt.sad_orchid,type=minecraft:area_effect_cloud] at @s run func
 execute as @a[scores={wt.rng=9}] at @s if entity @e[tag=wt.sad_orchid,type=minecraft:area_effect_cloud,distance=..3] positioned ~ ~1.35 ~ run particle minecraft:dripping_water ^-0.15 ^ ^0.275 0 0 0 1 1 normal
 
 #feature-compatibility: graves
-execute at @e[tag=wt.shinigami] run particle minecraft:dust 0.2314 0.2314 0.25098 2 ~ ~1 ~ 3 2 3 1 2 normal
-execute at @e[tag=wt.shinigami] run effect give @a[distance=..6] blindness 2 0 true
+function graves:witchtrading/main

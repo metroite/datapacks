@@ -9,7 +9,7 @@ scoreboard players set rngmax wt.rng 15
 scoreboard players set 15 wt.rng 15
 
 #feature-compatibility
-function graves:witchtrading
+function graves:witchtrading/setup
 
 #What you shouldn't do:
 #Don't move away.

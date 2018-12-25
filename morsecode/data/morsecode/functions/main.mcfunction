@@ -14,5 +14,5 @@ execute as @e[type=minecraft:item_frame,scores={mc.itemrotation=0..},tag=mc.send
 execute as @e[type=minecraft:item_frame,scores={mc.itemrotation=0..},tag=mc.receiver] at @s if block ~ ~ ~ minecraft:redstone_wire[power=1] run fill ~ ~ ~ ~ ~ ~ minecraft:redstone_wire[power=0] replace minecraft:redstone_wire[power=1]
 
 #crafting mobile_receiver
-execute as @a[scores={mc.craftreceiver=1..}] run give @s minecraft:feather{CanPlaceOn:["minecraft:void_air"],HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:1}],display:{Lore:["Frequency: Slot 2 to Slot 9"],Name:"{\"text\":\"Mobile Receiver\",\"color\":\"yellow\",\"italic\":false}"}} 1
+execute as @a[scores={mc.craftreceiver=1..}] run give @s minecraft:feather{RepairCost:99999999,CanPlaceOn:["minecraft:void_air"],HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:1}],display:{Lore:["Frequency: Slot 2 to Slot 9"],Name:"{\"text\":\"Mobile Receiver\",\"color\":\"yellow\",\"italic\":false}"}} 1
 execute as @a[scores={mc.craftreceiver=1..}] run scoreboard players remove @s mc.craftreceiver 1

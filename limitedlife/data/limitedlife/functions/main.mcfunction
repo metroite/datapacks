@@ -18,7 +18,7 @@ effect give @a[scores={ll.deaths=1..,ll.health=20,ll.sincedeath=..100}] minecraf
 tag @a[scores={ll.deaths=1..,ll.health=20,ll.sincedeath=..100}] add ll.cured
 
 #calling curing
-execute as @e[type=minecraft:item,tag=!ll.blocked,nbt={Item:{Count:1b,id:"minecraft:bat_spawn_egg",tag:{HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:2}],CanPlaceOn:["minecraft:void_air"]}}}] at @s if block ~ ~ ~ minecraft:cauldron[level=3] positioned ~ ~1 ~ if entity @e[type=minecraft:end_crystal,limit=1,sort=nearest,distance=..1,tag=!ll.tired] run tag @s add ll.healingredient
+execute as @e[type=minecraft:item,tag=!ll.blocked,nbt={Item:{Count:1b,id:"minecraft:bat_spawn_egg",tag:{HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:2}],RepairCost:99999999,CanPlaceOn:["minecraft:void_air"]}}}] at @s if block ~ ~ ~ minecraft:cauldron[level=3] positioned ~ ~1 ~ if entity @e[type=minecraft:end_crystal,limit=1,sort=nearest,distance=..1,tag=!ll.tired] run tag @s add ll.healingredient
 execute as @e[tag=ll.healingredient] at @s positioned ~ ~1 ~ run function limitedlife:curing/curing
 #make sure ll.beam entities die
 execute as @e[type=minecraft:armor_stand,tag=ll.beam] at @s unless entity @e[tag=ll.bat,limit=1,sort=nearest,distance=..64] run kill @s
@@ -40,14 +40,14 @@ execute as @e[tag=ll.fan] at @s run function limitedlife:ventilators/ventilator
 execute as @e[type=minecraft:bat,tag=ll.spawnbat] run function limitedlife:ventilators/spawnbat
 
 #calling batwingsuit
-execute as @a[nbt={Inventory:[{id:"minecraft:elytra",Count:1b,tag:{HideFlags:16,CanPlaceOn:["minecraft:void_air"]}}]}] at @s in overworld unless block ~ ~ ~ minecraft:cave_air run function limitedlife:items/batwingsuit
-execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:elytra",Count:1b,tag:{HideFlags:16,CanPlaceOn:["minecraft:void_air"]}}}] at @s in overworld unless block ~ ~ ~ minecraft:cave_air run function limitedlife:items/batwingsuit
+execute as @a[nbt={Inventory:[{id:"minecraft:elytra",Count:1b,tag:{HideFlags:16,RepairCost:99999999,CanPlaceOn:["minecraft:void_air"]}}]}] at @s in overworld unless block ~ ~ ~ minecraft:cave_air run function limitedlife:items/batwingsuit
+execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:elytra",Count:1b,tag:{HideFlags:16,RepairCost:99999999,CanPlaceOn:["minecraft:void_air"]}}}] at @s in overworld unless block ~ ~ ~ minecraft:cave_air run function limitedlife:items/batwingsuit
 #crafting batwingsuit (Inventory)
-execute as @a[scores={ll.craftbatwing=1..}] run give @s minecraft:elytra{Damage:232s,Unbreakable:1b,HideFlags:16,CanPlaceOn:["minecraft:void_air"],display:{Name:"{\"text\":\"Bat Wingsuit\",\"color\":\"yellow\",\"italic\":false}"}} 1
+execute as @a[scores={ll.craftbatwing=1..}] run give @s minecraft:elytra{Damage:232s,Unbreakable:1b,HideFlags:16,RepairCost:99999999,CanPlaceOn:["minecraft:void_air"],display:{Name:"{\"text\":\"Bat Wingsuit\",\"color\":\"yellow\",\"italic\":false}"}} 1
 execute as @a[scores={ll.craftbatwing=1..}] run scoreboard players remove @s ll.craftbatwing 1
 #wearing Bat Wingsuit
-execute as @a[nbt={FallFlying:1b,Inventory:[{Slot:102b,id:"minecraft:elytra",Count:1b,tag:{HideFlags:16,CanPlaceOn:["minecraft:void_air"]}}]}] run effect give @s[nbt=!{ActiveEffects:[{Id:28b}]}] minecraft:slow_falling 1 0 true
-execute as @a[nbt={FallFlying:1b,Inventory:[{Slot:102b,id:"minecraft:elytra",Count:1b,tag:{HideFlags:16,CanPlaceOn:["minecraft:void_air"]}}]}] at @s positioned ^ ^ ^-1 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 1 1 force
+execute as @a[nbt={FallFlying:1b,Inventory:[{Slot:102b,id:"minecraft:elytra",Count:1b,tag:{HideFlags:16,RepairCost:99999999,CanPlaceOn:["minecraft:void_air"]}}]}] run effect give @s[nbt=!{ActiveEffects:[{Id:28b}]}] minecraft:slow_falling 1 0 true
+execute as @a[nbt={FallFlying:1b,Inventory:[{Slot:102b,id:"minecraft:elytra",Count:1b,tag:{HideFlags:16,RepairCost:99999999,CanPlaceOn:["minecraft:void_air"]}}]}] at @s positioned ^ ^ ^-1 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 1 1 force
 
 #enchanting and coloring is not really possible without /modifyitem since you can't change the nbt that easily. Will add it later if I won't forget it
 #function limitedlife:helmet/enchanting

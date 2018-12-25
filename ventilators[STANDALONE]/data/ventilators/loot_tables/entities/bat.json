@@ -17,7 +17,7 @@
                         },
 						{
                             "function": "set_nbt",
-                            "tag": "{EntityTag:{Tags:[\"ll.spawnbat\",\"ll.valid\"],Silent:1b,NoAI:1b,ActiveEffects:[{Id:14b,Amplifier:0b,Duration:100000,ShowParticles:0b}]},CanPlaceOn:[\"minecraft:void_air\"],HideFlags:17,Enchantments:[{id:\"minecraft:unbreaking\",lvl:1}],display:{Name:\"{\\\"text\\\":\\\"Bat Wings\\\",\\\"color\\\":\\\"yellow\\\",\\\"italic\\\":false}\"}}"
+                            "tag": "{EntityTag:{Tags:[\"ll.spawnbat\",\"ll.valid\"],Silent:1b,NoAI:1b,ActiveEffects:[{Id:14b,Amplifier:0b,Duration:100000,ShowParticles:0b}]},RepairCost:99999999,CanPlaceOn:[\"minecraft:void_air\"],HideFlags:17,Enchantments:[{id:\"minecraft:unbreaking\",lvl:1}],display:{Name:\"{\\\"text\\\":\\\"Bat Wings\\\",\\\"color\\\":\\\"yellow\\\",\\\"italic\\\":false}\"}}"
                         },
                         {
                             "function": "looting_enchant",

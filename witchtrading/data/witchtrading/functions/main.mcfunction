@@ -44,6 +44,7 @@ title @a[scores={wt.sad_orchid=1..,wt.rng=15}] subtitle ["",{"text":"please ","c
 title @a[scores={wt.sad_orchid=1..,wt.rng=15}] title {"text":"error","bold":true,"color":"dark_red"}
 #calling sad_orchid:sad_orchid
 execute as @e[tag=wt.sad_orchid,type=minecraft:area_effect_cloud] at @s run function witchtrading:sad_orchid/sad_orchid
+execute as @a[scores={wt.rng=9}] at @s if entity @e[tag=wt.sad_orchid,type=minecraft:area_effect_cloud,distance=..3] positioned ~ ~1.35 ~ run particle minecraft:dripping_water ^-0.15 ^ ^0.275 0 0 0 1 1 normal
 
 #feature-compatibility: graves
 execute at @e[tag=wt.shinigami] run particle minecraft:dust 0.2314 0.2314 0.25098 2 ~ ~1 ~ 3 2 3 1 2 normal

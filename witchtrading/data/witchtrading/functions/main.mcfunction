@@ -42,10 +42,10 @@ scoreboard players reset @a[scores={wt.sad_orchid=..1},tag=!wt.sad_orchid] wt.sa
 execute as @a[tag=wt.sad_orchid] at @s run function witchtrading:sad_orchid/effects
 #calling sad_orchid:placement
 execute as @e[tag=wt.R.sad_orchid,type=minecraft:area_effect_cloud] at @s run function witchtrading:sad_orchid/placement
-######fallback if it fails to detect (Leftover, as it is working reliably now. Might still need it later on)
-######execute as @a[scores={wt.sad_orchid=1..}] at @s run function witchtrading:sad_orchid/effects
-######title @a[scores={wt.sad_orchid=1..,wt.rng=15}] subtitle ["",{"text":"please ","color":"red"},{"text":"look at","italic":true,"color":"red"},{"text":" the ","color":"red"},{"text":"placed block","italic":true,"color":"red"}]
-######title @a[scores={wt.sad_orchid=1..,wt.rng=15}] title {"text":"error","bold":true,"color":"dark_red"}
+#fallback if it fails to detect (Leftover, as it is working reliably now. Might still need it later on (if removing this, also take care of line 41!!))
+execute as @a[scores={wt.sad_orchid=1..}] at @s run function witchtrading:sad_orchid/effects
+title @a[scores={wt.sad_orchid=1..,wt.rng=15}] subtitle ["",{"text":"please ","color":"red"},{"text":"look at","italic":true,"color":"red"},{"text":" the ","color":"red"},{"text":"placed block","italic":true,"color":"red"}]
+title @a[scores={wt.sad_orchid=1..,wt.rng=15}] title {"text":"error","bold":true,"color":"dark_red"}
 #calling sad_orchid:sad_orchid
 execute as @e[tag=wt.sad_orchid,type=minecraft:area_effect_cloud] at @s run function witchtrading:sad_orchid/sad_orchid
 execute as @a[scores={wt.rng=9}] at @s if entity @e[tag=wt.sad_orchid,type=minecraft:area_effect_cloud,distance=..3] positioned ~ ~1.35 ~ run particle minecraft:dripping_water ^-0.15 ^ ^0.275 0 0 0 1 1 normal

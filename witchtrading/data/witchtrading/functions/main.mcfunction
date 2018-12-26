@@ -38,16 +38,19 @@ execute as @a[tag=wt.setup] at @s unless entity @e[type=area_effect_cloud,distan
 #calling sad_orchid:effects if sad orchid is SelectedItem
 tag @a[nbt={SelectedItem:{id:"minecraft:blue_orchid",tag:{HideFlags:1,AttributeModifiers:[{AttributeName:"generic.luck",Name:"generic.luck",Amount:1,Operation:0}]}}}] add wt.sad_orchid
 tag @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:blue_orchid",tag:{HideFlags:1,AttributeModifiers:[{AttributeName:"generic.luck",Name:"generic.luck",Amount:1,Operation:0}]}}]}] add wt.sad_orchid
+scoreboard players reset @a[scores={wt.sad_orchid=..1},tag=!wt.sad_orchid] wt.sad_orchid
 execute as @a[tag=wt.sad_orchid] at @s run function witchtrading:sad_orchid/effects
 #calling sad_orchid:placement
 execute as @e[tag=wt.R.sad_orchid,type=minecraft:area_effect_cloud] at @s run function witchtrading:sad_orchid/placement
-#error message if it fails
-execute as @a[scores={wt.sad_orchid=1..}] at @s run function witchtrading:sad_orchid/effects
-title @a[scores={wt.sad_orchid=1..,wt.rng=15}] subtitle ["",{"text":"please ","color":"red"},{"text":"look at","italic":true,"color":"red"},{"text":" the ","color":"red"},{"text":"placed blue_orchid","italic":true,"color":"red"}]
-title @a[scores={wt.sad_orchid=1..,wt.rng=15}] title {"text":"error","bold":true,"color":"dark_red"}
+######fallback if it fails to detect (Leftover, as it is working reliably now. Might still need it later on)
+######execute as @a[scores={wt.sad_orchid=1..}] at @s run function witchtrading:sad_orchid/effects
+######title @a[scores={wt.sad_orchid=1..,wt.rng=15}] subtitle ["",{"text":"please ","color":"red"},{"text":"look at","italic":true,"color":"red"},{"text":" the ","color":"red"},{"text":"placed block","italic":true,"color":"red"}]
+######title @a[scores={wt.sad_orchid=1..,wt.rng=15}] title {"text":"error","bold":true,"color":"dark_red"}
 #calling sad_orchid:sad_orchid
 execute as @e[tag=wt.sad_orchid,type=minecraft:area_effect_cloud] at @s run function witchtrading:sad_orchid/sad_orchid
 execute as @a[scores={wt.rng=9}] at @s if entity @e[tag=wt.sad_orchid,type=minecraft:area_effect_cloud,distance=..3] positioned ~ ~1.35 ~ run particle minecraft:dripping_water ^-0.15 ^ ^0.275 0 0 0 1 1 normal
+#calling sad_orchid/setup
+execute as @e[tag=wt.sad_orchid,tag=wt.SU.sad_orchid,type=minecraft:area_effect_cloud] at @s as @e[tag=wt.T.sad_orchid,type=minecraft:leash_knot,sort=nearest,limit=1] at @s run function witchtrading:sad_orchid/setup
 
 #feature-compatibility: graves
 function graves:witchtrading/main

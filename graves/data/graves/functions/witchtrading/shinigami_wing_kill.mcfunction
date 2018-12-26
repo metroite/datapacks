@@ -4,6 +4,7 @@ playsound minecraft:entity.witch.ambient voice @s ~ ~ ~ 2 2
 playsound minecraft:entity.witch.ambient voice @s ~ ~ ~ 2 2
 playsound minecraft:entity.witch.ambient voice @s ~ ~ ~ 2 2
 #end loop
+replaceitem entity @s armor.chest air 1
 tag @s[scores={wt.rng=1}] remove wt.P.shinigami_wing
 tag @s[scores={wt.rng=1}] remove wt.P.shinigami_wing.SU
 #kill

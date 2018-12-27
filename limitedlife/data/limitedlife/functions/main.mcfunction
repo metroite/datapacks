@@ -36,6 +36,7 @@ data merge entity @e[type=minecraft:bat,nbt=!{DeathLootTable:"limitedlife:entiti
 
 #call (BatWing) Ventilator
 execute as @e[tag=ll.fan] at @s run function limitedlife:ventilators/ventilator
+execute as @e[tag=ll.collision] at @s run function limitedlife:ventilators/collision/kill
 #calls ventilator_placement and spawnbat
 execute as @e[type=minecraft:bat,tag=ll.spawnbat] run function limitedlife:ventilators/spawnbat
 

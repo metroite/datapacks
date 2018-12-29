@@ -13,4 +13,4 @@ execute as @e[tag=sp.sapphire_glass] at @s run function limitedlife:sapphire/sap
 execute as @e[tag=sp.spawnsquid,tag=sp.valid] at @s run function limitedlife:sapphire/sapphire_glass/placement
 
 #tag @a selecting sapphire_glass with sp.sapphireglass
-execute as @a[tag=!sp.sapphireglass,nbt={SelectedItem:{id:"minecraft:light_blue_stained_glass",Count:1b,tag:{Enchantments:[{lvl:1s,id:"minecraft:binding_curse"},{lvl:1s,id:"minecraft:vanishing_curse"}]}}}] at @s run function limitedlife:sapphire/sapphire_glass/sapphireglass
+execute as @a[tag=!sp.sapphireglass,nbt={Inventory:[{Slot:-106b,id:"minecraft:light_blue_stained_glass",Count:1b,tag:{Enchantments:[{lvl:1s,id:"minecraft:binding_curse"},{lvl:1s,id:"minecraft:vanishing_curse"}]}}]}] at @s run function limitedlife:sapphire/sapphire_glass/sapphireglass

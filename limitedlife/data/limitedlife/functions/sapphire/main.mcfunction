@@ -14,3 +14,13 @@ execute as @e[tag=sp.spawnsquid,tag=sp.valid] at @s run function limitedlife:sap
 
 #tag @a selecting sapphire_glass with sp.sapphireglass
 execute as @a[tag=!sp.sapphireglass,nbt={Inventory:[{Slot:-106b,id:"minecraft:light_blue_stained_glass",Count:1b,tag:{Enchantments:[{lvl:1s,id:"minecraft:binding_curse"},{lvl:1s,id:"minecraft:vanishing_curse"}]}}]}] at @s run function limitedlife:sapphire/sapphire_glass/sapphireglass
+
+####placement-API for the sapphire_glass
+tag @a[nbt={SelectedItem:{id:"minecraft:light_blue_stained_glass",tag:{Enchantments:[{lvl:1s,id:"minecraft:binding_curse"},{lvl:1s,id:"minecraft:vanishing_curse"}]}}}] add sp.glass_block
+tag @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:light_blue_stained_glass",tag:{Enchantments:[{lvl:1s,id:"minecraft:binding_curse"},{lvl:1s,id:"minecraft:vanishing_curse"}]}}]}] add sp.glass_block
+scoreboard players reset @a[tag=!sp.glass_block] sp.glass_placed
+execute as @a[tag=sp.glass_block] at @s run function limitedlife:sapphire/sapphire_glassblock/effects
+#calling sad_orchid:placement
+execute as @e[tag=sp.R.glass,type=minecraft:area_effect_cloud] at @s run function limitedlife:sapphire/sapphire_glassblock/placement
+#calling setup
+execute at @e[tag=sp.sapphire_glasssetup] as @e[tag=sp.T.glass,type=minecraft:leash_knot,sort=nearest,limit=1] at @s run function limitedlife:sapphire/sapphire_glassblock/setup

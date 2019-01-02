@@ -5,5 +5,6 @@ execute if entity @p[distance=..7,nbt={SelectedItem:{id:"minecraft:diamond_picka
 execute if entity @p[distance=..7,nbt={SelectedItem:{id:"minecraft:diamond_pickaxe"}}] run kill @s
 #if not using diamond_pickaxe
 execute unless entity @p[distance=..7,nbt={SelectedItem:{id:"minecraft:diamond_pickaxe"}}] run fill ~ ~ ~ ~ ~ ~ light_blue_stained_glass replace air
+execute unless entity @p[distance=..7,nbt={SelectedItem:{id:"minecraft:diamond_pickaxe"}}] run kill @e[type=minecraft:item,limit=1,sort=nearest,distance=..2,nbt={Item:{id:"minecraft:light_blue_stained_glass"}}]
 #kill for sapphire_glass/placing
 execute if block ~ ~ ~ minecraft:glass run kill @s

@@ -38,7 +38,7 @@ execute as @a[tag=wt.setup] at @s unless entity @e[type=area_effect_cloud,distan
 #calling sad_orchid:effects if sad orchid is SelectedItem
 tag @a[nbt={SelectedItem:{id:"minecraft:blue_orchid",tag:{HideFlags:1,AttributeModifiers:[{AttributeName:"generic.luck",Name:"generic.luck",Amount:1,Operation:0}]}}}] add wt.sad_orchid
 tag @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:blue_orchid",tag:{HideFlags:1,AttributeModifiers:[{AttributeName:"generic.luck",Name:"generic.luck",Amount:1,Operation:0}]}}]}] add wt.sad_orchid
-scoreboard players reset @a[scores={wt.sad_orchid=1..},tag=!wt.sad_orchid] wt.sad_orchid
+scoreboard players reset @a[tag=!wt.sad_orchid] wt.sad_orchid
 execute as @a[tag=wt.sad_orchid] at @s run function witchtrading:sad_orchid/effects
 #calling sad_orchid:placement
 execute as @e[tag=wt.R.sad_orchid,type=minecraft:area_effect_cloud] at @s run function witchtrading:sad_orchid/placement

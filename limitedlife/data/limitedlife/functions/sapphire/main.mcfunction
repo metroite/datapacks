@@ -22,5 +22,3 @@ scoreboard players reset @a[tag=!sp.glass_block] sp.glass_placed
 execute as @a[tag=sp.glass_block] at @s run function limitedlife:sapphire/sapphire_glassblock/effects
 #calling sad_orchid:placement
 execute as @e[tag=sp.R.glass,type=minecraft:area_effect_cloud] at @s run function limitedlife:sapphire/sapphire_glassblock/placement
-#calling setup
-execute at @e[tag=sp.sapphire_glasssetup] as @e[tag=sp.T.glass,type=minecraft:leash_knot,sort=nearest,limit=1] at @s run function limitedlife:sapphire/sapphire_glassblock/setup

@@ -1,5 +1,13 @@
 #calling sad_orchid/success
 execute align xyz run summon area_effect_cloud ~0.5 ~ ~0.5 {Tags:["wt.C.sad_orchid"],Duration:1}
+execute positioned ^ ^1 ^ align xyz run summon area_effect_cloud ~0.5 ~ ~0.5 {Tags:["wt.C.sad_orchid"],Duration:1}
+execute positioned ^ ^-1 ^ align xyz run summon area_effect_cloud ~0.5 ~ ~0.5 {Tags:["wt.C.sad_orchid"],Duration:1}
+execute positioned ^1 ^ ^ align xyz run summon area_effect_cloud ~0.5 ~ ~0.5 {Tags:["wt.C.sad_orchid"],Duration:1}
+execute positioned ^-1 ^ ^ align xyz run summon area_effect_cloud ~0.5 ~ ~0.5 {Tags:["wt.C.sad_orchid"],Duration:1}
+execute positioned ^1 ^1 ^ align xyz run summon area_effect_cloud ~0.5 ~ ~0.5 {Tags:["wt.C.sad_orchid"],Duration:1}
+execute positioned ^-1 ^-1 ^ align xyz run summon area_effect_cloud ~0.5 ~ ~0.5 {Tags:["wt.C.sad_orchid"],Duration:1}
+execute positioned ^-1 ^1 ^ align xyz run summon area_effect_cloud ~0.5 ~ ~0.5 {Tags:["wt.C.sad_orchid"],Duration:1}
+execute positioned ^1 ^-1 ^ align xyz run summon area_effect_cloud ~0.5 ~ ~0.5 {Tags:["wt.C.sad_orchid"],Duration:1}
 execute as @e[tag=wt.C.sad_orchid] at @s if block ~ ~ ~ minecraft:blue_orchid unless entity @e[type=area_effect_cloud,tag=wt.sad_orchid,distance=..0.5] unless entity @e[tag=wt.SU.sad_orchid,distance=..3] run function witchtrading:sad_orchid/success
 #Recursive Ray
 tp @s ^ ^ ^1

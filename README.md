@@ -20,12 +20,12 @@ You could always find more useful information inside every datapack and chronolo
 
 ### To-Do-List:
 
-- [x] global sound when someone dies
-- [ ] big tree using "Sull Dust"
-- [ ] Wild Caves in Vanilla
-- [ ] new potions
-- [ ] meteorites
-- [ ] weather detectors
+- [ ] graves: big trees using "Skull Dust" on saplings
+- [ ] hurtfulhostiles: buff hostile entities
+- [ ] cauldronbrewing: new potions
+- [ ] meteorites: occasional events
+- [ ] sapphire: weather detectors
+- [ ] vulcans: instead of lava lakes
 
 ## Getting Started
 

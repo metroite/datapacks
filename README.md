@@ -23,9 +23,9 @@ You could always find more useful information inside every datapack and chronolo
 - [ ] graves: big trees using "Skull Dust" on saplings
 - [ ] hurtfulhostiles: buff hostile entities
 - [ ] cauldronbrewing: new potions
-- [ ] meteorites: occasional events
+- [ ] meteorites: occasional event
 - [ ] sapphire: weather detectors
-- [ ] vulcans: instead of lava lakes
+- [ ] vulcans: instead of surface lava lakes
 
 ## Getting Started
 

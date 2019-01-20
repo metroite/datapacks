@@ -41,7 +41,7 @@ tag @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:blue_orchid",tag:{HideFlags:1,A
 scoreboard players reset @a[tag=!wt.sad_orchid] wt.sad_orchid
 execute as @a[tag=wt.sad_orchid] at @s run function witchtrading:sad_orchid/effects
 #calling sad_orchid:placement
-execute as @e[tag=wt.R.sad_orchid,type=minecraft:area_effect_cloud] at @s run function witchtrading:sad_orchid/placement
+execute as @e[tag=wt.R.sad_orchid] at @s run function witchtrading:sad_orchid/placement
 #calling sad_orchid:sad_orchid
 execute as @e[tag=wt.sad_orchid,type=minecraft:area_effect_cloud] at @s run function witchtrading:sad_orchid/sad_orchid
 #particle effects if close to a sad_orchid (if this is inside of sad_orchid/sad_orchid this particle effect will be executed scaling with the amount of sad_orchids around the player)

@@ -8,8 +8,8 @@ tag @a[tag=!sp.sapphireglass,nbt={Inventory:[{Slot:103b,id:"minecraft:light_blue
 replaceitem entity @a[scores={sp.sincedeath=..50},tag=sp.sapphireglass] armor.head minecraft:air 1
 tag @a[scores={sp.sincedeath=..50},tag=sp.sapphireglass] remove sp.sapphireglass
 
-#calls placement and spawnsquid
-execute as @e[tag=sp.sapphire_glass] at @s run function limitedlife:sapphire/sapphire_glass/particle
+#calls placement and effect, also particles
+execute as @e[tag=sp.sapphire_glass] at @s run function limitedlife:sapphire/sapphire_glass/effects
 execute as @e[tag=sp.spawnsquid,tag=sp.valid] at @s run function limitedlife:sapphire/sapphire_glass/placement
 
 #tag @a selecting sapphire_glass with sp.sapphireglass

@@ -49,7 +49,3 @@ execute as @a[scores={ll.craftbatwing=1..}] run scoreboard players remove @s ll.
 #wearing Bat Wingsuit
 execute as @a[nbt={FallFlying:1b,Inventory:[{Slot:102b,id:"minecraft:elytra",Count:1b,tag:{HideFlags:16,RepairCost:99999999,CanPlaceOn:["minecraft:void_air"]}}]}] run effect give @s[nbt=!{ActiveEffects:[{Id:28b}]}] minecraft:slow_falling 1 0 true
 execute as @a[nbt={FallFlying:1b,Inventory:[{Slot:102b,id:"minecraft:elytra",Count:1b,tag:{HideFlags:16,RepairCost:99999999,CanPlaceOn:["minecraft:void_air"]}}]}] at @s positioned ^ ^ ^-1 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 1 1 force
-
-#enchanting and coloring is not really possible without /modifyitem since you can't change the nbt that easily. Will add it later if I won't forget it
-#function limitedlife:helmet/enchanting
-#function limitedlife:helmet/coloring

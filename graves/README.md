@@ -1,6 +1,7 @@
 ## graves
 
-Skulls and bones can be found on locations where players died!
+Skulls and bones can be found on locations where players died! Has extensive support in feature compatiblity with other datapacks of mine.
+Recommended to use with witchtrading.
 
 ## Version
 

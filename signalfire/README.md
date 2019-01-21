@@ -1,6 +1,6 @@
 ## signalfire
 
-Throw leaves into a burning log block and a very strong smoke will rise up.
+Throw leaves into a burning log block and a very strong smoke will rise up, visually notifying closeby players.
 
 ## Version
 

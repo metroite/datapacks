@@ -1,6 +1,7 @@
 ## witchtrading
 
-Trade your poisonous potatoes with witches. Don't play with them though!
+Trade your poisonous potatoes with witches. Don't overshoot your boundaries though!
+Recommended to use with graves.
 
 ## Version
 

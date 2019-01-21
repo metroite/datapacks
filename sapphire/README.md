@@ -1,6 +1,7 @@
 ## sapphire
 
-Sapphire gems will be generated in the ocean deep down. Detect weather, attract lightning and create decorative particles.
+Sapphire gems will be generated in the colder oceans, deep down. Detect weather, attract lightning and create decorative particles.
+Recommended to use with limitedlife.
 
 *S - Sapphire*
 

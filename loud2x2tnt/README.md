@@ -1,6 +1,7 @@
 ## loud2x2tnt
 
 Tnt placed 2x2x2 are loud enough to be heared from 1024 blocks away. Gamerule "mobGriefing" needs to be set to true.
+Recommended to use with graves and limitedlife.
 
 ## Version
 

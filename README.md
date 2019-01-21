@@ -6,12 +6,12 @@
 * [limitedlife](https://github.com/Metroite/datapacks/tree/master/limitedlife)
 * [loud2x2tnt](https://github.com/Metroite/datapacks/tree/master/loud2x2tnt)
 * [morsecode](https://github.com/Metroite/datapacks/tree/master/morsecode)
+* [sapphire](https://github.com/Metroite/datapacks/tree/master/sapphire)
 * [signalfire](https://github.com/Metroite/datapacks/tree/master/signalfire)
 * [ventilators(STANDALONE)](https://github.com/Metroite/datapacks/tree/master/ventilators[STANDALONE])
 * [witchtrading](https://github.com/Metroite/datapacks/tree/master/witchtrading)
-* [sapphire](https://github.com/Metroite/datapacks/tree/master/sapphire)
 
-You could always find more useful information inside every datapack and chronologically inside of every [release post](https://github.com/Metroite/datapacks/releases):
+More useful information can be found inside of every datapack ([above](https://github.com/Metroite/datapacks#metroites-datapacks)) and chronologically inside of every [release post](https://github.com/Metroite/datapacks/releases) ([below](https://github.com/Metroite/datapacks#releases)).
 
 ### Releases:
 
@@ -20,6 +20,7 @@ You could always find more useful information inside every datapack and chronolo
 
 ### To-Do-List:
 
+- [ ] placement-API: implementation and improvements
 - [ ] graves: big trees using "Skull Dust" on saplings
 - [ ] hurtfulhostiles: buff hostile entities
 - [ ] cauldronbrewing: new potions
@@ -35,7 +36,7 @@ Every folder in here is its own datapack. Datapack specific information can be f
 
 Its easy.
 
-Move the datapack(s) you wish to use inside your "datapacks" folder of your save file found in `.minecraft\saves`.
+Move the datapack(s) you wish to use inside your "datapacks" folder of your save file(s) found in `.minecraft\saves`.
 
 ```
 C:\Users\<User>\AppData\Roaming\.minecraft\saves\<world name>\datapacks
@@ -52,7 +53,7 @@ Have fun trying out the new stuff you have added!
 
 ## Version
 
-These datapacks were created in Minecraft 1.13.X, they might be working in newer versions of Minecraft.
+These datapacks were created in Minecraft 1.13.X, they might be working in newer versions of Minecraft (client and server).
 
 ## [Feedback](https://github.com/Metroite/datapacks/issues)
 
@@ -64,4 +65,4 @@ Please report any **bugs** you may find, any **suggestions** you might have and 
 
 ## License
 
-This project is licensed under the GNU GENERAL PUBLIC License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the GNU GENERAL PUBLIC License - see the [LICENSE.md](https://github.com/Metroite/datapacks/blob/master/LICENSE) file for details

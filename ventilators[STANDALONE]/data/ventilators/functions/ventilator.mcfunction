@@ -20,7 +20,7 @@ execute as @s[tag=ll.faneast] if block ~ ~ ~ minecraft:observer[powered=true] po
 execute as @s[tag=ll.fanup] if block ~ ~ ~ minecraft:observer[powered=true] positioned ~-0.5 ~-5 ~-0.5 run effect give @a[gamemode=!spectator,dy=5,limit=1,sort=nearest,nbt={OnGround:0b}] minecraft:levitation 1 220 true
 execute as @s[tag=ll.fandown] if block ~ ~ ~ minecraft:observer[powered=true] positioned ~-0.5 ~ ~-0.5 run effect give @a[gamemode=!spectator,dy=5,limit=1,sort=nearest] minecraft:levitation 1 15 true
 
-execute as @s[tag=ll.fanup] if block ~ ~ ~ minecraft:observer[powered=true] positioned ~-0.5 ~-4 ~-0.5 run effect clear @a[dy=4,dx=-1,dz=-1,limit=1,sort=nearest,nbt={OnGround:1b}] minecraft:levitation
+execute as @s[tag=ll.fanup] if block ~ ~ ~ minecraft:observer[powered=true] positioned ~1 ~-4 ~1 run effect clear @a[dy=4,dx=-4,dz=-4,limit=1,sort=nearest,nbt={OnGround:1b}] minecraft:levitation
 
 execute as @s[tag=ll.fanup] if block ~ ~ ~ minecraft:observer[powered=true] positioned ~-0.5 ~-15 ~-0.5 run effect clear @a[dy=4,limit=1,sort=nearest,distance=..12] minecraft:levitation
 execute as @s[tag=ll.fandown] if block ~ ~ ~ minecraft:observer[powered=true] positioned ~-0.5 ~15 ~-0.5 run effect clear @a[limit=1,sort=nearest,distance=..12] minecraft:levitation

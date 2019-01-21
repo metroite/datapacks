@@ -13,7 +13,9 @@
 
 More useful information can be found inside of every datapack ([above](https://github.com/Metroite/datapacks#metroites-datapacks)) and chronologically inside of every [release post](https://github.com/Metroite/datapacks/releases) ([below](https://github.com/Metroite/datapacks#releases)).
 
-### Releases:
+### [Releases](https://github.com/Metroite/datapacks/releases):
+
+**Most publication effort goes into those!**
 
 * [r1](https://github.com/Metroite/datapacks/releases/tag/r1)
 * r2 (coming soon)
@@ -42,7 +44,7 @@ Move the datapack(s) you wish to use inside your "datapacks" folder of your save
 C:\Users\<User>\AppData\Roaming\.minecraft\saves\<world name>\datapacks
 ```
 
-Now just join the world you put the datapacks in and execute the following command:
+Now just join the world you put the datapacks in and execute the following operator command (autocompletion [TAB] will be your friend here):
 
 ```
 /datapack enable <name of the added datapack>
@@ -65,4 +67,4 @@ Please report any **bugs** you may find, any **suggestions** you might have and 
 
 ## License
 
-This project is licensed under the GNU GENERAL PUBLIC License - see the [LICENSE.md](https://github.com/Metroite/datapacks/blob/master/LICENSE) file for details
+This project is licensed under the GNU GENERAL PUBLIC License - see the [LICENSE](https://github.com/Metroite/datapacks/blob/master/LICENSE) file for details

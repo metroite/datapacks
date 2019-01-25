@@ -13,7 +13,7 @@
 
 More useful information can be found inside of every datapack ([above](https://github.com/Metroite/datapacks#metroites-datapacks)) and chronologically inside of every [release post](https://github.com/Metroite/datapacks/releases) ([below](https://github.com/Metroite/datapacks#releases)).
 
-### [Releases](https://github.com/Metroite/datapacks/releases):
+### [Releases:](https://github.com/Metroite/datapacks/releases)
 
 **Most publication effort goes into those!**
 
@@ -22,7 +22,7 @@ More useful information can be found inside of every datapack ([above](https://g
 
 ### To-Do-List:
 
-- [ ] placement-API: implementation and improvements
+- [X] placement-API: implementation and improvements
 - [ ] graves: big trees using "Skull Dust" on saplings
 - [ ] hurtfulhostiles: buff hostile entities
 - [ ] cauldronbrewing: new potions

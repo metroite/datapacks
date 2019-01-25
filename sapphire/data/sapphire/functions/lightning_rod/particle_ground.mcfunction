@@ -10,5 +10,5 @@ execute as @s[nbt={Age:64}] run summon minecraft:area_effect_cloud ~ ~ ~ {Durati
 execute as @s[nbt={Age:64}] if block ~ ~ ~ minecraft:redstone_torch[lit=true] unless score x_random sp.sapphire = 0 sp.sapphire unless entity @e[tag=sp.oredrop] run scoreboard players set x_random sp.sapphire 0
 execute as @s[nbt={Age:64}] if block ~ ~ ~ minecraft:redstone_torch[lit=true] unless score z_random sp.sapphire = 0 sp.sapphire unless entity @e[tag=sp.oredrop] run scoreboard players set z_random sp.sapphire 0
 
-#call cleanup
-execute unless block ~ ~ ~ minecraft:redstone_torch run function sapphire:lightning_rod/cleanup
+#remove setup
+tag @s remove sp.lr.setup

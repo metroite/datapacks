@@ -1,6 +1,6 @@
 #removes tag
 tag @s remove sp.glass_block
-##initiating placement of sad_orchid (further steps are being taken in sad_orchid/placement)
+##initiating placement of sapphire_glassblock (further steps are being taken in sapphire_glassblock/placement)
 #summoning ray
 execute at @s[scores={sp.glass_placed=1..}] run summon area_effect_cloud ~ ~ ~ {Tags:["sp.R.glass"],Duration:1}
 #aligning the ray

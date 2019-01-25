@@ -1,20 +1,21 @@
 #calls x and z oredrop
-execute as @e[tag=sp.oredrop,tag=sp.lr.timer] at @s unless score x_random sp.sapphire = 0 sp.sapphire run function sapphire:generator/x_oredrop
-execute as @e[tag=sp.oredrop,tag=sp.lr.timer] at @s if score x_random sp.sapphire = 0 sp.sapphire unless score z_random sp.sapphire = 0 sp.sapphire run function sapphire:generator/z_oredrop
-execute as @e[tag=sp.oredrop,nbt={OnGround:0b},tag=!sp.valid] at @s if score x_random sp.sapphire = 0 sp.sapphire if score z_random sp.sapphire = 0 sp.sapphire run data merge entity @s {Motion:[0.0d,-5.0d,0.0d],Tags:["sp.oredrop"]}
-#call ore_placement
-execute as @e[tag=sp.oredrop,nbt={OnGround:1b},tag=!sp.valid] at @s if block ~ ~ ~ minecraft:water if block ~ ~-1 ~ minecraft:gravel if score x_random sp.sapphire = 0 sp.sapphire if score z_random sp.sapphire = 0 sp.sapphire positioned ~ ~-1 ~ run function sapphire:generator/ore_placement
-execute as @e[tag=sp.oredrop,nbt={OnGround:1b},tag=!sp.valid] at @s unless block ~ ~ ~ minecraft:water if score x_random sp.sapphire = 0 sp.sapphire if score z_random sp.sapphire = 0 sp.sapphire run kill @s
-execute as @e[tag=sp.oredrop,nbt={OnGround:1b},tag=!sp.valid] at @s unless block ~ ~-1 ~ minecraft:gravel if score x_random sp.sapphire = 0 sp.sapphire if score z_random sp.sapphire = 0 sp.sapphire run kill @s
-execute as @e[tag=sp.oredrop,tag=sp.valid] at @s run function sapphire:generator/ore_placement
-#call farm_ore
-execute as @e[tag=sp.sapphire_ore] at @s unless block ~ ~ ~ minecraft:redstone_ore run function sapphire:sapphire_ore/farm_ore
-#call sapphire_ore
-execute as @e[tag=sp.sapphire_main] at @s if block ~ ~ ~ minecraft:redstone_ore run function sapphire:sapphire_ore/sapphire_ore
+execute as @e[tag=sp.oredrop] at @s run function sapphire:generator/oredrop
 #area_effect_cloud sp.noore
 execute as @e[tag=sp.noore] at @s run kill @e[tag=sp.oredrop,distance=..128]
 #calling Revoke (therefore make it possible to spawn a new sapphire ore) deep_ocean advancement
-execute as @a[tag=sp.deep_ocean] at @s unless entity @e[tag=sp.sapphire_main,tag=!sp.valid,distance=..320] unless entity @e[tag=sp.oredrop,tag=!sp.valid,distance=..320] unless entity @e[tag=sp.noore,distance=..320] run function sapphire:generator/revoke_deep_ocean
+execute as @a[tag=sp.deep_ocean] at @s unless entity @e[tag=sp.sapphire_main,tag=!sp.so.placed,distance=..320] unless entity @e[tag=sp.oredrop,tag=!valid,distance=..320] unless entity @e[tag=sp.noore,distance=..320] run function sapphire:generator/revoke_deep_ocean
+#call cleanup
+execute as @e[tag=sp.sapphire_ore] at @s unless block ~ ~ ~ minecraft:redstone_ore run function sapphire:sapphire_ore/cleanup
+#call sapphire_ore
+execute as @e[tag=sp.sapphire_main] at @s if block ~ ~ ~ minecraft:redstone_ore run function sapphire:sapphire_ore/sapphire_ore
+
+##placement-API: sapphire_ore
+tag @a[nbt={SelectedItem:{id:"minecraft:redstone_ore",tag:{Enchantments:[{id:"minecraft:unbreaking",lvl:1}],RepairCost:99999999,CanPlaceOn:["minecraft:void_air"],HideFlags:17}}}] add sp.so.pa.tag
+tag @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:redstone_ore",tag:{Enchantments:[{id:"minecraft:unbreaking",lvl:1}],RepairCost:99999999,CanPlaceOn:["minecraft:void_air"],HideFlags:17}}]}] add sp.so.pa.tag
+scoreboard players reset @a[tag=!sp.so.pa.tag] sp.so.pa.ore
+execute as @a[tag=sp.so.pa.tag] at @s run function sapphire:sapphire_ore/effects
+#calling placement
+execute as @e[tag=sp.R.ore] at @s run function sapphire:sapphire_ore/placement
 
 #feature-compatibility: limitedlife
 function limitedlife:sapphire/main
@@ -25,10 +26,19 @@ execute as @e[tag=sp.particle] at @s run function sapphire:particle_generator/pa
 execute as @e[type=minecraft:squid,tag=sp.spawnsquid] at @s run function sapphire:particle_generator/placement
 
 #crafting lightning rod
-execute as @a[scores={sp.craftlight=1..}] run give @s minecraft:armor_stand{RepairCost:99999999,CanPlaceOn:["minecraft:void_air"],HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:1}],EntityTag:{Small:1b,Tags:["sp.lightning_rod","sp.valid"]},display:{Name:"{\"text\":\"Lightning Rod\",\"color\":\"yellow\",\"italic\":false}"}} 1
+execute as @a[scores={sp.craftlight=1..}] run give @s minecraft:redstone_torch{RepairCost:99999999,CanPlaceOn:["minecraft:void_air"],HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:1}],display:{Name:"{\"text\":\"Lightning Rod\",\"color\":\"yellow\",\"italic\":false}"}} 1
 execute as @a[scores={sp.craftlight=1..}] run scoreboard players remove @s sp.craftlight 1
-execute as @e[tag=sp.lightning_rod,tag=sp.valid,nbt={OnGround:1b}] at @s run function sapphire:lightning_rod/placement
-execute as @e[tag=sp.lr.attractor] at @s run function sapphire:lightning_rod/particle
+execute as @e[tag=sp.lr.attractor] at @s if block ~ ~ ~ redstone_torch run function sapphire:lightning_rod/particle_ground
+execute as @e[tag=sp.lr.attractor] at @s if block ~ ~ ~ redstone_wall_torch run function sapphire:lightning_rod/particle_wall
+execute as @e[tag=sp.lr.attractor] at @s unless block ~ ~ ~ minecraft:redstone_torch unless block ~ ~ ~ minecraft:redstone_wall_torch run function sapphire:lightning_rod/cleanup
+
+##placement-API: lightning_rod
+tag @a[nbt={SelectedItem:{id:"minecraft:redstone_torch",tag:{CanPlaceOn:["minecraft:void_air"],HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:1}]}}}] add sp.lr.pa.tag
+tag @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:redstone_torch",tag:{CanPlaceOn:["minecraft:void_air"],HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:1}]}}]}] add sp.lr.pa.tag
+scoreboard players reset @a[tag=!sp.lr.pa.tag] sp.lr.pa.torch
+execute as @a[tag=sp.lr.pa.tag] at @s run function sapphire:lightning_rod/effects
+#calling placement
+execute as @e[tag=sp.R.torch] at @s run function sapphire:lightning_rod/placement
 
 ##Possible in 1.14 weather_detector
 #data merge entity @e {DeathLootTable:"sapphire:weather"}

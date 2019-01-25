@@ -20,5 +20,5 @@ tag @a[nbt={SelectedItem:{id:"minecraft:light_blue_stained_glass",tag:{Enchantme
 tag @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:light_blue_stained_glass",tag:{Enchantments:[{lvl:1s,id:"minecraft:binding_curse"},{lvl:1s,id:"minecraft:vanishing_curse"}]}}]}] add sp.glass_block
 scoreboard players reset @a[tag=!sp.glass_block] sp.glass_placed
 execute as @a[tag=sp.glass_block] at @s run function limitedlife:sapphire/sapphire_glassblock/effects
-#calling sad_orchid:placement
+#calling placement
 execute as @e[tag=sp.R.glass] at @s run function limitedlife:sapphire/sapphire_glassblock/placement

@@ -6,8 +6,8 @@ execute as @e[tag=sp.noore] at @s run kill @e[tag=sp.oredrop,distance=..128]
 execute as @a[tag=sp.deep_ocean] at @s unless entity @e[tag=sp.sapphire_main,tag=!sp.so.placed,distance=..320] unless entity @e[tag=sp.oredrop,tag=!valid,distance=..320] unless entity @e[tag=sp.noore,distance=..320] run function sapphire:generator/revoke_deep_ocean
 #call cleanup
 execute as @e[tag=sp.sapphire_ore] at @s unless block ~ ~ ~ minecraft:redstone_ore run function sapphire:sapphire_ore/cleanup
-#call sapphire_ore
-execute as @e[tag=sp.sapphire_main] at @s if block ~ ~ ~ minecraft:redstone_ore run function sapphire:sapphire_ore/sapphire_ore
+#call sapphire_main: remove SU-tag from sapphire_ore
+execute as @e[tag=sp.sapphire_main] at @s if block ~ ~ ~ minecraft:redstone_ore run function sapphire:sapphire_ore/sapphire_main
 
 ##placement-API: sapphire_ore
 tag @a[nbt={SelectedItem:{id:"minecraft:redstone_ore",tag:{Enchantments:[{id:"minecraft:unbreaking",lvl:1}],RepairCost:99999999,CanPlaceOn:["minecraft:void_air"],HideFlags:17}}}] add sp.so.pa.tag

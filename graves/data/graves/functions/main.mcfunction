@@ -27,11 +27,16 @@ scoreboard players set @p[scores={g.deaths=1..}] g.deaths 0
 #call skulldrop "Skull Dust" g.drop:
 execute as @e[tag=g.dropskull] at @s run function graves:skulldrop
 
-#"Skull Dust" as bone meal
-execute as @a[tag=!g.usebonemeal,nbt={SelectedItem:{id:"minecraft:bone_meal",tag:{RepairCost:99999999,CanPlaceOn:["minecraft:void_air"],HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:1}]}}}] run tag @s add g.usebonemeal
-#call usebonemeal
-execute at @a[tag=g.usebonemeal,scores={g.usebonemeal=1..}] run function graves:usebonemeal
+##placement-API: Skull Dust as bone meal
+#kill too many SU-entities
+execute as @e[tag=g.SU.sapling] run kill @e[tag=g.SU.sapling,distance=0.5..3]
+execute as @e[tag=g.SU.sapling] at @s run particle minecraft:barrier ~ ~0.5 ~ 0 0 0 1 1 normal
+#tagging
+tag @a[tag=!g.usebonemeal,nbt={SelectedItem:{id:"minecraft:bone_meal",tag:{RepairCost:99999999,CanPlaceOn:["minecraft:void_air"],HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:1}]}}}] add g.usebonemeal
+tag @a[tag=!g.usebonemeal,nbt={Inventory:[{Slot:-106b,id:"minecraft:bone_meal",tag:{RepairCost:99999999,CanPlaceOn:["minecraft:void_air"],HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:1}]}}]}] add g.usebonemeal
+execute as @a[tag=g.usebonemeal] at @s run function graves:usebonemeal/effects
+#calling placement
+execute as @e[tag=g.R.sapling] at @s run function graves:usebonemeal/placement
 scoreboard players reset @a g.usebonemeal
-
-#calling groundgflower.mcfunction: kill g.flowers if OnGround and place random tall_flower
-execute as @e[tag=g.flower,nbt={OnGround:1b}] at @s run function graves:groundgflower
+#calling landed_flower.mcfunction: kill g.flowers if OnGround and place random tall_flower
+execute as @e[tag=g.flower,nbt={OnGround:1b}] at @s run function graves:usebonemeal/landed_flower

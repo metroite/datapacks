@@ -1,4 +1,4 @@
-#kill too many SU-entities
+#kill too many SU-entities (entities that were summoned all at once, the prevention feature inside of the placement-API can't take this into account: fix might be needed (look at graves:usebonemeal/main for possible solution))
 execute as @s[tag=sp.sapphire_glasssetup] run kill @e[tag=sp.sapphire_glasssetup,distance=0.5..3]
 #calling cleanup when sapphire_glass is destroyed
 execute unless block ~ ~ ~ minecraft:light_blue_stained_glass run function limitedlife:sapphire/sapphire_glass/cleanup

@@ -4,18 +4,18 @@
             "item": "minecraft:poisonous_potato"
         },
         "title": {
-            "translate": "Risky Business"
+            "translate": "Poisonous Potato"
         },
         "description": {
-            "translate": "Agree on a deal with a witch"
+            "translate": "Obtained the by witches beloved poisonous potato!"
         },
 		"background": "minecraft:textures/blocks/mossy_cobblestone.png",
         "show_toast": true,
         "announce_to_chat": true,
 		"hidden": true
     },
-	"requirements":[["observer"]],
+	"requirements":[["got_pp"]],
     "criteria": {
-		"observer":{"trigger":"minecraft:impossible"}
+		"got_pp":{"trigger":"minecraft:inventory_changed","conditions":{"items":[{"item":"minecraft:poisonous_potato"}]}}
     }
 }

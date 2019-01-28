@@ -1,0 +1,21 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:cauldron"
+        },
+        "title": {
+            "translate": "Risky Business"
+        },
+        "description": {
+            "translate": "Agreed on a deal with a witch!"
+        },
+		"background": "minecraft:textures/blocks/mossy_cobblestone.png",
+        "show_toast": true,
+        "announce_to_chat": true,
+		"hidden": true
+    },
+	"requirements":[["traded_witch"]],
+    "criteria": {
+		"traded_witch":{"trigger":"minecraft:impossible"}
+    }
+}

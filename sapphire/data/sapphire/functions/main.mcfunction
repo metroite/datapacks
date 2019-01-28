@@ -10,12 +10,13 @@ execute as @e[tag=sp.sapphire_ore] at @s unless block ~ ~ ~ minecraft:redstone_o
 execute as @e[tag=sp.sapphire_main] at @s if block ~ ~ ~ minecraft:redstone_ore run function sapphire:sapphire_ore/sapphire_main
 
 ##placement-API: sapphire_ore
-tag @a[nbt={SelectedItem:{id:"minecraft:redstone_ore",tag:{Enchantments:[{id:"minecraft:unbreaking",lvl:1}],RepairCost:99999999,CanPlaceOn:["minecraft:void_air"],HideFlags:17}}}] add sp.so.pa.tag
-tag @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:redstone_ore",tag:{Enchantments:[{id:"minecraft:unbreaking",lvl:1}],RepairCost:99999999,CanPlaceOn:["minecraft:void_air"],HideFlags:17}}]}] add sp.so.pa.tag
-scoreboard players reset @a[tag=!sp.so.pa.tag] sp.so.pa.ore
+#calling essentials
 execute as @a[tag=sp.so.pa.tag] at @s run function sapphire:sapphire_ore/effects
-#calling placement
 execute as @e[tag=sp.R.ore] at @s run function sapphire:sapphire_ore/placement
+#tagging if item is selected
+tag @a[nbt={SelectedItem:{id:"minecraft:redstone_ore",tag:{Enchantments:[{id:"minecraft:unbreaking",lvl:1}],RepairCost:99999999,CanPlaceOn:["minecraft:void_air"],HideFlags:17}}}] add sp.so.pa.tag
+execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:redstone_ore",tag:{Enchantments:[{id:"minecraft:unbreaking",lvl:1}],RepairCost:99999999,CanPlaceOn:["minecraft:void_air"],HideFlags:17}}]}] unless entity @s[nbt={SelectedItem:{id:"minecraft:redstone_ore"}}] run tag @s add sp.so.pa.tag
+scoreboard players reset @a[tag=!sp.so.pa.tag] sp.so.pa.ore
 
 #feature-compatibility: limitedlife
 function limitedlife:sapphire/main
@@ -33,12 +34,13 @@ execute as @e[tag=sp.lr.attractor] at @s if block ~ ~ ~ redstone_wall_torch run 
 execute as @e[tag=sp.lr.attractor] at @s unless block ~ ~ ~ minecraft:redstone_torch unless block ~ ~ ~ minecraft:redstone_wall_torch run function sapphire:lightning_rod/cleanup
 
 ##placement-API: lightning_rod
-tag @a[nbt={SelectedItem:{id:"minecraft:redstone_torch",tag:{CanPlaceOn:["minecraft:void_air"],HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:1}]}}}] add sp.lr.pa.tag
-tag @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:redstone_torch",tag:{CanPlaceOn:["minecraft:void_air"],HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:1}]}}]}] add sp.lr.pa.tag
-scoreboard players reset @a[tag=!sp.lr.pa.tag] sp.lr.pa.torch
+#calling essentials
 execute as @a[tag=sp.lr.pa.tag] at @s run function sapphire:lightning_rod/effects
-#calling placement
 execute as @e[tag=sp.R.torch] at @s run function sapphire:lightning_rod/placement
+#tagging if item is selected
+tag @a[nbt={SelectedItem:{id:"minecraft:redstone_torch",tag:{CanPlaceOn:["minecraft:void_air"],HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:1}]}}}] add sp.lr.pa.tag
+execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:redstone_torch",tag:{CanPlaceOn:["minecraft:void_air"],HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:1}]}}]}] unless entity @s[nbt={SelectedItem:{id:"minecraft:redstone_torch"}}] run tag @s add sp.lr.pa.tag
+scoreboard players reset @a[tag=!sp.lr.pa.tag] sp.lr.pa.torch
 
 ##Possible in 1.14 weather_detector
 #data merge entity @e {DeathLootTable:"sapphire:weather"}

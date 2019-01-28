@@ -16,9 +16,10 @@ execute as @e[tag=sp.spawnsquid,tag=sp.valid] at @s run function limitedlife:sap
 execute as @a[tag=!sp.sapphireglass,nbt={Inventory:[{Slot:-106b,id:"minecraft:light_blue_stained_glass",tag:{Enchantments:[{lvl:1s,id:"minecraft:binding_curse"},{lvl:1s,id:"minecraft:vanishing_curse"}]}}]}] at @s run function limitedlife:sapphire/sapphire_glass/sapphireglass
 
 ####placement-API for the sapphire_glass
-tag @a[nbt={SelectedItem:{id:"minecraft:light_blue_stained_glass",tag:{Enchantments:[{lvl:1s,id:"minecraft:binding_curse"},{lvl:1s,id:"minecraft:vanishing_curse"}]}}}] add sp.glass_block
-tag @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:light_blue_stained_glass",tag:{Enchantments:[{lvl:1s,id:"minecraft:binding_curse"},{lvl:1s,id:"minecraft:vanishing_curse"}]}}]}] add sp.glass_block
-scoreboard players reset @a[tag=!sp.glass_block] sp.glass_placed
+#calling essentials
 execute as @a[tag=sp.glass_block] at @s run function limitedlife:sapphire/sapphire_glassblock/effects
-#calling placement
 execute as @e[tag=sp.R.glass] at @s run function limitedlife:sapphire/sapphire_glassblock/placement
+#tagging if item is selected
+tag @a[nbt={SelectedItem:{id:"minecraft:light_blue_stained_glass",tag:{Enchantments:[{lvl:1s,id:"minecraft:binding_curse"},{lvl:1s,id:"minecraft:vanishing_curse"}]}}}] add sp.glass_block
+execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:light_blue_stained_glass",tag:{Enchantments:[{lvl:1s,id:"minecraft:binding_curse"},{lvl:1s,id:"minecraft:vanishing_curse"}]}}]}] unless entity @s[nbt={SelectedItem:{id:"minecraft:light_blue_stained_glass"}}] run tag @s add sp.glass_block
+scoreboard players reset @a[tag=!sp.glass_block] sp.glass_placed

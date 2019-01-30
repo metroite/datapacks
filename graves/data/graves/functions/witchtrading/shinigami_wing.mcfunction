@@ -4,8 +4,8 @@ execute at @s[tag=!wt.P.shinigami_wing.SU] run particle minecraft:large_smoke ~ 
 tag @s[tag=!wt.P.shinigami_wing.SU] add wt.P.shinigami_wing.SU
 
 #particle effects
-execute at @s[nbt={FallFlying:1b}] positioned ^1 ^ ^ run particle minecraft:dust 0.2314 0.2314 0.25098 3 ~ ~1 ~ 0 0 0 0.5 1 force
-execute at @s[nbt={FallFlying:1b}] positioned ^-1 ^ ^ run particle minecraft:dust 0.2314 0.2314 0.25098 3 ~ ~1 ~ 0 0 0 0.5 1 force
+execute at @s[nbt={FallFlying:1b}] anchored eyes run particle minecraft:dust 0.2314 0.2314 0.25098 3 ^1 ^ ^1 0 0 0 0.5 1 force
+execute at @s[nbt={FallFlying:1b}] anchored eyes run particle minecraft:dust 0.2314 0.2314 0.25098 3 ^-1 ^ ^1 0 0 0 0.5 1 force
 execute at @s[nbt={FallFlying:0b}] if entity @p[scores={wt.rng=6..11}] positioned ^ ^ ^-0.6 run particle minecraft:dust 0.2314 0.2314 0.25098 3 ~ ~0.7 ~ 0.2 0.4 0.05 0.5 1 force
 
 #calling shinigami_wing_kill: kill if elytra is removed

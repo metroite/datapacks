@@ -26,11 +26,11 @@ scoreboard players set @p[scores={g.deaths=1..}] g.deaths 0
 
 #call skulldrop "Skull Dust" g.drop:
 execute as @e[tag=g.dropskull] at @s run function graves:skulldrop
+#"Skull Dust" sapling bone mealing
+execute as @e[tag=g.SU.sapling] at @s run function graves:usebonemeal/sapling_init
+execute as @e[tag=g.skull_dusty] at @s run function graves:usebonemeal/sapling_growth
 
 ##placement-API: Skull Dust as bone meal
-#kill too many SU-entities (this has to be moved if Skull Dust trees are implemented)
-execute as @e[tag=g.SU.sapling] run kill @e[tag=g.SU.sapling,distance=0.5..3]
-execute as @e[tag=g.SU.sapling] at @s run particle minecraft:barrier ~ ~0.5 ~ 0 0 0 1 1 normal
 #calling essentials
 execute as @a[tag=g.usebonemeal] at @s run function graves:usebonemeal/effects
 execute as @e[tag=g.R.sapling] at @s run function graves:usebonemeal/placement

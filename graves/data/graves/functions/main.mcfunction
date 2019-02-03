@@ -2,7 +2,7 @@
 execute as @p[limit=1,sort=random] unless score @s g.deaths >= ZERO g.deaths run scoreboard players add @s g.deaths 0
 
 #compatibility to limitedlife (further compatibility in function limitedlife:graves)
-scoreboard players reset @a[scores={ll.deaths=10..}] g.deaths
+scoreboard players reset @a[scores={ll.deaths=10..},dx=5,dy=5,dz=-5] g.deaths
 #compatibility to loud2x2tnt
 function loud2x2tnt:graves
 
@@ -10,8 +10,8 @@ function loud2x2tnt:graves
 execute as @a[scores={g.deaths=1..}] at @s run function graves:direction_detect
 
 #calling grave.mcfunction
-execute as @e[tag=g.drop,tag=!g.skull,nbt={OnGround:1b}] at @s unless block ~ ~-0.5 ~ #graves:generatable run function graves:grave
-execute as @e[tag=g.drop,tag=!g.skull,nbt={OnGround:1b}] at @s if block ~ ~-0.5 ~ #graves:generatable positioned ~ ~1 ~ run function graves:grave
+execute as @e[tag=g.drop,tag=!g.skull,nbt={OnGround:1b}] at @s unless block ~ ~-0.1 ~ #graves:nocollision run function graves:grave
+execute as @e[tag=g.drop,tag=!g.skull,nbt={OnGround:1b}] at @s if block ~ ~-0.1 ~ #graves:nocollision positioned ~ ~1 ~ run function graves:grave
 
 #killing leftover armor_stands
 execute at @e[tag=g.bone,nbt={HurtTime:0s}] run summon minecraft:item ~ ~1.42 ~ {Motion:[0.0d,0.25d,0.0d],Item:{id:"minecraft:bone",Count:1}}

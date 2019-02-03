@@ -13,10 +13,14 @@ execute as @s[tag=ll.faneast] if block ~ ~ ~ minecraft:observer[powered=true] po
 execute as @s[tag=ll.fanup] if block ~ ~ ~ minecraft:observer[powered=true] positioned ~-0.5 ~-5 ~-0.5 run data merge entity @e[type=!minecraft:area_effect_cloud,dy=5,limit=1,sort=nearest] {Motion:[0.0d,-0.5d,0.0d]}
 execute as @s[tag=ll.fandown] if block ~ ~ ~ minecraft:observer[powered=true] positioned ~-0.5 ~ ~-0.5 run data merge entity @e[type=!minecraft:area_effect_cloud,dy=5,limit=1,sort=nearest] {Motion:[0.0d,0.5d,0.0d]}
 
-execute as @s[tag=ll.fansouth] if block ~ ~ ~ minecraft:observer[powered=true] positioned ~-0.5 ~ ~-0.5 as @a[gamemode=!spectator,dz=-5,limit=1,sort=nearest] at @s run function limitedlife:ventilators/collision/collision_south
-execute as @s[tag=ll.fanwest] if block ~ ~ ~ minecraft:observer[powered=true] positioned ~-0.5 ~ ~-0.5 as @a[gamemode=!spectator,dx=5,limit=1,sort=nearest] at @s run function limitedlife:ventilators/collision/collision_west
-execute as @s[tag=ll.fannorth] if block ~ ~ ~ minecraft:observer[powered=true] positioned ~-0.5 ~ ~-0.5 as @a[gamemode=!spectator,dz=5,limit=1,sort=nearest] at @s run function limitedlife:ventilators/collision/collision_north
-execute as @s[tag=ll.faneast] if block ~ ~ ~ minecraft:observer[powered=true] positioned ~-0.5 ~ ~-0.5 as @a[gamemode=!spectator,dx=-5,limit=1,sort=nearest] at @s run function limitedlife:ventilators/collision/collision_east
+execute as @s[tag=ll.fansouth] if block ~ ~ ~ minecraft:observer[powered=true] positioned ~-0.5 ~ ~-0.5 as @a[gamemode=!spectator,dz=-5,limit=1,sort=nearest] at @s if block ~ ~ ~-0.4 #limitedlife:nocollision if block ~ ~1 ~-0.4 #limitedlife:nocollision run tp @s ~ ~ ~-0.1
+#function limitedlife:ventilators/collision/collision_south
+execute as @s[tag=ll.fanwest] if block ~ ~ ~ minecraft:observer[powered=true] positioned ~-0.5 ~ ~-0.5 as @a[gamemode=!spectator,dx=5,limit=1,sort=nearest] at @s if block ~0.4 ~ ~ #limitedlife:nocollision if block ~0.4 ~1 ~ #limitedlife:nocollision run tp @s ~0.1 ~ ~
+#function limitedlife:ventilators/collision/collision_west
+execute as @s[tag=ll.fannorth] if block ~ ~ ~ minecraft:observer[powered=true] positioned ~-0.5 ~ ~-0.5 as @a[gamemode=!spectator,dz=5,limit=1,sort=nearest] at @s if block ~ ~ ~0.4 #limitedlife:nocollision if block ~ ~1 ~0.4 #limitedlife:nocollision run tp @s ~ ~ ~0.1
+#function limitedlife:ventilators/collision/collision_north
+execute as @s[tag=ll.faneast] if block ~ ~ ~ minecraft:observer[powered=true] positioned ~-0.5 ~ ~-0.5 as @a[gamemode=!spectator,dx=-5,limit=1,sort=nearest] at @s if block ~-0.4 ~ ~ #limitedlife:nocollision if block ~-0.4 ~1 ~ #limitedlife:nocollision run tp @s ~-0.1 ~ ~
+#function limitedlife:ventilators/collision/collision_east
 execute as @s[tag=ll.fanup] if block ~ ~ ~ minecraft:observer[powered=true] positioned ~-0.5 ~-5 ~-0.5 run effect give @a[gamemode=!spectator,dy=5,limit=1,sort=nearest,nbt={OnGround:0b}] minecraft:levitation 1 220 true
 execute as @s[tag=ll.fandown] if block ~ ~ ~ minecraft:observer[powered=true] positioned ~-0.5 ~ ~-0.5 run effect give @a[gamemode=!spectator,dy=5,limit=1,sort=nearest] minecraft:levitation 1 15 true
 

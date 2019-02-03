@@ -1,6 +1,8 @@
 #g.deaths
 execute as @p[limit=1,sort=random] unless score @s g.deaths >= ZERO g.deaths run scoreboard players add @s g.deaths 0
 
+#compatibility to limitedlife (further compatibility in function limitedlife:graves)
+scoreboard players reset @a[scores={ll.deaths=10..}] g.deaths
 #compatibility to loud2x2tnt
 function loud2x2tnt:graves
 

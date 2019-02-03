@@ -23,7 +23,7 @@ More useful information can be found inside of every datapack ([above](https://g
 ### To-Do-List:
 
 - [X] placement-API: implementation and improvements
-- [ ] graves: big trees using "Skull Dust" on saplings
+- [X] graves: big trees using "Skull Dust" on saplings
 - [ ] hurtfulhostiles: buff hostile entities
 - [ ] cauldronbrewing: new potions
 - [ ] meteorites: occasional event

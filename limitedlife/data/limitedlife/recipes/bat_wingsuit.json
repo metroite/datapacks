@@ -1,9 +1,9 @@
 {
     "type": "crafting_shaped",
     "pattern": [
-        " M ",
-        "BMB",
-        "BUB"
+        " B ",
+        "MBM",
+        "MUM"
     ],
     "key": {
         "B": {

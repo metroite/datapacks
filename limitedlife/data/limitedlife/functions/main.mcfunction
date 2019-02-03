@@ -48,4 +48,5 @@ execute as @a[scores={ll.craftbatwing=1..}] run give @s minecraft:elytra{Damage:
 execute as @a[scores={ll.craftbatwing=1..}] run scoreboard players remove @s ll.craftbatwing 1
 #calling batwingsuit
 execute as @a[nbt={FallFlying:1b,Inventory:[{Slot:102b,id:"minecraft:elytra",Count:1b,tag:{HideFlags:16,RepairCost:99999999,CanPlaceOn:["minecraft:void_air"]}}]}] at @s run function limitedlife:items/batwingsuit
+execute as @a[tag=ll.batwingflap] at @s run function limitedlife:items/batwingsuit
 scoreboard players reset @a ll.batwingflap

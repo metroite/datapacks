@@ -14,21 +14,18 @@ summon area_effect_cloud ~-1 ~2 ~-2 {Tags:["g.brownshroom","g.SU.mushroom"],Dura
 summon area_effect_cloud ~-2 ~2 ~1 {Tags:["g.brownshroom","g.SU.mushroom"],Duration:1}
 summon area_effect_cloud ~-2 ~2 ~ {Tags:["g.spreadshroom","g.brownshroom","g.SU.mushroom"],Duration:1}
 summon area_effect_cloud ~-2 ~2 ~-1 {Tags:["g.brownshroom","g.SU.mushroom"],Duration:1}
-summon area_effect_cloud ~1 ~2 ~1 {Tags:["g.brownshroom","g.SU.mushroom"],Duration:1}
-summon area_effect_cloud ~-1 ~2 ~-1 {Tags:["g.brownshroom","g.SU.mushroom"],Duration:1}
-summon area_effect_cloud ~-1 ~2 ~1 {Tags:["g.brownshroom","g.SU.mushroom"],Duration:1}
-summon area_effect_cloud ~1 ~2 ~-1 {Tags:["g.brownshroom","g.SU.mushroom"],Duration:1}
-summon area_effect_cloud ~ ~2 ~3 {Tags:["g.brownshroom","g.SU.mushroom"],Duration:1}
-summon area_effect_cloud ~ ~2 ~-3 {Tags:["g.brownshroom","g.SU.mushroom"],Duration:1}
-summon area_effect_cloud ~3 ~2 ~ {Tags:["g.brownshroom","g.SU.mushroom"],Duration:1}
-summon area_effect_cloud ~-3 ~2 ~ {Tags:["g.brownshroom","g.SU.mushroom"],Duration:1}
-summon area_effect_cloud ~ ~ ~ {Tags:["g.brownshroom","g.SU.mushroom","g.SU.T.mushroom"],Duration:1}
-summon area_effect_cloud ~ ~ ~ {Tags:["g.brownshroom","g.SU.mushroom","g.SU.T.mushroom"],Duration:1}
-summon area_effect_cloud ~ ~ ~ {Tags:["g.brownshroom","g.SU.mushroom","g.SU.T.mushroom"],Duration:1}
-summon area_effect_cloud ~ ~ ~ {Tags:["g.brownshroom","g.SU.mushroom","g.SU.T.mushroom"],Duration:1}
-summon area_effect_cloud ~ ~ ~ {Tags:["g.brownshroom","g.SU.mushroom","g.SU.T.mushroom"],Duration:1}
-summon area_effect_cloud ~ ~ ~ {Tags:["g.brownshroom","g.SU.mushroom","g.SU.T.mushroom"],Duration:1}
-summon area_effect_cloud ~ ~ ~ {Tags:["g.brownshroom","g.SU.mushroom","g.SU.T.mushroom"],Duration:1}
+summon area_effect_cloud ~1 ~2 ~1 {Tags:["g.spreadshroom","g.brownshroom","g.SU.mushroom"],Duration:1}
+summon area_effect_cloud ~-1 ~2 ~-1 {Tags:["g.spreadshroom","g.brownshroom","g.SU.mushroom"],Duration:1}
+summon area_effect_cloud ~-1 ~2 ~1 {Tags:["g.spreadshroom","g.brownshroom","g.SU.mushroom"],Duration:1}
+summon area_effect_cloud ~1 ~2 ~-1 {Tags:["g.spreadshroom","g.brownshroom","g.SU.mushroom"],Duration:1}
+summon area_effect_cloud ~ ~2 ~3 {Tags:["g.spreadshroom","g.brownshroom","g.SU.mushroom"],Duration:1}
+summon area_effect_cloud ~ ~2 ~-3 {Tags:["g.spreadshroom","g.brownshroom","g.SU.mushroom"],Duration:1}
+summon area_effect_cloud ~3 ~2 ~ {Tags:["g.spreadshroom","g.brownshroom","g.SU.mushroom"],Duration:1}
+summon area_effect_cloud ~-3 ~2 ~ {Tags:["g.spreadshroom","g.brownshroom","g.SU.mushroom"],Duration:1}
+summon area_effect_cloud ~-3 ~2 ~-3 {Tags:["g.spreadshroom","g.brownshroom","g.SU.mushroom"],Duration:1}
+summon area_effect_cloud ~3 ~2 ~-3 {Tags:["g.spreadshroom","g.brownshroom","g.SU.mushroom"],Duration:1}
+summon area_effect_cloud ~-3 ~2 ~3 {Tags:["g.spreadshroom","g.brownshroom","g.SU.mushroom"],Duration:1}
+summon area_effect_cloud ~3 ~2 ~-3 {Tags:["g.spreadshroom","g.brownshroom","g.SU.mushroom"],Duration:1}
 summon area_effect_cloud ~ ~ ~ {Tags:["g.brownshroom","g.SU.mushroom","g.SU.T.mushroom"],Duration:1}
 summon area_effect_cloud ~ ~ ~ {Tags:["g.brownshroom","g.SU.mushroom","g.SU.T.mushroom"],Duration:1}
 summon area_effect_cloud ~ ~ ~ {Tags:["g.brownshroom","g.SU.mushroom","g.SU.T.mushroom"],Duration:1}
@@ -36,5 +33,5 @@ summon area_effect_cloud ~ ~ ~ {Tags:["g.brownshroom","g.SU.mushroom","g.SU.T.mu
 summon area_effect_cloud ~ ~ ~ {Tags:["g.brownshroom","g.SU.mushroom","g.SU.T.mushroom"],Duration:1}
 summon area_effect_cloud ~ ~ ~ {Tags:["g.brownshroom","g.SU.mushroom","g.SU.T.mushroom"],Duration:1}
 
-execute as @e[tag=g.SU.mushroom,tag=g.brownshroom,limit=5,sort=random,distance=..5] at @s[tag=!g.SU.T.mushroom] run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,Tags:["g.mushroom","g.brownshroom"],NoGravity:0b,NoBasePlate:1b,ShowArms:1b,DisabledSlots:2039327}
+execute as @e[tag=g.SU.mushroom,tag=g.brownshroom,limit=3,sort=random,distance=..5] at @s[tag=!g.SU.T.mushroom] run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,Tags:["g.mushroom","g.brownshroom"],NoGravity:0b,NoBasePlate:1b,ShowArms:1b,DisabledSlots:2039327}
 execute at @e[tag=g.spreadshroom] run tag @e[tag=g.mushroom,limit=1,distance=..0.5] add g.spreadshroom

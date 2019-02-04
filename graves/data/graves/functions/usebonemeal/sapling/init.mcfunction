@@ -11,4 +11,3 @@ execute if block ~ ~ ~ minecraft:dark_oak_sapling run summon minecraft:item ~ ~ 
 execute if block ~ ~ ~ minecraft:red_mushroom run function graves:usebonemeal/sapling/mushroom/red_spread
 execute if block ~ ~ ~ minecraft:brown_mushroom run function graves:usebonemeal/sapling/mushroom/brown_spread
 execute if block ~ ~ ~ #graves:mushroom as @e[tag=g.mushroom] run tag @s add g.spreadshroom
-execute if block ~ ~ ~ #graves:mushroom run say hi

@@ -29,8 +29,8 @@ scoreboard players set @p[scores={g.deaths=1..}] g.deaths 0
 #call skulldrop "Skull Dust" g.drop:
 execute as @e[tag=g.dropskull] at @s run function graves:skulldrop
 #"Skull Dust" sapling bone mealing
-execute as @e[tag=g.SU.sapling] at @s run function graves:usebonemeal/sapling_init
-execute as @e[tag=g.skull_dusty] at @s run function graves:usebonemeal/sapling_growth
+execute as @e[tag=g.SU.sapling] at @s run function graves:usebonemeal/sapling/init
+execute as @e[tag=g.skull_dusty] at @s run function graves:usebonemeal/sapling/growth
 
 ##placement-API: Skull Dust as bone meal
 #calling essentials

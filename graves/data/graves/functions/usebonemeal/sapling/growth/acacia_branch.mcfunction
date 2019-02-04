@@ -15,3 +15,6 @@ execute at @s[tag=g.acacia_north] run fill ~ ~ ~ ~ ~ ~ minecraft:stripped_acacia
 execute at @s[tag=g.acacia_east] run fill ~ ~ ~ ~ ~ ~ minecraft:stripped_acacia_wood replace minecraft:air
 execute at @s[tag=g.acacia_south] run fill ~ ~ ~ ~ ~ ~ minecraft:stripped_acacia_wood replace minecraft:air
 execute at @s[tag=g.acacia_west] run fill ~ ~ ~ ~ ~ ~ minecraft:stripped_acacia_wood replace minecraft:air
+
+execute at @s[tag=g.acacia_branched] run fill ~4 ~ ~4 ~-4 ~2 ~-4 minecraft:acacia_leaves[persistent=false] replace minecraft:air
+kill @s[tag=g.acacia_branched]

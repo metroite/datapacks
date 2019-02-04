@@ -1,5 +1,8 @@
 #initial effects (would be better if I could specifically take the laughing sound in minecraft:entity.witch.ambient)
-execute at @s[tag=!wt.P.shinigami_wing.SU] run playsound minecraft:entity.bat.loop voice @a[distance=..16] ~ ~ ~ 2 0.5
+execute at @s[tag=!wt.P.shinigami_wing.SU] run playsound minecraft:entity.bat.loop voice @a[distance=..16] ~ ~ ~ 0.5 0.5
+execute at @s[tag=!wt.P.shinigami_wing.SU] run playsound minecraft:entity.vex.charge voice @a[distance=..16] ~ ~ ~ 2 1.2
+execute at @s[tag=!wt.P.shinigami_wing.SU] run playsound minecraft:entity.vex.charge voice @a[distance=..16] ~ ~ ~ 2 1.2
+execute at @s[tag=!wt.P.shinigami_wing.SU] run playsound minecraft:entity.vex.charge voice @a[distance=..16] ~ ~ ~ 2 1.2
 execute at @s[tag=!wt.P.shinigami_wing.SU] run particle minecraft:large_smoke ~ ~1 ~ 0 0 0 0.5 50 force
 tag @s[tag=!wt.P.shinigami_wing.SU] add wt.P.shinigami_wing.SU
 

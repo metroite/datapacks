@@ -1,10 +1,12 @@
 #effects
 particle minecraft:large_smoke ~ ~1 ~ 0 0 0 0.5 50 force
-playsound minecraft:entity.witch.ambient player @a[distance=..16] ~ ~ ~ 2 2
-playsound minecraft:entity.witch.ambient player @a[distance=..16] ~ ~ ~ 2 2
-playsound minecraft:entity.witch.ambient player @a[distance=..16] ~ ~ ~ 2 2
+playsound minecraft:entity.vex.death voice @a[distance=..16] ~ ~ ~ 2 1.2
+playsound minecraft:entity.vex.hurt voice @a[distance=..16] ~ ~ ~ 2 1.2
 #end loop
 replaceitem entity @s armor.chest air 1
+execute if entity @p[scores={wt.rng=1}] run playsound minecraft:entity.vex.charge voice @a[distance=..16] ~ ~ ~ 2 1.2
+execute if entity @p[scores={wt.rng=1}] run playsound minecraft:entity.vex.charge voice @a[distance=..16] ~ ~ ~ 2 1.2
+execute if entity @p[scores={wt.rng=1}] run playsound minecraft:entity.vex.charge voice @a[distance=..16] ~ ~ ~ 2 1.2
 execute if entity @p[scores={wt.rng=1}] run tag @s remove wt.P.shinigami_wing
 execute if entity @p[scores={wt.rng=1}] run tag @s remove wt.P.shinigami_wing.SU
 #kill

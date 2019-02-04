@@ -20,8 +20,9 @@ tag @a[scores={ll.deaths=1..,ll.health=20,ll.sincedeath=..100}] add ll.cured
 #calling curing
 execute as @e[type=minecraft:item,tag=!ll.blocked,nbt={Item:{Count:1b,id:"minecraft:bat_spawn_egg",tag:{HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:2}],RepairCost:99999999,CanPlaceOn:["minecraft:void_air"]}}}] at @s if block ~ ~ ~ minecraft:cauldron[level=3] positioned ~ ~1 ~ if entity @e[type=minecraft:end_crystal,limit=1,sort=nearest,distance=..1,tag=!ll.tired] run tag @s add ll.healingredient
 execute as @e[tag=ll.healingredient] at @s positioned ~ ~1 ~ run function limitedlife:curing/curing
-#make sure ll.beam entities die
-execute as @e[type=minecraft:armor_stand,tag=ll.beam] at @s unless entity @e[tag=ll.bat,limit=1,sort=nearest,distance=..64] run kill @s
+#make sure ll.bat entities die and players should also lose the ll.bat tag
+execute as @e[type=minecraft:bat,tag=ll.bat] at @s unless entity @e[tag=ll.beam,distance=..3] run kill @s
+execute as @a[tag=ll.bat] at @s unless entity @e[tag=ll.beam,distance=..5] run tag @s remove ll.bat
 #calling curedvoid
 execute as @a[tag=ll.curedvoid] at @s run function limitedlife:curing/curedvoid
 execute unless entity @a[tag=ll.curedvoid] run kill @e[type=minecraft:bat,tag=ll.curedvoid]

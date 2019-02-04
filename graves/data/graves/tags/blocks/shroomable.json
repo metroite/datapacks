@@ -1,0 +1,27 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:grass_block",
+    "minecraft:dirt",
+    "minecraft:gravel",
+    "minecraft:stone",
+    "minecraft:coarse_dirt",
+    "minecraft:podzol",
+    "minecraft:mycelium",
+    "minecraft:andesite",
+    "minecraft:diorite",
+    "minecraft:granite",
+    "minecraft:cobblestone",
+    "minecraft:gold_ore",
+    "minecraft:iron_ore",
+    "minecraft:coal_ore",
+    "minecraft:lapis_ore",
+    "minecraft:diamond_ore",
+    "minecraft:emerald_ore",
+    "minecraft:redstone_ore",
+    "minecraft:netherrack",
+    "minecraft:soul_sand",
+    "minecraft:nether_quartz_ore",
+    "minecraft:mossy_cobblestone"
+  ]
+}

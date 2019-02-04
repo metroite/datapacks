@@ -42,3 +42,6 @@ execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:bone_meal",tag:{RepairCo
 scoreboard players reset @a g.usebonemeal
 #calling landed_flower.mcfunction: kill g.flowers if OnGround and place random tall_flower
 execute as @e[tag=g.flower,nbt={OnGround:1b}] at @s run function graves:usebonemeal/landed_flower
+
+#mushroom spreads if it hits the ground
+execute as @e[tag=g.mushroom] at @s run function graves:usebonemeal/sapling/mushroom/placement

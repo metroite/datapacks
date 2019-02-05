@@ -8,3 +8,5 @@ execute as @s[scores={g.usebonemeal=1..}] run tp @e[tag=g.R.sapling,type=minecra
 execute at @s[scores={g.usebonemeal=1..}] as @e[tag=g.R.sapling,sort=nearest,limit=1] at @s run tp @s ~ ~1.5 ~
 #further grass related mealing
 execute as @s[scores={g.usebonemeal=1..}] run function graves:usebonemeal/tall_grass
+#advancement granting
+execute as @s[scores={g.usebonemeal=1..}] run advancement grant @s only graves:use_skull_dust

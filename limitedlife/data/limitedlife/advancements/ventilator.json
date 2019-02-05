@@ -1,0 +1,25 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:observer"
+        },
+        "title": {
+            "translate": "Ventilators"
+        },
+        "description": {
+            "translate": "Empower an observer with a Bat Wing, it might push you"
+        },
+        "show_toast": true,
+        "announce_to_chat": true
+    },
+	"requirements":[["ventilator"]],
+    "parent":"limitedlife:bat_wing",
+    "criteria": {
+		"ventilator":{"trigger":"minecraft:impossible"}
+  },
+  "rewards": {
+    "recipes": [
+        "limitedlife:bat_wingsuit"
+    ]
+  }
+}

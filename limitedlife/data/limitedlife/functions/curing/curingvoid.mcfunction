@@ -3,6 +3,7 @@ scoreboard players remove @s ll.deaths 1
 tag @s add ll.cured
 #actual tp-command
 execute at @e[tag=ll.curedvoid,type=minecraft:bat,limit=1] run tp @s ~ ~ ~
+execute at @e[scores={ll.cooking=3000},type=minecraft:item,tag=ll.healingredient,limit=1] at @e[tag=ll.bat,limit=1,sort=nearest,type=minecraft:bat] run advancement grant @p[tag=!ll.bat,distance=..64] only limitedlife:revive_player
 execute at @e[scores={ll.cooking=3000},type=minecraft:item,tag=ll.healingredient,limit=1] at @e[tag=ll.bat,limit=1,sort=nearest,type=minecraft:bat] run tp @s ~ ~ ~
 effect give @s minecraft:resistance 10 255 true
 effect give @s minecraft:glowing 10 0 true

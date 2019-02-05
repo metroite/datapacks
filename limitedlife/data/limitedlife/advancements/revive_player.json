@@ -1,0 +1,21 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:ender_pearl"
+        },
+        "title": {
+            "translate": "Came to life"
+        },
+        "description": {
+            "translate": "Bring someone forever lost back to life... by messing up?"
+        },
+        "show_toast": true,
+        "frame": "challenge",
+        "announce_to_chat": true
+    },
+	"requirements":[["revive_player"]],
+    "parent":"limitedlife:heal_max_health",
+    "criteria": {
+      "revive_player":{"trigger":"minecraft:impossible"}
+  }
+}

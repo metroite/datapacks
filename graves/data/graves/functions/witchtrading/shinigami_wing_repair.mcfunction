@@ -3,5 +3,7 @@ replaceitem entity @s armor.chest minecraft:elytra{display:{Name:"{\"text\":\"Sh
 execute at @e[type=minecraft:item,distance=..6,limit=1,sort=nearest,nbt={Item:{id:"minecraft:paper",Count:1b,tag:{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}],RepairCost:99999999,display:{Name:"{\"text\":\"Scroll of Shinigami\",\"color\":\"yellow\",\"italic\":false}",Lore:["\"Drop this to me and come closer,","I will take care of your Shinigami Wings\""]}}}}] run particle minecraft:totem_of_undying ~ ~0.75 ~ 0 0 0 0.2 10 force
 kill @e[type=minecraft:item,distance=..6,limit=1,sort=nearest,nbt={Item:{id:"minecraft:paper",Count:1b,tag:{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}],RepairCost:99999999,display:{Name:"{\"text\":\"Scroll of Shinigami\",\"color\":\"yellow\",\"italic\":false}",Lore:["\"Drop this to me and come closer,","I will take care of your Shinigami Wings\""]}}}}]
 execute at @s run particle minecraft:large_smoke ~ ~1 ~ 0 0 0 0.5 50 force
-playsound minecraft:entity.witch.ambient player @a[distance=..16] ~ ~ ~ 1 2
+advancement grant @s only graves:shinigami_scroll
+execute at @s run playsound minecraft:entity.witch.ambient player @a[distance=..16] ~ ~ ~ 1 1
 execute at @s run playsound minecraft:entity.bat.loop voice @a[distance=..16] ~ ~ ~ 2 0.5
+execute at @s run playsound mminecraft:entity.villager.yes voice @a[distance=..16] ~ ~ ~ 2 1.5

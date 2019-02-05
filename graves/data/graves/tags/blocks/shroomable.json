@@ -22,6 +22,12 @@
     "minecraft:netherrack",
     "minecraft:soul_sand",
     "minecraft:nether_quartz_ore",
+    "minecraft:stone_bricks",
+    "minecraft:mossy_stone_bricks",
+    "minecraft:cracked_stone_bricks",
+    "minecraft:chiseled_stone_bricks",
+    "minecraft:red_nether_bricks",
+    "minecraft:nether_wart_block",
     "minecraft:mossy_cobblestone"
   ]
 }

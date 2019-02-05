@@ -9,11 +9,14 @@ execute if score x_random sp.sapphire > 65 sp.sapphire if score z_random sp.sapp
 ##placement effects
 particle minecraft:dust 0.25 0.1 1 1.25 ~ ~0.5 ~ 0.4 0.4 0.4 1 24
 #success
-execute if score z_random sp.sapphire > 65 sp.sapphire if score z_random sp.sapphire > 65 sp.sapphire run playsound minecraft:ui.toast.in block @a[distance=..16] ~ ~ ~ 2 2
+execute if score x_random sp.sapphire > 65 sp.sapphire if score z_random sp.sapphire > 65 sp.sapphire run playsound minecraft:ui.toast.in block @a[distance=..16] ~ ~ ~ 2 2
 #fail
 execute if score z_random sp.sapphire <= 65 sp.sapphire run playsound minecraft:ui.toast.out block @a[distance=..16] ~ ~ ~ 2 1
 execute if score x_random sp.sapphire <= 65 sp.sapphire run playsound minecraft:ui.toast.out block @a[distance=..16] ~ ~ ~ 2 1
+execute if score z_random sp.sapphire <= 65 sp.sapphire run kill @s
+execute if score x_random sp.sapphire <= 65 sp.sapphire run kill @s
 
 #ends the particlesetup cycle
+advancement grant @p[distance=..8] only limitedlife:sapphire_glass
 tag @s remove sp.sapphire_glasssetup
 tag @s remove metroite.placement

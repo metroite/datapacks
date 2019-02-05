@@ -8,3 +8,4 @@ execute if score max_daytime ll.sincedeath >= daytime ll.sincedeath at @s anchor
 #Killing Bat Wingsuit when sun shines
 execute if score max_daytime ll.sincedeath >= daytime ll.sincedeath run clear @s[type=minecraft:player] minecraft:elytra{HideFlags:16,RepairCost:99999999,CanPlaceOn:["minecraft:void_air"]}
 execute if score max_daytime ll.sincedeath >= daytime ll.sincedeath run kill @s[type=minecraft:item]
+execute if score max_daytime ll.sincedeath >= daytime ll.sincedeath run advancement grant @p[distance=..8] only limitedlife:bat_wingsuit_burn

@@ -4,6 +4,7 @@ execute at @s[tag=!wt.P.shinigami_wing.SU] run playsound minecraft:entity.vex.ch
 execute at @s[tag=!wt.P.shinigami_wing.SU] run playsound minecraft:entity.vex.charge voice @a[distance=..16] ~ ~ ~ 2 1.2
 execute at @s[tag=!wt.P.shinigami_wing.SU] run playsound minecraft:entity.vex.charge voice @a[distance=..16] ~ ~ ~ 2 1.2
 execute at @s[tag=!wt.P.shinigami_wing.SU] run particle minecraft:large_smoke ~ ~1 ~ 0 0 0 0.5 50 force
+execute at @s[tag=!wt.P.shinigami_wing.SU] run advancement grant @s only graves:shinigami_wing
 tag @s[tag=!wt.P.shinigami_wing.SU] add wt.P.shinigami_wing.SU
 
 #particle effects

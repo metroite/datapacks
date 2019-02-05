@@ -1,0 +1,23 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:potion",
+            "nbt": "{CustomPotionColor:0,CustomPotionEffects:[{Id:20b,Amplifier:5b,Duration:20,ShowParticles:0b}]}"
+        },
+        "title": {
+            "translate": "Mysterious Potion"
+        },
+        "description": {
+            "translate": "Drink a Mysterious Potion"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "hidden": false,
+        "announce_to_chat": true
+    },
+	"requirements":[["drink_potion"]],
+    "parent":"witchtrading:risky_business",
+    "criteria": {
+		"drink_potion":{"trigger":"minecraft:impossible"}
+    }
+}

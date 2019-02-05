@@ -1,0 +1,21 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:bone_meal",
+            "nbt": "{RepairCost:99999999,CanPlaceOn:[\"minecraft:void_air\"],HideFlags:17,Enchantments:[{id:\"minecraft:unbreaking\",lvl:1}],display:{Name:\"{\\\"text\\\":\\\"Skull Dust\\\",\\\"color\\\":\\\"yellow\\\",\\\"italic\\\":false}\"}}"
+        },
+        "title": {
+            "translate": "Wings cant be desolved"
+        },
+        "description": {
+            "translate": "Instead of trying to desolve bat wings, try skull dust"
+        },
+        "show_toast": true,
+        "announce_to_chat": true
+    },
+	"requirements":[["desolve_dust"]],
+    "parent":"limitedlife:cooking",
+    "criteria": {
+      "desolve_dust":{"trigger":"minecraft:inventory_changed","conditions":{"items":[{"item":"minecraft:bone_meal","nbt":"{RepairCost:99999999,CanPlaceOn:[\"minecraft:void_air\"],HideFlags:17,Enchantments:[{id:\"minecraft:unbreaking\",lvl:1}],display:{Name:\"{\\\"text\\\":\\\"Skull Dust\\\",\\\"color\\\":\\\"yellow\\\",\\\"italic\\\":false}\"}}"}]}}
+  }
+}

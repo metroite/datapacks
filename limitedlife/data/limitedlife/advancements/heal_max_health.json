@@ -1,0 +1,22 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:lingering_potion",
+            "nbt": "{Potion:\"minecraft:strong_healing\"}"
+        },
+        "title": {
+            "translate": "Came down to life"
+        },
+        "description": {
+            "translate": "Follow the rules and you will feel better chronically"
+        },
+        "show_toast": true,
+        "frame": "goal",
+        "announce_to_chat": true
+    },
+	"requirements":[["heal_max_health"]],
+    "parent":"limitedlife:cooking",
+    "criteria": {
+      "heal_max_health":{"trigger":"minecraft:impossible"}
+  }
+}

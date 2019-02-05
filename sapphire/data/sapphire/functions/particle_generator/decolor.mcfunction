@@ -16,3 +16,5 @@ tag @s remove sp.particle_red
 tag @s remove sp.particle_black
 
 tag @s remove sp.particle_set
+
+advancement grant @p[distance=..8] only sapphire:particle_generator_recolor

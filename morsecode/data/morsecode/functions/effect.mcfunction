@@ -1,13 +1,23 @@
 #powering corresponding receiver
 recipe give @p morsecode:mobile_receiver
-execute as @s[scores={mc.itemrotation=0}] as @e[type=minecraft:item_frame,scores={mc.itemrotation=0},nbt={Facing:1b,Item:{id:"minecraft:redstone_torch"}},tag=mc.receiver] at @s run fill ~ ~ ~ ~ ~ ~ minecraft:redstone_wire[power=1] replace minecraft:redstone_wire[power=0]
-execute as @s[scores={mc.itemrotation=1}] as @e[type=minecraft:item_frame,scores={mc.itemrotation=1},nbt={Facing:1b,Item:{id:"minecraft:redstone_torch"}},tag=mc.receiver] at @s run fill ~ ~ ~ ~ ~ ~ minecraft:redstone_wire[power=1] replace minecraft:redstone_wire[power=0]
-execute as @s[scores={mc.itemrotation=2}] as @e[type=minecraft:item_frame,scores={mc.itemrotation=2},nbt={Facing:1b,Item:{id:"minecraft:redstone_torch"}},tag=mc.receiver] at @s run fill ~ ~ ~ ~ ~ ~ minecraft:redstone_wire[power=1] replace minecraft:redstone_wire[power=0]
-execute as @s[scores={mc.itemrotation=3}] as @e[type=minecraft:item_frame,scores={mc.itemrotation=3},nbt={Facing:1b,Item:{id:"minecraft:redstone_torch"}},tag=mc.receiver] at @s run fill ~ ~ ~ ~ ~ ~ minecraft:redstone_wire[power=1] replace minecraft:redstone_wire[power=0]
-execute as @s[scores={mc.itemrotation=4}] as @e[type=minecraft:item_frame,scores={mc.itemrotation=4},nbt={Facing:1b,Item:{id:"minecraft:redstone_torch"}},tag=mc.receiver] at @s run fill ~ ~ ~ ~ ~ ~ minecraft:redstone_wire[power=1] replace minecraft:redstone_wire[power=0]
-execute as @s[scores={mc.itemrotation=5}] as @e[type=minecraft:item_frame,scores={mc.itemrotation=5},nbt={Facing:1b,Item:{id:"minecraft:redstone_torch"}},tag=mc.receiver] at @s run fill ~ ~ ~ ~ ~ ~ minecraft:redstone_wire[power=1] replace minecraft:redstone_wire[power=0]
-execute as @s[scores={mc.itemrotation=6}] as @e[type=minecraft:item_frame,scores={mc.itemrotation=6},nbt={Facing:1b,Item:{id:"minecraft:redstone_torch"}},tag=mc.receiver] at @s run fill ~ ~ ~ ~ ~ ~ minecraft:redstone_wire[power=1] replace minecraft:redstone_wire[power=0]
-execute as @s[scores={mc.itemrotation=7}] as @e[type=minecraft:item_frame,scores={mc.itemrotation=7},nbt={Facing:1b,Item:{id:"minecraft:redstone_torch"}},tag=mc.receiver] at @s run fill ~ ~ ~ ~ ~ ~ minecraft:redstone_wire[power=1] replace minecraft:redstone_wire[power=0]
+execute as @s[scores={mc.itemrotation=0}] as @e[type=minecraft:item_frame,scores={mc.itemrotation=0},tag=mc.receiver] at @s run fill ~ ~ ~ ~ ~ ~ minecraft:redstone_wire[power=1] replace minecraft:redstone_wire[power=0]
+execute as @s[scores={mc.itemrotation=1}] as @e[type=minecraft:item_frame,scores={mc.itemrotation=1},tag=mc.receiver] at @s run fill ~ ~ ~ ~ ~ ~ minecraft:redstone_wire[power=1] replace minecraft:redstone_wire[power=0]
+execute as @s[scores={mc.itemrotation=2}] as @e[type=minecraft:item_frame,scores={mc.itemrotation=2},tag=mc.receiver] at @s run fill ~ ~ ~ ~ ~ ~ minecraft:redstone_wire[power=1] replace minecraft:redstone_wire[power=0]
+execute as @s[scores={mc.itemrotation=3}] as @e[type=minecraft:item_frame,scores={mc.itemrotation=3},tag=mc.receiver] at @s run fill ~ ~ ~ ~ ~ ~ minecraft:redstone_wire[power=1] replace minecraft:redstone_wire[power=0]
+execute as @s[scores={mc.itemrotation=4}] as @e[type=minecraft:item_frame,scores={mc.itemrotation=4},tag=mc.receiver] at @s run fill ~ ~ ~ ~ ~ ~ minecraft:redstone_wire[power=1] replace minecraft:redstone_wire[power=0]
+execute as @s[scores={mc.itemrotation=5}] as @e[type=minecraft:item_frame,scores={mc.itemrotation=5},tag=mc.receiver] at @s run fill ~ ~ ~ ~ ~ ~ minecraft:redstone_wire[power=1] replace minecraft:redstone_wire[power=0]
+execute as @s[scores={mc.itemrotation=6}] as @e[type=minecraft:item_frame,scores={mc.itemrotation=6},tag=mc.receiver] at @s run fill ~ ~ ~ ~ ~ ~ minecraft:redstone_wire[power=1] replace minecraft:redstone_wire[power=0]
+execute as @s[scores={mc.itemrotation=7}] as @e[type=minecraft:item_frame,scores={mc.itemrotation=7},tag=mc.receiver] at @s run fill ~ ~ ~ ~ ~ ~ minecraft:redstone_wire[power=1] replace minecraft:redstone_wire[power=0]
+
+#grant advancement build_success
+execute as @s[scores={mc.itemrotation=0}] if entity @e[type=minecraft:item_frame,scores={mc.itemrotation=0},tag=mc.receiver] run advancement grant @p only morsecode:build_success
+execute as @s[scores={mc.itemrotation=1}] if entity @e[type=minecraft:item_frame,scores={mc.itemrotation=1},tag=mc.receiver] run advancement grant @p only morsecode:build_success
+execute as @s[scores={mc.itemrotation=2}] if entity @e[type=minecraft:item_frame,scores={mc.itemrotation=2},tag=mc.receiver] run advancement grant @p only morsecode:build_success
+execute as @s[scores={mc.itemrotation=3}] if entity @e[type=minecraft:item_frame,scores={mc.itemrotation=3},tag=mc.receiver] run advancement grant @p only morsecode:build_success
+execute as @s[scores={mc.itemrotation=4}] if entity @e[type=minecraft:item_frame,scores={mc.itemrotation=4},tag=mc.receiver] run advancement grant @p only morsecode:build_success
+execute as @s[scores={mc.itemrotation=5}] if entity @e[type=minecraft:item_frame,scores={mc.itemrotation=5},tag=mc.receiver] run advancement grant @p only morsecode:build_success
+execute as @s[scores={mc.itemrotation=6}] if entity @e[type=minecraft:item_frame,scores={mc.itemrotation=6},tag=mc.receiver] run advancement grant @p only morsecode:build_success
+execute as @s[scores={mc.itemrotation=7}] if entity @e[type=minecraft:item_frame,scores={mc.itemrotation=7},tag=mc.receiver] run advancement grant @p only morsecode:build_success
 
 #call mobile_receiver
 execute as @s[scores={mc.itemrotation=0}] run scoreboard players set @a[nbt={Inventory:[{id:"minecraft:feather",Slot:1b,tag:{RepairCost:99999999,CanPlaceOn:["minecraft:void_air"],HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:1}]}}]}] mc.itemrotation 0

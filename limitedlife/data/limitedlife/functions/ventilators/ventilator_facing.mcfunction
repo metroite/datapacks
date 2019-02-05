@@ -17,6 +17,7 @@ execute as @s[tag=ll.fandown] run setblock ~ ~ ~ minecraft:observer[facing=down,
 #placement effects
 particle minecraft:large_smoke ~ ~ ~ 0.15 0.15 0.15 0.05 24
 playsound minecraft:entity.bat.takeoff block @a[distance=..16] ~ ~ ~ 2 0.75
+advancement grant @p[distance=..8] only limitedlife:ventilator
 
 #ends the fansetup cycle
 tag @s remove ll.fansetup

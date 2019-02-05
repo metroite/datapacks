@@ -1,0 +1,20 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:cauldron"
+        },
+        "title": {
+            "translate": "Cooking down to life"
+        },
+        "description": {
+            "translate": "Want to restore some maximum health? Throw a bat wing into a water-filled cauldron with an end crystal on top, have some golden apples to catch the healing beam and follow the rules! If you don't, it might mess up everything..."
+        },
+        "show_toast": true,
+        "announce_to_chat": true
+    },
+	"requirements":[["cooking"]],
+    "parent":"minecraft:story/enter_the_nether",
+    "criteria": {
+      "cooking":{"trigger":"minecraft:impossible"}
+  }
+}

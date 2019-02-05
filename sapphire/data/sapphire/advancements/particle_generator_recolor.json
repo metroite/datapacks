@@ -1,0 +1,20 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:cyan_dye"
+        },
+        "title": {
+            "translate": "Recolorful life"
+        },
+        "description": {
+            "translate": "Drop dye on a Particle Generator, it will be beautiful"
+        },
+        "show_toast": true,
+        "announce_to_chat": true
+    },
+	"requirements":[["particle_generator_recolor"]],
+    "parent":"sapphire:particle_generator",
+    "criteria": {
+		"particle_generator_recolor":{"trigger":"minecraft:impossible"}
+  }
+}

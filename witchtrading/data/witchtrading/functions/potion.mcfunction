@@ -1,4 +1,5 @@
 #Mysterious potion random effect
+advancement grant @s only witchtrading:mysterious_potion
 effect clear @s minecraft:wither
 effect give @s[scores={wt.rng=1}] minecraft:luck 1200 1 false
 effect give @s[scores={wt.rng=2}] minecraft:resistance 1200 0 false

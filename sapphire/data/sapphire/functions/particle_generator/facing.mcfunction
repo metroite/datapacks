@@ -17,6 +17,7 @@ execute as @s[tag=sp.particledown] run setblock ~ ~ ~ minecraft:observer[facing=
 #placement effects
 particle minecraft:effect ~ ~ ~ 0.15 0.15 0.15 0.5 24
 playsound minecraft:entity.player.levelup block @a[distance=..16] ~ ~ ~ 2 2
+advancement grant @p[distance=..8] only sapphire:particle_generator
 
 #ends the particlesetup cycle
 tag @s remove sp.particlesetup

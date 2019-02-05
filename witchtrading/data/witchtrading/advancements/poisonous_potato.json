@@ -7,14 +7,13 @@
             "translate": "Poisonous Potato"
         },
         "description": {
-            "translate": "Obtained the by witches beloved poisonous potato!"
+            "translate": "Obtain a (by witches beloved) poisonous potato"
         },
-		"background": "minecraft:textures/blocks/mossy_cobblestone.png",
         "show_toast": true,
-        "announce_to_chat": true,
-		"hidden": true
+        "announce_to_chat": true
     },
 	"requirements":[["got_pp"]],
+    "parent":"minecraft:husbandry/plant_seed",
     "criteria": {
 		"got_pp":{"trigger":"minecraft:inventory_changed","conditions":{"items":[{"item":"minecraft:poisonous_potato"}]}}
     }

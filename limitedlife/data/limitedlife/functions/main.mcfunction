@@ -1,5 +1,5 @@
 #ll.deaths
-execute as @a[limit=1,sort=random] unless score @s ll.deaths >= 0 ll.deaths run scoreboard players add @s ll.deaths 1
+execute as @a[limit=1,sort=random] unless score @s ll.deaths >= 0 ll.deaths run scoreboard players add @s ll.deaths 0
 scoreboard players remove @a[scores={ll.deaths=11..}] ll.deaths 1
 
 #tp to The Void

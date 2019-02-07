@@ -45,3 +45,7 @@ execute as @e[tag=g.flower,nbt={OnGround:1b}] at @s run function graves:usebonem
 
 #mushroom spreads if it hits the ground
 execute as @e[tag=g.mushroom] at @s run function graves:usebonemeal/sapling/mushroom/placement
+
+#generate tree in world and revoke biome detection advancement
+execute as @e[tag=g.sapling_drop] at @s run function graves:tree_generator/tick
+execute as @a at @s unless entity @e[tag=g.sapling_drop,distance=..280] unless entity @e[tag=g.notree,distance=..280] run function graves:tree_generator/revoke

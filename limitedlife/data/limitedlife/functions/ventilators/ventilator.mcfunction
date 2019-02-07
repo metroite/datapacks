@@ -21,13 +21,12 @@ execute as @s[tag=ll.fannorth] if block ~ ~ ~ minecraft:observer[powered=true] p
 #function limitedlife:ventilators/collision/collision_north
 execute as @s[tag=ll.faneast] if block ~ ~ ~ minecraft:observer[powered=true] positioned ~-0.5 ~ ~-0.5 as @a[gamemode=!spectator,dx=-5,limit=1,sort=nearest] at @s if block ~-0.4 ~ ~ #limitedlife:nocollision if block ~-0.4 ~1 ~ #limitedlife:nocollision if block ~-0.4 ~1 ~0.3 #limitedlife:nocollision if block ~-0.4 ~1 ~-0.3 #limitedlife:nocollision if block ~-0.4 ~ ~0.3 #limitedlife:nocollision if block ~-0.4 ~ ~-0.3 #limitedlife:nocollision run tp @s ~-0.1 ~ ~
 #function limitedlife:ventilators/collision/collision_east
-execute as @s[tag=ll.fanup] if block ~ ~ ~ minecraft:observer[powered=true] positioned ~-0.5 ~-5 ~-0.5 run effect give @a[gamemode=!spectator,dy=5,limit=1,sort=nearest,nbt={OnGround:0b}] minecraft:levitation 1 220 true
-execute as @s[tag=ll.fandown] if block ~ ~ ~ minecraft:observer[powered=true] positioned ~-0.5 ~ ~-0.5 run effect give @a[gamemode=!spectator,dy=5,limit=1,sort=nearest] minecraft:levitation 1 15 true
+execute as @s[tag=ll.fanup] if block ~ ~ ~ minecraft:observer[powered=true] positioned ~-0.5 ~-5 ~-0.5 run effect give @a[gamemode=!spectator,dy=5,limit=1,sort=nearest,nbt={OnGround:0b},nbt=!{ActiveEffects:[{Id:25b}]}] minecraft:levitation 1 220 true
+execute as @s[tag=ll.fandown] if block ~ ~ ~ minecraft:observer[powered=true] positioned ~-0.5 ~ ~-0.5 run effect give @a[gamemode=!spectator,dy=5,limit=1,sort=nearest,nbt=!{ActiveEffects:[{Id:25b}]}] minecraft:levitation 1 15 true
 
-execute as @s[tag=ll.fanup] if block ~ ~ ~ minecraft:observer[powered=true] positioned ~1 ~-4 ~1 run effect clear @a[dy=4,dx=-4,dz=-4,limit=1,sort=nearest,nbt={OnGround:1b}] minecraft:levitation
-
-execute as @s[tag=ll.fanup] if block ~ ~ ~ minecraft:observer[powered=true] positioned ~-0.5 ~-15 ~-0.5 run effect clear @a[dy=4,limit=1,sort=nearest,distance=..12] minecraft:levitation
-execute as @s[tag=ll.fandown] if block ~ ~ ~ minecraft:observer[powered=true] positioned ~-0.5 ~15 ~-0.5 run effect clear @a[limit=1,sort=nearest,distance=..12] minecraft:levitation
+execute as @s[tag=ll.fanup] if block ~ ~ ~ minecraft:observer[powered=true] positioned ~1 ~-4 ~1 run effect clear @a[dy=4,dx=-4,dz=-4,limit=1,sort=nearest,nbt={OnGround:1b},nbt={ActiveEffects:[{Id:25b,ShowParticles:0b,Amplifier:220b}]}] minecraft:levitation
+execute as @s[tag=ll.fanup] if block ~ ~ ~ minecraft:observer[powered=true] positioned ~-0.5 ~-15 ~-0.5 run effect clear @a[dy=4,limit=1,sort=nearest,distance=..12,nbt={ActiveEffects:[{Id:25b,ShowParticles:0b,Amplifier:220b}]}] minecraft:levitation
+execute as @s[tag=ll.fandown] if block ~ ~ ~ minecraft:observer[powered=true] positioned ~-0.5 ~15 ~-0.5 run effect clear @a[limit=1,sort=nearest,distance=..12,nbt={ActiveEffects:[{Id:25b,ShowParticles:0b,Amplifier:15b}]}] minecraft:levitation
 
 #kill ll.fan armor_stands
 execute unless block ~ ~ ~ minecraft:observer run function limitedlife:ventilators/ventilatorcleanup

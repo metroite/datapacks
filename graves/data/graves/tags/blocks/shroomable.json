@@ -28,6 +28,8 @@
     "minecraft:chiseled_stone_bricks",
     "minecraft:red_nether_bricks",
     "minecraft:nether_wart_block",
+    "#minecraft:logs",
+    "#minecraft:planks",
     "minecraft:mossy_cobblestone"
   ]
 }

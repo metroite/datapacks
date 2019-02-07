@@ -1,9 +1,9 @@
-fill ~ ~ ~ ~ ~ ~ minecraft:stripped_acacia_log[axis=y] replace
-execute at @s[scores={g.sapling_height=..80}] run fill ^ ^-1 ^-1 ^ ^-1 ^-1 minecraft:stripped_acacia_log[axis=y] replace minecraft:air
-execute at @s[scores={g.sapling_height=..80}] run fill ^-1 ^-1 ^ ^-1 ^-1 ^ minecraft:stripped_acacia_log[axis=y] replace minecraft:air
+fill ~ ~ ~ ~ ~ ~ minecraft:stripped_acacia_log[axis=y] replace #graves:space
+execute at @s[scores={g.sapling_height=..80}] run fill ^ ^-1 ^-1 ^ ^-1 ^-1 minecraft:stripped_acacia_log[axis=y] replace #graves:space
+execute at @s[scores={g.sapling_height=..80}] run fill ^-1 ^-1 ^ ^-1 ^-1 ^ minecraft:stripped_acacia_log[axis=y] replace #graves:space
 execute at @s[scores={g.sapling_rng=4}] run data merge entity @s {Motion:[0.0,0.4,0.0]}
 execute at @s[scores={g.sapling_rng=8}] run data merge entity @s {Motion:[0.0,0.4,0.0]}
-execute at @s[scores={g.sapling_height=195..}] run fill ~5 ~ ~5 ~-5 ~1 ~-5 minecraft:acacia_leaves[persistent=false] replace minecraft:air
+execute at @s[scores={g.sapling_height=195..}] run fill ~5 ~ ~5 ~-5 ~1 ~-5 minecraft:acacia_leaves[persistent=false] replace #graves:space
 execute at @s[scores={g.sapling_height=100}] run summon minecraft:item ~ ~ ~ {Motion:[0.0,0.25,0.0],Tags:["g.acacia_branch","g.acacia_north"],Item:{id:"minecraft:bone_meal",Count:1b,tag:{RepairCost:99999999,CanPlaceOn:["minecraft:void_air"],HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:1}],display:{Name:"{\"text\":\"Skull Dusty acacia_north\",\"color\":\"yellow\",\"italic\":false}"}}},PickupDelay:-1}
 execute at @s[scores={g.sapling_height=90}] if entity @e[tag=g.acacia_branch,distance=..2] run summon minecraft:item ~ ~ ~ {Motion:[0.0,0.25,0.0],Tags:["g.acacia_branch","g.acacia_east"],Item:{id:"minecraft:bone_meal",Count:1b,tag:{RepairCost:99999999,CanPlaceOn:["minecraft:void_air"],HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:1}],display:{Name:"{\"text\":\"Skull Dusty acacia_east\",\"color\":\"yellow\",\"italic\":false}"}}},PickupDelay:-1}
 execute at @s[scores={g.sapling_height=70}] run summon minecraft:item ~ ~ ~ {Motion:[0.0,0.25,0.0],Tags:["g.acacia_branch","g.acacia_south"],Item:{id:"minecraft:bone_meal",Count:1b,tag:{RepairCost:99999999,CanPlaceOn:["minecraft:void_air"],HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:1}],display:{Name:"{\"text\":\"Skull Dusty acacia_south\",\"color\":\"yellow\",\"italic\":false}"}}},PickupDelay:-1}

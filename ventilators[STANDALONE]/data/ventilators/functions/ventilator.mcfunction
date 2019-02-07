@@ -1,32 +1,48 @@
 #effects and motion
-execute as @s[tag=ll.fansouth] if block ~ ~ ~ minecraft:observer[powered=true] run particle minecraft:poof ~ ~0.5 ~-2.25 0.005 0.005 2 0.001 1 normal
-execute as @s[tag=ll.fanwest] if block ~ ~ ~ minecraft:observer[powered=true] run particle minecraft:poof ~2.25 ~0.5 ~ 2 0.005 0.005 0.001 1 normal
-execute as @s[tag=ll.fannorth] if block ~ ~ ~ minecraft:observer[powered=true] run particle minecraft:poof ~ ~0.5 ~2.25 0.005 0.005 2 0.001 1 normal
-execute as @s[tag=ll.faneast] if block ~ ~ ~ minecraft:observer[powered=true] run particle minecraft:poof ~-2.25 ~0.5 ~ 2 0.005 0.005 0.001 1 normal
-execute as @s[tag=ll.fanup] if block ~ ~ ~ minecraft:observer[powered=true] run particle minecraft:poof ~ ~-2.25 ~ 0.005 2 0.005 0.001 1 normal
-execute as @s[tag=ll.fandown] if block ~ ~ ~ minecraft:observer[powered=true] run particle minecraft:poof ~ ~2.25 ~ 0.005 2 0.005 0.001 1 normal
+execute as @s[tag=ll.fansouth] if block ~ ~ ~ minecraft:observer[powered=true] if block ~ ~ ~-1 #ventilators:nocollision positioned ~ ~ ~ run function ventilators:direction/south
+execute as @s[tag=ll.fanwest] if block ~ ~ ~ minecraft:observer[powered=true] if block ~1 ~ ~ #ventilators:nocollision positioned ~ ~ ~ run function ventilators:direction/west
+execute as @s[tag=ll.fannorth] if block ~ ~ ~ minecraft:observer[powered=true] if block ~ ~ ~1 #ventilators:nocollision positioned ~ ~ ~ run function ventilators:direction/north
+execute as @s[tag=ll.faneast] if block ~ ~ ~ minecraft:observer[powered=true] if block ~-1 ~ ~ #ventilators:nocollision positioned ~ ~ ~ run function ventilators:direction/east
 
-execute as @s[tag=ll.fansouth] if block ~ ~ ~ minecraft:observer[powered=true] positioned ~-0.5 ~ ~-0.5 run data merge entity @e[type=!minecraft:area_effect_cloud,dz=-5,limit=1,sort=nearest] {Motion:[0.0d,0.0d,-0.5d]}
-execute as @s[tag=ll.fanwest] if block ~ ~ ~ minecraft:observer[powered=true] positioned ~-0.5 ~ ~-0.5 run data merge entity @e[type=!minecraft:area_effect_cloud,dx=5,limit=1,sort=nearest] {Motion:[0.5d,0.0d,0.0d]}
-execute as @s[tag=ll.fannorth] if block ~ ~ ~ minecraft:observer[powered=true] positioned ~-0.5 ~ ~-0.5 run data merge entity @e[type=!minecraft:area_effect_cloud,dz=5,limit=1,sort=nearest] {Motion:[0.0d,0.0d,0.5d]}
-execute as @s[tag=ll.faneast] if block ~ ~ ~ minecraft:observer[powered=true] positioned ~-0.5 ~ ~-0.5 run data merge entity @e[type=!minecraft:area_effect_cloud,dx=-5,limit=1,sort=nearest] {Motion:[-0.5d,0.0d,0.0d]}
-execute as @s[tag=ll.fanup] if block ~ ~ ~ minecraft:observer[powered=true] positioned ~-0.5 ~-5 ~-0.5 run data merge entity @e[type=!minecraft:area_effect_cloud,dy=5,limit=1,sort=nearest] {Motion:[0.0d,-0.5d,0.0d]}
-execute as @s[tag=ll.fandown] if block ~ ~ ~ minecraft:observer[powered=true] positioned ~-0.5 ~ ~-0.5 run data merge entity @e[type=!minecraft:area_effect_cloud,dy=5,limit=1,sort=nearest] {Motion:[0.0d,0.5d,0.0d]}
+execute as @s[tag=ll.fansouth] if block ~ ~ ~ minecraft:observer[powered=true] if block ~ ~ ~-1 #ventilators:nocollision if block ~ ~ ~-2 #ventilators:nocollision positioned ~ ~ ~-1 run function ventilators:direction/south
+execute as @s[tag=ll.fanwest] if block ~ ~ ~ minecraft:observer[powered=true] if block ~1 ~ ~ #ventilators:nocollision if block ~2 ~ ~ #ventilators:nocollision positioned ~1 ~ ~ run function ventilators:direction/west
+execute as @s[tag=ll.fannorth] if block ~ ~ ~ minecraft:observer[powered=true] if block ~ ~ ~1 #ventilators:nocollision if block ~ ~ ~2 #ventilators:nocollision positioned ~ ~ ~1 run function ventilators:direction/north
+execute as @s[tag=ll.faneast] if block ~ ~ ~ minecraft:observer[powered=true] if block ~-1 ~ ~ #ventilators:nocollision if block ~-2 ~ ~ #ventilators:nocollision positioned ~-1 ~ ~ run function ventilators:direction/east
 
-execute as @s[tag=ll.fansouth] if block ~ ~ ~ minecraft:observer[powered=true] positioned ~-0.5 ~ ~-0.5 as @a[gamemode=!spectator,dz=-5,limit=1,sort=nearest] at @s if block ~ ~ ~-0.4 #ventilators:nocollision if block ~ ~1 ~-0.4 #ventilators:nocollision if block ~0.3 ~1 ~-0.4 #ventilators:nocollision if block ~-0.3 ~1 ~-0.4 #ventilators:nocollision if block ~0.3 ~ ~-0.4 #ventilators:nocollision if block ~-0.3 ~ ~-0.4 #ventilators:nocollision run tp @s ~ ~ ~-0.1
-#function ventilators:collision/collision_south
-execute as @s[tag=ll.fanwest] if block ~ ~ ~ minecraft:observer[powered=true] positioned ~-0.5 ~ ~-0.5 as @a[gamemode=!spectator,dx=5,limit=1,sort=nearest] at @s if block ~0.4 ~ ~ #ventilators:nocollision if block ~0.4 ~1 ~ #ventilators:nocollision if block ~0.4 ~1 ~0.3 #ventilators:nocollision if block ~0.4 ~1 ~-0.3 #ventilators:nocollision if block ~0.4 ~ ~0.3 #ventilators:nocollision if block ~0.4 ~ ~-0.3 #ventilators:nocollision run tp @s ~0.1 ~ ~
-#function ventilators:collision/collision_west
-execute as @s[tag=ll.fannorth] if block ~ ~ ~ minecraft:observer[powered=true] positioned ~-0.5 ~ ~-0.5 as @a[gamemode=!spectator,dz=5,limit=1,sort=nearest] at @s if block ~ ~ ~0.4 #ventilators:nocollision if block ~ ~1 ~0.4 #ventilators:nocollision if block ~0.3 ~1 ~0.4 #ventilators:nocollision if block ~-0.3 ~1 ~0.4 #ventilators:nocollision if block ~0.3 ~ ~0.4 #ventilators:nocollision if block ~-0.3 ~ ~0.4 #ventilators:nocollision run tp @s ~ ~ ~0.1
-#function ventilators:collision/collision_north
-execute as @s[tag=ll.faneast] if block ~ ~ ~ minecraft:observer[powered=true] positioned ~-0.5 ~ ~-0.5 as @a[gamemode=!spectator,dx=-5,limit=1,sort=nearest] at @s if block ~-0.4 ~ ~ #ventilators:nocollision if block ~-0.4 ~1 ~ #ventilators:nocollision if block ~-0.4 ~1 ~0.3 #ventilators:nocollision if block ~-0.4 ~1 ~-0.3 #ventilators:nocollision if block ~-0.4 ~ ~0.3 #ventilators:nocollision if block ~-0.4 ~ ~-0.3 #ventilators:nocollision run tp @s ~-0.1 ~ ~
-#function ventilators:collision/collision_east
-execute as @s[tag=ll.fanup] if block ~ ~ ~ minecraft:observer[powered=true] positioned ~-0.5 ~-5 ~-0.5 run effect give @a[gamemode=!spectator,dy=5,limit=1,sort=nearest,nbt={OnGround:0b},nbt=!{ActiveEffects:[{Id:25b}]}] minecraft:levitation 1 220 true
-execute as @s[tag=ll.fandown] if block ~ ~ ~ minecraft:observer[powered=true] positioned ~-0.5 ~ ~-0.5 run effect give @a[gamemode=!spectator,dy=5,limit=1,sort=nearest,nbt=!{ActiveEffects:[{Id:25b}]}] minecraft:levitation 1 15 true
+execute as @s[tag=ll.fansouth] if block ~ ~ ~ minecraft:observer[powered=true] if block ~ ~ ~-1 #ventilators:nocollision if block ~ ~ ~-2 #ventilators:nocollision if block ~ ~ ~-3 #ventilators:nocollision positioned ~ ~ ~-2 run function ventilators:direction/south
+execute as @s[tag=ll.fanwest] if block ~ ~ ~ minecraft:observer[powered=true] if block ~1 ~ ~ #ventilators:nocollision if block ~2 ~ ~ #ventilators:nocollision if block ~3 ~ ~ #ventilators:nocollision positioned ~2 ~ ~ run function ventilators:direction/west
+execute as @s[tag=ll.fannorth] if block ~ ~ ~ minecraft:observer[powered=true] if block ~ ~ ~1 #ventilators:nocollision if block ~ ~ ~2 #ventilators:nocollision if block ~ ~ ~3 #ventilators:nocollision positioned ~ ~ ~2 run function ventilators:direction/north
+execute as @s[tag=ll.faneast] if block ~ ~ ~ minecraft:observer[powered=true] if block ~-1 ~ ~ #ventilators:nocollision if block ~-2 ~ ~ #ventilators:nocollision if block ~-3 ~ ~ #ventilators:nocollision positioned ~-2 ~ ~ run function ventilators:direction/east
 
-execute as @s[tag=ll.fanup] if block ~ ~ ~ minecraft:observer[powered=true] positioned ~1 ~-4 ~1 run effect clear @a[dy=4,dx=-4,dz=-4,limit=1,sort=nearest,nbt={OnGround:1b},nbt={ActiveEffects:[{Id:25b,ShowParticles:0b,Amplifier:220b}]}] minecraft:levitation
-execute as @s[tag=ll.fanup] if block ~ ~ ~ minecraft:observer[powered=true] positioned ~-0.5 ~-15 ~-0.5 run effect clear @a[dy=4,limit=1,sort=nearest,distance=..12,nbt={ActiveEffects:[{Id:25b,ShowParticles:0b,Amplifier:220b}]}] minecraft:levitation
-execute as @s[tag=ll.fandown] if block ~ ~ ~ minecraft:observer[powered=true] positioned ~-0.5 ~15 ~-0.5 run effect clear @a[limit=1,sort=nearest,distance=..12,nbt={ActiveEffects:[{Id:25b,ShowParticles:0b,Amplifier:15b}]}] minecraft:levitation
+execute as @s[tag=ll.fansouth] if block ~ ~ ~ minecraft:observer[powered=true] if block ~ ~ ~-1 #ventilators:nocollision if block ~ ~ ~-2 #ventilators:nocollision if block ~ ~ ~-3 #ventilators:nocollision if block ~ ~ ~-4 #ventilators:nocollision positioned ~ ~ ~-3 run function ventilators:direction/south
+execute as @s[tag=ll.fanwest] if block ~ ~ ~ minecraft:observer[powered=true] if block ~-1 ~ ~ #ventilators:nocollision if block ~2 ~ ~ #ventilators:nocollision if block ~3 ~ ~ #ventilators:nocollision if block ~4 ~ ~ #ventilators:nocollision positioned ~3 ~ ~ run function ventilators:direction/west
+execute as @s[tag=ll.fannorth] if block ~ ~ ~ minecraft:observer[powered=true] if block ~ ~ ~-1 #ventilators:nocollision if block ~ ~ ~2 #ventilators:nocollision if block ~ ~ ~3 #ventilators:nocollision if block ~ ~ ~4 #ventilators:nocollision positioned ~ ~ ~3 run function ventilators:direction/north
+execute as @s[tag=ll.faneast] if block ~ ~ ~ minecraft:observer[powered=true] if block ~-1 ~ ~ #ventilators:nocollision if block ~-2 ~ ~ #ventilators:nocollision if block ~-3 ~ ~ #ventilators:nocollision if block ~-4 ~ ~ #ventilators:nocollision positioned ~-3 ~ ~ run function ventilators:direction/east
+
+execute as @s[tag=ll.fansouth] if block ~ ~ ~ minecraft:observer[powered=true] if block ~ ~ ~-1 #ventilators:nocollision if block ~ ~ ~-2 #ventilators:nocollision if block ~ ~ ~-3 #ventilators:nocollision if block ~ ~ ~-4 #ventilators:nocollision if block ~ ~ ~-5 #ventilators:nocollision positioned ~ ~ ~-4 run function ventilators:direction/south
+execute as @s[tag=ll.fanwest] if block ~ ~ ~ minecraft:observer[powered=true] if block ~1 ~ ~ #ventilators:nocollision if block ~2 ~ ~ #ventilators:nocollision if block ~3 ~ ~ #ventilators:nocollision if block ~4 ~ ~ #ventilators:nocollision if block ~5 ~ ~ #ventilators:nocollision positioned ~4 ~ ~ run function ventilators:direction/west
+execute as @s[tag=ll.fannorth] if block ~ ~ ~ minecraft:observer[powered=true] if block ~ ~ ~1 #ventilators:nocollision if block ~ ~ ~2 #ventilators:nocollision if block ~ ~ ~3 #ventilators:nocollision if block ~ ~ ~4 #ventilators:nocollision if block ~ ~ ~5 #ventilators:nocollision positioned ~ ~ ~4 run function ventilators:direction/north
+execute as @s[tag=ll.faneast] if block ~ ~ ~ minecraft:observer[powered=true] if block ~-1 ~ ~ #ventilators:nocollision if block ~-2 ~ ~ #ventilators:nocollision if block ~-3 ~ ~ #ventilators:nocollision if block ~-4 ~ ~ #ventilators:nocollision if block ~-5 ~ ~ #ventilators:nocollision positioned ~-4 ~ ~ run function ventilators:direction/east
+
+execute as @s[tag=ll.fanup] if block ~ ~ ~ minecraft:observer[powered=true] if block ~ ~-1 ~ #ventilators:nocollision positioned ~ ~ ~ run function ventilators:direction/up
+execute as @s[tag=ll.fandown] if block ~ ~ ~ minecraft:observer[powered=true] if block ~ ~1 ~ #ventilators:nocollision positioned ~ ~ ~ run function ventilators:direction/down
+
+execute as @s[tag=ll.fanup] if block ~ ~ ~ minecraft:observer[powered=true] if block ~ ~-1 ~ #ventilators:nocollision if block ~ ~-2 ~ #ventilators:nocollision positioned ~ ~-1 ~ run function ventilators:direction/up
+execute as @s[tag=ll.fandown] if block ~ ~ ~ minecraft:observer[powered=true] if block ~ ~1 ~ #ventilators:nocollision if block ~ ~2 ~ #ventilators:nocollision positioned ~ ~1 ~ run function ventilators:direction/down
+
+execute as @s[tag=ll.fanup] if block ~ ~ ~ minecraft:observer[powered=true] if block ~ ~-1 ~ #ventilators:nocollision if block ~ ~-2 ~ #ventilators:nocollision if block ~ ~-3 ~ #ventilators:nocollision positioned ~ ~-2 ~ run function ventilators:direction/up
+execute as @s[tag=ll.fandown] if block ~ ~ ~ minecraft:observer[powered=true] if block ~ ~1 ~ #ventilators:nocollision if block ~ ~2 ~ #ventilators:nocollision if block ~ ~3 ~ #ventilators:nocollision positioned ~ ~2 ~ run function ventilators:direction/down
+
+execute as @s[tag=ll.fanup] if block ~ ~ ~ minecraft:observer[powered=true] if block ~ ~-1 ~ #ventilators:nocollision if block ~ ~-2 ~ #ventilators:nocollision if block ~ ~-3 ~ #ventilators:nocollision if block ~ ~-4 ~ #ventilators:nocollision positioned ~ ~-3 ~ run function ventilators:direction/up
+execute as @s[tag=ll.fandown] if block ~ ~ ~ minecraft:observer[powered=true] if block ~ ~1 ~ #ventilators:nocollision if block ~ ~2 ~ #ventilators:nocollision if block ~ ~3 ~ #ventilators:nocollision if block ~ ~4 ~ #ventilators:nocollision positioned ~ ~3 ~ run function ventilators:direction/down
+
+execute as @s[tag=ll.fanup] if block ~ ~ ~ minecraft:observer[powered=true] if block ~ ~-1 ~ #ventilators:nocollision if block ~ ~-2 ~ #ventilators:nocollision if block ~ ~-3 ~ #ventilators:nocollision if block ~ ~-4 ~ #ventilators:nocollision if block ~ ~-5 ~ #ventilators:nocollision positioned ~ ~-4 ~ run function ventilators:direction/up
+execute as @s[tag=ll.fandown] if block ~ ~ ~ minecraft:observer[powered=true] if block ~ ~1 ~ #ventilators:nocollision if block ~ ~2 ~ #ventilators:nocollision if block ~ ~3 ~ #ventilators:nocollision if block ~ ~4 ~ #ventilators:nocollision if block ~ ~5 ~ #ventilators:nocollision positioned ~ ~4 ~ run function ventilators:direction/down
+
+#clear levitation
+execute as @s[tag=ll.fanup] if block ~ ~ ~ minecraft:observer[powered=true] positioned ~1 ~-12 ~1 run effect clear @a[dy=12,dx=-4,dz=-4,limit=1,sort=nearest,nbt={OnGround:1b},nbt={ActiveEffects:[{Id:25b,ShowParticles:0b,Amplifier:-36b}]}] minecraft:levitation
+execute as @s[tag=ll.fanup] if block ~ ~ ~ minecraft:observer[powered=true] positioned ~-0.5 ~-15 ~-0.5 run effect clear @a[limit=1,sort=nearest,distance=..10,nbt={ActiveEffects:[{Id:25b,ShowParticles:0b,Amplifier:-36b}]}] minecraft:levitation
+execute as @s[tag=ll.fandown] if block ~ ~ ~ minecraft:observer[powered=true] positioned ~-0.5 ~15 ~-0.5 run effect clear @a[limit=1,sort=nearest,distance=..10,nbt={ActiveEffects:[{Id:25b,ShowParticles:0b,Amplifier:15b}]}] minecraft:levitation
 
 #kill ll.fan armor_stands
 execute unless block ~ ~ ~ minecraft:observer run function ventilators:ventilatorcleanup

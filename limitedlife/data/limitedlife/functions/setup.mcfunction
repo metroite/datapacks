@@ -7,7 +7,6 @@ scoreboard players set max_daytime ll.sincedeath 12999
 scoreboard objectives add ll.craftbatwing minecraft.crafted:minecraft.milk_bucket
 scoreboard players set 0 ll.deaths 0
 scoreboard objectives add ll.batwingflap minecraft.custom:minecraft.sneak_time
-scoreboard objectives add ll.ventilator dummy
 
 #The Void
 #air
@@ -28,8 +27,5 @@ fill 0 1 -29 5 6 -29 minecraft:bedrock
 fill -1 1 -30 -1 6 -35 minecraft:bedrock
 fill 0 0 -30 5 0 -35 minecraft:bedrock
 fill 0 7 -30 5 7 -35 minecraft:bedrock
-
+#"datapack loaded": Please don't remove this message, if it annoys you make sure to credit me otherwise. Thank you!
 tellraw @a ["",{"text":"limitedlife","color":"green","clickEvent":{"action":"open_url","value":"https://github.com/Metroite/datapacks/tree/master/limitedlife"},"hoverEvent":{"action":"show_text","value":"every death you lose one heart"}},{"text":" by "},{"text":"Metroite","color":"aqua","clickEvent":{"action":"open_url","value":"https://github.com/Metroite"}},{"text":" loaded!"}]
-
-#ventilators[STANDALONE] is unnecessary
-function ventilators:limitedlife

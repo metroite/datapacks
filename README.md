@@ -8,7 +8,7 @@
 * [morsecode](https://github.com/Metroite/datapacks/tree/master/morsecode)
 * [sapphire](https://github.com/Metroite/datapacks/tree/master/sapphire)
 * [signalfire](https://github.com/Metroite/datapacks/tree/master/signalfire)
-* [ventilators(STANDALONE)](https://github.com/Metroite/datapacks/tree/master/ventilators[STANDALONE])
+* [ventilators](https://github.com/Metroite/datapacks/tree/master/ventilators)
 * [witchtrading](https://github.com/Metroite/datapacks/tree/master/witchtrading)
 
 More useful information can be found inside of every datapack ([above](https://github.com/Metroite/datapacks#metroites-datapacks)) and chronologically inside of every [release post](https://github.com/Metroite/datapacks/releases) ([below](https://github.com/Metroite/datapacks#releases)).
@@ -24,6 +24,8 @@ More useful information can be found inside of every datapack ([above](https://g
 
 - [X] placement-API: implementation and improvements
 - [X] graves: big trees using "Skull Dust" on saplings
+- [X] ventilators: split ventilators off of limitedlife
+- [ ] growontoptree: fix bug using methods
 - [ ] hurtfulhostiles: buff hostile entities
 - [ ] cauldronbrewing: new potions
 - [ ] meteorites: occasional event
@@ -67,4 +69,5 @@ Please report any **bugs** you may find, any **suggestions** you might have and 
 
 ## License
 
-This project is licensed under the GNU GENERAL PUBLIC License - see the [LICENSE](https://github.com/Metroite/datapacks/blob/master/LICENSE) file for details
+This project is licensed under the GNU GENERAL PUBLIC License - see the [LICENSE](https://github.com/Metroite/datapacks/blob/master/LICENSE) file for details.
+Reminder: always make sure to credit me if you use my work! Thank you!

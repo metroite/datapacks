@@ -25,5 +25,5 @@ scoreboard objectives add sp.craftlight minecraft.crafted:minecraft.redstone_ore
 #placement-API
 scoreboard objectives add sp.lr.pa.torch minecraft.used:minecraft.redstone_torch
 scoreboard objectives add sp.so.pa.ore minecraft.used:minecraft.redstone_ore
-
+#"datapack loaded": Please don't remove this message, if it annoys you make sure to credit me otherwise. Thank you!
 tellraw @a ["",{"text":"sapphire","color":"green","clickEvent":{"action":"open_url","value":"https://github.com/Metroite/datapacks/tree/master/sapphire"},"hoverEvent":{"action":"show_text","value":"sapphire now spawning in deep water, useful to play with the weather"}},{"text":"  by "},{"text":"Metroite","color":"aqua","clickEvent":{"action":"open_url","value":"https://github.com/Metroite"}},{"text":" loaded!"}]

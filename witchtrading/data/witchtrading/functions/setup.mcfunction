@@ -28,4 +28,5 @@ function graves:witchtrading/setup
 #Used Teams:
 #"wt.friendly"
 
+#"datapack loaded": Please don't remove this message, if it annoys you make sure to credit me otherwise. Thank you!
 tellraw @a ["",{"text":"witchtrading","color":"green","clickEvent":{"action":"open_url","value":"https://github.com/Metroite/datapacks/tree/master/witchtrading"},"hoverEvent":{"action":"show_text","value":"trade your poisonous potatoes with witches"}},{"text":" by "},{"text":"Metroite","color":"aqua","clickEvent":{"action":"open_url","value":"https://github.com/Metroite"}},{"text":" loaded!"}]

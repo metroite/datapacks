@@ -3,9 +3,8 @@ data merge block ~ ~-1 ~ {TransferCooldown:32.767}
 data merge block ~ ~-2 ~ {TransferCooldown:32.767}
 data merge block ~ ~ ~ {TransferCooldown:32.767}
 
-#grow ontop tree
-execute positioned ~ ~2 ~ as @a[distance=..3] at @s run tp @s ~ ~1 ~
-execute positioned ~ ~2 ~ as @a[distance=..3] run effect give @s minecraft:slow_falling 1 1 true
+#feature-compatibility to growontoptree
+function growontoptree:graves
 
 ##growth
 #oak

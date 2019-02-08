@@ -1,6 +1,7 @@
 ## growontoptree
 
-If players are inside wood, they get teleported up recursively! This can be misused. Not recommended.
+If players are inside wood, they get teleported up recursively!
+Recommended to use with graves.
 
 ## Version
 

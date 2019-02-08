@@ -1,3 +1,14 @@
-particle minecraft:poof ~ ~1 ~ 0.25 0.25 0.25 0.001 1 normal
-execute positioned ~-0.5 ~ ~-0.5 run data merge entity @e[type=!minecraft:area_effect_cloud,dy=1,limit=1,sort=nearest] {Motion:[0.0d,0.5d,0.0d]}
-execute positioned ~-0.5 ~ ~-0.5 run effect give @a[gamemode=!spectator,dy=1,limit=1,sort=nearest,nbt=!{ActiveEffects:[{Id:25b}]}] minecraft:levitation 1 15 true
+execute if block ~ ~1 ~ #limitedlife:nocollision run function limitedlife:ventilators/direction/push/down
+execute if block ~ ~1 ~ #limitedlife:nocollision if block ~ ~2 ~ #limitedlife:nocollision positioned ~ ~1 ~ run function limitedlife:ventilators/direction/push/down
+execute if block ~ ~1 ~ #limitedlife:nocollision if block ~ ~2 ~ #limitedlife:nocollision if block ~ ~3 ~ #limitedlife:nocollision positioned ~ ~2 ~ run function limitedlife:ventilators/direction/push/down
+execute if block ~ ~1 ~ #limitedlife:nocollision if block ~ ~2 ~ #limitedlife:nocollision if block ~ ~3 ~ #limitedlife:nocollision if block ~ ~4 ~ #limitedlife:nocollision positioned ~ ~3 ~ run function limitedlife:ventilators/direction/push/down
+execute if block ~ ~1 ~ #limitedlife:nocollision if block ~ ~2 ~ #limitedlife:nocollision if block ~ ~3 ~ #limitedlife:nocollision if block ~ ~4 ~ #limitedlife:nocollision if block ~ ~5 ~ #limitedlife:nocollision positioned ~ ~4 ~ run function limitedlife:ventilators/direction/push/down
+execute if block ~ ~1 ~ #limitedlife:nocollision if block ~ ~2 ~ #limitedlife:nocollision if block ~ ~3 ~ #limitedlife:nocollision if block ~ ~4 ~ #limitedlife:nocollision if block ~ ~5 ~ #limitedlife:nocollision if block ~ ~6 ~ #limitedlife:nocollision positioned ~ ~5 ~ run function limitedlife:ventilators/direction/push/down
+execute positioned ~-0.5 ~15 ~-0.5 run effect clear @a[limit=1,sort=nearest,distance=..10,nbt={ActiveEffects:[{Id:25b,ShowParticles:0b,Amplifier:15b}]}] minecraft:levitation
+
+execute at @s[scores={ll.ventilator=1}] if block ~ ~1 ~ #limitedlife:nocollision run function limitedlife:ventilators/direction/particle/down
+execute at @s[scores={ll.ventilator=2}] if block ~ ~1 ~ #limitedlife:nocollision if block ~ ~2 ~ #limitedlife:nocollision positioned ~ ~1 ~ run function limitedlife:ventilators/direction/particle/down
+execute at @s[scores={ll.ventilator=3}] if block ~ ~1 ~ #limitedlife:nocollision if block ~ ~2 ~ #limitedlife:nocollision if block ~ ~3 ~ #limitedlife:nocollision positioned ~ ~2 ~ run function limitedlife:ventilators/direction/particle/down
+execute at @s[scores={ll.ventilator=4}] if block ~ ~1 ~ #limitedlife:nocollision if block ~ ~2 ~ #limitedlife:nocollision if block ~ ~3 ~ #limitedlife:nocollision if block ~ ~4 ~ #limitedlife:nocollision positioned ~ ~3 ~ run function limitedlife:ventilators/direction/particle/down
+execute at @s[scores={ll.ventilator=5}] if block ~ ~1 ~ #limitedlife:nocollision if block ~ ~2 ~ #limitedlife:nocollision if block ~ ~3 ~ #limitedlife:nocollision if block ~ ~4 ~ #limitedlife:nocollision if block ~ ~5 ~ #limitedlife:nocollision positioned ~ ~4 ~ run function limitedlife:ventilators/direction/particle/down
+execute at @s[scores={ll.ventilator=6}] if block ~ ~1 ~ #limitedlife:nocollision if block ~ ~2 ~ #limitedlife:nocollision if block ~ ~3 ~ #limitedlife:nocollision if block ~ ~4 ~ #limitedlife:nocollision if block ~ ~5 ~ #limitedlife:nocollision if block ~ ~6 ~ #limitedlife:nocollision positioned ~ ~5 ~ run function limitedlife:ventilators/direction/particle/down

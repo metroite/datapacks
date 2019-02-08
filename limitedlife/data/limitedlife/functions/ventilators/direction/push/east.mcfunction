@@ -1,0 +1,2 @@
+execute positioned ~-0.5 ~ ~-0.5 run data merge entity @e[type=!minecraft:area_effect_cloud,dx=-1,limit=1,sort=nearest] {Motion:[-0.5d,0.0d,0.0d]}
+execute positioned ~-0.5 ~ ~-0.5 as @a[gamemode=!spectator,dx=-1,limit=1,sort=nearest] at @s if block ~-0.35 ~ ~ #limitedlife:nocollision if block ~-0.35 ~1 ~ #limitedlife:nocollision if block ~-0.35 ~1 ~0.3 #limitedlife:nocollision if block ~-0.35 ~1 ~-0.3 #limitedlife:nocollision if block ~-0.35 ~ ~0.3 #limitedlife:nocollision if block ~-0.35 ~ ~-0.3 #limitedlife:nocollision run tp @s ~-0.05 ~ ~

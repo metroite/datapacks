@@ -1,6 +1,7 @@
 #effects
 particle minecraft:angry_villager ~ ~0.1 ~ 0 0.2 0 1 1 force
 tag @s add l2t.fused
+execute at @s[tag=!l2t.longfuse] run advancement grant @p[distance=..8] only loud2x2tnt:blow_up
 execute at @s[nbt={Fuse:3s}] as @a[distance=0..16] at @s run playsound minecraft:entity.generic.explode block @s ~ ~ ~ 2 0.6
 execute at @s[nbt={Fuse:3s}] as @a[distance=17..32] at @s run playsound minecraft:entity.generic.explode block @s ~ ~ ~ 1.7 0.6
 execute at @s[nbt={Fuse:3s}] as @a[distance=33..64] at @s run playsound minecraft:entity.generic.explode block @s ~ ~ ~ 1.4 0.6

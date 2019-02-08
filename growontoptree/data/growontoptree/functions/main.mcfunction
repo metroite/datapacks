@@ -5,4 +5,4 @@ execute as @a[tag=got.sapling] at @s if block ~ ~ ~ #minecraft:logs run tp @s ~ 
 execute as @a[tag=got.sapling] at @s if block ~ ~ ~ #minecraft:leaves[persistent=false] run tp @s ~ ~1 ~
 execute as @a[tag=got.sapling] at @s if block ~ ~ ~ #minecraft:logs run function growontoptree:main
 execute as @a[tag=got.sapling] at @s if block ~ ~ ~ #minecraft:leaves[persistent=false] run function growontoptree:main
-execute as @a at @s unless block ~ ~ ~ #minecraft:saplings run tag @a remove got.sapling
+execute as @a at @s unless block ~ ~ ~ #minecraft:saplings run tag @s remove got.sapling

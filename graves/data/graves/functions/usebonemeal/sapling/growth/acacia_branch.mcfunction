@@ -18,3 +18,6 @@ execute at @s[tag=g.acacia_west] run fill ~ ~ ~ ~ ~ ~ minecraft:stripped_acacia_
 
 execute at @s[tag=g.acacia_branched] run fill ~4 ~ ~4 ~-4 ~2 ~-4 minecraft:acacia_leaves[persistent=false] replace #graves:space
 kill @s[tag=g.acacia_branched]
+
+#feature-compatibility to growontoptree
+function growontoptree:graves

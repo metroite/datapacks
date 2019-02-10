@@ -42,9 +42,17 @@ tag @a[nbt={SelectedItem:{id:"minecraft:redstone_torch",tag:{CanPlaceOn:["minecr
 execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:redstone_torch",tag:{CanPlaceOn:["minecraft:void_air"],HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:1}]}}]}] unless entity @s[nbt={SelectedItem:{id:"minecraft:redstone_torch"}}] run tag @s add sp.lr.pa.tag
 scoreboard players reset @a[tag=!sp.lr.pa.tag] sp.lr.pa.torch
 
-##Possible in 1.14 weather_detector
-#data merge entity @e {DeathLootTable:"sapphire:weather"}
-#summon armor_stand ~ ~ ~ {Small:1b,NoGravity:1b,Tags:["sp.weather","sp.weathersetup"],Small:1b,Invisible:1b,Marker:1b,ArmorItems:[{},{},{},{id:"daylight_sensor",Count:1b}],HandItems:[{},{}],DisabledSlots:2039583,}
-#crafting weather_detector (Inventory)
-#execute as @a[scores={sp.craftdetector=1..}] run give @s minecraft:armor_stand{RepairCost:99999999,CanPlaceOn:["minecraft:void_air"],HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:1}],EntityTag:{Small:1b,Tags:["sp.weather_detector","sp.valid"]},display:{Name:"{\"text\":\"Weather Detector\",\"color\":\"yellow\",\"italic\":false}"}} 1
-#execute as @a[scores={sp.craftdetector=1..}] run scoreboard players remove @s sp.craftdetector 1
+#crafting water_detector (Inventory)
+execute as @a[scores={sp.craftdetector=1..}] run give @s minecraft:observer{RepairCost:99999999,CanPlaceOn:["minecraft:void_air"],HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:1}],display:{Name:"{\"text\":\"Water Detector\",\"color\":\"yellow\",\"italic\":false}"}} 1
+execute as @a[scores={sp.craftdetector=1..}] run scoreboard players remove @s sp.craftdetector 1
+execute as @e[tag=sp.wd.detector] at @s run function sapphire:water_detector/particle
+execute as @e[tag=sp.wd.fire] at @s unless entity @e[tag=sp.wd.detector,distance=..0.5] run kill @s
+
+##placement-API: water detector
+#calling essentials
+execute as @a[tag=sp.wd.pa.tag] at @s run function sapphire:water_detector/effects
+execute as @e[tag=sp.R.detector] at @s run function sapphire:water_detector/placement
+#tagging if item is selected
+tag @a[nbt={SelectedItem:{id:"minecraft:observer",tag:{CanPlaceOn:["minecraft:void_air"],HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:1}]}}}] add sp.wd.pa.tag
+execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:observer",tag:{CanPlaceOn:["minecraft:void_air"],HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:1}]}}]}] unless entity @s[nbt={SelectedItem:{id:"minecraft:observer"}}] run tag @s add sp.wd.pa.tag
+scoreboard players reset @a[tag=!sp.wd.pa.tag] sp.wd.pa.detec

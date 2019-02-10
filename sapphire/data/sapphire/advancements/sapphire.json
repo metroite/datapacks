@@ -21,7 +21,7 @@
   "rewards": {
     "recipes": [
         "sapphire:lightning_rod",
-        "sapphire:weather_detector"
+        "sapphire:water_detector"
     ]
   }
 }

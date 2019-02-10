@@ -16,7 +16,7 @@
             "item": "minecraft:iron_ingot"
         },
         "B": {
-            "item": "minecraft:bucket"
+            "item": "minecraft:lava_bucket"
         }
     },
     "result": {

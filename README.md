@@ -25,11 +25,11 @@ More useful information can be found inside of every datapack ([above](https://g
 - [X] placement-API: implementation and improvements
 - [X] graves: big trees using "Skull Dust" on saplings
 - [X] ventilators: split ventilators off of limitedlife
-- [ ] growontoptree: fix bug using methods
+- [X] growontoptree: fix bug using methods
 - [ ] hurtfulhostiles: buff hostile entities
 - [ ] cauldronbrewing: new potions
 - [ ] meteorites: occasional event
-- [ ] sapphire: weather detectors
+- [X] sapphire: water detectors
 - [ ] vulcans: instead of surface lava lakes
 
 ## Getting Started

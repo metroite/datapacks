@@ -1,12 +1,7 @@
 #summon g.l2t after explosion
 execute as @e[tag=l2t.fused,nbt={Fuse:5s}] at @s run summon area_effect_cloud ~ ~ ~ {Tags:["g.l2t"],Duration:10}
 #data merge every skull into "Skull Dust"
-execute as @e[tag=g.l2t] at @s as @e[type=minecraft:item,distance=..16,nbt={Item:{id:"minecraft:dragon_head",Count:1b}}] run data merge entity @s {Invulnerable:1b,Item:{id:"minecraft:bone_meal",Count:1b,tag:{RepairCost:99999999,CanPlaceOn:["minecraft:void_air"],HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:1}],display:{Name:"{\"text\":\"Skull Dust\",\"color\":\"yellow\",\"italic\":false}"}}}}
-execute as @e[tag=g.l2t] at @s as @e[type=minecraft:item,distance=..16,nbt={Item:{id:"minecraft:creeper_head",Count:1b}}] run data merge entity @s {Invulnerable:1b,Item:{id:"minecraft:bone_meal",Count:1b,tag:{RepairCost:99999999,CanPlaceOn:["minecraft:void_air"],HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:1}],display:{Name:"{\"text\":\"Skull Dust\",\"color\":\"yellow\",\"italic\":false}"}}}}
-execute as @e[tag=g.l2t] at @s as @e[type=minecraft:item,distance=..16,nbt={Item:{id:"minecraft:zombie_head",Count:1b}}] run data merge entity @s {Invulnerable:1b,Item:{id:"minecraft:bone_meal",Count:1b,tag:{RepairCost:99999999,CanPlaceOn:["minecraft:void_air"],HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:1}],display:{Name:"{\"text\":\"Skull Dust\",\"color\":\"yellow\",\"italic\":false}"}}}}
-execute as @e[tag=g.l2t] at @s as @e[type=minecraft:item,distance=..16,nbt={Item:{id:"minecraft:player_head",Count:1b}}] run data merge entity @s {Invulnerable:1b,Item:{id:"minecraft:bone_meal",Count:1b,tag:{RepairCost:99999999,CanPlaceOn:["minecraft:void_air"],HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:1}],display:{Name:"{\"text\":\"Skull Dust\",\"color\":\"yellow\",\"italic\":false}"}}}}
-execute as @e[tag=g.l2t] at @s as @e[type=minecraft:item,distance=..16,nbt={Item:{id:"minecraft:skeleton_skull",Count:1b}}] run data merge entity @s {Invulnerable:1b,Item:{id:"minecraft:bone_meal",Count:1b,tag:{RepairCost:99999999,CanPlaceOn:["minecraft:void_air"],HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:1}],display:{Name:"{\"text\":\"Skull Dust\",\"color\":\"yellow\",\"italic\":false}"}}}}
-execute as @e[tag=g.l2t] at @s as @e[type=minecraft:item,distance=..16,nbt={Item:{id:"minecraft:wither_skeleton_skull",Count:1b}}] run data merge entity @s {Invulnerable:1b,Item:{id:"minecraft:bone_meal",Count:1b,tag:{RepairCost:99999999,CanPlaceOn:["minecraft:void_air"],HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:1}],display:{Name:"{\"text\":\"Skull Dust\",\"color\":\"yellow\",\"italic\":false}"}}}}
-#kill all tnts
-execute as @e[tag=g.l2t] at @s run kill @e[type=minecraft:tnt,distance=0.5..3]
-execute as @e[tag=g.l2t] at @s run kill @e[type=minecraft:tnt,nbt={Fuse:1s}]
+execute as @e[tag=g.l2t] at @s run function loud2x2tnt:graves_skull
+#grant advancement
+execute as @e[tag=l2t.advancement] at @s run advancement grant @p[distance=..8] only graves:blow_dust
+execute as @e[tag=l2t.advancement] at @s if entity @p[distance=..8] run tag @s remove l2t.advancement

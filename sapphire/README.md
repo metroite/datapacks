@@ -1,7 +1,9 @@
 ## sapphire
 
-Sapphire gems will be generated in the colder oceans, deep down. Detect weather, attract lightning and create decorative particles.
+Sapphire gems will be generated in the colder oceans, deep down. Detect water, attract lightning and create decorative particles.
 Recommended to use with limitedlife.
+
+**Crafting:**
 
 *S - Sapphire*
 
@@ -11,14 +13,16 @@ Recommended to use with limitedlife.
 
 *B - Bucket*
 
-**Weather Detector:**
+*L - Lava Bucket*
+
+**Water Detector:** (Recipe Book: Water Bucket)
 ```
 GGG
 ISI
-IBI
+ILI
 ```
 
-**lightning Rod:**
+**Lightning Rod:** (Recipe Book: Redstone Ore)
 ```
  S
 ISI

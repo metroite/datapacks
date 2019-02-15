@@ -18,7 +18,7 @@ More useful information can be found inside of every datapack ([above](https://g
 **Most publication effort goes into those!**
 
 * [r1](https://github.com/Metroite/datapacks/releases/tag/r1)
-* r2 (coming soon)
+* r2 (coming very very soon)
 
 ### To-Do-List:
 

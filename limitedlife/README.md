@@ -1,4 +1,4 @@
-## limitedlife
+## [limitedlife](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Metroite/datapacks/tree/master/limitedlife)
 
 limitedlife limits your max health every time you die. Max health can be restored if a *Bat Wing* is thrown into a water-filled cauldron under an End Crystal. The "Absorption" effect will be needed!
 Also, craft a different kind of Elytra using *Bat Wings* (tip: burns on daylight, tip2: "Milk Bucket" recipe book entry)!

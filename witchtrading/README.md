@@ -1,6 +1,6 @@
-## witchtrading
+## [witchtrading](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Metroite/datapacks/tree/master/witchtrading)
 
-Trade your poisonous potatoes with witches. Don't overshoot your boundaries though!
+Trade your poisonous potatoes with witches. Don't try to hurt her feelings though!
 Recommended to use with graves.
 
 ## Version

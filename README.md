@@ -10,6 +10,7 @@
 * [signalfire](https://github.com/Metroite/datapacks/tree/master/signalfire)
 * [ventilators](https://github.com/Metroite/datapacks/tree/master/ventilators)
 * [witchtrading](https://github.com/Metroite/datapacks/tree/master/witchtrading)
+* [worseoldpvp](https://github.com/Metroite/datapacks/tree/master/worseoldpvp)
 
 More useful information can be found inside of every datapack ([above](https://github.com/Metroite/datapacks#metroites-datapacks)) and chronologically inside of every [release post](https://github.com/Metroite/datapacks/releases) ([below](https://github.com/Metroite/datapacks#releases)).
 

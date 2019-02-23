@@ -4,6 +4,7 @@
   "minecraft:air",
   "minecraft:cave_air",
   "#minecraft:leaves",
+  "#minecraft:logs",
   "#minecraft:saplings",
   "minecraft:vine",
   "minecraft:snow",

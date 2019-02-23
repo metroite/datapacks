@@ -26,3 +26,4 @@ scoreboard players set @s[scores={g.sapling_rng=15}] g.sapling_rng 0
 scoreboard players add @s g.sapling_rng 1
 scoreboard players add @s g.sapling_height 1
 kill @s[tag=g.sapling_kill]
+execute unless block ~ ~3 ~ #graves:space run kill @s

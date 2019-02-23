@@ -1,4 +1,4 @@
-# Metroites Datapacks
+# [Metroites Datapacks](https://github.com/Metroite/datapacks/archive/master.zip)
 
 * [earlyleatherarmor](https://github.com/Metroite/datapacks/tree/master/earlyleatherarmor)
 * [graves](https://github.com/Metroite/datapacks/tree/master/graves)
@@ -67,6 +67,7 @@ Please report any **bugs** you may find, any **suggestions** you might have and 
 ## Authors
 
 * [**Metroite**](https://github.com/Metroite)
+![Metroite](Metroite.png?raw=true "Metroite")
 
 ## License
 

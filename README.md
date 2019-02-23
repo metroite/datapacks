@@ -66,7 +66,8 @@ Please report any **bugs** you may find, any **suggestions** you might have and 
 
 ## Authors
 
-* [**Metroite**](https://github.com/Metroite)
+[**Metroite**](https://github.com/Metroite)
+
 ![Metroite](Metroite.png?raw=true "Metroite")
 
 ## License

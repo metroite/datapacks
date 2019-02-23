@@ -32,19 +32,19 @@ scoreboard players reset @e[tag=!ll.tired,type=minecraft:end_crystal,scores={ll.
 #calling beam
 execute as @e[tag=ll.beam] at @s run function limitedlife:curing/beam
 
-#Bat Wings: loottable for all bats
+#Batwing: loottable for all bats
 data merge entity @e[type=minecraft:bat,nbt=!{DeathLootTable:"limitedlife:entities/bat"},limit=1,sort=random,tag=!ll.bat,tag=!ll.spawnbat] {DeathLootTable:"limitedlife:entities/bat"}
 
 #feature-compatibility to ventilators
 execute as @e[type=minecraft:bat,tag=ll.spawnbat] at @s run function ventilators:ventilator_placement
-#Bat Wings can't be placed, gives item back
+#Batwing can't be placed, gives item back
 execute as @e[type=minecraft:bat,tag=ll.spawnbat] run function limitedlife:items/spawnbat
 
 #calling remove_batwingsuit
 execute as @a[nbt={Inventory:[{id:"minecraft:elytra",Count:1b,tag:{HideFlags:16,RepairCost:99999999,CanPlaceOn:["minecraft:void_air"]}}]}] at @s in overworld unless block ~ ~ ~ minecraft:cave_air run function limitedlife:items/remove_batwingsuit
 execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:elytra",Count:1b,tag:{HideFlags:16,RepairCost:99999999,CanPlaceOn:["minecraft:void_air"]}}}] at @s in overworld unless block ~ ~ ~ minecraft:cave_air run function limitedlife:items/remove_batwingsuit
 #crafting batwingsuit (Inventory)
-execute as @a[scores={ll.craftbatwing=1..}] run give @s minecraft:elytra{Damage:232s,Unbreakable:1b,HideFlags:16,RepairCost:99999999,CanPlaceOn:["minecraft:void_air"],display:{Name:"{\"text\":\"Bat Wingsuit\",\"color\":\"yellow\",\"italic\":false}"}} 1
+execute as @a[scores={ll.craftbatwing=1..}] run give @s minecraft:elytra{Damage:12s,Unbreakable:1b,HideFlags:16,RepairCost:99999999,CanPlaceOn:["minecraft:void_air"],display:{Name:"{\"text\":\"Batwing Suit\",\"color\":\"yellow\",\"italic\":false}"}} 1
 execute as @a[scores={ll.craftbatwing=1..}] run scoreboard players remove @s ll.craftbatwing 1
 #calling batwingsuit
 execute as @a[nbt={FallFlying:1b,Inventory:[{Slot:102b,id:"minecraft:elytra",Count:1b,tag:{HideFlags:16,RepairCost:99999999,CanPlaceOn:["minecraft:void_air"]}}]}] at @s run function limitedlife:items/batwingsuit

@@ -8,7 +8,7 @@
             "translate": "Wings Cant be Desolved"
         },
         "description": {
-            "translate": "Instead of trying to desolve bat wings, try skull dust"
+            "translate": "Instead of trying to desolve Batwing, try skull dust"
         },
         "show_toast": true,
         "announce_to_chat": true

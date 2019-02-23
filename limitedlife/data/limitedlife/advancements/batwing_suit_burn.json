@@ -7,15 +7,15 @@
             "translate": "Oh no... it vaporized"
         },
         "description": {
-            "translate": "Expose a Bat Wingsuit to sunlight and watch it BURN"
+            "translate": "Expose a Batwing Suit to sunlight and watch it BURN"
         },
         "show_toast": true,
         "frame": "goal",
         "announce_to_chat": true
     },
-	"requirements":[["bat_wingsuit_burn"]],
-    "parent":"limitedlife:bat_wingsuit",
+	"requirements":[["batwing_suit_burn"]],
+    "parent":"limitedlife:batwing_suit",
     "criteria": {
-		"bat_wingsuit_burn":{"trigger":"minecraft:impossible"}
+		"batwing_suit_burn":{"trigger":"minecraft:impossible"}
   }
 }

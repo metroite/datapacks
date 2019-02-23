@@ -1,5 +1,5 @@
 #take off
-execute at @s[nbt={FallFlying:1b},scores={ll.batwingflap=1..}] if block ~ ~-0.5 ~ #limitedlife:nocollision if block ~ ~-1 ~ #limitedlife:nocollision run tp @s ~ ~-0.5 ~
+execute at @s[nbt={FallFlying:1b},scores={ll.batwingflap=1..}] if block ~ ~-0.5 ~ #limitedlife:nocollision if block ~ ~-1 ~ #limitedlife:nocollision run tp @s ~ ~-0.25 ~
 execute if block ~ ~-0.5 ~ #limitedlife:nocollision run scoreboard players reset @s ll.batwingflap
 tag @s[scores={ll.batwingflap=1..}] add ll.batwingflap
 execute at @s[tag=ll.batwingflap,nbt={FallFlying:0b}] anchored eyes run playsound minecraft:entity.bat.takeoff ambient @a[distance=..24] ~ ~ ~ 0.1 0.76

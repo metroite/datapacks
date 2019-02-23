@@ -7,13 +7,13 @@
             "translate": "Ventilators"
         },
         "description": {
-            "translate": "Empower an observer with a Bat Wing, it might push you"
+            "translate": "Empower an observer with a Batwing, you might get pushed around"
         },
         "show_toast": true,
         "announce_to_chat": true
     },
 	"requirements":[["ventilator"]],
-    "parent":"ventilators:bat_wing",
+    "parent":"ventilators:batwing",
     "criteria": {
 		"ventilator":{"trigger":"minecraft:impossible"}
   }

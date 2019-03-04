@@ -21,11 +21,17 @@ function limitedlife:sapphire/setup
 #crafting
 scoreboard objectives add sp.craftdetector minecraft.crafted:minecraft.water_bucket
 scoreboard objectives add sp.craftlight minecraft.crafted:minecraft.redstone_ore
+
 scoreboard objectives add sp.wd.detector dummy
+scoreboard objectives add sp.wd.cleanup minecraft.mined:minecraft.observer
 
 #placement-API
 scoreboard objectives add sp.lr.pa.torch minecraft.used:minecraft.redstone_torch
 scoreboard objectives add sp.so.pa.ore minecraft.used:minecraft.redstone_ore
 scoreboard objectives add sp.wd.pa.detec minecraft.used:minecraft.observer
+
+scoreboard objectives add sp.lr.pa.fail dummy
+scoreboard objectives add sp.so.pa.fail dummy
+scoreboard objectives add sp.wd.pa.fail dummy
 #"datapack loaded": Please don't remove this message, if it annoys you make sure to credit me otherwise. Thank you!
 tellraw @a ["",{"text":"sapphire","color":"green","clickEvent":{"action":"open_url","value":"https://github.com/Metroite/datapacks/tree/master/sapphire"},"hoverEvent":{"action":"show_text","value":"sapphire now spawning in deep water, very reactive to water"}},{"text":"  by "},{"text":"Metroite","color":"aqua","clickEvent":{"action":"open_url","value":"https://github.com/Metroite"}},{"text":" loaded!"}]

@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+  "minecraft:red_mushroom",
+  "#minecraft:saplings",
+  "minecraft:brown_mushroom"
+  ]
+}

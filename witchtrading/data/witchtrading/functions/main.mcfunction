@@ -34,18 +34,17 @@ tag @a[tag=wt.setup,team=!wt.friendly] remove wt.setup
 execute as @a[tag=wt.setup] at @s unless entity @e[type=area_effect_cloud,distance=..1,name=wt.friendly] run tag @e[team=wt.friendly,type=minecraft:witch,distance=..6,limit=1,sort=nearest,tag=!wt.traded] add wt.blocked
 execute as @a[tag=wt.setup] at @s unless entity @e[type=area_effect_cloud,distance=..1,name=wt.friendly] run team leave @s
 
-#####placement-API: SAD ORCHID
-#calling essentials
-execute as @a[tag=wt.sad_orchid] at @s run function witchtrading:sad_orchid/effects
-execute as @e[tag=wt.R.sad_orchid] at @s run function witchtrading:sad_orchid/placement
-#tagging if item is selected
-tag @a[nbt={SelectedItem:{id:"minecraft:blue_orchid",tag:{HideFlags:1,AttributeModifiers:[{AttributeName:"generic.luck",Name:"generic.luck",Amount:1,Operation:0}]}}}] add wt.sad_orchid
-execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:blue_orchid",tag:{HideFlags:1,AttributeModifiers:[{AttributeName:"generic.luck",Name:"generic.luck",Amount:1,Operation:0}]}}]}] unless entity @s[nbt={SelectedItem:{id:"minecraft:blue_orchid"}}] run tag @s add wt.sad_orchid
-scoreboard players reset @a[tag=!wt.sad_orchid] wt.sad_orchid
 #calling sad_orchid:sad_orchid
 execute as @e[tag=wt.sad_orchid,type=minecraft:area_effect_cloud] at @s run function witchtrading:sad_orchid/sad_orchid
 #particle effects if close to a sad_orchid (if this is inside of sad_orchid/sad_orchid this particle effect will be executed scaling with the amount of sad_orchids around the player)
 execute as @a[scores={wt.rng=9}] at @s if entity @e[tag=wt.sad_orchid,type=minecraft:area_effect_cloud,distance=..3] positioned ~ ~1.35 ~ run particle minecraft:dripping_water ^-0.15 ^ ^0.275 0 0 0 1 1 normal
+#####placement-API: SAD ORCHID
+#calling effects if item is selected
+execute as @a[tag=wt.sad_orchid] at @s run function witchtrading:sad_orchid/effects
+#tagging if item is selected
+tag @a[nbt={SelectedItem:{id:"minecraft:blue_orchid",tag:{HideFlags:1,AttributeModifiers:[{Slot:"offhand",AttributeName:"generic.luck",Name:"generic.luck",Amount:1,Operation:0,UUIDLeast:848934,UUIDMost:433777},{Slot:"mainhand",AttributeName:"generic.luck",Name:"generic.luck",Amount:2,Operation:0,UUIDLeast:848934,UUIDMost:433777}]}}}] add wt.sad_orchid
+execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:blue_orchid",tag:{HideFlags:1,AttributeModifiers:[{Slot:"offhand",AttributeName:"generic.luck",Name:"generic.luck",Amount:1,Operation:0,UUIDLeast:848934,UUIDMost:433777},{Slot:"mainhand",AttributeName:"generic.luck",Name:"generic.luck",Amount:2,Operation:0,UUIDLeast:848934,UUIDMost:433777}]}}]}] unless entity @s[nbt={SelectedItem:{id:"minecraft:blue_orchid"}}] run tag @s add wt.sad_orchid
+scoreboard players reset @a[tag=!wt.sad_orchid] wt.sad_orchid
 
 #feature-compatibility: graves
 function graves:witchtrading/main

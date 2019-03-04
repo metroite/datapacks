@@ -15,6 +15,6 @@
 	"requirements":[["batwing_suit"]],
     "parent":"limitedlife:batwing",
     "criteria": {
-		"batwing_suit":{"trigger":"minecraft:inventory_changed","conditions":{"items":[{"item":"minecraft:elytra","nbt":"{Damage:12s,Unbreakable:1b,HideFlags:16,RepairCost:99999999,CanPlaceOn:[\"minecraft:void_air\"],display:{Name:\"{\\\"text\\\":\\\"Batwing Suit\\\",\\\"color\\\":\\\"yellow\\\",\\\"italic\\\":false}\"}}"}]}}
+		"batwing_suit":{"trigger":"minecraft:inventory_changed","conditions":{"items":[{"item":"minecraft:elytra","nbt":"{Damage:12,Unbreakable:1b,HideFlags:16,CanPlaceOn:[\"minecraft:void_air\"],display:{Name:\"{\\\"text\\\":\\\"Batwing Suit\\\",\\\"color\\\":\\\"yellow\\\",\\\"italic\\\":false}\"}}"}]}}
   }
 }

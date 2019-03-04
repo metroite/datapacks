@@ -1,9 +1,11 @@
 #kill too many SU-entities
 execute at @s[tag=metroite.placement] run fill ~ ~ ~ ~ ~ ~ minecraft:observer[facing=up] replace minecraft:observer
-execute at @s[tag=metroite.placement] run summon minecraft:armor_stand ~ ~0.5 ~ {Fire:32767s,Invulnerable:1b,Invisible:1b,NoGravity:1b,Tags:["sp.wd.fire"],Small:1b}
+execute at @s[tag=metroite.placement] run summon minecraft:armor_stand ~ ~0.5 ~ {Fire:32767s,Invulnerable:1b,Invisible:1b,NoGravity:1b,Tags:["sp.wd.fire","sp.wd.wd"],Small:1b}
 execute as @s[tag=metroite.placement] run kill @e[tag=metroite.placement,distance=0.5..3]
 #cleanup
 execute unless block ~ ~ ~ minecraft:observer[facing=up] run function sapphire:water_detector/cleanup
+scoreboard players reset @a sp.wd.cleanup
+execute if block ~ ~ ~ minecraft:observer[facing=up] run scoreboard players reset @s sp.wd.pa.detec
 #effects
 execute at @s[tag=!metroite.placement] if block ~ ~ ~ minecraft:observer[facing=up,powered=false] if entity @e[tag=sp.wd.fire,distance=..0.5,nbt={Fire:0s}] run fill ~ ~ ~ ~ ~ ~ minecraft:observer[facing=up,powered=true]
 execute at @s[tag=!metroite.placement] if block ~ ~ ~ minecraft:observer[facing=up,powered=true] unless entity @e[tag=sp.wd.fire,distance=..0.5,nbt={Fire:0s}] run fill ~ ~ ~ ~ ~ ~ minecraft:observer[facing=up,powered=false]

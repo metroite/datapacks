@@ -1,5 +1,3 @@
-#kill too many SU-entities
-kill @e[tag=g.SU.sapling,distance=0.5..3]
 #effects
 particle minecraft:happy_villager ~ ~ ~ 0.5 0.5 0.5 1 10 normal
 execute if block ~ ~ ~ minecraft:oak_sapling run summon minecraft:item ~ ~ ~ {Motion:[0.0,0.25,0.0],Tags:["g.skull_dusty","g.oak"],Item:{id:"minecraft:bone_meal",Count:1b,tag:{RepairCost:99999999,CanPlaceOn:["minecraft:void_air"],HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:1}],display:{Name:"{\"text\":\"Skull Dusty\",\"color\":\"yellow\",\"italic\":false}"}}},PickupDelay:-1}
@@ -10,4 +8,4 @@ execute if block ~ ~ ~ minecraft:acacia_sapling run summon minecraft:item ~ ~ ~ 
 execute if block ~ ~ ~ minecraft:dark_oak_sapling run summon minecraft:item ~ ~ ~ {Motion:[0.0,0.25,0.0],Tags:["g.skull_dusty","g.dark_oak"],Item:{id:"minecraft:bone_meal",Count:1b,tag:{RepairCost:99999999,CanPlaceOn:["minecraft:void_air"],HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:1}],display:{Name:"{\"text\":\"Skull Dusty\",\"color\":\"yellow\",\"italic\":false}"}}},PickupDelay:-1}
 execute if block ~ ~ ~ minecraft:red_mushroom run function graves:usebonemeal/sapling/mushroom/red_spread
 execute if block ~ ~ ~ minecraft:brown_mushroom run function graves:usebonemeal/sapling/mushroom/brown_spread
-execute if block ~ ~ ~ #graves:mushroom as @e[tag=g.mushroom] run tag @s add g.spreadshroom
+execute if block ~ ~ ~ #graves:mushroom as @e[tag=g.mushroom,distance=..8] run tag @s add g.spreadshroom

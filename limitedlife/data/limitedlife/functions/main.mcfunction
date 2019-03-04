@@ -41,12 +41,12 @@ execute as @e[type=minecraft:bat,tag=ll.spawnbat] at @s run function ventilators
 execute as @e[type=minecraft:bat,tag=ll.spawnbat] run function limitedlife:items/spawnbat
 
 #calling remove_batwingsuit
-execute as @a[nbt={Inventory:[{id:"minecraft:elytra",Count:1b,tag:{HideFlags:16,RepairCost:99999999,CanPlaceOn:["minecraft:void_air"]}}]}] at @s in overworld unless block ~ ~ ~ minecraft:cave_air run function limitedlife:items/remove_batwingsuit
-execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:elytra",Count:1b,tag:{HideFlags:16,RepairCost:99999999,CanPlaceOn:["minecraft:void_air"]}}}] at @s in overworld unless block ~ ~ ~ minecraft:cave_air run function limitedlife:items/remove_batwingsuit
+execute as @a[nbt={Inventory:[{id:"minecraft:elytra",tag:{Damage:12,Unbreakable:1b,HideFlags:16,CanPlaceOn:["minecraft:void_air"]}}]}] at @s in overworld unless block ~ ~ ~ minecraft:cave_air run function limitedlife:items/remove_batwingsuit
+execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:elytra",tag:{HideFlags:16,CanPlaceOn:["minecraft:void_air"]}}}] at @s in overworld unless block ~ ~ ~ minecraft:cave_air run function limitedlife:items/remove_batwingsuit
 #crafting batwingsuit (Inventory)
-execute as @a[scores={ll.craftbatwing=1..}] run give @s minecraft:elytra{Damage:12s,Unbreakable:1b,HideFlags:16,RepairCost:99999999,CanPlaceOn:["minecraft:void_air"],display:{Name:"{\"text\":\"Batwing Suit\",\"color\":\"yellow\",\"italic\":false}"}} 1
+execute as @a[scores={ll.craftbatwing=1..}] run give @s minecraft:elytra{Damage:12,Unbreakable:1b,HideFlags:16,CanPlaceOn:["minecraft:void_air"],display:{Name:"{\"text\":\"Batwing Suit\",\"color\":\"yellow\",\"italic\":false}"}} 1
 execute as @a[scores={ll.craftbatwing=1..}] run scoreboard players remove @s ll.craftbatwing 1
 #calling batwingsuit
-execute as @a[nbt={FallFlying:1b,Inventory:[{Slot:102b,id:"minecraft:elytra",Count:1b,tag:{HideFlags:16,RepairCost:99999999,CanPlaceOn:["minecraft:void_air"]}}]}] at @s run function limitedlife:items/batwingsuit
+execute as @a[nbt={FallFlying:1b,Inventory:[{Slot:102b,id:"minecraft:elytra",tag:{Damage:12,Unbreakable:1b,HideFlags:16,CanPlaceOn:["minecraft:void_air"]}}]}] at @s run function limitedlife:items/batwingsuit
 execute as @a[tag=ll.batwingflap] at @s run function limitedlife:items/batwingsuit
 scoreboard players reset @a ll.batwingflap

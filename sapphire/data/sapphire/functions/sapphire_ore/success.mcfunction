@@ -1,4 +1,2 @@
-function sapphire:generator/ore_placement
-#end loop
-scoreboard players remove @p[scores={sp.so.pa.ore=1..}] sp.so.pa.ore 1
-kill @e[tag=sp.R.ore,sort=nearest,limit=1]
+execute align xyz positioned ~0.5 ~ ~0.5 unless entity @e[type=area_effect_cloud,tag=metroite.place,distance=..0.5] unless entity @e[tag=metroite.placement,distance=..7] run scoreboard players reset @s sp.so.pa.ore
+execute align xyz positioned ~0.5 ~ ~0.5 unless entity @e[type=area_effect_cloud,tag=metroite.place,distance=..0.5] unless entity @e[tag=metroite.placement,distance=..7] run function sapphire:generator/ore_placement

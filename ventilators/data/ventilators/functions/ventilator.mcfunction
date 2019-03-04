@@ -1,6 +1,4 @@
 #effects and motion based on direction
-scoreboard players add @s[tag=!v.off] v.ventilator 1
-scoreboard players add @s[tag=!v.off,scores={v.ventilator=1}] v.sound 1
 execute as @s[tag=v.fansouth,tag=!v.off] if block ~ ~ ~ minecraft:observer[powered=true] run function ventilators:direction/south
 execute as @s[tag=v.fanwest,tag=!v.off] if block ~ ~ ~ minecraft:observer[powered=true] run function ventilators:direction/west
 execute as @s[tag=v.fannorth,tag=!v.off] if block ~ ~ ~ minecraft:observer[powered=true] run function ventilators:direction/north
@@ -31,9 +29,6 @@ execute if block ~ ~1 ~ minecraft:redstone_wall_torch[lit=true] run tag @s add v
 execute if block ~ ~-1 ~ minecraft:redstone_wall_torch[lit=true] run tag @s add v.off
 
 execute at @s[tag=v.off] run particle minecraft:cloud ~ ~0.5 ~ 0.175 0.175 0.175 0.025 1
-
-scoreboard players set @s[scores={v.sound=11..}] v.sound 0
-scoreboard players set @s[scores={v.ventilator=9..}] v.ventilator 0
 
 #kill v.fan armor_stands
 execute unless block ~ ~ ~ minecraft:observer run function ventilators:ventilatorcleanup

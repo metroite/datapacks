@@ -6,6 +6,6 @@ execute if score max_daytime ll.sincedeath >= daytime ll.sincedeath at @s run pl
 execute if score max_daytime ll.sincedeath >= daytime ll.sincedeath at @s anchored eyes run particle minecraft:smoke ^ ^-0.8 ^-0.2 0 0.3 0 0.1 50 normal
 
 #Killing Batwing Suit when sun shines
-execute if score max_daytime ll.sincedeath >= daytime ll.sincedeath run clear @s[type=minecraft:player] minecraft:elytra{HideFlags:16,RepairCost:99999999,CanPlaceOn:["minecraft:void_air"]}
+execute if score max_daytime ll.sincedeath >= daytime ll.sincedeath run clear @s[type=minecraft:player] minecraft:elytra{Damage:12,Unbreakable:1b,HideFlags:16,CanPlaceOn:["minecraft:void_air"]}
 execute if score max_daytime ll.sincedeath >= daytime ll.sincedeath run kill @s[type=minecraft:item]
 execute if score max_daytime ll.sincedeath >= daytime ll.sincedeath run advancement grant @p[distance=..8] only limitedlife:batwing_suit_burn

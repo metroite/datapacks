@@ -8,7 +8,9 @@ scoreboard objectives add wt.rng minecraft.custom:minecraft.play_one_minute
 scoreboard players set rngmax wt.rng 15
 scoreboard players set 15 wt.rng 15
 
+#placement-API
 scoreboard objectives add wt.sad_orchid minecraft.used:minecraft.blue_orchid
+scoreboard objectives add wt.so.pa.fail dummy
 
 #feature-compatibility
 function graves:witchtrading/setup

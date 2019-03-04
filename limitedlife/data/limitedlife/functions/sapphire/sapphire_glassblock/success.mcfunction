@@ -1,4 +1,2 @@
-data merge entity @s {Duration:2147483637,Tags:["sp.sapphire_glass","sp.sapphire_glasssetup","metroite.placement","metroite.place"]}
-#end loop
-scoreboard players remove @p[scores={sp.glass_placed=1..}] sp.glass_placed 1
-kill @e[tag=sp.R.glass,sort=nearest,limit=1]
+execute align xyz positioned ~0.5 ~ ~0.5 unless entity @e[type=area_effect_cloud,tag=metroite.place,distance=..0.5] unless entity @e[tag=metroite.placement,distance=..7] run scoreboard players reset @s sp.glass_placed
+execute align xyz positioned ~0.5 ~ ~0.5 unless entity @e[type=area_effect_cloud,tag=metroite.place,distance=..0.5] unless entity @e[tag=metroite.placement,distance=..7] run summon minecraft:area_effect_cloud ~ ~ ~ {Duration:2147483637,Tags:["sp.sapphire_glass","metroite.placement","metroite.place"]}

@@ -1,4 +1,13 @@
-playsound minecraft:entity.player.levelup block @a[distance=..16] ~ ~ ~ 2 2
-particle minecraft:effect ~ ~ ~ 0.15 0.15 0.15 0.5 24
-summon minecraft:item ~ ~0.25 ~ {Motion:[0.0d,0.25d,0.0d],Item:{id:"minecraft:observer",Count:1b,tag:{RepairCost:99999999,CanPlaceOn:["minecraft:void_air"],HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:1}],display:{Name:"{\"text\":\"Water Detector\",\"color\":\"yellow\",\"italic\":false}"}}}}
-kill @s
+#dont push: doesn't work flawlessly. Its stupid. I hate pistons
+scoreboard players add @s sp.wd.pa.detec 1
+execute unless entity @s[tag=sp.wd.cleaned] unless entity @p[scores={sp.wd.cleanup=1..},distance=..8] positioned ~1 ~ ~ if block ~ ~ ~ minecraft:observer[facing=up] unless entity @e[tag=metroite.place,distance=..0.5] run function sapphire:water_detector/piston_move
+execute unless entity @s[tag=sp.wd.cleaned] unless entity @p[scores={sp.wd.cleanup=1..},distance=..8] positioned ~-1 ~ ~ if block ~ ~ ~ minecraft:observer[facing=up] unless entity @e[tag=metroite.place,distance=..0.5] run function sapphire:water_detector/piston_move
+execute unless entity @s[tag=sp.wd.cleaned] unless entity @p[scores={sp.wd.cleanup=1..},distance=..8] positioned ~ ~1 ~ if block ~ ~ ~ minecraft:observer[facing=up] unless entity @e[tag=metroite.place,distance=..0.5] run function sapphire:water_detector/piston_move
+execute unless entity @s[tag=sp.wd.cleaned] unless entity @p[scores={sp.wd.cleanup=1..},distance=..8] positioned ~ ~-1 ~ if block ~ ~ ~ minecraft:observer[facing=up] unless entity @e[tag=metroite.place,distance=..0.5] run function sapphire:water_detector/piston_move
+execute unless entity @s[tag=sp.wd.cleaned] unless entity @p[scores={sp.wd.cleanup=1..},distance=..8] positioned ~ ~ ~1 if block ~ ~ ~ minecraft:observer[facing=up] unless entity @e[tag=metroite.place,distance=..0.5] run function sapphire:water_detector/piston_move
+execute unless entity @s[tag=sp.wd.cleaned] unless entity @p[scores={sp.wd.cleanup=1..},distance=..8] positioned ~ ~ ~-1 if block ~ ~ ~ minecraft:observer[facing=up] unless entity @e[tag=metroite.place,distance=..0.5] run function sapphire:water_detector/piston_move
+execute if entity @s[tag=sp.wd.cleaned] run summon minecraft:item ~ ~0.25 ~ {Motion:[0.0d,0.25d,0.0d],Item:{id:"minecraft:observer",Count:1b,tag:{RepairCost:99999999,CanPlaceOn:["minecraft:void_air"],HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:1}],display:{Name:"{\"text\":\"Water Detector\",\"color\":\"yellow\",\"italic\":false}"}}}}
+execute if entity @s[scores={sp.wd.pa.detec=3..}] run playsound minecraft:entity.player.levelup block @a[distance=..16] ~ ~ ~ 2 2
+execute if entity @s[scores={sp.wd.pa.detec=3..}] run particle minecraft:effect ~ ~ ~ 0.15 0.15 0.15 0.5 24
+execute if entity @s[scores={sp.wd.pa.detec=3..}] unless entity @s[tag=sp.wd.cleaned] run data merge entity @e[type=minecraft:item,distance=..2,sort=nearest,limit=1,tag=!pa.dropped,nbt={Item:{id:"minecraft:observer",Count:1b}}] {Tags:["pa.dropped"],Item:{id:"minecraft:observer",Count:1b,tag:{RepairCost:99999999,CanPlaceOn:["minecraft:void_air"],HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:1}],display:{Name:"{\"text\":\"Water Detector\",\"color\":\"yellow\",\"italic\":false}"}}}}
+execute if entity @s[scores={sp.wd.pa.detec=3..}] run kill @s

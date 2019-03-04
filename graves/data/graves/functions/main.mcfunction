@@ -29,17 +29,16 @@ scoreboard players set @p[scores={g.deaths=1..}] g.deaths 0
 #call skulldrop "Skull Dust" g.drop:
 execute as @e[tag=g.dropskull] at @s run function graves:skulldrop
 #"Skull Dust" sapling bone mealing
-execute as @e[tag=g.SU.sapling] at @s run function graves:usebonemeal/sapling/init
 execute as @e[tag=g.skull_dusty] at @s run function graves:usebonemeal/sapling/growth
 
 ##placement-API: Skull Dust as bone meal
-#calling essentials
+#calling effects if item is selected
 execute as @a[tag=g.usebonemeal] at @s run function graves:usebonemeal/effects
-execute as @e[tag=g.R.sapling] at @s run function graves:usebonemeal/placement
 #tagging if item is selected
 tag @a[nbt={SelectedItem:{id:"minecraft:bone_meal",tag:{RepairCost:99999999,CanPlaceOn:["minecraft:void_air"],HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:1}]}}}] add g.usebonemeal
 execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:bone_meal",tag:{RepairCost:99999999,CanPlaceOn:["minecraft:void_air"],HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:1}]}}]}] unless entity @s[nbt={SelectedItem:{id:"minecraft:bone_meal"}}] run tag @s add g.usebonemeal
 scoreboard players reset @a g.usebonemeal
+
 #calling landed_flower.mcfunction: kill g.flowers if OnGround and place random tall_flower
 execute as @e[tag=g.flower,nbt={OnGround:1b}] at @s run function graves:usebonemeal/landed_flower
 

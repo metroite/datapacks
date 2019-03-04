@@ -20,5 +20,4 @@ playsound minecraft:entity.player.levelup block @a[distance=..16] ~ ~ ~ 2 2
 advancement grant @p[distance=..8] only sapphire:particle_generator
 
 #ends the particlesetup cycle
-tag @s remove sp.particlesetup
 tag @s remove metroite.placement

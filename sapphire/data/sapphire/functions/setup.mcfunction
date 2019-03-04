@@ -31,7 +31,13 @@ scoreboard objectives add sp.so.pa.ore minecraft.used:minecraft.redstone_ore
 scoreboard objectives add sp.wd.pa.detec minecraft.used:minecraft.observer
 
 scoreboard objectives add sp.lr.pa.fail dummy
+scoreboard players set 0 sp.lr.pa.fail 0
+scoreboard players add _fallback_ sp.lr.pa.fail 0
 scoreboard objectives add sp.so.pa.fail dummy
+scoreboard players set 0 sp.so.pa.fail 0
+scoreboard players add _fallback_ sp.so.pa.fail 0
 scoreboard objectives add sp.wd.pa.fail dummy
+scoreboard players set 0 sp.wd.pa.fail 0
+scoreboard players add _fallback_ sp.wd.pa.fail 0
 #"datapack loaded": Please don't remove this message, if it annoys you make sure to credit me otherwise. Thank you!
 tellraw @a ["",{"text":"sapphire","color":"green","clickEvent":{"action":"open_url","value":"https://github.com/Metroite/datapacks/tree/master/sapphire"},"hoverEvent":{"action":"show_text","value":"sapphire now spawning in deep water, very reactive to water"}},{"text":"  by "},{"text":"Metroite","color":"aqua","clickEvent":{"action":"open_url","value":"https://github.com/Metroite"}},{"text":" loaded!"}]

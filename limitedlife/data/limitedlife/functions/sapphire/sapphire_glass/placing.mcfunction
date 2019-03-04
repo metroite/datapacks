@@ -19,4 +19,3 @@ execute if score x_random sp.sapphire <= 65 sp.sapphire run kill @s
 #ends the particlesetup cycle
 advancement grant @p[distance=..8] only limitedlife:sapphire_glass
 tag @s remove metroite.placement
-tag @s remove metroite.placement

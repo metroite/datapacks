@@ -17,6 +17,8 @@ execute as @a[tag=sp.so.pa.tag] at @s run function sapphire:sapphire_ore/effects
 tag @a[nbt={SelectedItem:{id:"minecraft:redstone_ore",tag:{Enchantments:[{id:"minecraft:unbreaking",lvl:1}],RepairCost:99999999,CanPlaceOn:["minecraft:void_air"],HideFlags:17}}}] add sp.so.pa.tag
 execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:redstone_ore",tag:{Enchantments:[{id:"minecraft:unbreaking",lvl:1}],RepairCost:99999999,CanPlaceOn:["minecraft:void_air"],HideFlags:17}}]}] unless entity @s[nbt={SelectedItem:{id:"minecraft:redstone_ore"}}] run tag @s add sp.so.pa.tag
 scoreboard players reset @a[tag=!sp.so.pa.tag] sp.so.pa.ore
+#fallback mechanic: returns lost items if the API failed
+execute as @a[scores={sp.so.pa.fail=1..}] at @s run function sapphire:sapphire_ore/fallback
 
 #feature-compatibility: limitedlife
 function limitedlife:sapphire/main
@@ -40,6 +42,8 @@ execute as @a[tag=sp.lr.pa.tag] at @s run function sapphire:lightning_rod/effect
 tag @a[nbt={SelectedItem:{id:"minecraft:redstone_torch",tag:{CanPlaceOn:["minecraft:void_air"],HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:1}]}}}] add sp.lr.pa.tag
 execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:redstone_torch",tag:{CanPlaceOn:["minecraft:void_air"],HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:1}]}}]}] unless entity @s[nbt={SelectedItem:{id:"minecraft:redstone_torch"}}] run tag @s add sp.lr.pa.tag
 scoreboard players reset @a[tag=!sp.lr.pa.tag] sp.lr.pa.torch
+#fallback mechanic: returns lost items if the API failed
+execute as @a[scores={sp.lr.pa.fail=1..}] at @s run function sapphire:lightning_rod/fallback
 
 #crafting water_detector (Inventory)
 execute as @a[scores={sp.craftdetector=1..}] run give @s minecraft:observer{RepairCost:99999999,CanPlaceOn:["minecraft:void_air"],HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:1}],display:{Name:"{\"text\":\"Water Detector\",\"color\":\"yellow\",\"italic\":false}"}} 1
@@ -54,3 +58,5 @@ execute as @a[tag=sp.wd.pa.tag] at @s run function sapphire:water_detector/effec
 tag @a[nbt={SelectedItem:{id:"minecraft:observer",tag:{CanPlaceOn:["minecraft:void_air"],HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:1}]}}}] add sp.wd.pa.tag
 execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:observer",tag:{CanPlaceOn:["minecraft:void_air"],HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:1}]}}]}] unless entity @s[nbt={SelectedItem:{id:"minecraft:observer"}}] run tag @s add sp.wd.pa.tag
 scoreboard players reset @a[tag=!sp.wd.pa.tag] sp.wd.pa.detec
+#fallback mechanic: returns lost items if the API failed
+execute as @a[scores={sp.wd.pa.fail=1..}] at @s run function sapphire:water_detector/fallback

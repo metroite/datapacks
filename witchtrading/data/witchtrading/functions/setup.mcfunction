@@ -11,6 +11,8 @@ scoreboard players set 15 wt.rng 15
 #placement-API
 scoreboard objectives add wt.sad_orchid minecraft.used:minecraft.blue_orchid
 scoreboard objectives add wt.so.pa.fail dummy
+scoreboard players set 0 wt.so.pa.fail 0
+scoreboard players add _fallback_ wt.so.pa.fail 0
 
 #feature-compatibility
 function graves:witchtrading/setup

@@ -5,7 +5,7 @@ effect give @s[nbt={NoAI:1b}] minecraft:slowness 1 255 true
 execute unless entity @p[distance=..11,nbt={SelectedItem:{tag:{wopsword:1b}}}] run data merge entity @s {NoAI:0b}
 execute unless entity @p[distance=..11,nbt={SelectedItem:{tag:{wopsword:1b}}}] run tag @s remove wop.noai
 #gravity
-execute if entity @s[nbt={NoAI:1b}] if block ~ ~-0.5 ~ #worseoldpvp:nocollision if block ~0.2 ~-0.5 ~0.2 #worseoldpvp:nocollision if block ~-0.2 ~-0.5 ~-0.2 #worseoldpvp:nocollision if block ~0.2 ~-0.5 ~-0.2 #worseoldpvp:nocollision if block ~-0.2 ~-0.5 ~0.2 #worseoldpvp:nocollision run tp @s ~ ~-0.25 ~
+execute if entity @s[nbt={NoAI:1b}] if block ~ ~-0.25 ~ #worseoldpvp:nocollision if block ~0.2 ~-0.25 ~0.2 #worseoldpvp:nocollision if block ~-0.2 ~-0.25 ~-0.2 #worseoldpvp:nocollision if block ~0.2 ~-0.25 ~-0.2 #worseoldpvp:nocollision if block ~-0.2 ~-0.25 ~0.2 #worseoldpvp:nocollision run tp @s ~ ~-0.24 ~
 #if hit regain ai
 execute store result score @s wop.damage run data get entity @s HurtTime
 execute if entity @s[scores={wop.damage=1..}] run data merge entity @s {NoAI:0b}

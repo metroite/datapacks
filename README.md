@@ -19,7 +19,7 @@ More useful information can be found inside of every datapack ([above](https://g
 **Most publication effort goes into those!**
 
 * [r1](https://github.com/Metroite/datapacks/releases/tag/r1)
-* r2 (coming very very soon)
+* [r2](https://github.com/Metroite/datapacks/projects/2) (coming very very very soon)
 
 ### To-Do-List:
 
@@ -58,7 +58,7 @@ Have fun trying out the new stuff you have added!
 
 ## Version
 
-These datapacks were created in Minecraft 1.13.X, they might be working in newer versions of Minecraft (client and server).
+These datapacks were created in Minecraft 1.13.X, [they might be working in newer versions of Minecraft](https://github.com/Metroite/datapacks/projects/1). I aim to provide 100% multiplayer-proof datapacks.
 
 ## [Feedback](https://github.com/Metroite/datapacks/issues)
 

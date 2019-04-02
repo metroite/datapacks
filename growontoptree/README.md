@@ -1,4 +1,4 @@
-## [growontoptree](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Metroite/datapacks/tree/master/growontoptree)
+## [growontoptree](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Metroite/datapacks/tree/master/growontoptree&rootDirectory=false)
 
 If players are inside wood, they get teleported up recursively!
 Recommended to use with graves.

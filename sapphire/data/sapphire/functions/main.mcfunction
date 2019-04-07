@@ -50,6 +50,7 @@ execute as @a[scores={sp.craftdetector=1..}] run give @s minecraft:observer{Repa
 execute as @a[scores={sp.craftdetector=1..}] run scoreboard players remove @s sp.craftdetector 1
 execute as @e[tag=sp.wd.detector] at @s run function sapphire:water_detector/particle
 execute as @e[tag=sp.wd.fire] at @s unless entity @e[tag=sp.wd.detector,distance=..0.5] run kill @s
+execute as @e[tag=sp.wd.gem] at @s unless entity @e[tag=sp.wd.detector,distance=..0.5] run kill @s
 
 ##placement-API: water detector
 #calling effects if item is selected

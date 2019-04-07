@@ -2,7 +2,7 @@
     "display": {
         "icon": {
             "item": "minecraft:squid_spawn_egg",
-            "nbt": "{RepairCost:99999999,CanPlaceOn:[\"minecraft:void_air\"],HideFlags:17,Enchantments:[{id:\"minecraft:unbreaking\",lvl:1}],display:{Name:\"{\\\"text\\\":\\\"Sapphire\\\",\\\"color\\\":\\\"yellow\\\",\\\"italic\\\":false}\"}}"
+            "nbt": "{RepairCost:99999999,CanPlaceOn:[\"minecraft:void_air\"],HideFlags:17,Enchantments:[{id:\"minecraft:unbreaking\",lvl:2}],display:{Name:\"{\\\"text\\\":\\\"Sapphire\\\",\\\"color\\\":\\\"yellow\\\",\\\"italic\\\":false}\"}}"
         },
         "title": {
             "translate": "Sapphire"
@@ -16,7 +16,7 @@
 	"requirements":[["got_sp"]],
     "parent":"minecraft:story/iron_tools",
     "criteria": {
-		"got_sp":{"trigger":"minecraft:inventory_changed","conditions":{"items":[{"item":"minecraft:squid_spawn_egg","nbt":"{RepairCost:99999999,CanPlaceOn:[\"minecraft:void_air\"],HideFlags:17,Enchantments:[{id:\"minecraft:unbreaking\",lvl:1}],display:{Name:\"{\\\"text\\\":\\\"Sapphire\\\",\\\"color\\\":\\\"yellow\\\",\\\"italic\\\":false}\"}}"}]}}
+		"got_sp":{"trigger":"minecraft:inventory_changed","conditions":{"items":[{"item":"minecraft:squid_spawn_egg","nbt":"{RepairCost:99999999,CanPlaceOn:[\"minecraft:void_air\"],HideFlags:17,Enchantments:[{id:\"minecraft:unbreaking\",lvl:2}],display:{Name:\"{\\\"text\\\":\\\"Sapphire\\\",\\\"color\\\":\\\"yellow\\\",\\\"italic\\\":false}\"}}"}]}}
   },
   "rewards": {
     "recipes": [

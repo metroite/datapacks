@@ -26,7 +26,7 @@ function limitedlife:sapphire/main
 #calls particle_generator
 execute as @e[tag=sp.particle] at @s run function sapphire:particle_generator/particle
 #calls particle_generator placement
-execute as @e[type=minecraft:squid,tag=sp.spawnsquid] at @s run function sapphire:particle_generator/placement
+execute as @e[type=minecraft:item,tag=sp.spawnsquid] at @s run function sapphire:particle_generator/placement
 
 #crafting lightning rod
 execute as @a[scores={sp.craftlight=1..}] run give @s minecraft:redstone_torch{RepairCost:99999999,CanPlaceOn:["minecraft:void_air"],HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:1}],display:{Name:"{\"text\":\"Lightning Rod\",\"color\":\"yellow\",\"italic\":false}"}} 1

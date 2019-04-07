@@ -50,3 +50,8 @@ execute as @a[scores={ll.craftbatwing=1..}] run scoreboard players remove @s ll.
 execute as @a[nbt={FallFlying:1b,Inventory:[{Slot:102b,id:"minecraft:elytra",tag:{Damage:12,Unbreakable:1b,HideFlags:16,CanPlaceOn:["minecraft:void_air"]}}]}] at @s run function limitedlife:items/batwingsuit
 execute as @a[tag=ll.batwingflap] at @s run function limitedlife:items/batwingsuit
 scoreboard players reset @a ll.batwingflap
+
+#winged arrow (in 1.14: use item tag to list all arrow types and make all of them shootable)
+execute as @a[scores={ll.wa.shoot=1..},nbt={Inventory:[{Slot:-106b,id:"minecraft:bat_spawn_egg",tag:{RepairCost:99999999,CanPlaceOn:["minecraft:void_air"],HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:2}],display:{Name:"{\"text\":\"Batwing\",\"color\":\"yellow\",\"italic\":false}"}}}]}] at @s run function limitedlife:items/winged_arrow_player
+execute as @e[tag=ll.wa.arrow] at @s run function limitedlife:items/winged_arrow_arrow
+scoreboard players reset @a ll.wa.shoot

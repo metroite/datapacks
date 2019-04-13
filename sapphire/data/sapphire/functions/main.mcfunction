@@ -22,6 +22,8 @@ execute as @a[scores={sp.so.pa.fail=1..}] at @s run function sapphire:sapphire_o
 
 #feature-compatibility: limitedlife
 function limitedlife:sapphire/main
+#feature-compatibility: torchout
+function torchout:sapphire/tick
 
 #calls particle_generator
 execute as @e[tag=sp.particle] at @s run function sapphire:particle_generator/particle/main

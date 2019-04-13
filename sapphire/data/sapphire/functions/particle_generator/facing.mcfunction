@@ -7,12 +7,12 @@ execute if block ~ ~ ~ minecraft:observer[facing=up] run tag @s add sp.particleu
 execute if block ~ ~ ~ minecraft:observer[facing=down] run tag @s add sp.particledown
 
 #powers the observers on so they can become particle_generators
-execute as @s[tag=sp.particlesouth] run setblock ~ ~ ~ minecraft:observer[facing=south,powered=true] replace
-execute as @s[tag=sp.particlewest] run setblock ~ ~ ~ minecraft:observer[facing=west,powered=true] replace
-execute as @s[tag=sp.particlenorth] run setblock ~ ~ ~ minecraft:observer[facing=north,powered=true] replace
-execute as @s[tag=sp.particleeast] run setblock ~ ~ ~ minecraft:observer[facing=east,powered=true] replace
-execute as @s[tag=sp.particleup] run setblock ~ ~ ~ minecraft:observer[facing=up,powered=true] replace
-execute as @s[tag=sp.particledown] run setblock ~ ~ ~ minecraft:observer[facing=down,powered=true] replace
+execute if entity @s[tag=sp.particlesouth] run setblock ~ ~ ~ minecraft:observer[facing=south,powered=true] replace
+execute if entity @s[tag=sp.particlewest] run setblock ~ ~ ~ minecraft:observer[facing=west,powered=true] replace
+execute if entity @s[tag=sp.particlenorth] run setblock ~ ~ ~ minecraft:observer[facing=north,powered=true] replace
+execute if entity @s[tag=sp.particleeast] run setblock ~ ~ ~ minecraft:observer[facing=east,powered=true] replace
+execute if entity @s[tag=sp.particleup] run setblock ~ ~ ~ minecraft:observer[facing=up,powered=true] replace
+execute if entity @s[tag=sp.particledown] run setblock ~ ~ ~ minecraft:observer[facing=down,powered=true] replace
 
 #placement effects
 particle minecraft:effect ~ ~ ~ 0.15 0.15 0.15 0.5 24

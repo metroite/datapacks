@@ -2,8 +2,8 @@
 execute if entity @s[tag=sp.wd.SU.tag] run function sapphire:water_detector/particle_setup
 #cleanup
 execute unless block ~ ~ ~ minecraft:observer[facing=up] run function sapphire:water_detector/cleanup
-scoreboard players reset @a sp.wd.cleanup
-execute if block ~ ~ ~ minecraft:observer[facing=up] run scoreboard players reset @s sp.wd.pa.detec
+execute if block ~ ~ ~ minecraft:observer[facing=up] run scoreboard players reset @s sp.wd.cleanup
+execute as @a[distance=..12,scores={sp.wd.cleanup=1..}] at @s unless entity @e[tag=sp.wd.detector,distance=..8,scores={sp.wd.cleanup=1..}] run scoreboard players reset @s sp.wd.cleanup
 #effects
 execute if entity @s[tag=!sp.wd.SU.tag] if block ~ ~ ~ minecraft:observer[facing=up,powered=false] if entity @e[tag=sp.wd.fire,distance=..0.5,nbt={Fire:0s}] run fill ~ ~ ~ ~ ~ ~ minecraft:observer[facing=up,powered=true]
 execute if entity @s[tag=!sp.wd.SU.tag] if block ~ ~ ~ minecraft:observer[facing=up,powered=true] unless entity @e[tag=sp.wd.fire,distance=..0.5,nbt={Fire:0s}] run fill ~ ~ ~ ~ ~ ~ minecraft:observer[facing=up,powered=false]

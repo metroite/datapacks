@@ -1,4 +1,4 @@
-#calls ventilator and score-function
+#calls ventilator and handles scores for particles and effects
 scoreboard players add _global_ v.ventilator 1
 execute if score _global_ v.ventilator >= 9 v.ventilator run scoreboard players add _sound_ v.ventilator 1
 execute as @e[tag=v.fan] at @s run function ventilators:ventilator
@@ -10,3 +10,6 @@ execute as @e[type=minecraft:item,tag=ll.spawnbat] at @s run function ventilator
 
 #Batwing: loottable for all bats
 data merge entity @e[type=minecraft:bat,nbt=!{DeathLootTable:"ventilators:entities/bat"},limit=1,sort=random,tag=!ll.bat,tag=!ll.spawnbat] {DeathLootTable:"ventilators:entities/bat"}
+
+#kills tortured bats
+kill @e[type=minecraft:bat,tag=ll.spawnbat,nbt={BatFlags:1b}]

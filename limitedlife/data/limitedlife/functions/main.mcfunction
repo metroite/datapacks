@@ -35,11 +35,6 @@ execute as @e[tag=ll.beam] at @s run function limitedlife:curing/beam
 #Batwing: loottable for all bats
 data merge entity @e[type=minecraft:bat,nbt=!{DeathLootTable:"limitedlife:entities/bat"},limit=1,sort=random,tag=!ll.bat,tag=!ll.spawnbat] {DeathLootTable:"limitedlife:entities/bat"}
 
-#feature-compatibility to ventilators
-execute as @e[type=minecraft:bat,tag=ll.spawnbat] at @s run function ventilators:ventilator_placement
-#Batwing can't be placed, gives item back
-execute as @e[type=minecraft:bat,tag=ll.spawnbat] run function limitedlife:items/spawnbat
-
 #calling remove_batwingsuit
 execute as @a[nbt={Inventory:[{id:"minecraft:elytra",tag:{Damage:12,Unbreakable:1b,HideFlags:16,CanPlaceOn:["minecraft:void_air"]}}]}] at @s in overworld unless block ~ ~ ~ minecraft:cave_air run function limitedlife:items/remove_batwingsuit
 execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:elytra",tag:{HideFlags:16,CanPlaceOn:["minecraft:void_air"]}}}] at @s in overworld unless block ~ ~ ~ minecraft:cave_air run function limitedlife:items/remove_batwingsuit

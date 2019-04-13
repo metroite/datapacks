@@ -24,7 +24,7 @@ execute as @a[scores={sp.so.pa.fail=1..}] at @s run function sapphire:sapphire_o
 function limitedlife:sapphire/main
 
 #calls particle_generator
-execute as @e[tag=sp.particle] at @s run function sapphire:particle_generator/particle
+execute as @e[tag=sp.particle] at @s run function sapphire:particle_generator/particle/main
 #calls particle_generator placement
 execute as @e[type=minecraft:item,tag=sp.spawnsquid] at @s run function sapphire:particle_generator/placement
 
@@ -49,8 +49,8 @@ execute as @a[scores={sp.lr.pa.fail=1..}] at @s run function sapphire:lightning_
 execute as @a[scores={sp.craftdetector=1..}] run give @s minecraft:observer{RepairCost:99999999,CanPlaceOn:["minecraft:void_air"],HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:1}],display:{Name:"{\"text\":\"Water Detector\",\"color\":\"yellow\",\"italic\":false}"}} 1
 execute as @a[scores={sp.craftdetector=1..}] run scoreboard players remove @s sp.craftdetector 1
 execute as @e[tag=sp.wd.detector] at @s run function sapphire:water_detector/particle
-execute as @e[tag=sp.wd.fire] at @s unless entity @e[tag=sp.wd.detector,distance=..0.5] run kill @s
-execute as @e[tag=sp.wd.gem] at @s unless entity @e[tag=sp.wd.detector,distance=..0.5] run kill @s
+execute as @e[tag=sp.wd.fire] at @s positioned ~ ~-0.5 ~ unless entity @e[tag=sp.wd.detector,distance=..0.5] run kill @s
+execute as @e[tag=sp.wd.gem] at @s positioned ~ ~ ~ unless entity @e[tag=sp.wd.detector,distance=..0.5] run kill @s
 
 ##placement-API: water detector
 #calling effects if item is selected

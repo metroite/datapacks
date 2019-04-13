@@ -1,4 +1,4 @@
-#torchin
+#torchin and apply damage to the flint_and_steel
 execute if block ~ ~ ~ minecraft:oak_button[powered=true] as @p[distance=..8,nbt={SelectedItem:{id:"minecraft:flint_and_steel"}}] run function torchout:torch/damage
 execute if block ~ ~ ~ minecraft:oak_button[powered=true] if entity @p[distance=..8,scores={to.damage=2..},nbt={SelectedItem:{id:"minecraft:flint_and_steel"}}] run function torchout:torch/in
 #reactivate button

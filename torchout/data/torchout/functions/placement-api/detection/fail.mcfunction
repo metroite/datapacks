@@ -3,7 +3,7 @@ tellraw @s ["",{"text":"error#6:","bold":true,"color":"red","hoverEvent":{"actio
 ###NO UNLIMITED-LIGHT ALLOWED!
 execute as @e[tag=to.tag.torch,distance=..7] at @s if block ~ ~ ~ minecraft:torch run tag @s add to.tag.fail
 execute as @e[tag=to.tag.torch,distance=..7] at @s if block ~ ~ ~ minecraft:wall_torch run tag @s add to.tag.fail
-execute as @e[tag=to.tag.fail,distance=..12] at @s run function torchout:torch/out
+execute as @e[tag=to.tag.fail,distance=..12] at @s run function torchout:placement-api/detection/out
 #change every torch to a button
 fill ~7 ~7 ~7 ~-7 ~-7 ~-7 minecraft:oak_button[face=floor] replace minecraft:torch
 fill ~7 ~7 ~7 ~-7 ~-7 ~-7 minecraft:oak_button[facing=north,face=wall] replace minecraft:wall_torch[facing=north]
@@ -16,5 +16,5 @@ fill ~7 ~3 ~7 ~-7 ~-3 ~-7 minecraft:oak_button[facing=north,face=wall] replace m
 fill ~7 ~3 ~7 ~-7 ~-3 ~-7 minecraft:oak_button[facing=east,face=wall] replace minecraft:wall_torch[facing=east]
 fill ~7 ~3 ~7 ~-7 ~-3 ~-7 minecraft:oak_button[facing=south,face=wall] replace minecraft:wall_torch[facing=south]
 fill ~7 ~3 ~7 ~-7 ~-3 ~-7 minecraft:oak_button[facing=west,face=wall] replace minecraft:wall_torch[facing=west]
-execute as @e[tag=to.tag.fail,distance=..12] at @s run function torchout:torch/in
+execute as @e[tag=to.tag.fail,distance=..12] at @s run function torchout:placement-api/detection/in
 scoreboard players reset @s to.torch

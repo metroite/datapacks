@@ -2,8 +2,8 @@ scoreboard objectives add wop.usecarrot minecraft.used:minecraft.carrot_on_a_sti
 scoreboard objectives add wop.extend dummy
 scoreboard players set 0 wop.extend 0
 scoreboard players set 1 wop.extend 1
-execute unless score extend wop.extend >= 0 wop.extend run scoreboard players set extend wop.extend 6
-execute unless score mode wop.extend >= 0 wop.extend run scoreboard players set mode wop.extend 0
+execute unless score $extend$ wop.extend >= 0 wop.extend run scoreboard players set $extend$ wop.extend 6
+execute unless score $mode$ wop.extend >= 0 wop.extend run scoreboard players set $mode$ wop.extend 0
 scoreboard objectives add wop.health health
 scoreboard objectives add wop.damage dummy
 scoreboard objectives add wop.damagecalc dummy

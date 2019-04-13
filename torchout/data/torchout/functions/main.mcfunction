@@ -10,3 +10,4 @@ execute as @a[scores={to.pa.fail=1..}] at @s run function torchout:placement-api
 
 #torch tick
 execute as @e[tag=to.tag.torch] at @s run function torchout:torch/tick
+scoreboard players add $global$ to.torch 1

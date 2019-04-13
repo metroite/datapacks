@@ -4,7 +4,7 @@ replaceitem entity @s[scores={wop.extend=0},nbt=!{Inventory:[{Slot:-106b}]}] wea
 #playsound if hit and if initally blocked (also sets wop.damagecalc and wop.damage)
 execute if entity @s[scores={wop.extend=0,wop.usecarrot=1..}] run function worseoldpvp:sword-block/init
 #extends the sword-blocking by x ticks and calls the actual blocking function, which replaces offhand with another, more op carrot_on_a_stick
-scoreboard players operation @s[scores={wop.usecarrot=1..}] wop.extend = extend wop.extend
+scoreboard players operation @s[scores={wop.usecarrot=1..}] wop.extend = $extend$ wop.extend
 execute if entity @s[scores={wop.extend=1..}] run function worseoldpvp:sword-block/blocking
 
 #pigs don't respond to the carrot_on_a_stick

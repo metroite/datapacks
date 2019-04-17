@@ -6,6 +6,5 @@ execute if entity @s[scores={wop.extend=0,wop.usecarrot=1..}] run function worse
 #extends the sword-blocking by x ticks and calls the actual blocking function, which replaces offhand with another, more op carrot_on_a_stick
 scoreboard players operation @s[scores={wop.usecarrot=1..}] wop.extend = $extend$ wop.extend
 execute if entity @s[scores={wop.extend=1..}] run function worseoldpvp:sword-block/blocking
-
 #pigs don't respond to the carrot_on_a_stick
 execute as @e[type=minecraft:pig,tag=!wop.noai,distance=..10] at @s run function worseoldpvp:pigs/noai

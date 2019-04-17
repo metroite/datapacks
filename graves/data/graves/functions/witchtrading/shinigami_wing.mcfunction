@@ -19,6 +19,8 @@ execute as @s[type=minecraft:player,nbt=!{Inventory:[{Slot:102b,id:"minecraft:el
 execute as @s[type=minecraft:player,nbt=!{Inventory:[{Slot:102b,id:"minecraft:elytra",tag:{AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:5,Operation:0,UUIDLeast:233217,UUIDMost:736971,Slot:"chest"},{AttributeName:"generic.armorToughness",Name:"generic.armorToughness",Amount:1,Operation:0,UUIDLeast:903708,UUIDMost:932627,Slot:"chest"}],display:{Name:"{\"text\":\"Shinigami Wings\",\"color\":\"yellow\",\"italic\":false}",Lore:["wear this and you will be bound to a contract until eternity"]}}}]}] at @s run tag @s remove wt.P.shinigami_wing.SU
 
 #replacing offhand with firework rockets
+clear @s[nbt=!{Inventory:[{Slot:-106b}]}] minecraft:firework_rocket{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}],display:{Name:"\"Shinigami Power\"",Lore:["fly through the sky until you die"]}}
+clear @s[nbt=!{FallFlying:1b}] minecraft:firework_rocket{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}],display:{Name:"\"Shinigami Power\"",Lore:["fly through the sky until you die"]}}
 replaceitem entity @s[scores={wt.rng=1},nbt=!{Inventory:[{Slot:-106b}]},nbt={FallFlying:1b}] weapon.offhand minecraft:firework_rocket{RepairCost:99999999,Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}],display:{Name:"\"Shinigami Power\"",Lore:["fly through the sky until you die"]}} 1
 
 #repairing the Shinigami Wing

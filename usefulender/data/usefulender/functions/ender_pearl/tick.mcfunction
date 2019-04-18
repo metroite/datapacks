@@ -1,3 +1,5 @@
+#get uuid of thrower
+execute unless entity @s[scores={ue.uuid=1..}] store result score @s ue.uuid run scoreboard players get @p[scores={ue.uuid=1..},distance=..48] ue.uuid
 ##calls success (for dragon_egg tp or ender_pearl nodmg) at direction of motion
 execute if entity @s[tag=!ue.calulated] run function usefulender:ender_pearl/direction/calculate
 #if too close to block

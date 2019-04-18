@@ -6,7 +6,7 @@ Change *$burntime$* in *to.torch* to redefine the time until torches burn out in
 
 ## Version
 
-Minecraft 1.13
+Minecraft 1.14
 
 ## Performance
 

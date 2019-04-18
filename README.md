@@ -1,5 +1,9 @@
 # [Metroites Datapacks](https://github.com/Metroite/datapacks/archive/master.zip)
 
+[Discord Server](https://discord.gg/vBgb85N)
+
+### Datapack-List:
+
 * [earlyleatherarmor](https://github.com/Metroite/datapacks/tree/master/earlyleatherarmor)
 * [graves](https://github.com/Metroite/datapacks/tree/master/graves)
 * [growontoptree](https://github.com/Metroite/datapacks/tree/master/growontoptree)
@@ -12,26 +16,19 @@
 * [witchtrading](https://github.com/Metroite/datapacks/tree/master/witchtrading)
 * [worseoldpvp](https://github.com/Metroite/datapacks/tree/master/worseoldpvp)
 
-More useful information can be found inside of every datapack ([above](https://github.com/Metroite/datapacks#metroites-datapacks)) and chronologically inside of every [release post](https://github.com/Metroite/datapacks/releases) ([below](https://github.com/Metroite/datapacks#releases)).
+**More useful information can be found inside of every datapack** ([above](https://github.com/Metroite/datapacks#metroites-datapacks)) and chronologically inside of every [release post](https://github.com/Metroite/datapacks/releases) ([below](https://github.com/Metroite/datapacks#releases)).
 
 ### [Releases:](https://github.com/Metroite/datapacks/releases)
 
 **Most publication effort goes into those!**
 
 * [r1](https://github.com/Metroite/datapacks/releases/tag/r1)
-* [r2](https://github.com/Metroite/datapacks/projects/2) (coming very very very soon)
+* [r2](https://github.com/Metroite/datapacks/projects/2) (coming very very very soon - releasing hopefully together with Minecraft 1.14 on Tuesday the 23rd of April)
 
 ### To-Do-List:
 
-- [X] placement-API: implementation and improvements
-- [X] graves: big trees using "Skull Dust" on saplings
-- [X] ventilators: split ventilators off of limitedlife
-- [X] growontoptree: fix bug using methods
-- [ ] hurtfulhostiles: buff hostile entities
-- [ ] cauldronbrewing: new potions
-- [ ] meteorites: occasional event
-- [X] sapphire: water detectors
-- [ ] vulcans: instead of surface lava lakes
+* [r2](https://github.com/Metroite/datapacks/projects/2)
+* [Minecraft 1.14 Port](https://github.com/Metroite/datapacks/projects/1)
 
 ## Getting Started
 
@@ -58,11 +55,13 @@ Have fun trying out the new stuff you have added!
 
 ## Version
 
-These datapacks were created in Minecraft 1.13.X, [they might be working in newer versions of Minecraft](https://github.com/Metroite/datapacks/projects/1). I aim to provide 100% multiplayer-proof datapacks.
+All datapacks work in [1.13](https://github.com/Metroite/datapacks/tree/master) and [1.14](https://github.com/Metroite/datapacks/tree/1.14). I aim to provide 100% multiplayer-proof datapacks.
 
 ## [Feedback](https://github.com/Metroite/datapacks/issues)
 
 Please report any **bugs** you may find, any **suggestions** you might have and any possible **feedback** on the [Issues](https://github.com/Metroite/datapacks/issues) page! They are all welcome.
+
+If you want to messsage me directly or follow this project more conveniently, then just join the [Discord Server](https://discord.gg/vBgb85N)!
 
 ## Authors
 

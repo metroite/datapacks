@@ -8,7 +8,7 @@ Minecraft 1.13
 
 ## Performance
 
-Tier 1/5
+Tier 2/5
 
 ## Authors
 

@@ -1,3 +1,5 @@
+#NO PISTONS
+execute if entity @s[tag=sp.ll.piston_move] run function limitedlife:sapphire/sapphire_glass/piston_move
 #calling cleanup when sapphire_glass is destroyed
 execute unless block ~ ~ ~ minecraft:light_blue_stained_glass run function limitedlife:sapphire/sapphire_glass/cleanup
 scoreboard players set @a sp.glass_broken 0

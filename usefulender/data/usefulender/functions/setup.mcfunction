@@ -1,5 +1,6 @@
 scoreboard objectives add ue.pearlthrow minecraft.used:minecraft.ender_pearl
 scoreboard objectives add ue.ea.shoot minecraft.used:minecraft.bow
+scoreboard objectives add ue.ea.shootc minecraft.used:minecraft.crossbow
 scoreboard objectives add ue.pearlX dummy
 scoreboard objectives add ue.pearlY dummy
 scoreboard objectives add ue.pearlZ dummy

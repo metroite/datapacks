@@ -2,7 +2,7 @@
     "display": {
         "icon": {
             "item": "minecraft:feather",
-            "nbt": "{RepairCost:99999999,CanPlaceOn:[\"minecraft:void_air\"],HideFlags:17,Enchantments:[{id:\"minecraft:unbreaking\",lvl:1}],display:{Lore:[\"Frequency: Slot 2 to Slot 9\"],Name:\"{\\\"text\\\":\\\"Mobile Receiver\\\",\\\"color\\\":\\\"yellow\\\",\\\"italic\\\":false}\"}}"
+            "nbt": "{RepairCost:99999999,CanPlaceOn:[\"minecraft:void_air\"],HideFlags:17,Enchantments:[{id:\"minecraft:unbreaking\",lvl:1}],display:{Lore:[\"{\\\"text\\\":\\\"Frequency: Slot 2 to Slot 9\\\"}\"],Name:\"{\\\"text\\\":\\\"Mobile Receiver\\\",\\\"color\\\":\\\"yellow\\\",\\\"italic\\\":false}\"}}"
         },
         "title": {
             "translate": "Mobile Receiver"
@@ -17,6 +17,6 @@
 	"requirements":[["craft_mobile_receiver"]],
     "parent":"morsecode:build_sender",
     "criteria": {
-    "craft_mobile_receiver":{"trigger":"minecraft:inventory_changed","conditions":{"items":[{"item":"minecraft:feather","nbt":"{RepairCost:99999999,CanPlaceOn:[\"minecraft:void_air\"],HideFlags:17,Enchantments:[{id:\"minecraft:unbreaking\",lvl:1}],display:{Lore:[\"Frequency: Slot 2 to Slot 9\"],Name:\"{\\\"text\\\":\\\"Mobile Receiver\\\",\\\"color\\\":\\\"yellow\\\",\\\"italic\\\":false}\"}}"}]}}
+    "craft_mobile_receiver":{"trigger":"minecraft:inventory_changed","conditions":{"items":[{"item":"minecraft:feather","nbt":"{RepairCost:99999999,CanPlaceOn:[\"minecraft:void_air\"],HideFlags:17,Enchantments:[{id:\"minecraft:unbreaking\",lvl:1}],display:{Lore:[\"{\\\"text\\\":\\\"Frequency: Slot 2 to Slot 9\\\"}\"],Name:\"{\\\"text\\\":\\\"Mobile Receiver\\\",\\\"color\\\":\\\"yellow\\\",\\\"italic\\\":false}\"}}"}]}}
     }
 }

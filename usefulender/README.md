@@ -4,7 +4,7 @@ Ender Pearls won't deal damage if this datapack is installed! On top of that, if
 
 ## Version
 
-Minecraft 1.13
+Minecraft 1.14
 
 ## Performance
 

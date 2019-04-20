@@ -1,7 +1,7 @@
 data merge entity @s {Motion:[0.0d,0.32d,0.0d]}
 scoreboard players add @s sf.signalfire 1
 execute if entity @s[scores={sf.signalfire=1}] run advancement grant @p[distance=..8] only signalfire:smoke_signal
-execute if entity @s[scores={sf.signalfire=0..5}] run playsound minecraft:block.fire.extinguish block @a[distance=..32] ~ ~ ~ 2 0.5
+execute if entity @s[scores={sf.signalfire=0..5}] run playsound minecraft:block.fire.extinguish block @a ~ ~ ~ 2 0.5
 execute if entity @s[scores={sf.signalfire=0..20}] run particle minecraft:large_smoke ~ ~ ~ 0.1 0.2 0.1 0.05 10 force
 execute if entity @s[scores={sf.signalfire=21..40}] run particle minecraft:large_smoke ~ ~ ~ 0.2 0.2 0.2 0.06 12 force
 execute if entity @s[scores={sf.signalfire=41..60}] run particle minecraft:large_smoke ~ ~ ~ 0.3 0.2 0.3 0.07 14 force

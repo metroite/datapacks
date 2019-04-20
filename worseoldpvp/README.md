@@ -10,7 +10,7 @@ Change *$mode$* in *wop.extend* from 0 to 2 if only the sword-block (1) or the n
 
 ## Version
 
-Minecraft 1.13
+Minecraft 1.14
 
 ## Performance
 

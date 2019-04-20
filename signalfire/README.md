@@ -4,7 +4,7 @@ Throw leaves into a burning log block and a very strong smoke will rise up, visu
 
 ## Version
 
-Minecraft 1.13
+Minecraft 1.14
 
 ## Performance
 

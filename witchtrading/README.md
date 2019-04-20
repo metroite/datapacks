@@ -1,4 +1,4 @@
-## [witchtrading](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Metroite/datapacks/tree/master/witchtrading&rootDirectory=false)
+## [witchtrading](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Metroite/datapacks/tree/1.14/witchtrading&rootDirectory=false)
 
 Trade your poisonous potatoes with witches. Don't try to hurt their feelings though!
 Recommended to use with graves.

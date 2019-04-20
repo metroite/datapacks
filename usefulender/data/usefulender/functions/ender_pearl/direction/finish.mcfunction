@@ -6,4 +6,4 @@ execute if block ~ ~1 ~ minecraft:dragon_egg run function usefulender:ender_pear
 execute if block ~ ~-1 ~ minecraft:dragon_egg run function usefulender:ender_pearl/dragon_egg
 execute if block ~ ~ ~1 minecraft:dragon_egg run function usefulender:ender_pearl/dragon_egg
 execute if block ~ ~ ~-1 minecraft:dragon_egg run function usefulender:ender_pearl/dragon_egg
-execute unless block ~ ~ ~ #usefulender:nocollision run function usefulender:ender_pearl/success
+execute unless block ~ ~ ~ #usefulender:no_collision_ender_pearl run function usefulender:ender_pearl/success

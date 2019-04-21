@@ -1,6 +1,7 @@
 #ender arrow
 #bow
 execute as @a[scores={ue.ea.shoot=1..},nbt={Inventory:[{Slot:-106b,id:"minecraft:ender_pearl"}]}] at @s run function usefulender:ender_pearl/ender_arrow/player
+execute as @a[scores={ue.ea.shoot=1..},nbt={SelectedItem:{id:"minecraft:ender_pearl"}}] at @s run function usefulender:ender_pearl/ender_arrow/player
 #crossbow
 tag @a[nbt={SelectedItem:{id:"minecraft:crossbow",tag:{ChargedProjectiles:[{id:"minecraft:ender_pearl"}]}}}] add ue.ea.shootc
 tag @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:crossbow",tag:{ChargedProjectiles:[{id:"minecraft:ender_pearl"}]}}]}] add ue.ea.shootc

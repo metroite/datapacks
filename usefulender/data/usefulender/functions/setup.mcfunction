@@ -8,6 +8,7 @@ scoreboard objectives add ue.uuid dummy
 scoreboard players set 0 ue.uuid 0
 execute unless score $max$ ue.uuid >= 0 ue.uuid run scoreboard players set $max$ ue.uuid 10000
 execute unless score $accuracy$ ue.pearlthrow >= 0 ue.uuid run scoreboard players set $accuracy$ ue.pearlthrow 3
+execute unless score $distance$ ue.pearlthrow >= 0 ue.uuid run scoreboard players set $distance$ ue.pearlthrow 8
 
 #"datapack loaded": Please don't remove this message, if it annoys you make sure to credit me otherwise. Thank you!
 tellraw @a ["",{"text":"usefulender","color":"green","clickEvent":{"action":"open_url","value":"https://github.com/Metroite/datapacks/tree/master/usefulender"},"hoverEvent":{"action":"show_text","value":"ender pearls but now actually useful"}},{"text":" by "},{"text":"Metroite","color":"aqua","clickEvent":{"action":"open_url","value":"https://github.com/Metroite"}},{"text":" loaded!"}]

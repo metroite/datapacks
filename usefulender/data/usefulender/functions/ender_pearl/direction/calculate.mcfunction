@@ -1,7 +1,10 @@
 #if too close to block
-execute as @p[scores={ue.pearlthrow=1..},distance=..2] at @s anchored eyes run function usefulender:ender_pearl/direction/close
-#mark begin location of calculation
-summon minecraft:area_effect_cloud ~ ~ ~ {Age:-2147483648,Duration:1,WaitTime:-2147483648,Tags:["ue.motion"]}
+scoreboard players operation @p[scores={ue.pearlthrow=1..},distance=..2] ue.pearlY = $distance$ ue.pearlthrow
+scoreboard players operation @p[scores={ue.ea.shoot=1..},distance=..2] ue.pearlY = $distance$ ue.pearlthrow
+scoreboard players operation @p[scores={ue.ea.shootc=1..},distance=..2] ue.pearlY = $distance$ ue.pearlthrow
+execute as @p[scores={ue.pearlthrow=1..},distance=..2] at @s positioned ~ ~1.5 ~ run function usefulender:ender_pearl/direction/close_check
+execute as @p[scores={ue.ea.shoot=1..},distance=..2] at @s positioned ~ ~1.5 ~ run function usefulender:ender_pearl/direction/close_check
+execute as @p[scores={ue.ea.shootc=1..},distance=..2] at @s positioned ~ ~1.5 ~ run function usefulender:ender_pearl/direction/close_check
 #data get Motion
 execute store result score @s ue.pearlX run data get entity @s Motion[0] 1000000
 execute store result score @s ue.pearlY run data get entity @s Motion[1] 1000000

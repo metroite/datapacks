@@ -1,6 +1,5 @@
 #for later curvage calculation
-execute if entity @s[scores={ue.pearlY=10000..}] run tag @s add ue.motion_high
-execute if entity @s[scores={ue.pearlY=..-10000}] run tag @s add ue.motion_low
+execute if entity @s[scores={ue.pearlY=..-100}] run tag @s add ue.motion_low
 #recursively lowers the score and redefines the position until score is close enough to 0
 scoreboard players remove @s[scores={ue.pearlY=100000..}] ue.pearlY 100000
 scoreboard players remove @s[scores={ue.pearlY=10000..100000}] ue.pearlY 10000

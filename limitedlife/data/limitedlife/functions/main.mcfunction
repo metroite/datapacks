@@ -46,9 +46,16 @@ execute as @a[nbt={FallFlying:1b,Inventory:[{Slot:102b,id:"minecraft:elytra",tag
 execute as @a[tag=ll.batwingflap] at @s run function limitedlife:items/batwingsuit
 scoreboard players reset @a ll.batwingflap
 
-#winged arrow
+##winged arrow
+#bow
 execute as @a[scores={ll.wa.shoot=1..},nbt={Inventory:[{Slot:-106b,id:"minecraft:bat_spawn_egg",tag:{RepairCost:99999999,CanPlaceOn:["minecraft:void_air"],HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:2}],display:{Name:"{\"text\":\"Batwing\",\"color\":\"yellow\",\"italic\":false}"}}}]}] at @s run function limitedlife:items/winged_arrow_player
-execute as @a[scores={ll.wa.shootc=1..},nbt={Inventory:[{Slot:-106b,id:"minecraft:bat_spawn_egg",tag:{RepairCost:99999999,CanPlaceOn:["minecraft:void_air"],HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:2}],display:{Name:"{\"text\":\"Batwing\",\"color\":\"yellow\",\"italic\":false}"}}}]}] at @s run function limitedlife:items/winged_arrow_player
+#crossbow
+tag @a[nbt={SelectedItem:{id:"minecraft:crossbow",tag:{ChargedProjectiles:[{id:"minecraft:bat_spawn_egg"}]}}}] add ll.wa.shootc
+tag @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:crossbow",tag:{ChargedProjectiles:[{id:"minecraft:bat_spawn_egg"}]}}]}] add ll.wa.shootc
+execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:bat_spawn_egg"}],SelectedItem:{tag:{Charged:1b,ChargedProjectiles:[{id:"minecraft:arrow"}]}}}] run function limitedlife:items/winged_arrow_load
+execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Charged:1b,ChargedProjectiles:[{id:"minecraft:arrow"}]}}],SelectedItem:{id:"minecraft:bat_spawn_egg"}}] run function limitedlife:items/winged_arrow_load
+execute as @a[tag=ll.wa.shootc] at @s run function limitedlife:items/winged_arrow_player
+#arrow
 execute as @e[tag=ll.wa.arrow] at @s run function limitedlife:items/winged_arrow_arrow
 scoreboard players reset @a ll.wa.shoot
 scoreboard players reset @a ll.wa.shootc

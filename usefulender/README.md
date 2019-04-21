@@ -2,13 +2,15 @@
 
 Ender Pearls won't deal damage if this datapack is installed! On top of that, if they're thrown at a Dragon Egg, the player will be teleported someplace far away.
 
+Set *$accuracy$* in *ue.pearlthrow* higher, if the server is experiencing lag due to this datapack (3 is default): `/scoreboard players set $accuracy$ ue.pearlthrow 3`
+
 ## Version
 
 Minecraft 1.14
 
 ## Performance
 
-Tier 2/5
+Tier 3/5
 
 ## Authors
 

@@ -8,8 +8,8 @@ execute as @s[tag=v.fanup,tag=!v.off] if block ~ ~ ~ minecraft:observer[powered=
 execute as @s[tag=v.fandown,tag=!v.off] if block ~ ~ ~ minecraft:observer[powered=true] run function ventilators:direction/down
 
 #sound
-execute if score _sound_ v.ventilator = 11 v.ventilator unless entity @p[tag=v.nosound,distance=..15] run playsound minecraft:item.elytra.flying block @a ~ ~ ~ 0.3 2
-tag @a[distance=..15] add v.nosound
+execute if score _sound_ v.ventilator = 11 v.ventilator unless entity @p[tag=v.nosound,distance=..16] run playsound minecraft:item.elytra.flying block @a ~ ~ ~ 0.3 2
+tag @a[distance=..16] add v.nosound
 
 #powering the ventilators off
 tag @s remove v.off

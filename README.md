@@ -1,6 +1,6 @@
 # [Metroites Datapacks](https://github.com/Metroite/datapacks/archive/master.zip)
 
-[Discord Server](https://discord.gg/vBgb85N)
+[Discord Server](https://discord.gg/vBgb85N) to follow this project more conveniently!
 
 ### Datapack-List:
 
@@ -12,6 +12,8 @@
 * [morsecode](https://github.com/Metroite/datapacks/tree/master/morsecode)
 * [sapphire](https://github.com/Metroite/datapacks/tree/master/sapphire)
 * [signalfire](https://github.com/Metroite/datapacks/tree/master/signalfire)
+* [torchout](https://github.com/Metroite/datapacks/tree/master/torchout)
+* [usefulender](https://github.com/Metroite/datapacks/tree/master/usefulender)
 * [ventilators](https://github.com/Metroite/datapacks/tree/master/ventilators)
 * [witchtrading](https://github.com/Metroite/datapacks/tree/master/witchtrading)
 * [worseoldpvp](https://github.com/Metroite/datapacks/tree/master/worseoldpvp)

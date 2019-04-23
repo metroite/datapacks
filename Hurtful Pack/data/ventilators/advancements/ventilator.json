@@ -1,0 +1,20 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:observer"
+        },
+        "title": {
+            "translate": "Ventilators"
+        },
+        "description": {
+            "translate": "Empower an observer with a Batwing, you might get pushed around"
+        },
+        "show_toast": true,
+        "announce_to_chat": true
+    },
+	"requirements":[["ventilator"]],
+    "parent":"ventilators:batwing",
+    "criteria": {
+		"ventilator":{"trigger":"minecraft:impossible"}
+  }
+}

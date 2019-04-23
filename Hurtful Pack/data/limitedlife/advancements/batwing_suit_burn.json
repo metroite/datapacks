@@ -1,0 +1,21 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:elytra"
+        },
+        "title": {
+            "translate": "Oh no... it vaporized"
+        },
+        "description": {
+            "translate": "Expose a Batwing Suit to sunlight and watch it BURN"
+        },
+        "show_toast": true,
+        "frame": "goal",
+        "announce_to_chat": true
+    },
+	"requirements":[["batwing_suit_burn"]],
+    "parent":"limitedlife:batwing_suit",
+    "criteria": {
+		"batwing_suit_burn":{"trigger":"minecraft:impossible"}
+  }
+}

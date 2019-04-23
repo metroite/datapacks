@@ -1,0 +1,22 @@
+{
+    "display": {
+        "icon": {
+          "item": "minecraft:bone_meal",
+          "nbt": "{RepairCost:99999999,CanPlaceOn:[\"minecraft:void_air\"],HideFlags:17,Enchantments:[{id:\"minecraft:unbreaking\",lvl:1}],display:{Name:\"{\\\"text\\\":\\\"Skull Dust\\\",\\\"color\\\":\\\"yellow\\\",\\\"italic\\\":false}\"}}"
+      },
+        "title": {
+            "translate": "Skulls BOOOOM to Dust"
+        },
+        "description": {
+            "translate": "Crush skulls into dust by shattering them with the help of 2x2x2 tnt"
+        },
+        "show_toast": true,
+        "hidden": false,
+        "announce_to_chat": true
+    },
+	"requirements":[["blow_dust"]],
+    "parent":"loud2x2tnt:blow_up",
+    "criteria": {
+      "blow_dust":{"trigger":"minecraft:impossible"}
+  }
+}

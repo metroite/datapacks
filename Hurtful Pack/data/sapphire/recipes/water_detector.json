@@ -1,0 +1,26 @@
+{
+    "type": "crafting_shaped",
+    "pattern": [
+        "GGG",
+        "ISI",
+        "IBI"
+    ],
+    "key": {
+        "G": {
+            "item": "minecraft:glass"
+        },
+        "S": {
+            "item": "minecraft:squid_spawn_egg"
+        },
+		    "I": {
+            "item": "minecraft:iron_ingot"
+        },
+        "B": {
+            "item": "minecraft:lava_bucket"
+        }
+    },
+    "result": {
+        "item": "minecraft:water_bucket",
+        "count": 1
+    }
+}

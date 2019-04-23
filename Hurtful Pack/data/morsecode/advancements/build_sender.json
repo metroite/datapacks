@@ -1,0 +1,20 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:gold_block"
+        },
+        "title": {
+            "translate": "Sender"
+        },
+        "description": {
+            "translate": "Build yourself a sender and use it: place a button and an item frame with a redstone torch inside on a gold block"
+        },
+        "show_toast": true,
+        "announce_to_chat": true
+    },
+	"requirements":[["build_sender"]],
+    "parent":"minecraft:story/smelt_iron",
+    "criteria": {
+		"build_sender":{"trigger":"minecraft:impossible"}
+    }
+}

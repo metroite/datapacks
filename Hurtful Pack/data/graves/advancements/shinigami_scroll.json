@@ -1,0 +1,21 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:paper",
+            "nbt": "{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}"
+        },
+        "title": {
+            "translate": "Scroll of Shinigami"
+        },
+        "description": {
+            "translate": "Trade yourself a Scroll of Shinigami and give it a Shinigami so it can take a look at your wings"
+        },
+        "show_toast": true,
+        "announce_to_chat": true
+    },
+	"requirements":[["repair_shinigami"]],
+    "parent":"graves:shinigami_wing",
+    "criteria": {
+		"repair_shinigami":{"trigger":"minecraft:impossible"}
+    }
+}

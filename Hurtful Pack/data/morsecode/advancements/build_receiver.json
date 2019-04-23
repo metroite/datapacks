@@ -1,0 +1,20 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:iron_block"
+        },
+        "title": {
+            "translate": "Receiver"
+        },
+        "description": {
+            "translate": "Your sender might need a receiver: place redstone and an item frame with a redstone torch inside on an iron block"
+        },
+        "show_toast": true,
+        "announce_to_chat": true
+    },
+	"requirements":[["build_receiver"]],
+    "parent":"morsecode:build_sender",
+    "criteria": {
+		"build_receiver":{"trigger":"minecraft:impossible"}
+    }
+}

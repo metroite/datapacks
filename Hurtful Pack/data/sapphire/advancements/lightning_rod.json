@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:redstone_torch",
+            "nbt": "{RepairCost:99999999,CanPlaceOn:[\"minecraft:void_air\"],HideFlags:17,Enchantments:[{id:\"minecraft:unbreaking\",lvl:1}],display:{Name:\"{\\\"text\\\":\\\"Lightning Rod\\\",\\\"color\\\":\\\"yellow\\\",\\\"italic\\\":false}\"}}"
+        },
+        "title": {
+            "translate": "Lightning Rod"
+        },
+        "description": {
+            "translate": "Craft a Lightning Rod which can be found in the recipe book as a redstone ore"
+        },
+        "show_toast": true,
+        "announce_to_chat": true
+    },
+	"requirements":[["lightning_rod"]],
+    "parent":"sapphire:sapphire",
+    "criteria": {
+		"lightning_rod":{"trigger":"minecraft:inventory_changed","conditions":{"items":[{"item":"minecraft:redstone_torch","nbt":"{RepairCost:99999999,CanPlaceOn:[\"minecraft:void_air\"],HideFlags:17,Enchantments:[{id:\"minecraft:unbreaking\",lvl:1}],display:{Name:\"{\\\"text\\\":\\\"Lightning Rod\\\",\\\"color\\\":\\\"yellow\\\",\\\"italic\\\":false}\"}}"}]}}
+  },
+  "rewards": {
+    "recipes": [
+        "sapphire:lightning_rod",
+        "sapphire:water_detector"
+    ]
+  }
+}

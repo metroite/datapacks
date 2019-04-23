@@ -1,0 +1,23 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:elytra",
+            "nbt": "{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}"
+        },
+        "title": {
+            "translate": "Shinigami Wing"
+        },
+        "description": {
+            "translate": "Kill a Shinigami and wear its wings"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "hidden": false,
+        "announce_to_chat": true
+    },
+	"requirements":[["wear_shinigami"]],
+    "parent":"witchtrading:risky_business",
+    "criteria": {
+		"wear_shinigami":{"trigger":"minecraft:impossible"}
+    }
+}

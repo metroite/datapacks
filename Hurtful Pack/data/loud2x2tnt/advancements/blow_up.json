@@ -1,0 +1,21 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:tnt"
+        },
+        "title": {
+            "translate": "BOOOOM"
+        },
+        "description": {
+            "translate": "Light ONE block of a 2x2x2 tnt structure and make it boom"
+        },
+        "show_toast": true,
+        "hidden": false,
+        "announce_to_chat": true
+    },
+	"requirements":[["blow_up"]],
+    "parent":"minecraft:story/upgrade_tools",
+    "criteria": {
+      "blow_up":{"trigger":"minecraft:impossible"}
+  }
+}

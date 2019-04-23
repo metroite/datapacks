@@ -18,6 +18,8 @@
 * [witchtrading](https://github.com/Metroite/datapacks/tree/master/witchtrading)
 * [worseoldpvp](https://github.com/Metroite/datapacks/tree/master/worseoldpvp)
 
+**Every Datapack is included in the [Hurtful Pack](https://github.com/Metroite/datapacks/tree/master/Hurtful_Pack)!** Available in **1.13** and 1.14!
+
 **More useful information can be found inside of every datapack** ([above](https://github.com/Metroite/datapacks#metroites-datapacks)) and chronologically inside of every [release post](https://github.com/Metroite/datapacks/releases) ([below](https://github.com/Metroite/datapacks#releases)).
 
 ### [Releases:](https://github.com/Metroite/datapacks/releases)
@@ -25,7 +27,7 @@
 **Most publication effort goes into those!**
 
 * [r1](https://github.com/Metroite/datapacks/releases/tag/r1)
-* [r2](https://github.com/Metroite/datapacks/projects/2) (coming very very very soon - releasing hopefully together with Minecraft 1.14 on Tuesday the 23rd of April)
+* [r2](https://github.com/Metroite/datapacks/projects/2) (!RELEASED! as the [Hurtful Pack](https://github.com/Metroite/datapacks/tree/master/Hurt_Pack), release post is on its way!)
 
 ### To-Do-List:
 
@@ -57,7 +59,7 @@ Have fun trying out the new stuff you have added!
 
 ## Version
 
-All datapacks work in [1.13](https://github.com/Metroite/datapacks/tree/master) and [1.14](https://github.com/Metroite/datapacks/tree/1.14). I aim to provide 100% multiplayer-proof datapacks.
+All datapacks work in [1.13](https://github.com/Metroite/datapacks/tree/master) and [1.14](https://github.com/Metroite/datapacks/tree/1.14). **This is  the 1.13 branch**, click on [1.14](https://github.com/Metroite/datapacks/tree/1.14) to switch to its branch. I aim to provide 100% multiplayer-proof datapacks.
 
 ## [Feedback](https://github.com/Metroite/datapacks/issues)
 

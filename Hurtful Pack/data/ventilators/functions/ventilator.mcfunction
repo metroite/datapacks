@@ -1,0 +1,38 @@
+#effects and motion based on direction
+execute as @s[tag=v.fansouth,tag=!v.off] if block ~ ~ ~ minecraft:observer[powered=true] run function ventilators:direction/south
+execute as @s[tag=v.fanwest,tag=!v.off] if block ~ ~ ~ minecraft:observer[powered=true] run function ventilators:direction/west
+execute as @s[tag=v.fannorth,tag=!v.off] if block ~ ~ ~ minecraft:observer[powered=true] run function ventilators:direction/north
+execute as @s[tag=v.faneast,tag=!v.off] if block ~ ~ ~ minecraft:observer[powered=true] run function ventilators:direction/east
+
+execute as @s[tag=v.fanup,tag=!v.off] if block ~ ~ ~ minecraft:observer[powered=true] run function ventilators:direction/up
+execute as @s[tag=v.fandown,tag=!v.off] if block ~ ~ ~ minecraft:observer[powered=true] run function ventilators:direction/down
+
+#sound
+execute if score _sound_ v.ventilator = 11 v.ventilator unless entity @p[tag=v.nosound,distance=..16] run playsound minecraft:item.elytra.flying block @a ~ ~ ~ 0.3 2
+tag @a[distance=..16] add v.nosound
+
+#powering the ventilators off
+tag @s remove v.off
+
+execute if block ~ ~ ~-1 minecraft:repeater[facing=north,powered=true] run tag @s add v.off
+execute if block ~ ~ ~1 minecraft:repeater[facing=south,powered=true] run tag @s add v.off
+execute if block ~-1 ~ ~ minecraft:repeater[facing=west,powered=true] run tag @s add v.off
+execute if block ~1 ~ ~ minecraft:repeater[facing=east,powered=true] run tag @s add v.off
+
+execute if block ~ ~ ~-1 minecraft:redstone_torch[lit=true] run tag @s add v.off
+execute if block ~ ~ ~1 minecraft:redstone_torch[lit=true] run tag @s add v.off
+execute if block ~-1 ~ ~ minecraft:redstone_torch[lit=true] run tag @s add v.off
+execute if block ~1 ~ ~ minecraft:redstone_torch[lit=true] run tag @s add v.off
+execute if block ~ ~-1 ~ minecraft:redstone_torch[lit=true] run tag @s add v.off
+
+execute if block ~ ~ ~-1 minecraft:redstone_wall_torch[lit=true] unless block ~ ~ ~-1 minecraft:redstone_wall_torch[facing=north,lit=true] run tag @s add v.off
+execute if block ~ ~ ~1 minecraft:redstone_wall_torch[lit=true] unless block ~ ~ ~1 minecraft:redstone_wall_torch[facing=south,lit=true] run tag @s add v.off
+execute if block ~-1 ~ ~ minecraft:redstone_wall_torch[lit=true] unless block ~-1 ~ ~ minecraft:redstone_wall_torch[facing=west,lit=true] run tag @s add v.off
+execute if block ~1 ~ ~ minecraft:redstone_wall_torch[lit=true] unless block ~1 ~ ~ minecraft:redstone_wall_torch[facing=east,lit=true] run tag @s add v.off
+execute if block ~ ~1 ~ minecraft:redstone_wall_torch[lit=true] run tag @s add v.off
+execute if block ~ ~-1 ~ minecraft:redstone_wall_torch[lit=true] run tag @s add v.off
+
+execute at @s[tag=v.off] run particle minecraft:cloud ~ ~0.5 ~ 0.175 0.175 0.175 0.025 1
+
+#kill v.fan armor_stands
+execute unless block ~ ~ ~ minecraft:observer run function ventilators:ventilatorcleanup

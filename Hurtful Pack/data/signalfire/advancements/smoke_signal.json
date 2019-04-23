@@ -1,0 +1,21 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:oak_leaves"
+        },
+        "title": {
+            "translate": "Smoke for Attention"
+        },
+        "description": {
+            "translate": "Throw leaves on burning logs"
+        },
+        "show_toast": true,
+        "hidden": false,
+        "announce_to_chat": true
+    },
+	"requirements":[["smoke_signal"]],
+    "parent":"minecraft:story/upgrade_tools",
+    "criteria": {
+      "smoke_signal":{"trigger":"minecraft:impossible"}
+  }
+}

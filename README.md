@@ -2,7 +2,7 @@
 
 [Discord Server](https://discord.gg/vBgb85N) to follow this project more conveniently!
 
-### Datapack-List:
+### Datapack-List & Download:
 
 * [earlyleatherarmor](https://github.com/Metroite/datapacks/tree/master/earlyleatherarmor)
 * [graves](https://github.com/Metroite/datapacks/tree/master/graves)
@@ -18,9 +18,9 @@
 * [witchtrading](https://github.com/Metroite/datapacks/tree/master/witchtrading)
 * [worseoldpvp](https://github.com/Metroite/datapacks/tree/master/worseoldpvp)
 
-**Every Datapack is included in the [Hurtful Pack](https://github.com/Metroite/datapacks/tree/master/Hurtful_Pack)!** Available in **1.13** and 1.14!
+**Every Datapack is included in the [Hurtful Pack](https://github.com/Metroite/datapacks/tree/master/Hurtful%20Pack)!** Available in **1.13** and 1.14!
 
-**More useful information can be found inside of every datapack** ([above](https://github.com/Metroite/datapacks#metroites-datapacks)) and chronologically inside of every [release post](https://github.com/Metroite/datapacks/releases) ([below](https://github.com/Metroite/datapacks#releases)).
+**Download links and more useful information can be found inside of every datapack** ([above](https://github.com/Metroite/datapacks#metroites-datapacks)) and chronologically inside of every [release post](https://github.com/Metroite/datapacks/releases) ([below](https://github.com/Metroite/datapacks#releases)).
 
 ### [Releases:](https://github.com/Metroite/datapacks/releases)
 
@@ -36,7 +36,7 @@
 
 ## Getting Started
 
-Every folder in here is its own datapack. Datapack specific information can be found inside these datapacks.
+Every folder in here is its own datapack. Download links and datapack specific information can be found inside these datapacks.
 
 ### Installing
 

@@ -1,0 +1,20 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:end_crystal"
+        },
+        "title": {
+            "translate": "eat a golden apple and catch the beam!"
+        },
+        "description": {
+            "translate": "Bring someone forever lost back to life... by messing up?"
+        },
+        "show_toast": true,
+        "hidden": true,
+        "announce_to_chat": false
+    },
+	"requirements":[["catch_beam"]],
+    "criteria": {
+      "catch_beam":{"trigger":"minecraft:impossible"}
+  }
+}

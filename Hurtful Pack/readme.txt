@@ -1,0 +1,1 @@
+just move the "Hurtful Resourcepack" folder to your resourcepacks folder and the rest goes staight into the datapacks folder of the save

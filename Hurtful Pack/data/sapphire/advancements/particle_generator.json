@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:observer"
+        },
+        "title": {
+            "translate": "Particle Generator"
+        },
+        "description": {
+            "translate": "Empower an observer with your Sapphire gem"
+        },
+        "show_toast": true,
+        "announce_to_chat": true
+    },
+	"requirements":[["particle_generator"]],
+    "parent":"sapphire:sapphire",
+    "criteria": {
+		"particle_generator":{"trigger":"minecraft:impossible"}
+  },
+  "rewards": {
+    "recipes": [
+        "sapphire:lightning_rod",
+        "sapphire:water_detector"
+    ]
+  }
+}

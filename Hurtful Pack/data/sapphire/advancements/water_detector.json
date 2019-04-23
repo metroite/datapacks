@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:observer",
+            "nbt": "{RepairCost:99999999,CanPlaceOn:[\"minecraft:void_air\"],HideFlags:17,Enchantments:[{id:\"minecraft:unbreaking\",lvl:1}],display:{Name:\"{\\\"text\\\":\\\"Water Detector\\\",\\\"color\\\":\\\"yellow\\\",\\\"italic\\\":false}\"}}"
+        },
+        "title": {
+            "translate": "Water Detector"
+        },
+        "description": {
+            "translate": "Craft a Water Detector which can be found in the recipe book as a water bucket"
+        },
+        "show_toast": true,
+        "announce_to_chat": true
+    },
+	"requirements":[["water_detector"]],
+    "parent":"sapphire:lightning_rod",
+    "criteria": {
+		"water_detector":{"trigger":"minecraft:inventory_changed","conditions":{"items":[{"item":"minecraft:observer","nbt":"{RepairCost:99999999,CanPlaceOn:[\"minecraft:void_air\"],HideFlags:17,Enchantments:[{id:\"minecraft:unbreaking\",lvl:1}],display:{Name:\"{\\\"text\\\":\\\"Water Detector\\\",\\\"color\\\":\\\"yellow\\\",\\\"italic\\\":false}\"}}"}]}}
+  },
+  "rewards": {
+    "recipes": [
+        "sapphire:lightning_rod",
+        "sapphire:water_detector"
+    ]
+  }
+}

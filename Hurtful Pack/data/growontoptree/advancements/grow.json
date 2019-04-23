@@ -1,0 +1,21 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:oak_sapling"
+        },
+        "title": {
+            "translate": "Lets Grow Together!"
+        },
+        "description": {
+            "translate": "Stand on a sapling and use bone meal on it until you both grow upwards"
+        },
+        "show_toast": true,
+        "hidden": false,
+        "announce_to_chat": true
+    },
+	"requirements":[["grow"]],
+    "parent":"minecraft:adventure/root",
+    "criteria": {
+      "grow":{"trigger":"minecraft:impossible"}
+  }
+}

@@ -1,0 +1,20 @@
+{
+    "type": "crafting_shaped",
+    "pattern": [
+        " S ",
+        "ISI",
+        "ISI"
+    ],
+    "key": {
+        "S": {
+            "item": "minecraft:squid_spawn_egg"
+        },
+		    "I": {
+            "item": "minecraft:iron_bars"
+        }
+    },
+    "result": {
+        "item": "minecraft:redstone_ore",
+        "count": 1
+    }
+}

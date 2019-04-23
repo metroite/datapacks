@@ -1,0 +1,21 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:grass"
+        },
+        "title": {
+            "translate": "Cycle of Life"
+        },
+        "description": {
+            "translate": "Use skull dust as bone meal on whatever plant you want... maybe saplings? Or rather mushrooms?"
+        },
+        "show_toast": true,
+        "hidden": false,
+        "announce_to_chat": true
+    },
+	"requirements":[["use_skull_dust"]],
+    "parent":"graves:skull_dust",
+    "criteria": {
+		"use_skull_dust":{"trigger":"minecraft:impossible"}
+  }
+}

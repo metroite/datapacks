@@ -2,7 +2,7 @@
 
 [Discord Server](https://discord.gg/vBgb85N) to follow this project more conveniently!
 
-### Datapack-List:
+### Datapack-List & Download:
 
 * [earlyleatherarmor](https://github.com/Metroite/datapacks/tree/1.14/earlyleatherarmor)
 * [graves](https://github.com/Metroite/datapacks/tree/1.14/graves)
@@ -18,14 +18,16 @@
 * [witchtrading](https://github.com/Metroite/datapacks/tree/1.14/witchtrading)
 * [worseoldpvp](https://github.com/Metroite/datapacks/tree/1.14/worseoldpvp)
 
-**More useful information can be found inside of every datapack** ([above](https://github.com/Metroite/datapacks#metroites-datapacks)) and chronologically inside of every [release post](https://github.com/Metroite/datapacks/releases) ([below](https://github.com/Metroite/datapacks#releases)).
+**Every Datapack is included in the [Hurtful Pack](https://github.com/Metroite/datapacks/tree/1.14/Hurtful%20Pack)!** Available in 1.13 and **1.14**!
+
+**Download links and more useful information can be found inside of every datapack** ([above](https://github.com/Metroite/datapacks#metroites-datapacks)) and chronologically inside of every [release post](https://github.com/Metroite/datapacks/releases) ([below](https://github.com/Metroite/datapacks#releases)).
 
 ### [Releases:](https://github.com/Metroite/datapacks/releases)
 
 **Most publication effort goes into those!**
 
 * [r1](https://github.com/Metroite/datapacks/releases/tag/r1)
-* [r2](https://github.com/Metroite/datapacks/projects/2) (coming very very very soon - releasing hopefully together with Minecraft 1.14 on Tuesday the 23rd of April)
+* [r2](https://github.com/Metroite/datapacks/projects/2) (!RELEASED! as the [Hurtful Pack](https://github.com/Metroite/datapacks/tree/master/Hurt_Pack), release post is on its way!)
 
 ### To-Do-List:
 
@@ -34,7 +36,7 @@
 
 ## Getting Started
 
-Every folder in here is its own datapack. Datapack specific information can be found inside these datapacks.
+Every folder in here is its own datapack. Download links and datapack specific information can be found inside these datapacks.
 
 ### Installing
 
@@ -57,7 +59,7 @@ Have fun trying out the new stuff you have added!
 
 ## Version
 
-All datapacks work in [1.13](https://github.com/Metroite/datapacks/tree/master) and [1.14](https://github.com/Metroite/datapacks/tree/1.14). I aim to provide 100% multiplayer-proof datapacks.
+All datapacks work in [1.13](https://github.com/Metroite/datapacks/tree/master) and [1.14](https://github.com/Metroite/datapacks/tree/1.14). **This is  the 1.14 branch**, click on [1.13](https://github.com/Metroite/datapacks/tree/master) to switch to its branch. I aim to provide 100% multiplayer-proof datapacks.
 
 ## [Feedback](https://github.com/Metroite/datapacks/issues)
 

@@ -1,0 +1,21 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:stone_button"
+        },
+        "title": {
+            "translate": "Send and Receive"
+        },
+        "description": {
+            "translate": "Now set the frequency by rotating the redstone torch and hit the button!"
+        },
+        "show_toast": true,
+        "frame": "goal",
+        "announce_to_chat": true
+    },
+	"requirements":[["build_success"]],
+    "parent":"morsecode:build_receiver",
+    "criteria": {
+		"build_success":{"trigger":"minecraft:impossible"}
+    }
+}

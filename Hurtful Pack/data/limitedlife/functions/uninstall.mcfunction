@@ -7,6 +7,7 @@ scoreboard objectives remove ll.craftbatwing
 scoreboard objectives remove ll.wa.shoot
 scoreboard objectives remove ll.wa.shootc
 scoreboard objectives remove ll.batwingflap
+scoreboard objectives remove ll.end_gateway
 
 #tick
 kill @e[tag=ll.spawnbat]

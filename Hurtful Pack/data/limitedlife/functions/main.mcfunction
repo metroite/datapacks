@@ -1,5 +1,5 @@
 #ll.deaths
-execute as @a[limit=1,sort=random] unless score @s ll.deaths >= 0 ll.deaths run scoreboard players add @s ll.deaths 0
+execute as @a[limit=1,sort=random] unless score @s ll.deaths >= 0 ll.deaths run function hurtfulpack:compatibility/limitedlife
 scoreboard players remove @a[scores={ll.deaths=11..}] ll.deaths 1
 
 #tp to The Void
@@ -13,7 +13,7 @@ function graves:limitedlife
 execute as @a[nbt=!{Inventory:[{Slot:103b,Count:1b,tag:{Enchantments:[{lvl:1s,id:"minecraft:binding_curse"},{lvl:1s,id:"minecraft:vanishing_curse"}]}}]}] run function limitedlife:helmet/helmet
 execute as @a[tag=ll.cured] run function limitedlife:helmet/helmet
 #players need to be damaged to update to their real health value
-effect give @a[scores={ll.deaths=1..,ll.health=20,ll.sincedeath=..100}] minecraft:wither 1 1 true
+effect give @a[scores={ll.deaths=1..9,ll.health=20,ll.sincedeath=..1000}] minecraft:wither 1 1 true
 #Compatibility for keepInventory=true
 tag @a[scores={ll.deaths=1..,ll.health=20,ll.sincedeath=..100}] add ll.cured
 

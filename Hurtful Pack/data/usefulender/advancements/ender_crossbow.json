@@ -1,0 +1,20 @@
+{
+    "display": {
+        "icon": {
+          "item": "minecraft:ender_pearl"
+        },
+        "title": {
+            "translate": "Ender Crossbow"
+        },
+        "description": {
+            "translate": "Charge a crossbow with an ender pearl"
+        },
+        "show_toast": true,
+        "announce_to_chat": true
+    },
+	"requirements":[["ender_crossbow"]],
+    "parent":"minecraft:adventure/ol_betsy",
+    "criteria": {
+		"ender_crossbow":{"trigger":"minecraft:impossible"}
+  }
+}

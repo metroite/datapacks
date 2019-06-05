@@ -22,7 +22,9 @@ playsound minecraft:entity.dolphin.ambient_water voice @a ~ ~ ~ 2 0.5
 playsound minecraft:entity.dolphin.ambient_water voice @a ~ ~ ~ 2 0.5
 playsound minecraft:entity.dolphin.ambient_water voice @a ~ ~ ~ 2 0.5
 playsound minecraft:entity.dolphin.ambient_water voice @a ~ ~ ~ 2 0.5
-
+#revoke end_gateway advancement if it wasn't achieved earlier
+execute unless entity @s[scores={ll.end_gateway=1..}] run advancement revoke @s only minecraft:end/enter_end_gateway
+execute unless entity @s[scores={ll.end_gateway=1..}] run scoreboard players reset @s ll.end_gateway
 
 #further effects after the initial effects
 tag @s add ll.curedvoid

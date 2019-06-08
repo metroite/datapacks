@@ -1,5 +1,6 @@
 #storeboard
-scoreboard objectives add hp.storeboard
+scoreboard objectives add hp.storeboard dummy
+scoreboard objectives add hp.cauldron minecraft.custom:minecraft.fill_cauldron
 scoreboard players set $0$ hp.storeboard 0
 #gamerules
 execute unless score $reload$ hp.storeboard > $0$ hp.storeboard run gamerule naturalRegeneration false
@@ -15,6 +16,7 @@ execute unless score $reload$ hp.storeboard > $0$ hp.storeboard run gamerule doE
 execute unless score $reload$ hp.storeboard > $0$ hp.storeboard run gamerule doFireTick true
 execute unless score $reload$ hp.storeboard > $0$ hp.storeboard run gamerule doDaylightCycle true
 execute unless score $reload$ hp.storeboard > $0$ hp.storeboard run gamerule maxEntityCramming 5
+execute unless score $reload$ hp.storeboard > $0$ hp.storeboard run difficulty hard
 #worseoldpvp
 execute unless score $reload$ hp.storeboard > $0$ hp.storeboard run scoreboard players set $mode$ wop.extend 1
 #usefulender

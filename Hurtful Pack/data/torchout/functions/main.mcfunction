@@ -8,7 +8,7 @@ scoreboard players reset @a[tag=!to.torch] to.torch
 #fallback mechanic: returns lost items if the API failed
 execute as @a[scores={to.pa.fail=1..}] at @s run function torchout:placement-api_torch/fallback
 
-####placement-api_torch
+####placement-api_campfire
 #calling effects if item is selected
 execute as @a[tag=to.campfire] at @s run function torchout:placement-api_campfire/effects
 #tagging if item is selected

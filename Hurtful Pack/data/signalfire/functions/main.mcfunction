@@ -1,3 +1,5 @@
+#increment $global$ score
+scoreboard players add $global$ sf.counter 1
 #detect blocks
 execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:jungle_leaves"}}] at @s unless entity @e[tag=sf.signalfire,distance=..200] if block ~ ~ ~ minecraft:campfire[lit=true] run function signalfire:summon
 execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:oak_leaves"}}] at @s unless entity @e[tag=sf.signalfire,distance=..200] if block ~ ~ ~ minecraft:campfire[lit=true] run function signalfire:summon

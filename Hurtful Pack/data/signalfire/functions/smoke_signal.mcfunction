@@ -15,6 +15,7 @@ execute if entity @s[scores={sf.signalfire=600..}] run particle minecraft:campfi
 execute if entity @s[scores={sf.signalfire=600..}] run particle minecraft:campfire_signal_smoke ~ ~-27 ~ 3.6 7 3.6 0.01 3 force
 execute if entity @s[scores={sf.signalfire=642..2700}] run particle minecraft:campfire_signal_smoke ~ ~ ~ 25 4 25 0.01 1 force
 execute if entity @s[scores={sf.signalfire=2400..}] run particle minecraft:campfire_cosy_smoke ~ ~ ~ 8 5 8 0.01 4 force
+
 #end
 data merge entity @s[scores={sf.signalfire=600}] {NoGravity:1b}
-kill @s[scores={sf.signalfire=3500..}]
+execute if score @s sf.counter <= $global$ sf.counter run kill @s

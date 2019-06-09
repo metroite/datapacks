@@ -4,7 +4,7 @@ execute as @e[tag=wt.shinigami,type=minecraft:witch] at @s run function graves:w
 execute as @e[tag=wt.shinigami_wing] at @s unless entity @e[tag=wt.shinigami,type=minecraft:witch,distance=..2] run kill @s
 
 #unleashing the shinigami_wing contract
-execute as @e[type=minecraft:item,limit=1,sort=random,nbt={Item:{id:"minecraft:elytra",Count:1b,tag:{HideFlags:1,display:{Name:"{\"text\":\"Shinigami Wings [setup]\",\"color\":\"yellow\",\"italic\":false}",Lore:["{\"text\":\"...a contract until eternity\"}"]}}}}] at @s run function shinigami_wing_setup
+execute as @e[type=minecraft:item,limit=1,sort=random,nbt={Item:{id:"minecraft:elytra",Count:1b,tag:{HideFlags:1,display:{Name:"{\"text\":\"Shinigami Wings [setup]\",\"color\":\"yellow\",\"italic\":false}",Lore:["{\"text\":\"...a contract until eternity\"}"]}}}}] at @s run function graves:witchtrading/shinigami_wing_setup
 tag @a[nbt={Inventory:[{Slot:102b,id:"minecraft:elytra",Count:1b,tag:{HideFlags:1,display:{Name:"{\"text\":\"Shinigami Wings\",\"color\":\"yellow\",\"italic\":false}",Lore:["{\"text\":\"...a contract until eternity\"}"]}}}]}] add wt.P.shinigami_wing
 tag @e[nbt={ArmorItems:[{},{},{id:"minecraft:elytra",Count:1b,tag:{HideFlags:1,display:{Name:"{\"text\":\"Shinigami Wings\",\"color\":\"yellow\",\"italic\":false}",Lore:["{\"text\":\"...a contract until eternity\"}"]}}},{}]}] add wt.P.shinigami_wing
 execute as @e[tag=wt.P.shinigami_wing] at @s run function graves:witchtrading/shinigami_wing

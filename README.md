@@ -1,24 +1,24 @@
-# [Metroites Datapacks](https://github.com/Metroite/datapacks/archive/master.zip)
+# [Metroites Datapacks](https://github.com/Metroite/datapacks/archive/1.13.zip)
 
 [Discord Server](https://discord.gg/vBgb85N) to follow this project more conveniently!
 
 ### Datapack-List & Download:
 
-* [earlyleatherarmor](https://github.com/Metroite/datapacks/tree/master/earlyleatherarmor)
-* [graves](https://github.com/Metroite/datapacks/tree/master/graves)
-* [growontoptree](https://github.com/Metroite/datapacks/tree/master/growontoptree)
-* [limitedlife](https://github.com/Metroite/datapacks/tree/master/limitedlife)
-* [loud2x2tnt](https://github.com/Metroite/datapacks/tree/master/loud2x2tnt)
-* [morsecode](https://github.com/Metroite/datapacks/tree/master/morsecode)
-* [sapphire](https://github.com/Metroite/datapacks/tree/master/sapphire)
-* [signalfire](https://github.com/Metroite/datapacks/tree/master/signalfire)
-* [torchout](https://github.com/Metroite/datapacks/tree/master/torchout)
-* [usefulender](https://github.com/Metroite/datapacks/tree/master/usefulender)
-* [ventilators](https://github.com/Metroite/datapacks/tree/master/ventilators)
-* [witchtrading](https://github.com/Metroite/datapacks/tree/master/witchtrading)
-* [worseoldpvp](https://github.com/Metroite/datapacks/tree/master/worseoldpvp)
+* [earlyleatherarmor](https://github.com/Metroite/datapacks/tree/1.13/earlyleatherarmor)
+* [graves](https://github.com/Metroite/datapacks/tree/1.13/graves)
+* [growontoptree](https://github.com/Metroite/datapacks/tree/1.13/growontoptree)
+* [limitedlife](https://github.com/Metroite/datapacks/tree/1.13/limitedlife)
+* [loud2x2tnt](https://github.com/Metroite/datapacks/tree/1.13/loud2x2tnt)
+* [morsecode](https://github.com/Metroite/datapacks/tree/1.13/morsecode)
+* [sapphire](https://github.com/Metroite/datapacks/tree/1.13/sapphire)
+* [signalfire](https://github.com/Metroite/datapacks/tree/1.13/signalfire)
+* [torchout](https://github.com/Metroite/datapacks/tree/1.13/torchout)
+* [usefulender](https://github.com/Metroite/datapacks/tree/1.13/usefulender)
+* [ventilators](https://github.com/Metroite/datapacks/tree/1.13/ventilators)
+* [witchtrading](https://github.com/Metroite/datapacks/tree/1.13/witchtrading)
+* [worseoldpvp](https://github.com/Metroite/datapacks/tree/1.13/worseoldpvp)
 
-**Every Datapack is included in the [Hurtful Pack](https://github.com/Metroite/datapacks/tree/master/Hurtful%20Pack)!** Available in **1.13** and 1.14!
+**Every Datapack is included in the [Hurtful Pack](https://github.com/Metroite/datapacks/tree/1.13/Hurtful%20Pack)!** Available in [**1.13** and 1.14](https://github.com/Metroite/datapacks#version)!
 
 **Download links and more useful information can be found inside of every datapack** ([above](https://github.com/Metroite/datapacks#metroites-datapacks)) and chronologically inside of every [release post](https://github.com/Metroite/datapacks/releases) ([below](https://github.com/Metroite/datapacks#releases)).
 
@@ -27,7 +27,7 @@
 **Most publication effort goes into those!**
 
 * [r1](https://github.com/Metroite/datapacks/releases/tag/r1)
-* [r2](https://github.com/Metroite/datapacks/projects/2) (!RELEASED! as the [Hurtful Pack](https://github.com/Metroite/datapacks/tree/master/Hurt_Pack), release post is on its way!)
+* [r2](https://github.com/Metroite/datapacks/projects/2) (!RELEASED! as the [Hurtful Pack](https://github.com/Metroite/datapacks/tree/1.13/Hurt_Pack), release post is on its way!)
 
 ### To-Do-List:
 
@@ -59,7 +59,7 @@ Have fun trying out the new stuff you have added!
 
 ## Version
 
-All datapacks work in [1.13](https://github.com/Metroite/datapacks/tree/master) and [1.14](https://github.com/Metroite/datapacks/tree/1.14). **This is  the 1.13 branch**, click on [1.14](https://github.com/Metroite/datapacks/tree/1.14) to switch to its branch. I aim to provide 100% multiplayer-proof datapacks.
+All datapacks work in [1.13](https://github.com/Metroite/datapacks/tree/1.13) and [1.14](https://github.com/Metroite/datapacks/tree/master). **This is  the 1.13 branch**, click on [1.14](https://github.com/Metroite/datapacks/tree/master) to switch to its branch. I aim to provide 100% multiplayer-proof datapacks.
 
 ## [Feedback](https://github.com/Metroite/datapacks/issues)
 
@@ -75,5 +75,5 @@ If you want to messsage me directly or follow this project more conveniently, th
 
 ## License
 
-This project is licensed under the GNU GENERAL PUBLIC License - see the [LICENSE](https://github.com/Metroite/datapacks/blob/master/LICENSE) file for details.
+This project is licensed under the GNU GENERAL PUBLIC License - see the [LICENSE](https://github.com/Metroite/datapacks/blob/1.13/LICENSE) file for details.
 Reminder: always make sure to credit me if you use my work! Thank you!

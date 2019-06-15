@@ -1,4 +1,4 @@
-## [Hurtful Pack](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Metroite/datapacks/tree/master/Hurtful%20Pack&rootDirectory=false)
+## [Hurtful Pack](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Metroite/datapacks/tree/1.13/Hurtful%20Pack&rootDirectory=false)
 
 Many datapacks packed into one aiming to make survival harder... a datapack pack?
 

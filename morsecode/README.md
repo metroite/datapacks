@@ -1,4 +1,4 @@
-## [morsecode](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Metroite/datapacks/tree/master/morsecode&rootDirectory=false)
+## [morsecode](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Metroite/datapacks/tree/1.13/morsecode&rootDirectory=false)
 
 A very smooth way of wireless communication. Put a redstone_torch inside an item_frame on a gold_block (sender) with a button on top or an iron_block (receiver) with a redstone_wire on top. The ItemRotation will decide which one of eight frequencies to use. Comes with a "Mobile Receiver".
 

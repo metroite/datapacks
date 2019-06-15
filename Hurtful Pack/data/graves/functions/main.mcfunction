@@ -12,11 +12,10 @@ execute as @a[scores={g.deaths=1..}] at @s run function graves:skull/direction_d
 execute as @e[tag=g.dropskull,nbt={OnGround:1b}] at @s run function graves:skull/drop
 #particles for g.skull (AoEC)
 execute as @e[tag=g.skull] at @s run function graves:skull/particles
-#calling groundbone and groundgbone.mcfunction: move g.bones to the ground if OnGround
+#move g.bones to the ground if OnGround
 execute as @e[tag=g.bone] at @s run function graves:skull/bone
 #global playound if a player dies
 execute as @p[scores={g.deaths=1..}] run playsound minecraft:item.elytra.flying block @a ~ ~ ~ 0.25 0.5 0.25
-#stops looping
 scoreboard players set @p[scores={g.deaths=1..}] g.deaths 0
 
 #"Skull Dust" sapling bone mealing

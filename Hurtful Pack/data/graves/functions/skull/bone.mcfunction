@@ -10,6 +10,6 @@ execute at @s[nbt={NoGravity:1b}] unless block ~ ~1.49 ~ #graves:nocollision run
 execute at @s[nbt={NoGravity:1b}] unless block ~ ~1.45 ~ #graves:nocollision run tp ~ ~0.04 ~
 execute at @s[nbt={NoGravity:1b}] unless block ~ ~1.43 ~ #graves:nocollision run tp ~ ~0.02 ~
 execute at @s[nbt={NoGravity:1b}] unless block ~ ~1.42 ~ #graves:nocollision run tp ~ ~0.01 ~
-#set bone height if the OnGround
+#set bone height if OnGround:1b
 execute if entity @s[tag=g.nogravity,nbt={OnGround:1b}] run function graves:skull/bone_ground_alignment
 execute positioned ~ -1.679 ~ run kill @s[distance=..2]

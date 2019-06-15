@@ -1,11 +1,11 @@
-## [loud2x2tnt](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Metroite/datapacks/tree/master/loud2x2tnt&rootDirectory=false)
+## [loud2x2tnt](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Metroite/datapacks/tree/1.14/loud2x2tnt&rootDirectory=false)
 
 Tnt placed 2x2x2 are loud enough to be heared from 1024 blocks away. Gamerule "mobGriefing" needs to be set to true.
 Recommended to use with graves and limitedlife.
 
 ## Version
 
-Minecraft 1.13
+Minecraft 1.14
 
 ## Performance
 

@@ -1,22 +1,31 @@
-gamerule naturalRegeneration false
-gamerule spectatorsGenerateChunks false
-gamerule showDeathMessages false
-gamerule reducedDebugInfo true
-gamerule keepInventory false
-gamerule doWeatherCycle true
-gamerule doTileDrops true
-gamerule doMobSpawning true
-gamerule mobGriefing true
-gamerule doEntityDrops true
-gamerule doFireTick true
-gamerule doDaylightCycle true
-#limitedlife
-execute as @a unless entity @s[scores={ll.deaths=0..}] run tag @s add ll.cured
-execute as @a unless entity @s[scores={ll.deaths=0..}] run scoreboard players set @s ll.deaths 3
+#storeboard
+scoreboard objectives add hp.storeboard dummy
+scoreboard objectives add hp.cauldron minecraft.custom:minecraft.fill_cauldron
+scoreboard players set $0$ hp.storeboard 0
+#gamerules
+execute unless score $reload$ hp.storeboard > $0$ hp.storeboard run gamerule naturalRegeneration false
+execute unless score $reload$ hp.storeboard > $0$ hp.storeboard run gamerule spectatorsGenerateChunks false
+execute unless score $reload$ hp.storeboard > $0$ hp.storeboard run gamerule showDeathMessages false
+execute unless score $reload$ hp.storeboard > $0$ hp.storeboard run gamerule reducedDebugInfo true
+execute unless score $reload$ hp.storeboard > $0$ hp.storeboard run gamerule keepInventory false
+execute unless score $reload$ hp.storeboard > $0$ hp.storeboard run gamerule doWeatherCycle true
+execute unless score $reload$ hp.storeboard > $0$ hp.storeboard run gamerule doTileDrops true
+execute unless score $reload$ hp.storeboard > $0$ hp.storeboard run gamerule doMobSpawning true
+execute unless score $reload$ hp.storeboard > $0$ hp.storeboard run gamerule mobGriefing true
+execute unless score $reload$ hp.storeboard > $0$ hp.storeboard run gamerule doEntityDrops true
+execute unless score $reload$ hp.storeboard > $0$ hp.storeboard run gamerule doFireTick true
+execute unless score $reload$ hp.storeboard > $0$ hp.storeboard run gamerule doDaylightCycle true
+execute unless score $reload$ hp.storeboard > $0$ hp.storeboard run gamerule maxEntityCramming 5
+execute unless score $reload$ hp.storeboard > $0$ hp.storeboard run difficulty hard
 #worseoldpvp
-scoreboard players set $mode$ wop.extend 1
+execute unless score $reload$ hp.storeboard > $0$ hp.storeboard run scoreboard players set $mode$ wop.extend 1
+#usefulender
+execute unless score $reload$ hp.storeboard > $0$ hp.storeboard run scoreboard players set $distance$ ue.pearlthrow 14
+#run above commands only once
+execute unless score $reload$ hp.storeboard >= $0$ hp.storeboard run scoreboard players set $reload$ hp.storeboard 0
+scoreboard players add $reload$ hp.storeboard 1
 
-#disable all my datapacks
+#disable all included datapacks
 datapack disable "file/earlyleatherarmor"
 datapack disable "file/graves"
 datapack disable "file/growontoptree"

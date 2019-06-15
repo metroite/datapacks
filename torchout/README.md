@@ -1,4 +1,4 @@
-## [torchout](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Metroite/datapacks/tree/master/torchout&rootDirectory=false)
+## [torchout](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Metroite/datapacks/tree/1.14/torchout&rootDirectory=false)
 
 Torches burn out with this datapack installed. Ignite torches using Flint and Steel!
 
@@ -6,7 +6,7 @@ Change *$burntime$* in *to.torch* to redefine the time until torches burn out in
 
 ## Version
 
-Minecraft 1.13
+Minecraft 1.14
 
 ## Performance
 

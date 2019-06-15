@@ -1,3 +1,5 @@
+scoreboard objectives remove hp.storeboard
+
 function graves:uninstall
 function limitedlife:uninstall
 function morsecode:uninstall

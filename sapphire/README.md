@@ -1,4 +1,4 @@
-## [sapphire](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Metroite/datapacks/tree/master/sapphire&rootDirectory=false)
+## [sapphire](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Metroite/datapacks/tree/1.14/sapphire&rootDirectory=false)
 
 Sapphire gems will be generated in the colder oceans, deep down. Detect water, attract lightning and create decorative particles.
 Recommended to use with limitedlife.
@@ -31,7 +31,7 @@ ISI
 
 ## Version
 
-Minecraft 1.13
+Minecraft 1.14
 
 ## Performance
 

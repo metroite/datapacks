@@ -1,4 +1,4 @@
-## [worseoldpvp](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Metroite/datapacks/tree/master/worseoldpvp&rootDirectory=false)
+## [worseoldpvp](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Metroite/datapacks/tree/1.14/worseoldpvp&rootDirectory=false)
 
 You want the worse, old PvP back? Worry no more, this datapack will fulfill your wishes! Just drop your tools once to update them and enjoy your eZ, no-skill version of PvP.
 
@@ -10,7 +10,7 @@ Change *$mode$* in *wop.extend* from 0 to 2 if only the sword-block (1) or the n
 
 ## Version
 
-Minecraft 1.13
+Minecraft 1.14
 
 ## Performance
 

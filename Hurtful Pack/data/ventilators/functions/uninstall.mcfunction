@@ -1,12 +1,7 @@
 #init
-team remove wt.friendly
-scoreboard objectives remove wt.ttv
-scoreboard objectives remove wt.twv
-scoreboard objectives remove wt.rng
-#placement-API
-scoreboard objectives remove wt.sad_orchid
-scoreboard objectives remove wt.so.pa.fail
+scoreboard objectives remove v.ventilator
+scoreboard objectives remove v.sound
 
 #tick
-tag @a remove wt.sad_orchid
-kill @e[tag=wt.sad_orchid,type=!minecraft:player]
+kill @e[tag=v.fan]
+kill @e[tag=ll.spawnbat]

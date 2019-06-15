@@ -37,7 +37,7 @@ execute as @a[tag=wt.setup] at @s unless entity @e[type=area_effect_cloud,distan
 #calling sad_orchid:sad_orchid
 execute as @e[tag=wt.sad_orchid,type=minecraft:area_effect_cloud] at @s run function witchtrading:sad_orchid/sad_orchid
 #particle effects if close to a sad_orchid (if this is inside of sad_orchid/sad_orchid this particle effect will be executed scaling with the amount of sad_orchids around the player)
-execute as @a[scores={wt.rng=9}] at @s if entity @e[tag=wt.sad_orchid,type=minecraft:area_effect_cloud,distance=..3] positioned ~ ~1.35 ~ run particle minecraft:dripping_water ^-0.15 ^ ^0.275 0 0 0 1 1 normal
+execute as @a[scores={wt.rng=9}] at @s if entity @e[tag=wt.sad_orchid,type=minecraft:area_effect_cloud,distance=..3] positioned ~ ~1.35 ~ run particle minecraft:dripping_water ^0.175 ^ ^0.275 0 0 0 1 1 normal
 #####placement-API: SAD ORCHID
 #calling effects if item is selected
 execute as @a[tag=wt.sad_orchid] at @s run function witchtrading:sad_orchid/effects

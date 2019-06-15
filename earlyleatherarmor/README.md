@@ -1,4 +1,4 @@
-## [earlyleatherarmor](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Metroite/datapacks/tree/master/earlyleatherarmor&rootDirectory=false)
+## [earlyleatherarmor](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Metroite/datapacks/tree/1.14/earlyleatherarmor&rootDirectory=false)
 
 As the name suggests, this datapacks makes leather armor actually worth crafting. Leather boots bring a buff with them!
 
@@ -36,7 +36,7 @@ L L
 
 ## Version
 
-Minecraft 1.13
+Minecraft 1.14
 
 ## Performance
 

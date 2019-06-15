@@ -1,0 +1,20 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:torch"
+        },
+        "title": {
+            "translate": "Fire!"
+        },
+        "description": {
+            "translate": "Light up a torch with a flint and steel"
+        },
+        "show_toast": true,
+        "announce_to_chat": true
+    },
+	"requirements":[["light_up"]],
+    "parent":"minecraft:story/smelt_iron",
+    "criteria": {
+		"light_up":{"trigger":"minecraft:impossible"}
+  }
+}

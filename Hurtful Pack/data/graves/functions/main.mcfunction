@@ -7,27 +7,17 @@ scoreboard players reset @a[scores={ll.deaths=10..},dx=5,dy=5,dz=-5] g.deaths
 function loud2x2tnt:graves
 
 #detecting direction
-execute as @a[scores={g.deaths=1..}] at @s run function graves:direction_detect
-
-#calling grave.mcfunction
-execute as @e[tag=g.drop,tag=!g.skull,nbt={OnGround:1b}] at @s unless block ~ ~-0.1 ~ #graves:nocollision run function graves:grave
-execute as @e[tag=g.drop,tag=!g.skull,nbt={OnGround:1b}] at @s if block ~ ~-0.1 ~ #graves:nocollision positioned ~ ~1 ~ run function graves:grave
-
-#killing leftover armor_stands
-execute at @e[tag=g.bone,nbt={HurtTime:0s}] run summon minecraft:item ~ ~1.42 ~ {Motion:[0.0d,0.25d,0.0d],Item:{id:"minecraft:bone",Count:1}}
-kill @e[tag=g.bone,nbt={HurtTime:0s}]
-kill @e[tag=g.bone,nbt=!{ArmorItems:[{},{},{},{}],HandItems:[{id:"minecraft:bone",Count:1b},{}]}]
-
-#calling groundbone and groundgbone.mcfunction: move g.bones to the ground if OnGround
-execute as @e[tag=g.bone] at @s run function graves:groundbone
-
+execute as @a[scores={g.deaths=1..}] at @s run function graves:skull/direction_detect
+#effects for g.dropskull
+execute as @e[tag=g.dropskull,nbt={OnGround:1b}] at @s run function graves:skull/drop
+#particles for g.skull (AoEC)
+execute as @e[tag=g.skull] at @s run function graves:skull/particles
+#move g.bones to the ground if OnGround
+execute as @e[tag=g.bone] at @s run function graves:skull/bone
 #global playound if a player dies
 execute as @p[scores={g.deaths=1..}] run playsound minecraft:item.elytra.flying block @a ~ ~ ~ 0.25 0.5 0.25
-#stops looping
 scoreboard players set @p[scores={g.deaths=1..}] g.deaths 0
 
-#call skulldrop "Skull Dust" g.drop:
-execute as @e[tag=g.dropskull] at @s run function graves:skulldrop
 #"Skull Dust" sapling bone mealing
 execute as @e[tag=g.skull_dusty] at @s run function graves:usebonemeal/sapling/growth
 

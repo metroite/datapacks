@@ -12,16 +12,16 @@ effect give @s minecraft:slow_falling 8 0 true
 particle minecraft:dragon_breath ~ ~1 ~ 0.1 0.1 0.1 1 100 force
 summon minecraft:bat ~ ~1 ~ {ActiveEffects:[{Id:14b,Amplifier:0b,Duration:100000,ShowParticles:0b}],Tags:["ll.curedvoid"],Silent:1b,Invulnerable:1b}
 #Hopefully runs every possible sound file
-playsound minecraft:entity.dolphin.ambient_water voice @a[distance=..64] ~ ~ ~ 2 0.5
-playsound minecraft:entity.dolphin.ambient_water voice @a[distance=..64] ~ ~ ~ 2 0.5
-playsound minecraft:entity.dolphin.ambient_water voice @a[distance=..64] ~ ~ ~ 2 0.5
-playsound minecraft:entity.dolphin.ambient_water voice @a[distance=..64] ~ ~ ~ 2 0.5
-playsound minecraft:entity.dolphin.ambient_water voice @a[distance=..64] ~ ~ ~ 2 0.5
-playsound minecraft:entity.dolphin.ambient_water voice @a[distance=..64] ~ ~ ~ 2 0.5
-playsound minecraft:entity.dolphin.ambient_water voice @a[distance=..64] ~ ~ ~ 2 0.5
-playsound minecraft:entity.dolphin.ambient_water voice @a[distance=..64] ~ ~ ~ 2 0.5
-playsound minecraft:entity.dolphin.ambient_water voice @a[distance=..64] ~ ~ ~ 2 0.5
-playsound minecraft:entity.dolphin.ambient_water voice @a[distance=..64] ~ ~ ~ 2 0.5
+playsound minecraft:entity.dolphin.ambient_water voice @a ~ ~ ~ 2 0.5
+playsound minecraft:entity.dolphin.ambient_water voice @a ~ ~ ~ 2 0.5
+playsound minecraft:entity.dolphin.ambient_water voice @a ~ ~ ~ 2 0.5
+playsound minecraft:entity.dolphin.ambient_water voice @a ~ ~ ~ 2 0.5
+playsound minecraft:entity.dolphin.ambient_water voice @a ~ ~ ~ 2 0.5
+playsound minecraft:entity.dolphin.ambient_water voice @a ~ ~ ~ 2 0.5
+playsound minecraft:entity.dolphin.ambient_water voice @a ~ ~ ~ 2 0.5
+playsound minecraft:entity.dolphin.ambient_water voice @a ~ ~ ~ 2 0.5
+playsound minecraft:entity.dolphin.ambient_water voice @a ~ ~ ~ 2 0.5
+playsound minecraft:entity.dolphin.ambient_water voice @a ~ ~ ~ 2 0.5
 
 
 #further effects after the initial effects

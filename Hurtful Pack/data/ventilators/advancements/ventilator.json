@@ -13,7 +13,7 @@
         "announce_to_chat": true
     },
 	"requirements":[["ventilator"]],
-    "parent":"ventilators:batwing",
+    "parent":"limitedlife:batwing",
     "criteria": {
 		"ventilator":{"trigger":"minecraft:impossible"}
   }

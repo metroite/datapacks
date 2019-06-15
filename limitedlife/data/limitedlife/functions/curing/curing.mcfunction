@@ -16,12 +16,12 @@ execute as @s[scores={ll.cooking=1000..}] run particle minecraft:bubble_pop ~ ~-
 execute as @s[scores={ll.cooking=1100..}] run particle minecraft:bubble_pop ~ ~-0.12 ~ 0.25 0 0.25 0.1 1
 execute as @s[scores={ll.cooking=1200..}] run particle minecraft:bubble_pop ~ ~-0.12 ~ 0.26 0 0.26 0.1 1
 execute as @s[scores={ll.cooking=1200..}] at @e[type=minecraft:end_crystal,distance=..1] run particle minecraft:dragon_breath ~ ~0.5 ~ 0.1 0.25 0.1 0.0001 1
-execute as @s[scores={ll.cooking=110..}] run playsound minecraft:ambient.underwater.loop.additions ambient @p ~ ~ ~ 0.05 2
+execute as @s[scores={ll.cooking=110..}] run playsound minecraft:ambient.underwater.loop.additions ambient @a ~ ~ ~ 0.5 2
 
 #The beam
 #summoning bat
 execute as @s[scores={ll.cooking=2000}] at @e[type=minecraft:end_crystal,distance=..1] run summon minecraft:bat ~ ~ ~ {ActiveEffects:[{Id:14b,Amplifier:0b,Duration:100000,ShowParticles:0b}],Tags:["ll.bat"],Silent:1b,Invulnerable:1b}
-execute as @s[scores={ll.cooking=2000}] at @e[type=minecraft:end_crystal,distance=..1] run playsound minecraft:block.conduit.attack.target ambient @a[distance=..32] ~ ~ ~ 2 1.5
+execute as @s[scores={ll.cooking=2000}] at @e[type=minecraft:end_crystal,distance=..1] run playsound minecraft:block.conduit.attack.target ambient @a ~ ~ ~ 2 1.5
 execute as @s[scores={ll.cooking=2000}] run advancement grant @a[distance=..48] only limitedlife:catch_beam
 execute as @s[scores={ll.cooking=2100}] run advancement revoke @a only limitedlife:catch_beam
 execute at @e[tag=ll.bat,type=minecraft:player] run particle minecraft:totem_of_undying ~ ~1 ~ 0.5 0.5 0.5 0.01 1 force
@@ -36,7 +36,7 @@ execute as @s[scores={ll.cooking=2010}] at @a[scores={ll.deaths=10},limit=1,sort
 execute as @s[scores={ll.cooking=2020}] at @a[scores={ll.deaths=10},limit=1,sort=random] run summon endermite ~ ~ ~
 #transfering ll.bat to player
 execute at @e[tag=ll.bat,type=minecraft:bat] as @p[distance=..2,scores={ll.deaths=1..},tag=!ll.bat,nbt={ActiveEffects:[{Id:22b}]}] run tag @s add ll.bat
-execute as @e[tag=ll.bat,type=minecraft:bat] at @s if entity @p[distance=..2,scores={ll.deaths=1..},tag=ll.bat,nbt={ActiveEffects:[{Id:22b}]}] run playsound minecraft:entity.player.levelup ambient @a[distance=..8] ~ ~ ~ 2 1.7
+execute as @e[tag=ll.bat,type=minecraft:bat] at @s if entity @p[distance=..2,scores={ll.deaths=1..},tag=ll.bat,nbt={ActiveEffects:[{Id:22b}]}] run playsound minecraft:entity.player.levelup ambient @a ~ ~ ~ 2 1.7
 execute as @e[tag=ll.bat,type=minecraft:bat] at @s if entity @p[distance=..2,scores={ll.deaths=1..},tag=ll.bat,nbt={ActiveEffects:[{Id:22b}]}] run kill @s
 #summoning ll.beam
 execute at @e[type=minecraft:end_crystal,distance=..1] if entity @e[tag=ll.bat,distance=..64] run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["ll.beam","ll.beam_l"],Duration:50}
@@ -44,12 +44,12 @@ execute at @e[type=minecraft:end_crystal,distance=..1] if entity @e[tag=ll.bat,d
 
 #particle and sound effects
 execute as @s[scores={ll.cooking=2700..2705}] run particle minecraft:dragon_breath ~ ~1.5 ~ 0.1 0.1 0.1 1 100 force
-execute as @s[scores={ll.cooking=2700..2705}] run playsound minecraft:block.conduit.ambient ambient @a[distance=..32] ~ ~ ~ 2 0.7
+execute as @s[scores={ll.cooking=2700..2705}] run playsound minecraft:block.conduit.ambient ambient @a ~ ~ ~ 2 0.7
 execute as @s[scores={ll.cooking=2800..2805}] run particle minecraft:dragon_breath ~ ~1.5 ~ 0.1 0.1 0.1 1 100 force
-execute as @s[scores={ll.cooking=2800..2805}] run playsound minecraft:block.conduit.ambient ambient @a[distance=..32] ~ ~ ~ 2 0.7
+execute as @s[scores={ll.cooking=2800..2805}] run playsound minecraft:block.conduit.ambient ambient @a ~ ~ ~ 2 0.7
 execute as @s[scores={ll.cooking=2900..2905}] run particle minecraft:dragon_breath ~ ~1.5 ~ 0.1 0.1 0.1 1 100 force
-execute as @s[scores={ll.cooking=2900..2905}] run playsound minecraft:block.conduit.ambient ambient @a[distance=..32] ~ ~ ~ 2 0.7
-execute as @s[scores={ll.cooking=2999..3000}] run playsound minecraft:block.conduit.deactivate ambient @a[distance=..64] ~ ~ ~ 2 0.7
+execute as @s[scores={ll.cooking=2900..2905}] run playsound minecraft:block.conduit.ambient ambient @a ~ ~ ~ 2 0.7
+execute as @s[scores={ll.cooking=2999..3000}] run playsound minecraft:block.conduit.deactivate ambient @a ~ ~ ~ 2 0.7
 #particles and sound effects in The Void if bat is still alive
 execute as @s[scores={ll.cooking=2700..2705}] if entity @e[tag=ll.bat,distance=..48,type=minecraft:bat] at @e[type=minecraft:end_crystal,distance=..1] as @a[scores={ll.deaths=10},limit=1,sort=random] at @s run particle minecraft:dragon_breath ~ ~2 ~ 0.1 0.1 0.1 1 100 force
 execute as @s[scores={ll.cooking=2700..2705}] if entity @e[tag=ll.bat,distance=..48,type=minecraft:bat] at @e[type=minecraft:end_crystal,distance=..1] as @a[scores={ll.deaths=10},limit=1,sort=random] at @s run playsound minecraft:block.conduit.ambient ambient @a[distance=..5] ~ ~ ~ 2 0.7
@@ -65,16 +65,16 @@ execute as @s[scores={ll.cooking=3000}] run tag @e[type=minecraft:end_crystal,li
 execute as @s[scores={ll.cooking=3000}] run tag @p[tag=ll.bat,distance=..48] add ll.cured
 #the actual curing effect and particles
 execute as @s[scores={ll.cooking=3000}] at @p[tag=ll.bat,scores={ll.deaths=1..},distance=..48] run particle minecraft:totem_of_undying ~ ~ ~ 0 0 0 1 100 force
-execute as @s[scores={ll.cooking=3000}] at @p[tag=ll.bat,scores={ll.deaths=1..},distance=..48] run playsound minecraft:entity.dolphin.ambient_water voice @a[distance=..16] ~ ~ ~ 1.5 0.5
-execute as @s[scores={ll.cooking=3000}] at @p[tag=ll.bat,scores={ll.deaths=1..},distance=..48] run playsound minecraft:entity.dolphin.ambient_water voice @a[distance=..16] ~ ~ ~ 1.5 0.5
-execute as @s[scores={ll.cooking=3000}] at @p[tag=ll.bat,scores={ll.deaths=1..},distance=..48] run playsound minecraft:entity.dolphin.ambient_water voice @a[distance=..16] ~ ~ ~ 1.5 0.5
-execute as @s[scores={ll.cooking=3000}] at @p[tag=ll.bat,scores={ll.deaths=1..},distance=..48] run playsound minecraft:entity.dolphin.ambient_water voice @a[distance=..16] ~ ~ ~ 1.5 0.5
-execute as @s[scores={ll.cooking=3000}] at @p[tag=ll.bat,scores={ll.deaths=1..},distance=..48] run playsound minecraft:entity.dolphin.ambient_water voice @a[distance=..16] ~ ~ ~ 1.5 0.5
-execute as @s[scores={ll.cooking=3000}] at @p[tag=ll.bat,scores={ll.deaths=1..},distance=..48] run playsound minecraft:entity.dolphin.ambient_water voice @a[distance=..16] ~ ~ ~ 1.5 0.5
-execute as @s[scores={ll.cooking=3000}] at @p[tag=ll.bat,scores={ll.deaths=1..},distance=..48] run playsound minecraft:entity.dolphin.ambient_water voice @a[distance=..16] ~ ~ ~ 1.5 0.5
-execute as @s[scores={ll.cooking=3000}] at @p[tag=ll.bat,scores={ll.deaths=1..},distance=..48] run playsound minecraft:entity.dolphin.ambient_water voice @a[distance=..16] ~ ~ ~ 1.5 0.5
-execute as @s[scores={ll.cooking=3000}] at @p[tag=ll.bat,scores={ll.deaths=1..},distance=..48] run playsound minecraft:entity.dolphin.ambient_water voice @a[distance=..16] ~ ~ ~ 1.5 0.5
-execute as @s[scores={ll.cooking=3000}] at @p[tag=ll.bat,scores={ll.deaths=1..},distance=..48] run playsound minecraft:entity.dolphin.ambient_water voice @a[distance=..16] ~ ~ ~ 1.5 0.5
+execute as @s[scores={ll.cooking=3000}] at @p[tag=ll.bat,scores={ll.deaths=1..},distance=..48] run playsound minecraft:entity.dolphin.ambient_water voice @a ~ ~ ~ 1.5 0.5
+execute as @s[scores={ll.cooking=3000}] at @p[tag=ll.bat,scores={ll.deaths=1..},distance=..48] run playsound minecraft:entity.dolphin.ambient_water voice @a ~ ~ ~ 1.5 0.5
+execute as @s[scores={ll.cooking=3000}] at @p[tag=ll.bat,scores={ll.deaths=1..},distance=..48] run playsound minecraft:entity.dolphin.ambient_water voice @a ~ ~ ~ 1.5 0.5
+execute as @s[scores={ll.cooking=3000}] at @p[tag=ll.bat,scores={ll.deaths=1..},distance=..48] run playsound minecraft:entity.dolphin.ambient_water voice @a ~ ~ ~ 1.5 0.5
+execute as @s[scores={ll.cooking=3000}] at @p[tag=ll.bat,scores={ll.deaths=1..},distance=..48] run playsound minecraft:entity.dolphin.ambient_water voice @a ~ ~ ~ 1.5 0.5
+execute as @s[scores={ll.cooking=3000}] at @p[tag=ll.bat,scores={ll.deaths=1..},distance=..48] run playsound minecraft:entity.dolphin.ambient_water voice @a ~ ~ ~ 1.5 0.5
+execute as @s[scores={ll.cooking=3000}] at @p[tag=ll.bat,scores={ll.deaths=1..},distance=..48] run playsound minecraft:entity.dolphin.ambient_water voice @a ~ ~ ~ 1.5 0.5
+execute as @s[scores={ll.cooking=3000}] at @p[tag=ll.bat,scores={ll.deaths=1..},distance=..48] run playsound minecraft:entity.dolphin.ambient_water voice @a ~ ~ ~ 1.5 0.5
+execute as @s[scores={ll.cooking=3000}] at @p[tag=ll.bat,scores={ll.deaths=1..},distance=..48] run playsound minecraft:entity.dolphin.ambient_water voice @a ~ ~ ~ 1.5 0.5
+execute as @s[scores={ll.cooking=3000}] at @p[tag=ll.bat,scores={ll.deaths=1..},distance=..48] run playsound minecraft:entity.dolphin.ambient_water voice @a ~ ~ ~ 1.5 0.5
 execute as @s[scores={ll.cooking=3000}] run advancement grant @p[tag=ll.bat,distance=..48,scores={ll.deaths=1..}] only limitedlife:heal_max_health
 execute as @s[scores={ll.cooking=3000}] run scoreboard players remove @p[tag=ll.bat,distance=..48,scores={ll.deaths=1..}] ll.deaths 1
 #calling curingvoid.mcfunction

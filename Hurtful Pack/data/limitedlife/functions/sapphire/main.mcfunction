@@ -11,7 +11,7 @@ tag @a[scores={sp.sincedeath=..50},tag=sp.sapphireglass] remove sp.sapphireglass
 #calls placement and effects, also particles
 scoreboard players add _global_ sp.glass_placed 1
 execute as @e[tag=sp.sapphire_glass] at @s run function limitedlife:sapphire/sapphire_glass/effects
-execute as @e[tag=sp.spawnsquid,tag=sp.valid] at @s run function limitedlife:sapphire/sapphire_glass/placement
+execute as @e[type=minecraft:item,tag=sp.spawnsquid] at @s run function limitedlife:sapphire/sapphire_glass/placement
 execute if score _global_ sp.glass_placed >= 10 sp.glass_placed run scoreboard players set _global_ sp.glass_placed 0
 
 #tag @a selecting sapphire_glass with sp.sapphireglass for (sp)ll.cured

@@ -17,7 +17,7 @@ As the name suggests, this datapacks makes leather armor actually worth crafting
 ```
 / /
 /L/
-///
+/L/
 ```
 
 **Leather Leggings:**

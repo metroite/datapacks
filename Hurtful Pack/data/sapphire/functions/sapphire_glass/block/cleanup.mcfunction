@@ -1,5 +1,5 @@
 #no piston_move: further in effects.mcfunction
-tag @s add sp.ll.piston_move
+tag @s add sp.sg.piston_move
 #obsidian-like only will be destroyed if the closeby player is using a diamond_pickaxe
 execute if entity @p[distance=..8,nbt={SelectedItem:{id:"minecraft:diamond_pickaxe"}},scores={sp.glass_broken=1..}] run data merge entity @e[type=minecraft:item,limit=1,sort=nearest,distance=..2,nbt=!{Item:{id:"minecraft:light_blue_stained_glass",Count:1b,tag:{}}},nbt={Item:{id:"minecraft:light_blue_stained_glass",Count:1b}}] {Item:{id:"minecraft:light_blue_stained_glass",Count:1b,tag:{display:{Name:"{\"text\":\"Sapphire Glass\",\"color\":\"aqua\",\"italic\":false}"},Enchantments:[{lvl:1s,id:"minecraft:binding_curse"},{lvl:1s,id:"minecraft:vanishing_curse",AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:2,Operation:0,UUIDLeast:897636,UUIDMost:510691,Slot:"head"},{AttributeName:"generic.armorToughness",Name:"generic.armorToughness",Amount:2,Operation:0,UUIDLeast:584132,UUIDMost:458804,Slot:"head"}]}]}}}
 execute if entity @p[distance=..8,nbt={SelectedItem:{id:"minecraft:diamond_pickaxe"}},scores={sp.glass_broken=1..}] run execute unless entity @e[tag=metroite.placement,distance=..2] run playsound minecraft:block.anvil.use block @a ~ ~ ~ 0.65 2

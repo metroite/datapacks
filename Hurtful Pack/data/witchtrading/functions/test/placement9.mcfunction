@@ -17,4 +17,5 @@ execute if entity @s[scores={test=29..35}] positioned ^-2 ^2 ^ align xyz if bloc
 #repeat if unsuccessful
 scoreboard players add @s[scores={test=29..35}] test 1
 execute if entity @s[scores={test=29..35}] positioned ^ ^ ^1 run function witchtrading:test/placement9
-#scoreboard players reset @s[scores={test=36..}] test
+execute if entity @s[scores={test=36..}] run tellraw @s[scores={test=36..}] ["",{"text":"unsuccessful","color":"red","bold":"true"}]
+scoreboard players reset @s[scores={test=36..}] test

@@ -25,6 +25,22 @@ function limitedlife:sapphire/main
 #feature-compatibility: torchout
 function torchout:sapphire/tick
 
+#calls placement and effects, also particles
+scoreboard players add _global_ sp.glass_placed 1
+execute as @e[tag=sp.sapphire_glass] at @s run function sapphire:sapphire_glass/block/effects
+execute as @e[type=minecraft:item,tag=sp.spawnsquid] at @s run function sapphire:sapphire_glass/block/placement
+execute if score _global_ sp.glass_placed >= 10 sp.glass_placed run scoreboard players set _global_ sp.glass_placed 0
+
+####placement-API for the sapphire_glass
+#calling effects if item is selected
+execute as @a[tag=sp.glass_block] at @s run function sapphire:sapphire_glass/placement-api/effects
+#tagging if item is selected
+tag @a[nbt={SelectedItem:{id:"minecraft:light_blue_stained_glass",tag:{Enchantments:[{lvl:1s,id:"minecraft:binding_curse"},{lvl:1s,id:"minecraft:vanishing_curse"}]}}}] add sp.glass_block
+execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:light_blue_stained_glass",tag:{Enchantments:[{lvl:1s,id:"minecraft:binding_curse"},{lvl:1s,id:"minecraft:vanishing_curse"}]}}]}] unless entity @s[nbt={SelectedItem:{id:"minecraft:light_blue_stained_glass"}}] run tag @s add sp.glass_block
+scoreboard players reset @a[tag=!sp.glass_block] sp.glass_placed
+#fallback mechanic: returns lost items if the API failed
+execute as @a[scores={sp.sg.pa.fail=1..}] at @s run function sapphire:sapphire_glass/placement-api/fallback
+
 #calls particle_generator
 execute as @e[tag=sp.particle] at @s run function sapphire:particle_generator/particle/main
 #calls particle_generator placement

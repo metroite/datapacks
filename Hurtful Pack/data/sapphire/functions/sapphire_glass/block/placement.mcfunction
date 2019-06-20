@@ -10,4 +10,4 @@ execute positioned ~-1 ~ ~ unless entity @e[tag=metroite.place,distance=..0.5] u
 execute as @e[tag=sp.sapphire_glass,tag=metroite.placement,limit=1,sort=nearest] run summon minecraft:area_effect_cloud ~ ~ ~ {Duration:2,Tags:["metroite.placement","metroite.place"]}
 
 #setup sp.sapphire_glass
-execute as @e[tag=sp.sapphire_glass,tag=metroite.placement,limit=1,sort=nearest] at @s run function limitedlife:sapphire/sapphire_glass/placing
+execute as @e[tag=sp.sapphire_glass,tag=metroite.placement,limit=1,sort=nearest] at @s run function sapphire:sapphire_glass/block/placing

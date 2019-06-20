@@ -18,6 +18,12 @@ scoreboard players set z_random sp.sapphire 0
 #feature-compatibility: limitedlife
 function limitedlife:sapphire/setup
 
+#sapphire glass
+scoreboard objectives add sp.glass_placed minecraft.used:minecraft.light_blue_stained_glass
+scoreboard players add _global_ sp.glass_placed 0
+scoreboard players set 10 sp.glass_placed 10
+scoreboard objectives add sp.glass_broken minecraft.mined:minecraft.light_blue_stained_glass
+
 #crafting
 scoreboard objectives add sp.craftdetector minecraft.crafted:minecraft.water_bucket
 scoreboard objectives add sp.craftlight minecraft.crafted:minecraft.redstone_ore
@@ -39,3 +45,6 @@ scoreboard players add _fallback_ sp.so.pa.fail 0
 scoreboard objectives add sp.wd.pa.fail dummy
 scoreboard players set 0 sp.wd.pa.fail 0
 scoreboard players add _fallback_ sp.wd.pa.fail 0
+scoreboard objectives add sp.sg.pa.fail dummy
+scoreboard players set 0 sp.sg.pa.fail 0
+scoreboard players add _fallback_ sp.sg.pa.fail 0

@@ -1,10 +1,10 @@
 scoreboard players add @s g.sapling_rng 1
 scoreboard players set @s[scores={g.sapling_rng=15}] g.sapling_rng 0
 
-data merge entity @s[scores={g.sapling_rng=1},tag=g.acacia_north] {Motion:[0.0,0.3,-0.75]}
-data merge entity @s[scores={g.sapling_rng=1},tag=g.acacia_east] {Motion:[0.75,0.4,0.0]}
-data merge entity @s[scores={g.sapling_rng=1},tag=g.acacia_south] {Motion:[0.0,0.5,0.75]}
-data merge entity @s[scores={g.sapling_rng=1},tag=g.acacia_west] {Motion:[-0.75,0.2,0.0]}
+data merge entity @s[scores={g.sapling_rng=1},tag=g.acacia_north] {Motion:[0.0,0.3,-1]}
+data merge entity @s[scores={g.sapling_rng=1},tag=g.acacia_east] {Motion:[1,0.4,0.0]}
+data merge entity @s[scores={g.sapling_rng=1},tag=g.acacia_south] {Motion:[0.0,0.5,1]}
+data merge entity @s[scores={g.sapling_rng=1},tag=g.acacia_west] {Motion:[-1,0.2,0.0]}
 
 data merge entity @s[scores={g.sapling_rng=7},tag=g.acacia_north] {Motion:[0.0,0.4,0.0]}
 data merge entity @s[scores={g.sapling_rng=7},tag=g.acacia_east] {Motion:[0.0,0.4,0.0]}

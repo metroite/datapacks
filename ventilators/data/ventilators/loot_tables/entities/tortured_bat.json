@@ -1,0 +1,27 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:bat_spawn_egg",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 1
+                            }
+                        },
+						{
+                            "function": "set_nbt",
+                            "tag": "{RepairCost:99999999,CanPlaceOn:[\"minecraft:void_air\"],HideFlags:17,Enchantments:[{id:\"minecraft:unbreaking\",lvl:2}],display:{Name:\"{\\\"text\\\":\\\"Batwing\\\",\\\"color\\\":\\\"yellow\\\",\\\"italic\\\":false}\"},EntityTag:{Tags:[\"ll.spawnbat\"],id:\"minecraft:item\",Item:{id:\"minecraft:bat_spawn_egg\",Count:1b,tag:{RepairCost:99999999,CanPlaceOn:[\"minecraft:void_air\"],HideFlags:17,Enchantments:[{id:\"minecraft:unbreaking\",lvl:2}],display:{Name:\"{\\\"text\\\":\\\"Batwing\\\",\\\"color\\\":\\\"yellow\\\",\\\"italic\\\":false}\"}}}}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

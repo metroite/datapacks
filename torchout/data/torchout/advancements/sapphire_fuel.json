@@ -1,0 +1,21 @@
+{
+    "display": {
+        "icon": {
+          "item": "minecraft:squid_spawn_egg",
+          "nbt": "{RepairCost:99999999,CanPlaceOn:[\"minecraft:void_air\"],HideFlags:17,Enchantments:[{id:\"minecraft:unbreaking\",lvl:2}],display:{Name:\"{\\\"text\\\":\\\"Sapphire\\\",\\\"color\\\":\\\"yellow\\\",\\\"italic\\\":false}\"}}"
+        },
+        "title": {
+            "translate": "Sapphire fueled"
+        },
+        "description": {
+            "translate": "Fuel a lit torch with a never outburning sapphire"
+        },
+        "show_toast": true,
+        "announce_to_chat": true
+    },
+	"requirements":[["sapphire_fuel"]],
+    "parent":"torchout:light_up",
+    "criteria": {
+		"sapphire_fuel":{"trigger":"minecraft:impossible"}
+  }
+}

@@ -18,6 +18,12 @@ scoreboard players set z_random sp.sapphire 0
 #feature-compatibility: limitedlife
 function limitedlife:sapphire/setup
 
+#sapphire glass
+scoreboard objectives add sp.glass_placed minecraft.used:minecraft.light_blue_stained_glass
+scoreboard players add _global_ sp.glass_placed 0
+scoreboard players set 10 sp.glass_placed 10
+scoreboard objectives add sp.glass_broken minecraft.mined:minecraft.light_blue_stained_glass
+
 #crafting
 scoreboard objectives add sp.craftdetector minecraft.crafted:minecraft.water_bucket
 scoreboard objectives add sp.craftlight minecraft.crafted:minecraft.redstone_ore
@@ -39,5 +45,8 @@ scoreboard players add _fallback_ sp.so.pa.fail 0
 scoreboard objectives add sp.wd.pa.fail dummy
 scoreboard players set 0 sp.wd.pa.fail 0
 scoreboard players add _fallback_ sp.wd.pa.fail 0
+scoreboard objectives add sp.sg.pa.fail dummy
+scoreboard players set 0 sp.sg.pa.fail 0
+scoreboard players add _fallback_ sp.sg.pa.fail 0
 #"datapack loaded": Please don't remove this message, if it annoys you make sure to credit me otherwise. Thank you!
 tellraw @a ["",{"text":"sapphire","color":"green","clickEvent":{"action":"open_url","value":"https://github.com/Metroite/datapacks/tree/master/sapphire"},"hoverEvent":{"action":"show_text","value":"sapphire now spawning in deep water, very reactive to water"}},{"text":"  by "},{"text":"Metroite","color":"aqua","clickEvent":{"action":"open_url","value":"https://github.com/Metroite"}},{"text":" loaded!"},{"text":" [","color":"dark_red"},{"text":"!","color":"red","bold":"true","clickEvent":{"action":"run_command","value":"/function sapphire:uninstall"},"hoverEvent":{"action":"show_text","value":"click and delete files to uninstall"}},{"text":"]","color":"dark_red"}]

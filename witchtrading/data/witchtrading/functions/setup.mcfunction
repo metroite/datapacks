@@ -26,7 +26,7 @@ function graves:witchtrading/setup
 #
 #All those will block trading and the witch will be very mad.
 ##############################################################
-#Used Tags:
+#Used Tags (outdated):
 #"wt.setup", "wt.blocked", "wt.traded"
 #
 #Used Teams:

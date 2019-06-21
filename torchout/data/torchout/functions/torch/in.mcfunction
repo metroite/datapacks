@@ -16,6 +16,8 @@ execute if block ~ ~ ~ minecraft:wall_torch[facing=east] run particle minecraft:
 execute if block ~ ~ ~ minecraft:wall_torch[facing=south] run particle minecraft:flame ~ ~0.85 ~-0.3 0 0 0 0.01 12 normal
 execute if block ~ ~ ~ minecraft:wall_torch[facing=west] run particle minecraft:flame ~0.3 ~0.85 ~ 0 0 0 0.01 12 normal
 execute if block ~ ~ ~ minecraft:torch run particle minecraft:flame ~ ~0.75 ~ 0 0 0 0.01 12 normal
-playsound minecraft:block.fire.ambient ambient @a ~ ~ ~ 0.3 1
+playsound minecraft:block.fire.ambient ambient @a ~ ~ ~ 0.65 1
 #break flint_and_steel if it should
 execute as @p[distance=..8,nbt={SelectedItem:{id:"minecraft:flint_and_steel"}}] run function torchout:torch/damaged
+#grant advancement
+advancement grant @p[distance=..8] only torchout:light_up

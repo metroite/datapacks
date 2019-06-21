@@ -8,6 +8,8 @@ execute positioned ~-1 ~ ~ unless entity @e[tag=metroite.place,distance=..0.5] u
 
 #invalid placement will give the item back
 execute unless entity @e[limit=1,sort=nearest,distance=..1.25,tag=metroite.place,tag=metroite.placement] run give @p[distance=..7] minecraft:bat_spawn_egg{RepairCost:99999999,CanPlaceOn:["minecraft:void_air"],HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:2}],display:{Name:"{\"text\":\"Batwing\",\"color\":\"yellow\",\"italic\":false}"},EntityTag:{Tags:["ll.spawnbat"],id:"minecraft:item",Item:{id:"minecraft:bat_spawn_egg",Count:1b,tag:{RepairCost:99999999,CanPlaceOn:["minecraft:void_air"],HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:2}],display:{Name:"{\"text\":\"Batwing\",\"color\":\"yellow\",\"italic\":false}"}}}}} 1
+#feature-compatibility: limitedlife
+execute unless entity @e[limit=1,sort=nearest,distance=..1.25,tag=metroite.place,tag=metroite.placement] as @p[distance=..7] at @s run function limitedlife:items/batwing_eat
 
 #setup v.fan
 execute as @e[tag=v.fan,tag=v.fansetup,limit=1,sort=nearest] at @s run function ventilators:ventilator/facing

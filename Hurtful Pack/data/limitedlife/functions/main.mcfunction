@@ -5,8 +5,12 @@ scoreboard players remove @a[scores={ll.deaths=11..}] ll.deaths 1
 #tp to The Void
 execute as @a[scores={ll.deaths=10}] positioned 0 1 -30 run function limitedlife:curing/thevoid
 
-#feature-compatibility to graves
+#feature-compatibility: graves, ventilators
 function graves:limitedlife
+execute unless score 9 v.ventilator = 9 v.ventilator as @e[type=minecraft:item,tag=ll.spawnbat] at @s run function limitedlife:items/batwing_recover
+
+#batwing eating
+execute if entity @p[scores={ll.batwingeat=1..}] run function limitedlife:items/batwing_eat_tick
 
 #helmet
 execute as @a[nbt=!{Inventory:[{Slot:103b,Count:1b,tag:{Enchantments:[{lvl:1s,id:"minecraft:binding_curse"},{lvl:1s,id:"minecraft:vanishing_curse"}]}}]}] run function limitedlife:helmet/helmet

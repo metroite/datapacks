@@ -10,6 +10,8 @@ scoreboard objectives add ll.wa.shootc minecraft.used:minecraft.crossbow
 scoreboard players set 0 ll.deaths 0
 scoreboard objectives add ll.batwingflap minecraft.custom:minecraft.sneak_time
 scoreboard objectives add ll.end_gateway dummy
+scoreboard objectives add ll.batwingeat dummy
+scoreboard players set 20 ll.batwingeat 20
 
 #The Void
 #air

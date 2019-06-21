@@ -15,7 +15,7 @@
         "announce_to_chat": true
     },
 	"requirements":[["wear_sapphire_glass"]],
-    "parent":"limitedlife:sapphire_glass",
+    "parent":"sapphire:sapphire_glass",
     "criteria": {
 		"wear_sapphire_glass":{"trigger":"minecraft:impossible"}
   }

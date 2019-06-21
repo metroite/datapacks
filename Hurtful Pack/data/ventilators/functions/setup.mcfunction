@@ -1,6 +1,5 @@
 scoreboard objectives add v.ventilator dummy
 scoreboard players set 9 v.ventilator 9
-scoreboard players set 11 v.ventilator 11
 scoreboard players set 1 v.ventilator 1
 scoreboard players set 2 v.ventilator 2
 scoreboard players set 3 v.ventilator 3

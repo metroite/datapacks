@@ -5,9 +5,11 @@ execute if entity @p[distance=..8,nbt={SelectedItem:{id:"minecraft:diamond_picka
 execute if entity @p[distance=..8,nbt={SelectedItem:{id:"minecraft:diamond_pickaxe"}},scores={sp.glass_broken=1..}] run execute unless entity @e[tag=metroite.placement,distance=..2] run playsound minecraft:block.anvil.use block @a ~ ~ ~ 0.65 2
 execute if entity @p[distance=..8,nbt={SelectedItem:{id:"minecraft:diamond_pickaxe"}},scores={sp.glass_broken=1..}] run particle minecraft:dust 0.25 0.1 1 1.25 ~ ~0.5 ~ 0.4 0.4 0.4 2 24
 execute if entity @p[distance=..8,nbt={SelectedItem:{id:"minecraft:diamond_pickaxe"}},scores={sp.glass_broken=1..}] run kill @s
+#general particle effect
+particle minecraft:dust 0.25 0.1 1 1.25 ~ ~0.5 ~ 0.25 0.25 0.25 2 2
 #for creative mode
 execute at @p[distance=..8] if entity @p[distance=..1,gamemode=creative] at @s run playsound minecraft:block.anvil.use block @a ~ ~ ~ 0.65 2
-execute at @p[distance=..8] if entity @p[distance=..1,gamemode=creative] at @s run particle minecraft:dust 0.25 0.1 1 1.25 ~ ~0.5 ~ 0.4 0.4 0.4 2 24
+execute at @p[distance=..8] if entity @p[distance=..1,gamemode=creative] at @s run particle minecraft:dust 0.25 0.1 1 1.25 ~ ~0.5 ~ 0.25 0.25 0.25 2 12
 execute at @p[distance=..8] if entity @p[distance=..1,gamemode=creative] at @s run kill @s
 #if not using diamond_pickaxe
 execute unless entity @a[distance=..8,nbt={SelectedItem:{id:"minecraft:diamond_pickaxe"}},scores={sp.glass_broken=1..}] at @p[distance=..8] unless entity @p[distance=..1,gamemode=creative] at @s run fill ~ ~ ~ ~ ~ ~ minecraft:light_blue_stained_glass replace air

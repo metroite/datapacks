@@ -10,4 +10,3 @@ function torchout:main
 function usefulender:main
 function ventilators:main
 function witchtrading:main
-function worseoldpvp:main

@@ -7,4 +7,5 @@ execute if entity @s[scores={ll.batwingeat=7}] run playsound minecraft:entity.pl
 execute if entity @s[scores={ll.batwingeat=7}] run clear @s minecraft:bat_spawn_egg{RepairCost:99999999,CanPlaceOn:["minecraft:void_air"],HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:2}],display:{Name:"{\"text\":\"Batwing\",\"color\":\"yellow\",\"italic\":false}"}} 1
 execute if entity @s[scores={ll.batwingeat=7}] run effect give @s minecraft:regeneration 3 2
 execute if entity @s[scores={ll.batwingeat=7}] run effect give @s minecraft:night_vision 120 0
+execute if entity @s[scores={ll.batwingeat=7}] run effect give @s minecraft:saturation 1 5 true
 scoreboard players reset @s[scores={ll.batwingeat=7..}] ll.batwingeat

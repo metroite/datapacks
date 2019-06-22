@@ -17,7 +17,7 @@ execute unless score $reload$ hp.storeboard > $0$ hp.storeboard run gamerule doF
 execute unless score $reload$ hp.storeboard > $0$ hp.storeboard run gamerule doDaylightCycle true
 execute unless score $reload$ hp.storeboard > $0$ hp.storeboard run gamerule maxEntityCramming 5
 execute unless score $reload$ hp.storeboard > $0$ hp.storeboard run difficulty hard
-#worseoldpvp
+#feature-compatibility: worseoldpvp
 execute unless score $reload$ hp.storeboard > $0$ hp.storeboard run scoreboard players set $mode$ wop.extend 1
 #usefulender
 execute unless score $reload$ hp.storeboard > $0$ hp.storeboard run scoreboard players set $distance$ ue.pearlthrow 14
@@ -38,7 +38,6 @@ datapack disable "file/torchout"
 datapack disable "file/usefulender"
 datapack disable "file/ventilators"
 datapack disable "file/witchtrading"
-datapack disable "file/worseoldpvp"
 
 #"datapack loaded": Please don't remove this message, if it annoys you make sure to credit me otherwise. Thank you!
 tellraw @a ["",{"text":"Hurtful Pack","color":"green","clickEvent":{"action":"open_url","value":"https://github.com/Metroite/datapacks/tree/master"},"hoverEvent":{"action":"show_text","value":"datapack pack for survival, but harder"}},{"text":" by "},{"text":"Metroite","color":"aqua","clickEvent":{"action":"open_url","value":"https://github.com/Metroite"}},{"text":" loaded!"},{"text":" [","color":"dark_red"},{"text":"!","color":"red","bold":"true","clickEvent":{"action":"run_command","value":"/function hurtfulpack:uninstall/toggle"},"hoverEvent":{"action":"show_text","value":"click to toggle uninstallation"}},{"text":"]","color":"dark_red"}]

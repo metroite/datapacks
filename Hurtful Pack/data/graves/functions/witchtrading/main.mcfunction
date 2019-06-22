@@ -11,3 +11,4 @@ execute as @e[tag=wt.P.shinigami_wing] at @s run function graves:witchtrading/sh
 #calling shinigami_power upon right click
 execute as @e[type=minecraft:firework_rocket,nbt={FireworksItem:{tag:{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}],display:{Name:"{\"text\":\"Shinigami Power\",\"color\":\"aqua\",\"italic\":\"false\"}",Lore:["{\"text\":\"...fly through the sky until you die\"}"]}}}}] at @s run function graves:witchtrading/shinigami/wing/power
 scoreboard players reset @a wt.shootc
+scoreboard players reset @a wt.shinigamipw

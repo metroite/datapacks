@@ -3,8 +3,10 @@ scoreboard objectives remove g.deaths
 scoreboard objectives remove g.usebonemeal
 scoreboard objectives remove g.sapling_height
 scoreboard objectives remove g.sapling_rng
+#feature-compatibility: witchtrading
 scoreboard objectives remove wt.shootc
 scoreboard objectives remove wt.shinigami
+scoreboard objectives remove wt.shinigamipw
 #feature compatibility to witchtrading: limit witch again
 execute unless score rngmax wt.rng = 15 wt.rng run scoreboard players set rngmax wt.rng 15
 

@@ -4,13 +4,11 @@
 		"layer0": "item/carrot_on_a_stick"
 	},
 	"overrides": [
-		{ "predicate": { "damaged": 0, "damage": 0.5 }, "model": "item/carrot_on_a_stick/13" },
-		{ "predicate": { "damaged": 0, "damage": 0.5384615384615384 }, "model": "item/carrot_on_a_stick/14" },
-		{ "predicate": { "damaged": 0, "damage": 0.5769230769230769 }, "model": "item/carrot_on_a_stick/15" },
-		{ "predicate": { "damaged": 0, "damage": 0.6153846153846154 }, "model": "item/carrot_on_a_stick/16" },
-		{ "predicate": { "damaged": 0, "damage": 0.6538461538461539 }, "model": "item/carrot_on_a_stick/17" },
-		{ "predicate": { "damaged": 0, "damage": 0.6923076923076923 }, "model": "item/carrot_on_a_stick/18" },
-		{ "predicate": { "damaged": 0, "damage": 0.75 }, "model": "item/carrot_on_a_stick" },
-		{ "predicate": { "damaged": 1, "damage": 0}, "model": "item/carrot_on_a_stick"}
+		{ "predicate": { "custom_model_data": 27}, "model": "item/carrot_on_a_stick/13" },
+		{ "predicate": { "custom_model_data": 28}, "model": "item/carrot_on_a_stick/14" },
+		{ "predicate": { "custom_model_data": 29}, "model": "item/carrot_on_a_stick/15" },
+		{ "predicate": { "custom_model_data": 30}, "model": "item/carrot_on_a_stick/16" },
+		{ "predicate": { "custom_model_data": 31}, "model": "item/carrot_on_a_stick/17" },
+		{ "predicate": { "custom_model_data": 32}, "model": "item/carrot_on_a_stick/18" }
 	]
 }

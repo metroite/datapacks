@@ -7,7 +7,7 @@
             "translate": "Fire!"
         },
         "description": {
-            "translate": "Light up a torch with a flint and steel"
+            "translate": "Light a torch up using flint and steel"
         },
         "show_toast": true,
         "announce_to_chat": true

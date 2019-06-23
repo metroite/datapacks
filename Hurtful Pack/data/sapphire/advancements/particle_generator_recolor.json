@@ -7,7 +7,7 @@
             "translate": "Recolorful"
         },
         "description": {
-            "translate": "Drop dye on a Particle Generator, it will be beautiful"
+            "translate": "Drop dye on a Particle Generator, it will get beautiful"
         },
         "show_toast": true,
         "announce_to_chat": true

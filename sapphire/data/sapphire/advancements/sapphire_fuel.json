@@ -8,7 +8,7 @@
             "translate": "Sapphire fueled"
         },
         "description": {
-            "translate": "Fuel a lit torch with a never outburning sapphire"
+            "translate": "Fuel a lit torch with a never outburning Sapphire gem"
         },
         "show_toast": true,
         "announce_to_chat": true

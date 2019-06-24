@@ -12,6 +12,7 @@ execute if entity @s[scores={vd.grave=100}] run playsound minecraft:block.portal
 execute if entity @s[scores={vd.grave=300}] run playsound minecraft:block.end_portal.spawn master @a ~ ~ ~ 1 0
 #potion effects
 execute if entity @s[scores={vd.grave=100..}] run effect give @s minecraft:nausea 5 0 true
+execute if entity @s[scores={vd.grave=40..}] run effect give @s minecraft:slowness 1 2 true
 execute if entity @s[scores={vd.grave=60}] run effect give @s minecraft:blindness 1 0 true
 execute if entity @s[scores={vd.grave=110}] run effect give @s minecraft:blindness 1 0 true
 execute if entity @s[scores={vd.grave=150}] run effect give @s minecraft:blindness 1 0 true

@@ -8,4 +8,5 @@ execute if entity @s[y_rotation=75..105] if block ~ ~ ~ #voiddimension:skulls[ro
 execute if entity @s[y_rotation=165..-165] if block ~ ~ ~ #voiddimension:skulls[rotation=8] align xyz positioned ~0.5 ~0.5 ~0.5 run function voiddimension:grave/effects
 execute if entity @s[y_rotation=-105..-75] if block ~ ~ ~ #voiddimension:skulls[rotation=12] align xyz positioned ~0.5 ~0.5 ~0.5 run function voiddimension:grave/effects
 #recursive forward motion
+execute if score %range% vd.grave > $maxrange$ vd.grave unless block ~ ~ ~ #voiddimension:skulls run scoreboard players reset @s vd.grave
 execute if score %range% vd.grave > 0 vd.coordinates if score %range% vd.grave <= $maxrange$ vd.grave unless block ~ ~ ~ #voiddimension:skulls positioned ^ ^ ^0.5 run function voiddimension:grave/skull_check

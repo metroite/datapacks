@@ -25,4 +25,5 @@ execute at @s if score z_temp vd.coordinates <= -1 vd.coordinates run tp ~ ~ ~-1
 execute at @s if score z_temp vd.coordinates <= -1 vd.coordinates run scoreboard players add z_temp vd.coordinates 1
 #tp recusively
 execute at @s unless score z_temp vd.coordinates = 0 vd.coordinates run function voiddimension:rift/z_teleport
-execute at @s if score z_temp vd.coordinates = 0 vd.coordinates run say hi
+execute at @s if score z_temp vd.coordinates = 0 vd.coordinates run particle large_smoke ~ ~1 ~ 0.25 0.5 0.25 0.1 200 force
+execute at @s if score z_temp vd.coordinates = 0 vd.coordinates run summon minecraft:lightning_bolt ~ 300 ~

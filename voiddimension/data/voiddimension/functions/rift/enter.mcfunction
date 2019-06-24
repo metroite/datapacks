@@ -12,5 +12,7 @@ scoreboard players operation z vd.coordinates -= $shift$ vd.coordinates
 scoreboard players operation z vd.coordinates /= $travel$ vd.coordinates
 scoreboard players operation z_temp vd.coordinates = z vd.coordinates
 #tp into the end after the shift
-execute in minecraft:the_end run tp 0 100 0
+tag @s add vd.in_void
+gamemode adventure @s[gamemode=survival]
+execute in minecraft:the_end run tp 0 288 0
 function voiddimension:rift/x_teleport

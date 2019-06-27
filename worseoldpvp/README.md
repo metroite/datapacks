@@ -4,7 +4,8 @@ You want the worse, old PvP back? Worry no more, this datapack will fulfill your
 
 Set *$extend$* in *wop.extend* higher, the more the server is lagging (6 is default): `/scoreboard players set $extend$ wop.extend 6`
 
-Change *$mode$* in *wop.extend* from 0 to 2 if only the sword-block (1) or the no-cooldown (2) is wanted (0 is default): `/scoreboard players set $mode$ wop.extend 0`
+Use one of the mode funtions numbered from 0 to 2 if only the sword-block (1) or the no-cooldown (2) is wanted (0 is default): `/function worseoldpvp:mode/0`
+Alternatively you can change ones mode individually by changing the palyers *wop.mode* score (0 is default): `/scoreboard players set <player> wop.mode 0`
 
 ![worseoldpvp](worseoldpvp.png?raw=true "The worse, old PvP")
 

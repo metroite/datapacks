@@ -1,22 +1,10 @@
 #scoreboards
 scoreboard objectives add vd.coordinates dummy
-scoreboard players set 0 vd.coordinates 0
-scoreboard players set 1 vd.coordinates 1
-scoreboard players set 10 vd.coordinates 10
-scoreboard players set 100 vd.coordinates 100
-scoreboard players set 1000 vd.coordinates 1000
-scoreboard players set 10000 vd.coordinates 10000
-scoreboard players set 100000 vd.coordinates 100000
-scoreboard players set -1 vd.coordinates -1
-scoreboard players set -10 vd.coordinates -10
-scoreboard players set -100 vd.coordinates -100
-scoreboard players set -1000 vd.coordinates -1000
-scoreboard players set -10000 vd.coordinates -10000
-scoreboard players set -100000 vd.coordinates -100000
-execute unless score $shift$ vd.coordinates >= 0 vd.coordinates run scoreboard players set $shift$ vd.coordinates 10000000
-execute unless score $travel$ vd.coordinates >= 0 vd.coordinates run scoreboard players set $travel$ vd.coordinates 16
+execute unless score $shift_x$ vd.coordinates matches 0.. run scoreboard players set $shift_x$ vd.coordinates 15000000
+execute unless score $shift_z$ vd.coordinates matches 0.. run scoreboard players set $shift_z$ vd.coordinates -15000000
+execute unless score $travel$ vd.coordinates matches 0.. run scoreboard players set $travel$ vd.coordinates 16
 scoreboard objectives add vd.grave dummy
-execute unless score $maxrange$ vd.grave >= 0 vd.coordinates run scoreboard players set $maxrange$ vd.grave 4
+execute unless score $maxrange$ vd.grave matches 0.. run scoreboard players set $maxrange$ vd.grave 4
 scoreboard objectives add vd.health health
 
 #"datapack loaded": Please don't remove this message, if it annoys you make sure to credit me otherwise. Thank you!

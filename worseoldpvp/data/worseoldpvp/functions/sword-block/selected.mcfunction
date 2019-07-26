@@ -1,3 +1,5 @@
+#player has to be defined!
+scoreboard players add @s wop.extend 0
 #replace offhand if empty with invisible carrot_on_a_stick to detect right clicks
 clear @s[scores={wop.extend=0},nbt={Inventory:[{Slot:-106b,id:"minecraft:carrot_on_a_stick",tag:{wopcarrot:1b}}]}] minecraft:carrot_on_a_stick{wopcarrot:1b,wopblocking:1b}
 replaceitem entity @s[scores={wop.extend=0},nbt=!{Inventory:[{Slot:-106b}]}] weapon.offhand minecraft:carrot_on_a_stick{wopcarrot:1b,wopunblock:1b,CustomModelData:27}

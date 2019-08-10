@@ -1,0 +1,8 @@
+CustomModelData, Item, Id
+
+6827,	invisible right click detector,	carrot_on_a_stick
+6828,	blocking diamond_sword        ,	diamond_sword
+6829,	blocking iron_sword           ,	iron_sword
+6830,	blocking golden_sword         ,	golden_sword
+6831,	blocking wooden_sword         ,	wooden_sword
+6832,	blocking stone_sword          ,	stone_sword

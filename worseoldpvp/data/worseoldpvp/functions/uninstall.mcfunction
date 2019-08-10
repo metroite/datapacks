@@ -6,13 +6,9 @@ scoreboard objectives remove wop.damage
 scoreboard objectives remove wop.damagecalc
 scoreboard objectives remove wop.validitem
 scoreboard objectives remove wop.sneaking
-
+scoreboard objectives remove wop.mode
+tellraw @a[tag=!wop.no] ["",{"text":"worseoldpvp:","color":"green","clickEvent":{"action":"open_url","value":"https://github.com/Metroite/datapacks/tree/master/worseoldpvp"},"hoverEvent":{"action":"show_text","value":"reverts the combat system to the worse one back in 1.8"}},{"text":" uninstalling...","bold":"true","hoverEvent":{"action":"show_text","value":"cooldown and no-sword-block"}}]
+setblock ~ ~ ~ minecraft:repeating_command_block{Command:"function worseoldpvp:uninstall_tick",auto:1b,conditionMet:1b,CustomName:"[{\"text\":\"worseoldpvp: \",\"color\":\"green\"},{\"text\":\"uninstaller\",\"color\":\"reset\"}]"} replace
+setblock ~ ~1 ~ minecraft:oak_sign{Text1:"{\"text\":\"ensures that\"}",Text2:"{\"text\":\"all selected\"}",Text3:"{\"text\":\"tools are\"}",Text4:"{\"text\":\"reverted back\"}"} replace
 #tick
-#normalite attack_speed
-effect give @s[nbt={SelectedItem:{tag:{wopcooldown:0}}}] minecraft:weakness 1 100 true
-title @s[nbt={SelectedItem:{tag:{wopcooldown:0}}}] actionbar ["",{"text":"worseoldpvp:","color":"green","clickEvent":{"action":"open_url","value":"https://github.com/Metroite/datapacks/tree/master/worseoldpvp"},"hoverEvent":{"action":"show_text","value":"reverts the combat system to the worse one back in 1.8 (drop your tools once to update them)"}},{"text":" drop your selected item once, its too fast, the datapack has been uninstalled!"}]
-execute at @a as @e[type=minecraft:item,distance=..4,nbt=!{Item:{tag:{wopcooldown:1}}}] run function worseoldpvp:cooldown/yes
-#remove carrot_on_a_stick: also done in function cooldown/yes ^^
-clear @a minecraft:carrot_on_a_stick{wopcarrot:1b}
-#pigs should get their AI back
-execute as @e[type=minecraft:pig,tag=wop.noai] at @s run function worseoldpvp:pigs/ai
+function worseoldpvp:uninstall_tick

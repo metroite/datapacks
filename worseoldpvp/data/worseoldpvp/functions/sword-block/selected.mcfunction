@@ -1,5 +1,3 @@
-#players have to be defined!
-scoreboard players add @s wop.extend 0
 #replace offhand if empty with invisible carrot_on_a_stick to detect right clicks (new method: also reverts the texture, the new methods is called in other selected function)
 execute if score $oldmethod$ wop.extend matches 1.. if entity @s[scores={wop.extend=0}] run function worseoldpvp:sword-block/reset
 #playsound if hit and if initally blocked (also sets wop.damagecalc and wop.damage)

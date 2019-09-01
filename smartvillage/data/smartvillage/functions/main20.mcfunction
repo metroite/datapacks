@@ -6,4 +6,7 @@ scoreboard players add $global$ sv.global 1
 execute as @e[type=minecraft:villager,tag=!sv.marked,limit=1,sort=random] at @s run function smartvillage:village/common/scores
 execute as @e[type=minecraft:villager,tag=sv.marked,limit=1,sort=random,scores={sv.center_x=0,sv.center_y=0,sv.center_z=0}] at @s run function smartvillage:village/common/scores
 #calculate distance from every player to village center if sv.marked (marked entity) is around | also ticks if inside/outside
-execute as @a at @s as @e[limit=1,sort=nearest,tag=sv.center,distance=..200] run function smartvillage:village/common/distance
+execute as @a at @s as @e[limit=1,sort=nearest,tag=sv.marked,distance=..200] run function smartvillage:village/common/distance
+#remove inside tag if actually outside
+execute as @a[tag=!sv.determined,tag=sv.entered] at @s run function smartvillage:village/outside
+tag @a remove sv.determined

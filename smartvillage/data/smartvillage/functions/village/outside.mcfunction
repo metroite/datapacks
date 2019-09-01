@@ -7,3 +7,5 @@ scoreboard players reset @a sv.damagedealt
 scoreboard players reset @a sv.killigolem
 scoreboard players reset @a sv.killvillager
 scoreboard players reset @a sv.chestopened
+#stop multiple calls^^
+tag @s add sv.outside

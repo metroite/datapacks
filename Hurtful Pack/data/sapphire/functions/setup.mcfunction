@@ -27,14 +27,14 @@ scoreboard objectives add sp.sg.piston minecraft.used:minecraft.light_blue_stain
 
 #crafting
 scoreboard objectives add sp.craftdetector minecraft.crafted:minecraft.water_bucket
-scoreboard objectives add sp.craftlight minecraft.crafted:minecraft.redstone_ore
+scoreboard objectives add sp.craftlight minecraft.crafted:minecraft.lapis_ore
 
 scoreboard objectives add sp.wd.detector dummy
 scoreboard objectives add sp.wd.cleanup minecraft.mined:minecraft.observer
 
 #placement-API
 scoreboard objectives add sp.lr.pa.torch minecraft.used:minecraft.redstone_torch
-scoreboard objectives add sp.so.pa.ore minecraft.used:minecraft.redstone_ore
+scoreboard objectives add sp.so.pa.ore minecraft.used:minecraft.lapis_ore
 scoreboard objectives add sp.wd.pa.detec minecraft.used:minecraft.observer
 
 scoreboard objectives add sp.lr.pa.fail dummy

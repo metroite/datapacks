@@ -1,0 +1,9 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "block/lever"
+    },
+	"overrides": [
+		{ "predicate": { "custom_model_data": 7185}, "model": "item/lever/7185" }
+	]
+}

@@ -2,7 +2,7 @@
     "display": {
         "icon": {
           "item": "minecraft:squid_spawn_egg",
-          "nbt": "{RepairCost:99999999,CanPlaceOn:[\"minecraft:void_air\"],HideFlags:17,Enchantments:[{id:\"minecraft:unbreaking\",lvl:2}],display:{Name:\"{\\\"text\\\":\\\"Sapphire\\\",\\\"color\\\":\\\"yellow\\\",\\\"italic\\\":false}\"}}"
+          "nbt": "{RepairCost:99999999,CanPlaceOn:[\"minecraft:void_air\"],HideFlags:17,Enchantments:[{id:\"minecraft:unbreaking\",lvl:2}],CustomModelData:8771,display:{Name:\"{\\\"text\\\":\\\"Sapphire\\\",\\\"color\\\":\\\"yellow\\\",\\\"italic\\\":false}\"}}"
         },
         "title": {
             "translate": "Sapphire fueled"

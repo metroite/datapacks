@@ -1,21 +1,19 @@
 #calls x and z oredrop
 execute as @e[tag=sp.oredrop] at @s run function sapphire:generator/oredrop
-#area_effect_cloud sp.noore: makes sure that sapphire ore can only generate 128 blocks appart
-execute as @e[tag=sp.noore] at @s run kill @e[tag=sp.oredrop,distance=..128]
 #calling Revoke (therefore make it possible to spawn a new sapphire ore) deep_ocean advancement
-execute as @a[tag=sp.deep_ocean] at @s unless entity @e[tag=sp.sapphire_main,tag=!sp.so.placed,distance=..320] unless entity @e[tag=sp.oredrop,tag=!valid,distance=..320] unless entity @e[tag=sp.noore,distance=..320] run function sapphire:generator/revoke_deep_ocean
+execute as @a[tag=sp.deep_ocean] at @s unless entity @e[tag=sp.oredrop,distance=..128] unless entity @e[tag=sp.noore,distance=..128] run function sapphire:generator/revoke_deep_ocean
 
 #call cleanup
-execute as @e[tag=sp.sapphire_ore] at @s unless block ~ ~ ~ minecraft:redstone_ore run function sapphire:sapphire_ore/cleanup
+execute as @e[tag=sp.sapphire_ore] at @s unless block ~ ~ ~ minecraft:lapis_ore run function sapphire:sapphire_ore/cleanup
 #call sapphire_main: remove SU-tag from sapphire_ore
-execute as @e[tag=sp.sapphire_main] at @s if block ~ ~ ~ minecraft:redstone_ore run function sapphire:sapphire_ore/sapphire_main
+execute as @e[tag=sp.sapphire_main] at @s if block ~ ~ ~ minecraft:lapis_ore run function sapphire:sapphire_ore/sapphire_main
 
 ##placement-API: sapphire_ore
 #calling effects if item is selected
 execute as @a[tag=sp.so.pa.tag] at @s run function sapphire:sapphire_ore/effects
 #tagging if item is selected
-tag @a[nbt={SelectedItem:{id:"minecraft:redstone_ore",tag:{Enchantments:[{id:"minecraft:unbreaking",lvl:1}],RepairCost:99999999,CanPlaceOn:["minecraft:void_air"],HideFlags:17}}}] add sp.so.pa.tag
-execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:redstone_ore",tag:{Enchantments:[{id:"minecraft:unbreaking",lvl:1}],RepairCost:99999999,CanPlaceOn:["minecraft:void_air"],HideFlags:17}}]}] unless entity @s[nbt={SelectedItem:{id:"minecraft:redstone_ore"}}] run tag @s add sp.so.pa.tag
+tag @a[nbt={SelectedItem:{id:"minecraft:lapis_ore",tag:{Enchantments:[{id:"minecraft:unbreaking",lvl:1}],RepairCost:99999999,CanPlaceOn:["minecraft:void_air"],HideFlags:17}}}] add sp.so.pa.tag
+execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:lapis_ore",tag:{Enchantments:[{id:"minecraft:unbreaking",lvl:1}],RepairCost:99999999,CanPlaceOn:["minecraft:void_air"],HideFlags:17}}]}] unless entity @s[nbt={SelectedItem:{id:"minecraft:lapis_ore"}}] run tag @s add sp.so.pa.tag
 scoreboard players reset @a[tag=!sp.so.pa.tag] sp.so.pa.ore
 #fallback mechanic: returns lost items if the API failed
 execute as @a[scores={sp.so.pa.fail=1..}] at @s run function sapphire:sapphire_ore/fallback
@@ -24,6 +22,13 @@ execute as @a[scores={sp.so.pa.fail=1..}] at @s run function sapphire:sapphire_o
 function limitedlife:sapphire/main
 #feature-compatibility: torchout
 function torchout:sapphire/tick
+
+#calls placement (for polishing glass) and effects, also particles (needs to be above placement-API, because of the place score being used in order to fix the piston-dupe-glitch (could just use own objective if necessary))
+scoreboard players add _global_ sp.glass_placed 1
+execute as @e[tag=sp.sapphire_glass] at @s run function sapphire:sapphire_glass/block/effects
+execute as @e[type=minecraft:item,tag=sp.spawnsquid] at @s run function sapphire:sapphire_glass/block/placement
+execute if score _global_ sp.glass_placed >= 10 sp.glass_placed run scoreboard players set _global_ sp.glass_placed 0
+scoreboard players reset @a sp.sg.piston
 
 ####placement-API for the sapphire_glass
 #calling effects if item is selected
@@ -34,13 +39,6 @@ execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:light_blue_stained_glass
 scoreboard players reset @a[tag=!sp.glass_block] sp.glass_placed
 #fallback mechanic: returns lost items if the API failed
 execute as @a[scores={sp.sg.pa.fail=1..}] at @s run function sapphire:sapphire_glass/placement-api/fallback
-
-#calls placement and effects, also particles
-scoreboard players add _global_ sp.glass_placed 1
-execute as @e[tag=sp.sapphire_glass] at @s run function sapphire:sapphire_glass/block/effects
-execute as @e[type=minecraft:item,tag=sp.spawnsquid] at @s run function sapphire:sapphire_glass/block/placement
-execute if score _global_ sp.glass_placed >= 10 sp.glass_placed run scoreboard players set _global_ sp.glass_placed 0
-scoreboard players reset @a sp.sg.piston
 
 #calls particle_generator
 execute as @e[tag=sp.particle] at @s run function sapphire:particle_generator/particle/main

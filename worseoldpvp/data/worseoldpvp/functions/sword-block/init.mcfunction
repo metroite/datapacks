@@ -5,5 +5,4 @@ execute if entity @s[nbt={SelectedItem:{id:"minecraft:golden_sword"}}] run plays
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:wooden_sword"}}] run playsound minecraft:item.armor.equip_generic player @a ~ ~ ~ 1 2
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:stone_sword"}}] run playsound minecraft:item.armor.equip_chain player @a ~ ~ ~ 1 2
 #damage calculation
-execute store result score @s wop.damagecalc run scoreboard players get @s wop.health
 execute store result score @s wop.damage run data get entity @s SelectedItem.tag.Damage

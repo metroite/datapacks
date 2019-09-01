@@ -2,7 +2,7 @@
     "display": {
         "icon": {
             "item": "minecraft:bat_spawn_egg",
-            "nbt": "{RepairCost:99999999,CanPlaceOn:[\"minecraft:void_air\"],HideFlags:17,Enchantments:[{id:\"minecraft:unbreaking\",lvl:2}],display:{Name:\"{\\\"text\\\":\\\"Batwing\\\",\\\"color\\\":\\\"yellow\\\",\\\"italic\\\":false}\"}}"
+            "nbt": "{RepairCost:99999999,CanPlaceOn:[\"minecraft:void_air\"],HideFlags:17,Enchantments:[{id:\"minecraft:unbreaking\",lvl:2}],CustomModelData:7061,display:{Name:\"{\\\"text\\\":\\\"Batwing\\\",\\\"color\\\":\\\"yellow\\\",\\\"italic\\\":false}\"}}"
         },
         "title": {
             "translate": "Batwing"
@@ -16,7 +16,7 @@
 	"requirements":[["got_batwing"]],
     "parent":"minecraft:adventure/kill_a_mob",
     "criteria": {
-		"got_batwing":{"trigger":"minecraft:inventory_changed","conditions":{"items":[{"item":"minecraft:bat_spawn_egg","nbt":"{RepairCost:99999999,CanPlaceOn:[\"minecraft:void_air\"],HideFlags:17,Enchantments:[{id:\"minecraft:unbreaking\",lvl:2}],display:{Name:\"{\\\"text\\\":\\\"Batwing\\\",\\\"color\\\":\\\"yellow\\\",\\\"italic\\\":false}\"}}"}]}}
+		"got_batwing":{"trigger":"minecraft:inventory_changed","conditions":{"items":[{"item":"minecraft:bat_spawn_egg","nbt":"{RepairCost:99999999,CanPlaceOn:[\"minecraft:void_air\"],HideFlags:17,Enchantments:[{id:\"minecraft:unbreaking\",lvl:2}],CustomModelData:7061,display:{Name:\"{\\\"text\\\":\\\"Batwing\\\",\\\"color\\\":\\\"yellow\\\",\\\"italic\\\":false}\"}}"}]}}
   },
   "rewards": {
     "recipes": [

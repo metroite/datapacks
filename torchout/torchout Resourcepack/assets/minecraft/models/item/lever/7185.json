@@ -1,0 +1,81 @@
+{
+	"textures": {
+		"lit": "block/coal_block",
+		"wood": "block/torch",
+		"oak": "block/oak_planks"
+	},
+	"elements": [ 
+		{
+			"__comment": "Element",
+			"from": [ 7, 0, 7 ],
+			"to": [ 9, 0.5, 9 ],
+			"faces": {
+				"down": { "uv": [ 7, 7, 9, 9 ], "texture": "#oak" },
+				"up": { "uv": [ 7, 7, 9, 9 ], "texture": "#oak" },
+				"north": { "uv": [ 7, 15.45, 9, 16 ], "texture": "#oak" },
+				"south": { "uv": [ 7, 15.45, 9, 16 ], "texture": "#oak" },
+				"west": { "uv": [ 7, 15.45, 9, 16 ], "texture": "#oak" },
+				"east": { "uv": [ 7, 15.45, 9, 16 ], "texture": "#oak" }
+			}
+		},
+		{
+			"__comment": "Element",
+			"from": [ 7, 0.5, 7 ],
+			"to": [ 9, 8, 9 ],
+			"faces": {
+				"north": { "uv": [ 7, 9.5, 9, 15.5 ], "texture": "#wood" },
+				"south": { "uv": [ 7, 9.5, 9, 15.5 ], "texture": "#wood" },
+				"west": { "uv": [ 7, 9.5, 9, 15.5 ], "texture": "#wood" },
+				"east": { "uv": [ 7, 9.5, 9, 15.5 ], "texture": "#wood" }
+			}
+		},
+		{
+			"__comment": "Element",
+			"from": [ 7, 8, 7 ],
+			"to": [ 9, 10, 9 ],
+			"faces": {
+				"up": { "uv": [ 7, 7, 9, 9 ], "texture": "#lit" },
+				"north": { "uv": [ 7, 6, 9, 8 ], "texture": "#lit" },
+				"south": { "uv": [ 7, 6, 9, 8 ], "texture": "#lit" },
+				"west": { "uv": [ 7, 6, 9, 8 ], "texture": "#lit" },
+				"east": { "uv": [ 7, 6, 9, 8 ], "texture": "#lit" }
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"translation":  [ 0, 1.4, 1 ],
+			"scale":  [ 2, 2, 2 ]
+		},
+		"thirdperson_lefthand": {
+			"translation":  [ 0, 1.4, 1 ],
+			"scale":  [ 2, 2, 2 ]
+		},
+		"firstperson_righthand": {
+			"rotation":  [ -30, 71, 0 ],
+			"translation":  [ 1.13, 4, 1.13 ],
+			"scale":  [ 0.5, 0.5, 0.5 ]
+		},
+		"firstperson_lefthand": {
+			"rotation":  [ -30, 71, 0 ],
+			"translation":  [ 1.13, 4, 1.13 ],
+			"scale":  [ 0.5, 0.5, 0.5 ]
+		},
+		"gui": {
+			"rotation":  [ 30, 45, 0 ],
+			"translation":  [ 0, 3, 0 ],
+			"scale":  [ 1.3, 1.3, 1.3 ]
+		},
+		"ground": {
+			"translation":  [ 0, 3, 0 ],
+			"scale":  [ 0.35, 0.35, 0.35 ]
+		},
+		"fixed": {
+			"translation":  [ 0, 2, 0.6 ],
+			"scale":  [ 0.8, 0.8, 0.8 ]
+		},
+		"head": {
+			"scale":  [ 2, 2, 2 ]
+		}
+	}
+}

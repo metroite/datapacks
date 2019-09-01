@@ -1,0 +1,7 @@
+execute if score @s sv.counter matches 0 run title @s subtitle ["",{"text":"deserted","italic":true,"color":"gray"}]
+execute if score @s sv.counter matches 1..7 run title @s subtitle ["",{"text":"isolated","italic":true,"color":"gray"}]
+execute if score @s sv.counter matches 8..15 run title @s subtitle ["",{"text":"rural","italic":true,"color":"gray"}]
+execute if score @s sv.counter matches 16..23 run title @s subtitle ["",{"text":"suburban","italic":true,"color":"gray"}]
+execute if score @s sv.counter matches 24..30 run title @s subtitle ["",{"text":"urban","italic":true,"color":"gray"}]
+execute if score @s sv.counter matches 31..38 run title @s subtitle ["",{"text":"crowded","italic":true,"color":"gray"}]
+execute if score @s sv.counter matches 39.. run title @s subtitle ["",{"text":"overcrowded","italic":true,"color":"gray"}]

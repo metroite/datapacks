@@ -1,0 +1,22 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:poppy"
+        },
+        "title": {
+            "translate": "A Villager's Friend!"
+        },
+        "description": {
+            "translate": "Save a named village out of a raid and build up your standing by trading (not hitting)"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "hidden": false,
+        "announce_to_chat": true
+    },
+	"requirements":[["trust_v"]],
+    "parent":"smartvillage:name_village",
+    "criteria": {
+      "trust_v":{"trigger":"minecraft:impossible"}
+  }
+}

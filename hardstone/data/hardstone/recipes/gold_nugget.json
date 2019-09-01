@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:smelting",
+    "ingredient": {
+        "item": "minecraft:command_block"
+    },
+    "result": "minecraft:gold_nugget",
+    "experience": 0.15,
+    "cookingtime": 22
+}

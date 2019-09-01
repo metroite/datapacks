@@ -6,5 +6,10 @@ execute if entity @s[tag=g.dark_oak,nbt={OnGround:1b}] if block ~ ~-1 ~ #graves:
 execute if entity @s[tag=g.jungle,nbt={OnGround:1b}] if block ~ ~-1 ~ #graves:treeable if block ~ ~ ~ #graves:space if block ~ ~1 ~ #graves:space run summon minecraft:item ~ ~ ~ {Motion:[0.0,0.25,0.0],Tags:["g.skull_dusty","g.jungle"],Item:{id:"minecraft:bone_meal",Count:1b,tag:{RepairCost:99999999,CanPlaceOn:["minecraft:void_air"],HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:1}],display:{Name:"{\"text\":\"Skull Dusty\",\"color\":\"yellow\",\"italic\":false}"}}},PickupDelay:-1}
 execute if entity @s[tag=g.oak,nbt={OnGround:1b}] if block ~ ~-1 ~ #graves:treeable if block ~ ~ ~ #graves:space if block ~ ~1 ~ #graves:space run summon minecraft:item ~ ~ ~ {Motion:[0.0,0.25,0.0],Tags:["g.skull_dusty","g.oak"],Item:{id:"minecraft:bone_meal",Count:1b,tag:{RepairCost:99999999,CanPlaceOn:["minecraft:void_air"],HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:1}],display:{Name:"{\"text\":\"Skull Dusty\",\"color\":\"yellow\",\"italic\":false}"}}},PickupDelay:-1}
 execute if entity @s[tag=g.spruce,nbt={OnGround:1b}] if block ~ ~-1 ~ #graves:treeable if block ~ ~ ~ #graves:space if block ~ ~1 ~ #graves:space run summon minecraft:item ~ ~ ~ {Motion:[0.0,0.25,0.0],Tags:["g.skull_dusty","g.spruce"],Item:{id:"minecraft:bone_meal",Count:1b,tag:{RepairCost:99999999,CanPlaceOn:["minecraft:void_air"],HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:1}],display:{Name:"{\"text\":\"Skull Dusty\",\"color\":\"yellow\",\"italic\":false}"}}},PickupDelay:-1}
-execute if entity @s[nbt={OnGround:1b}] run summon area_effect_cloud ~ ~ ~ {Duration:2147483637,Tags:["g.notree"]}
+execute if entity @s[nbt={OnGround:1b}] run summon area_effect_cloud ~ ~ ~48 {Duration:2147483637,Tags:["g.notree"]}
+execute if entity @s[nbt={OnGround:1b}] run summon area_effect_cloud ~48 ~ ~ {Duration:2147483637,Tags:["g.notree"]}
+execute if entity @s[nbt={OnGround:1b}] run summon area_effect_cloud ~ ~ ~-48 {Duration:2147483637,Tags:["g.notree"]}
+execute if entity @s[nbt={OnGround:1b}] run summon area_effect_cloud ~-48 ~ ~ {Duration:2147483637,Tags:["g.notree"]}
+#kill if OnGround or if another tree is close
 kill @s[nbt={OnGround:1b}]
+execute if entity @e[tag=g.notree,distance=..280] run kill @s

@@ -1,0 +1,6 @@
+{
+	"parent": "block/repeating_command_block",
+	"overrides": [
+		{ "predicate": { "custom_model_data": 7044}, "model": "item/repeating_command_block/7044" }
+	]
+}

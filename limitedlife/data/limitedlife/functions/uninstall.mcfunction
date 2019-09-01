@@ -21,6 +21,6 @@ tag @a remove ll.curedvoid
 kill @e[type=!minecraft:player,tag=ll.curedvoid]
 kill @e[tag=ll.beam]
 tag @e[tag=ll.tired] remove ll.tired
-clear @a minecraft:elytra{Damage:12,Unbreakable:1b,HideFlags:16,CanPlaceOn:["minecraft:void_air"]}
+clear @a minecraft:elytra{CustomModelData:7060,Unbreakable:1b,HideFlags:16,CanPlaceOn:["minecraft:void_air"]}
 tag @a remove ll.batwingflap
 kill @e[tag=ll.wa.arrow]

@@ -1,0 +1,21 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:hay_block"
+        },
+        "title": {
+            "translate": "A Village!"
+        },
+        "description": {
+            "translate": "Find and explore a village"
+        },
+        "show_toast": true,
+        "hidden": false,
+        "announce_to_chat": true
+    },
+	"requirements":[["find_v"]],
+    "parent":"minecraft:adventure/root",
+    "criteria": {
+      "find_v":{"trigger":"minecraft:impossible"}
+  }
+}

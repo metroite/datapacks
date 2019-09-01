@@ -1,0 +1,12 @@
+CustomModelData, Item, Id, Datapack
+
+7043,	Raw Gold,	      command_block,		      	hardstone
+7044,	Raw Iron,	      repeating_command_block,	hardstone
+7060,	Batwing Suit, 	elytra,			            	limitedlife
+7061,	Batwing,	      bat_spawn_egg,	      		limitedlife
+7062,	Batwing Arrow,  crossbow,		             	limitedlife
+7131,	Ender Arrow,	  crossbow,		            	usefulender
+7185,	Torch Out,	    lever,			             	torchout
+7186,	Torch Arrow,   	crossbow,		             	torchout
+8771,	Sapphire,	      squid_spawn_egg,	       	sapphire
+8771,	Sapphire Ore, 	lapis_ore,		           	sapphire

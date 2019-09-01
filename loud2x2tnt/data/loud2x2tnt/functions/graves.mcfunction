@@ -5,3 +5,5 @@ execute as @e[tag=g.l2t] at @s run function loud2x2tnt:graves_skull
 #grant advancement
 execute as @e[tag=l2t.advancement] at @s run advancement grant @p[distance=..8] only graves:blow_dust
 execute as @e[tag=l2t.advancement] at @s if entity @p[distance=..8] run tag @s remove l2t.advancement
+#optional: no skull dust drop
+execute if score $noskulldustfromgraves$ l2t.storeboard matches 1.. run kill @e[tag=g.skull]

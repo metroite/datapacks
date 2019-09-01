@@ -1,0 +1,21 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:name_tag"
+        },
+        "title": {
+            "translate": "\"Village\""
+        },
+        "description": {
+            "translate": "Name a village by first naming the Iron Golem then ringing the bell"
+        },
+        "show_toast": true,
+        "hidden": false,
+        "announce_to_chat": true
+    },
+	"requirements":[["name_v"]],
+    "parent":"smartvillage:enter_village",
+    "criteria": {
+      "name_v":{"trigger":"minecraft:impossible"}
+  }
+}

@@ -16,5 +16,6 @@ fill ~7 ~3 ~7 ~-7 ~-3 ~-7 minecraft:oak_button[facing=north,face=wall] replace m
 fill ~7 ~3 ~7 ~-7 ~-3 ~-7 minecraft:oak_button[facing=east,face=wall] replace minecraft:wall_torch[facing=east]
 fill ~7 ~3 ~7 ~-7 ~-3 ~-7 minecraft:oak_button[facing=south,face=wall] replace minecraft:wall_torch[facing=south]
 fill ~7 ~3 ~7 ~-7 ~-3 ~-7 minecraft:oak_button[facing=west,face=wall] replace minecraft:wall_torch[facing=west]
+fill ~7 ~1 ~7 ~-7 ~-1 ~-7 minecraft:oak_button[face=floor] replace minecraft:torch
 execute as @e[tag=to.tag.fail,distance=..12] at @s run function torchout:placement-api_torch/detection/in
 scoreboard players reset @s to.torch

@@ -1,13 +1,19 @@
 {
   "values":[
   "graves:setup",
+  "hardstone:setup",
+  "heavyarmor:setup",
   "limitedlife:setup",
+  "loud2x2tnt:setup",
   "morsecode:setup",
+  "naturalpaths:setup",
+  "reforestation:setup",
   "sapphire:setup",
   "signalfire:setup",
   "torchout:setup",
   "usefulender:setup",
   "ventilators:setup",
+  "smartvillage:setup",
   "witchtrading:setup",
   "hurtfulpack:setup"
   ]

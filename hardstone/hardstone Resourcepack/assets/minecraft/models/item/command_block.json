@@ -1,0 +1,6 @@
+{
+	"parent": "block/command_block",
+	"overrides": [
+		{ "predicate": { "custom_model_data": 7043}, "model": "item/command_block/7043" }
+	]
+}

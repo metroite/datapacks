@@ -1,0 +1,20 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:torch"
+        },
+        "title": {
+            "translate": "Torch Arrow"
+        },
+        "description": {
+            "translate": "Shoot a torch, flame enchantment is recommended"
+        },
+        "show_toast": true,
+        "announce_to_chat": true
+    },
+	"requirements":[["torch_arrow"]],
+    "parent":"minecraft:adventure/shoot_arrow",
+    "criteria": {
+		"torch_arrow":{"trigger":"minecraft:impossible"}
+  }
+}

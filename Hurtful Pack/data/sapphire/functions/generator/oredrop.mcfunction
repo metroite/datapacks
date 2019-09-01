@@ -6,3 +6,5 @@ execute as @s[nbt={OnGround:0b}] if score x_random sp.sapphire = 0 sp.sapphire i
 execute as @s[nbt={OnGround:1b}] if block ~ ~ ~ minecraft:water if block ~ ~-1 ~ minecraft:gravel if score x_random sp.sapphire = 0 sp.sapphire if score z_random sp.sapphire = 0 sp.sapphire positioned ~ ~-1 ~ run function sapphire:generator/ore_placement
 execute as @s[nbt={OnGround:1b}] unless block ~ ~ ~ minecraft:water if score x_random sp.sapphire = 0 sp.sapphire if score z_random sp.sapphire = 0 sp.sapphire run kill @s
 execute as @s[nbt={OnGround:1b}] unless block ~ ~-1 ~ minecraft:gravel if score x_random sp.sapphire = 0 sp.sapphire if score z_random sp.sapphire = 0 sp.sapphire run kill @s
+#kill if ore is already close
+execute if entity @e[tag=sp.noore,distance=..128] run kill @s

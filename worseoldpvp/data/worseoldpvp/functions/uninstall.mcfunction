@@ -3,7 +3,6 @@ scoreboard objectives remove wop.usecarrot
 scoreboard objectives remove wop.extend
 scoreboard objectives remove wop.health
 scoreboard objectives remove wop.damage
-scoreboard objectives remove wop.damagecalc
 scoreboard objectives remove wop.validitem
 scoreboard objectives remove wop.sneaking
 scoreboard objectives remove wop.mode

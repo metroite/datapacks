@@ -2,7 +2,7 @@
     "display": {
         "icon": {
             "item": "minecraft:light_blue_stained_glass",
-            "nbt": "{display:{Name:\"{\\\"text\\\":\\\"Sapphire Glass\\\",\\\"color\\\":\\\"aqua\\\",\\\"italic\\\":false}\"},Enchantments:[{lvl:1s,id:\"minecraft:binding_curse\"},{lvl:1s,id:\"minecraft:vanishing_curse\"}]}"
+            "nbt": "{CustomModelData:8771,display:{Name:\"{\\\"text\\\":\\\"Sapphire Glass\\\",\\\"color\\\":\\\"aqua\\\",\\\"italic\\\":false}\"},Enchantments:[{lvl:1s,id:\"minecraft:binding_curse\"},{lvl:1s,id:\"minecraft:vanishing_curse\"}]}"
         },
         "title": {
             "translate": "Very Durable Head"

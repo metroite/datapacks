@@ -1,5 +1,5 @@
 #reschedule
-schedule function smartvillage:main20 20t
+execute if score $smartvillage$ hp.storeboard matches 1.. run schedule function smartvillage:main20 20t
 #global unpresence decrease relation score
 scoreboard players add $global$ sv.global 1
 #mark every village, if already marked, equalize them

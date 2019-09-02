@@ -17,6 +17,6 @@ execute if entity @s[type=minecraft:villager,nbt={VillagerData:{profession:"mine
 execute if entity @s[type=minecraft:villager,nbt={VillagerData:{profession:"minecraft:mason"}}] run function smartvillage:village/standing/hostile/replace_villager_to_vindicator
 execute if entity @s[type=minecraft:villager,nbt={VillagerData:{profession:"minecraft:shepherd"}}] run function smartvillage:village/standing/hostile/replace_villager_to_vindicator
 #iron_golem to ravager
-execute if entity @s[type=minecraft:iron_golem] run function smartvillage:village/standing/hostile/replace_iron_golem
+execute as @e[type=minecraft:iron_golem,sort=nearest,limit=1,distance=..30] at @s run function smartvillage:village/standing/hostile/replace_iron_golem
 #if it didn't work then it shall never work
 tag @s add sv.replacefail

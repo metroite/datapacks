@@ -1,5 +1,3 @@
-#subtitle state of village
-function smartvillage:village/status/state
 #create area_effect_cloud if not already existent, also mechanics to make the player realize it is a centered bell
 execute if score @s sv.center_x matches -15..15 if score @s sv.center_y matches -5..5 if score @s sv.center_z matches -15..15 run function smartvillage:village/bell/centered
 execute unless score @s sv.center_x matches -15..15 run function smartvillage:village/bell/centered_no
@@ -16,6 +14,11 @@ execute if score @s sv.renamedV matches 1.. run tag @e[distance=..110,sort=neare
 title @s title ["",{"selector":"@e[distance=..110,sort=nearest,limit=1,tag=sv.village]"}]
 execute unless entity @e[distance=..110,sort=nearest,limit=1,tag=sv.village] run title @s title ["",{"text":"Village"}]
 #get into survival mode if trusted
-execute if entity @e[distance=..110,sort=nearest,limit=1,tag=sv.village,tag=sv.hero,tag=sv.named,scores={sv.counter=20..}] run gamemode survival @s[gamemode=adventure]
+tag @s remove sv.trusted
+execute if entity @e[distance=..110,sort=nearest,limit=1,tag=sv.village,tag=sv.hero,tag=sv.named,scores={sv.counter=20..}] run tag @s add sv.trusted
+gamemode survival @s[gamemode=adventure,tag=sv.trusted]
+gamemode adventure @s[gamemode=survival,tag=!sv.trusted]
+#subtitle state of village
+function smartvillage:village/status/state
 #reset score
 scoreboard players reset @s sv.bell_ring

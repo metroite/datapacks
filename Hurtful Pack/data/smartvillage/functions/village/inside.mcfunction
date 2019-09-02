@@ -9,6 +9,6 @@ execute if score @s sv.killvillager matches 1.. run function smartvillage:villag
 execute if score @s sv.killigolem matches 1.. run function smartvillage:village/standing/killed_iron_golem
 execute unless score $threshold$ sv.global matches 1 as @e[distance=..110,sort=nearest,limit=1,tag=sv.village] run function smartvillage:village/standing/unpresence
 #if village is hostile replace villagers with pillagers
-execute if score @e[distance=..110,sort=nearest,limit=1,tag=sv.village] sv.counter matches ..-20 as @e[distance=..30,limit=1,sort=random,tag=!sv.replacefail] at @s run function smartvillage:village/standing/hostile/tick
+execute if score @e[distance=..110,sort=nearest,limit=1,tag=sv.village] sv.counter matches ..-20 as @e[distance=..30,limit=1,sort=random,type=minecraft:villager,tag=!sv.replacefail] at @s run function smartvillage:village/standing/hostile/tick
 #enable trigger "stuck in village"
-execute if entity @s[gamemode=adventure] unless entity @e[distance=..110,sort=nearest,limit=1,tag=sv.village,tag=sv.hero,tag=sv.named,scores={sv.counter=20..}] run function smartvillage:village/adventure_mode/tick
+execute if entity @s[gamemode=!creative,tag=!sv.trusted] run function smartvillage:village/adventure_mode/tick

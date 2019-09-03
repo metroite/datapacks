@@ -8,5 +8,5 @@ execute if score $oldmethod$ wop.extend matches 1.. if score @s wop.mode matches
 execute if score $oldmethod$ wop.extend matches ..0 store result score @s wop.validitem run clear @s #worseoldpvp:attackspeed 0
 execute if score $oldmethod$ wop.extend matches ..0 if score @s wop.validitem matches 1.. if score @s wop.extend matches 0 run function worseoldpvp:cooldown/determine_new
 #effects when holding wopdone in mainhand
-execute if entity @s[nbt={SelectedItem:{tag:{wopdone:1}}}] run function worseoldpvp:selected
+execute if score @s wop.mode matches ..1 if entity @s[nbt={SelectedItem:{tag:{wopdone:1}}}] run function worseoldpvp:selected
 execute if score @s wop.mode matches 0..1 run function worseoldpvp:sword-block/utility

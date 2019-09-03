@@ -7,7 +7,8 @@ execute if entity @s[scores={wop.extend=0,wop.usecarrot=1..}] run function worse
 #extends the sword-blocking by x ticks and calls the actual blocking function, which replaces offhand with another, more op carrot_on_a_stick (or which just /data modifies the item (_cmd - new method))
 scoreboard players operation @s[scores={wop.usecarrot=1..}] wop.extend = $extend$ wop.extend
 execute if score $oldmethod$ wop.extend matches 1.. if entity @s[scores={wop.extend=1..}] run function worseoldpvp:sword-block/blocking
-execute if score $oldmethod$ wop.extend matches ..0 if score $attribute$ wop.extend matches 1.. if entity @s[scores={wop.extend=1..}] run function worseoldpvp:sword-block/blocking_attribute_new
+execute if score $oldmethod$ wop.extend matches ..0 if score $attribute$ wop.extend matches 1.. if score $mustsneak$ wop.extend matches 1.. if entity @s[scores={wop.extend=1..}] run function worseoldpvp:sword-block/blocking_attribute_new
+execute if score $oldmethod$ wop.extend matches ..0 if score $attribute$ wop.extend matches 1.. if score $mustsneak$ wop.extend matches ..0 if entity @s[scores={wop.extend=1..}] run function worseoldpvp:sword-block/blocking_attribute_new_nosneak
 execute if score $oldmethod$ wop.extend matches ..0 if score $attribute$ wop.extend matches ..0 if entity @s[scores={wop.extend=1..}] run function worseoldpvp:sword-block/blocking_effect_new
 #pigs don't respond to the carrot_on_a_stick
 execute as @e[type=minecraft:pig,tag=!wop.noai,distance=..10] at @s run function worseoldpvp:pigs/noai

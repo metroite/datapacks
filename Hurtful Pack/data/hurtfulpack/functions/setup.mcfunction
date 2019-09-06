@@ -48,7 +48,6 @@ execute unless score $reload$ hp.storeboard matches 0.. run scoreboard players s
 scoreboard players add $reload$ hp.storeboard 1
 #scheduled functions
 function hurtfulpack:main100
-execute if score $naturalpaths$ hp.storeboard matches 1.. run function naturalpaths:path/optional_speed
 
 #disable all included datapacks
 datapack disable "file/earlyleatherarmor"

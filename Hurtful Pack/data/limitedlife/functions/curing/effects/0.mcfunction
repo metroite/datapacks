@@ -1,5 +1,3 @@
-particle minecraft:bubble_pop ~ ~-0.12 ~ 0.15 0 0.15 0.1 1
-playsound minecraft:ambient.underwater.loop.additions ambient @a ~ ~ ~ 0.5 2
 execute if entity @s[scores={ll.cooking=200..}] run particle minecraft:bubble_pop ~ ~-0.12 ~ 0.16 0 0.16 0.1 1
 execute if entity @s[scores={ll.cooking=300..}] run particle minecraft:bubble_pop ~ ~-0.12 ~ 0.17 0 0.17 0.1 1
 execute if entity @s[scores={ll.cooking=400..}] run particle minecraft:bubble_pop ~ ~-0.12 ~ 0.18 0 0.18 0.1 1

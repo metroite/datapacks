@@ -48,7 +48,9 @@ execute unless score $reload$ hp.storeboard matches 0.. run scoreboard players s
 scoreboard players add $reload$ hp.storeboard 1
 #scheduled functions
 function hurtfulpack:main100
+function hurtfulpack:tick18
 function hurtfulpack:tick100
+function hurtfulpack:tick285
 
 #disable all included datapacks
 datapack disable "file/earlyleatherarmor"

@@ -11,6 +11,6 @@ execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:bat_spawn_egg"}],Selecte
 execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Charged:1b,ChargedProjectiles:[{id:"minecraft:arrow"}]}}],SelectedItem:{id:"minecraft:bat_spawn_egg"}}] run function limitedlife:items/winged_arrow_load
 execute as @a[tag=ll.wa.shootc] at @s run function limitedlife:items/winged_arrow_player
 #arrow
-execute as @e[tag=ll.wa.arrow] at @s run function limitedlife:items/winged_arrow_arrow
+execute as @e[type=minecraft:arrow,tag=ll.wa.arrow] at @s run function limitedlife:items/winged_arrow_arrow
 scoreboard players reset @a ll.wa.shoot
 scoreboard players reset @a ll.wa.shootc

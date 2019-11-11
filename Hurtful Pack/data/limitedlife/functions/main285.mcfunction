@@ -12,11 +12,11 @@ tag @a[scores={ll.deaths=1..,ll.health=20,ll.sincedeath=..1000}] add ll.cured
 
 #calling tired if global exceeds individual score##
 scoreboard players add $global$ ll.cooking 1
-execute as @e[tag=ll.tired] if score @s ll.cooking < $global$ ll.cooking at @s run function limitedlife:curing/tired
+execute as @e[type=minecraft:end_crystal,tag=ll.tired] if score @s ll.cooking < $global$ ll.cooking at @s run function limitedlife:curing/tired
 
 #make sure ll.bat entities die and players should also lose the ll.bat tag##
-execute as @e[type=minecraft:bat,tag=ll.bat] at @s unless entity @e[tag=ll.beam,distance=..3] run kill @s
-execute as @a[tag=ll.bat] at @s unless entity @e[tag=ll.beam,distance=..5] run tag @s remove ll.bat
+execute as @e[type=minecraft:bat,tag=ll.bat] at @s unless entity @e[type=minecraft:area_effect_cloud,distance=..5,tag=ll.beam] run kill @s
+execute as @a[tag=ll.bat] at @s unless entity @e[type=minecraft:area_effect_cloud,distance=..8,tag=ll.beam] run tag @s remove ll.bat
 
 #calling remove_batwingsuit##
 execute as @a[nbt={Dimension:0,Inventory:[{id:"minecraft:elytra",tag:{CustomModelData:7060,Unbreakable:1b,HideFlags:16,CanPlaceOn:["minecraft:void_air"]}}]}] at @s unless block ~ ~ ~ minecraft:cave_air run function limitedlife:items/remove_batwingsuit

@@ -8,9 +8,9 @@ execute if entity @p[scores={ll.batwingeat=1..}] run function limitedlife:items/
 #reviving effects
 execute as @a[tag=ll.curedvoid] at @s run function limitedlife:curing/void/effects
 #curing item and process
-execute as @e[tag=ll.healingredient] at @s positioned ~ ~1 ~ run function limitedlife:curing/curing
+execute as @e[type=minecraft:item,tag=ll.healingredient] at @s positioned ~ ~1 ~ run function limitedlife:curing/curing
 #healing beam
-execute as @e[tag=ll.beam] at @s run function limitedlife:curing/beam
+execute as @e[type=minecraft:area_effect_cloud,tag=ll.beam] at @s run function limitedlife:curing/beam/raytrace
 
 #calling batwingsuit
 execute as @a[nbt={FallFlying:1b},tag=ll.batwingwear] at @s run function limitedlife:items/batwingsuit

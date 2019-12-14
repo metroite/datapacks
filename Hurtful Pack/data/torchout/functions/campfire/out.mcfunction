@@ -7,5 +7,5 @@ fill ~ ~ ~ ~ ~ ~ minecraft:campfire[lit=false,facing=south] replace minecraft:ca
 fill ~ ~ ~ ~ ~ ~ minecraft:campfire[lit=false,facing=east] replace minecraft:campfire[lit=true,facing=east]
 fill ~ ~ ~ ~ ~ ~ minecraft:campfire[lit=false,facing=west] replace minecraft:campfire[lit=true,facing=west]
 
-tag @s remove to.cf.activated
+tag @s add to.cf.inactive
 scoreboard players reset @s to.torch

@@ -7,6 +7,7 @@ scoreboard objectives add sv.center_z dummy
 scoreboard objectives add sv.renamedV dummy
 scoreboard objectives add sv.counter dummy
 scoreboard objectives add sv.global dummy
+scoreboard objectives add sv.gamemode dummy
 execute unless score $threshold$ sv.global matches 1.. run scoreboard players set $threshold$ sv.global 5000
 scoreboard objectives add sv.traded minecraft.custom:minecraft.traded_with_villager
 scoreboard objectives add sv.damagedealt minecraft.custom:minecraft.damage_dealt

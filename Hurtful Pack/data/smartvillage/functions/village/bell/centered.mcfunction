@@ -6,4 +6,4 @@ execute unless entity @e[distance=..110,sort=nearest,limit=1,tag=sv.village] run
 #raytrace to make particles at the bell
 execute positioned ~ ~1.5 ~ run function smartvillage:village/bell/particle/raytrace
 #if its deserted, put players back into survival mode
-execute if score @s sv.counter matches 0 run gamemode survival @s[gamemode=adventure]
+execute if score @s sv.counter matches 0 run gamemode survival @s[gamemode=adventure,scores={sv.gamemode=0..1}]

@@ -9,13 +9,13 @@ execute if score @s ll.cooking matches 1 run advancement grant @p[distance=..16]
 execute if score @s ll.cooking matches 100.. run function limitedlife:curing/effects/0
 
 #endermites and spawn bat
-execute if entity @s[scores={ll.cooking=2000..2020}] run function limitedlife:curing/effects/1
-execute at @a[distance=..64,tag=ll.bat] run particle minecraft:totem_of_undying ~ ~1 ~ 0.1 0.25 0.1 0.25 1 force
-execute at @e[type=minecraft:bat,distance=..64,tag=ll.bat] run particle minecraft:totem_of_undying ~ ~1 ~ 0 0 0 0.01 1 force
+execute if score @s ll.cooking matches 2000..2020 run function limitedlife:curing/effects/1
+execute if score @s ll.cooking matches 2000.. at @a[distance=..64,tag=ll.bat] run particle minecraft:totem_of_undying ~ ~1 ~ 0.1 0.25 0.1 0.25 1 force
+execute if score @s ll.cooking matches 2000.. at @e[type=minecraft:bat,distance=..64,tag=ll.bat] run particle minecraft:totem_of_undying ~ ~1 ~ 0 0 0 0.01 1 force
 #transfering ll.bat to player
 execute if score @s ll.cooking matches 2081.. as @e[type=minecraft:bat,distance=..64,limit=1,sort=nearest,tag=ll.bat] at @s if entity @p[distance=..2,scores={ll.deaths=1..},tag=!ll.bat,nbt={ActiveEffects:[{Id:22b}]}] run function limitedlife:curing/beam/transfer
 #summoning ll.beam
-execute at @e[type=minecraft:end_crystal,distance=..1,limit=1] if entity @e[distance=..64,tag=ll.bat] run function limitedlife:curing/beam/summon
+execute if score @s ll.cooking matches 2000.. at @e[type=minecraft:end_crystal,distance=..1,limit=1] if entity @e[distance=..64,tag=ll.bat] run function limitedlife:curing/beam/summon
 
 #particle and sound effects: second effects
 execute if score @s ll.cooking matches 2700..2999 run function limitedlife:curing/effects/2

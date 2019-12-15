@@ -1,5 +1,5 @@
 #re-schedule
-schedule function torchout:main1200 1200t
+execute if score $torchout$ hp.storeboard matches 1.. run schedule function torchout:main1200 1200t
 #global counter
 scoreboard players add $global$ to.torch 1
 #torch tick if active

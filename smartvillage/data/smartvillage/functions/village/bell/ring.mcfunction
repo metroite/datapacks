@@ -16,7 +16,7 @@ execute unless entity @e[distance=..110,sort=nearest,limit=1,tag=sv.village] run
 #get into survival mode if trusted
 tag @s remove sv.trusted
 execute if entity @e[distance=..110,sort=nearest,limit=1,tag=sv.village,tag=sv.hero,tag=sv.named,scores={sv.counter=20..}] run tag @s add sv.trusted
-gamemode survival @s[gamemode=adventure,tag=sv.trusted]
+gamemode survival @s[gamemode=adventure,tag=sv.trusted,scores={sv.gamemode=0..1}]
 gamemode adventure @s[gamemode=survival,tag=!sv.trusted]
 #subtitle state of village
 function smartvillage:village/status/state

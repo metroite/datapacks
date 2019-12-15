@@ -2,6 +2,7 @@
 execute unless score $threshold$ sv.global matches 1 as @e[distance=..110,sort=nearest,limit=1,tag=sv.village] run function smartvillage:village/standing/unpresence
 #gamemode
 execute if entity @e[distance=..110,sort=nearest,limit=1,tag=sv.village,tag=sv.hero,tag=sv.named,scores={sv.counter=20..}] run tag @s add sv.trusted
+execute store result score @s sv.gamemode run data get entity @s playerGameType
 gamemode adventure @s[gamemode=survival,tag=!sv.trusted]
 advancement grant @s only smartvillage:enter_village
 #title

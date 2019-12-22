@@ -16,3 +16,9 @@ execute as @e[type=minecraft:area_effect_cloud,tag=ll.beam] at @s run function l
 execute as @a[nbt={FallFlying:1b},tag=ll.batwingwear] at @s run function limitedlife:items/batwingsuit
 execute as @a[tag=ll.batwingflap] at @s run function limitedlife:items/batwingsuit
 scoreboard players reset @a ll.batwingflap
+
+##winged arrow
+#tick player and determine bow or crossbow
+execute if score $wingedarrows$ ll.wa.shoot matches 1.. as @a at @s run function limitedlife:wingedarrow/determine
+#tick arrow
+execute if score $wingedarrows$ ll.wa.shoot matches 1.. as @e[tag=ll.wa.arrow] at @s run function limitedlife:wingedarrow/arrow

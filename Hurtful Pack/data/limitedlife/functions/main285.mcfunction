@@ -1,3 +1,6 @@
+#re-schedule
+execute if score $limitedlife$ hp.storeboard matches 1.. run schedule function limitedlife:main285 285t
+
 #ll.deaths##
 execute as @a unless score @s ll.deaths matches 0.. run function hurtfulpack:compatibility/limitedlife
 scoreboard players remove @a[scores={ll.deaths=11..}] ll.deaths 1

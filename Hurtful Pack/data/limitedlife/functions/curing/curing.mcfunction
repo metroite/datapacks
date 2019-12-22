@@ -1,12 +1,12 @@
 #particles and ll.cooking
-particle minecraft:bubble_pop ~ ~-0.12 ~ 0.15 0 0.15 0.1 1
+execute align xz positioned ~0.5 ~ ~0.5 run particle minecraft:bubble_pop ~ ~-0.12 ~ 0.15 0 0.15 0.1 1
 playsound minecraft:ambient.underwater.loop.additions ambient @a ~ ~ ~ 0.5 2
 tag @s[tag=ll.blockeddone] remove ll.blockeddone
 scoreboard players add @s ll.cooking 1
 data merge entity @s[scores={ll.cooking=1}] {PickupDelay:32767,Age:0s}
 execute if score @s ll.cooking matches 1 run advancement grant @p[distance=..16] only limitedlife:cooking
 #bubbling effect increase
-execute if score @s ll.cooking matches 100.. run function limitedlife:curing/effects/0
+execute if score @s ll.cooking matches 100.. align xz positioned ~0.5 ~ ~0.5 run function limitedlife:curing/effects/0
 
 #endermites and spawn bat
 execute if score @s ll.cooking matches 2000..2020 run function limitedlife:curing/effects/1
@@ -19,7 +19,7 @@ execute if score @s ll.cooking matches 2000.. at @e[type=minecraft:end_crystal,d
 
 #particle and sound effects: second effects
 execute if score @s ll.cooking matches 2700..2999 run function limitedlife:curing/effects/2
-execute if score @s ll.cooking matches 2100.. unless entity @e[distance=..48,tag=ll.bat] at @e[type=minecraft:end_crystal,limit=1,sort=nearest,distance=..1] run summon minecraft:tnt ~ ~ ~
+execute if score @s ll.cooking matches 2100.. unless entity @e[distance=..48,tag=ll.bat] at @e[type=minecraft:end_crystal,distance=..1,limit=1,sort=nearest] run summon minecraft:tnt ~ ~ ~
 
 #curing effect if at ll.cooking=3000: third and last effect
 execute if score @s ll.cooking matches 3000 run function limitedlife:curing/effects/3

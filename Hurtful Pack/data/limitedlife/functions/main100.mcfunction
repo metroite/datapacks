@@ -1,3 +1,6 @@
+#re-schedule
+execute if score $limitedlife$ hp.storeboard matches 1.. run schedule function limitedlife:main100 100t
+
 #tp to The Void#
 execute as @a[scores={ll.deaths=10}] positioned 0 1 -30 run function limitedlife:curing/void/thevoid
 

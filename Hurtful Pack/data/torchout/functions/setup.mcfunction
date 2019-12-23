@@ -1,6 +1,7 @@
 scoreboard objectives add to.damage dummy
 scoreboard objectives add to.flaming dummy
 scoreboard objectives add to.ta.shoot minecraft.used:minecraft.bow
+execute unless score $torcharrows$ to.ta.shoot matches 0.. run scoreboard players set $torcharrows$ to.ta.shoot 1
 scoreboard objectives add to.ta.shootc minecraft.used:minecraft.crossbow
 scoreboard objectives add to.ta.bind dummy
 scoreboard players set 2 to.ta.bind 2
@@ -16,5 +17,3 @@ scoreboard objectives add to.campfire minecraft.used:minecraft.campfire
 #scheduled main function for global counter and burnout detection
 schedule function torchout:main1200 6t
 schedule function torchout:main20 3t
-#optional features
-execute unless score $torcharrows$ to.ta.shoot matches 0.. run scoreboard players set $torcharrows$ to.ta.shoot 1

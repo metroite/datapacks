@@ -1,4 +1,4 @@
-#delay to bind torch to arrow
+#delay to bind item to arrow
 scoreboard players add @s ll.wa.bind 2
 execute if score @s ll.wa.bind > $bindtime$ ll.wa.bind run function limitedlife:wingedarrow/crossbow/offhand/load
 #sound effects

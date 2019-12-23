@@ -60,11 +60,25 @@
             "model": "item/crossbow_firework"
         },
 		{
+            "predicate": {
+                "charged": 1,
+				"custom_model_data": 7062
+            },
+            "model": "item/crossbow/7062"
+        },
+		{
 			"predicate": {
 				"charged": 1,
 				"custom_model_data": 7131
 			},
 			"model": "item/crossbow/7131"
-		}
+		},
+		{
+            "predicate": {
+                "charged": 1,
+				"custom_model_data": 7186
+            },
+            "model": "item/crossbow/7186"
+        }
     ]
 }

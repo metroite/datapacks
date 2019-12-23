@@ -1,0 +1,6 @@
+{
+    "parent": "item/template_spawn_egg",
+	"overrides": [
+		{ "predicate": { "custom_model_data": 8771}, "model": "item/squid_spawn_egg/8771" }
+	]
+}

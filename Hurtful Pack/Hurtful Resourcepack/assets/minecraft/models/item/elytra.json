@@ -4,8 +4,6 @@
 		"layer0": "item/elytra"
 	},
 	"overrides": [
-		{ "predicate": { "damaged": 0, "damage": 0.02771362586605081 }, "model": "item/elytra/12" },
-		{ "predicate": { "damaged": 0, "damage": 0.02800362586605081 }, "model": "item/elytra" },
-		{ "predicate": { "damaged": 1, "damage": 0}, "model": "item/elytra"}
+		{ "predicate": { "custom_model_data": 7060}, "model": "item/elytra/7060" }
 	]
 }

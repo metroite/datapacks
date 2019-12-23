@@ -1,0 +1,6 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "items/repeating_command_block/7044"
+	}
+}

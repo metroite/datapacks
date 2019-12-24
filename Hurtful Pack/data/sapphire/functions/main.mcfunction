@@ -18,8 +18,6 @@ scoreboard players reset @a[tag=!sp.so.pa.tag] sp.so.pa.ore
 #fallback mechanic: returns lost items if the API failed
 execute as @a[scores={sp.so.pa.fail=1..}] at @s run function sapphire:sapphire_ore/fallback
 
-#feature-compatibility: limitedlife
-function limitedlife:sapphire/main
 #feature-compatibility: torchout
 function torchout:sapphire/tick
 

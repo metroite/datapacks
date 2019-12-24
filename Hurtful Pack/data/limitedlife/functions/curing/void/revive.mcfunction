@@ -4,7 +4,7 @@ tag @s add ll.cured
 #actual tp-command (first one is for chain a revive)
 execute at @e[type=minecraft:bat,tag=ll.curedvoid,limit=1] run tp @s ~ ~ ~
 execute at @e[type=minecraft:item,scores={ll.cooking=3000},tag=ll.healingredient,limit=1] at @e[type=minecraft:bat,tag=ll.bat,limit=1,sort=nearest] run tp @s ~ ~ ~
-execute at @e[type=minecraft:item,scores={ll.cooking=3000},tag=ll.healingredient,limit=1] at @e[type=minecraft:bat,tag=ll.bat,limit=1,sort=nearest] run advancement grant @p[tag=!ll.cured,distance=..64] only limitedlife:revive_player
+execute at @e[type=minecraft:item,scores={ll.cooking=3000},tag=ll.healingredient,limit=1] at @e[type=minecraft:bat,tag=ll.bat,limit=1,sort=nearest] run advancement grant @p[tag=!ll.cured,distance=..50] only limitedlife:revive_player
 effect give @s minecraft:resistance 15 255 true
 effect give @s minecraft:glowing 15 0 true
 effect give @s minecraft:levitation 5 255 true

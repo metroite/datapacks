@@ -19,7 +19,6 @@ tag @a remove ll.bat
 kill @e[tag=ll.bat,type=!minecraft:player]
 tag @a remove ll.curedvoid
 kill @e[type=!minecraft:player,tag=ll.curedvoid]
-kill @e[type=minecraft:area_effect_cloud,tag=ll.beam]
 tag @e[type=minecraft:end_crystal,tag=ll.tired] remove ll.tired
 clear @a minecraft:elytra{CustomModelData:7060,Unbreakable:1b,HideFlags:16,CanPlaceOn:["minecraft:void_air"]}
 tag @a remove ll.batwingflap

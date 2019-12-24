@@ -49,3 +49,6 @@ scoreboard players add _fallback_ sp.wd.pa.fail 0
 scoreboard objectives add sp.sg.pa.fail dummy
 scoreboard players set 0 sp.sg.pa.fail 0
 scoreboard players add _fallback_ sp.sg.pa.fail 0
+
+#scheduled functions
+schedule function sapphire:main80 47t

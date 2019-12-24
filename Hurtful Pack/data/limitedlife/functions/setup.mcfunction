@@ -1,6 +1,8 @@
 scoreboard objectives add ll.deaths deathCount
+scoreboard objectives add ll.beamtargetY dummy
 scoreboard objectives add ll.cooking dummy
 execute unless score $tired_time$ ll.cooking matches 0.. run scoreboard players set $tired_time$ ll.cooking 50
+execute unless score $interval$ ll.cooking matches 0.. run scoreboard players set $interval$ ll.cooking 5
 scoreboard objectives add ll.health health "❤"
 scoreboard objectives setdisplay belowName ll.health
 scoreboard objectives add ll.sincedeath minecraft.custom:minecraft.time_since_death

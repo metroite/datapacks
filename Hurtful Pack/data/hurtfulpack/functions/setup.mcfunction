@@ -43,6 +43,7 @@ execute unless score $reload$ hp.storeboard matches 1.. run scoreboard players s
 execute unless score $reload$ hp.storeboard matches 1.. run scoreboard players set $noskulldustfromgraves$ l2t.storeboard 0
 execute unless score $reload$ hp.storeboard matches 1.. run scoreboard players set $mode$ wop.extend 1
 execute unless score $reload$ hp.storeboard matches 1.. run scoreboard players set $distance$ ue.pearlthrow 14
+execute unless score $reload$ hp.storeboard matches 1.. run scoreboard players set $display_name$ g.deaths 0
 #run above commands only once
 execute unless score $reload$ hp.storeboard matches 0.. run scoreboard players set $reload$ hp.storeboard 0
 scoreboard players add $reload$ hp.storeboard 1

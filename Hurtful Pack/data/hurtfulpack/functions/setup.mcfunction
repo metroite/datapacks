@@ -1,5 +1,6 @@
 #scoreboard
 scoreboard objectives add hp.storeboard dummy
+execute unless score $bukkit$ hp.storeboard matches 0.. run scoreboard players set $bukkit$ hp.storeboard 0
 scoreboard objectives add hp.cauldron minecraft.custom:minecraft.fill_cauldron
 scoreboard objectives add hp.packed_ice minecraft.used:minecraft.packed_ice
 scoreboard objectives add hp.blue_ice minecraft.used:minecraft.blue_ice

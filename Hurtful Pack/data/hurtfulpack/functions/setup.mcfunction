@@ -28,6 +28,7 @@ execute unless score $reload$ hp.storeboard matches 1.. run scoreboard players s
 execute unless score $reload$ hp.storeboard matches 1.. run scoreboard players set $growontoptree$ hp.storeboard 1
 execute unless score $reload$ hp.storeboard matches 1.. run scoreboard players set $hardstone$ hp.storeboard 1
 execute unless score $reload$ hp.storeboard matches 1.. run scoreboard players set $heavyarmor$ hp.storeboard 1
+execute unless score $reload$ hp.storeboard matches 1.. run scoreboard players set $horsetogether$ hp.storeboard 1
 execute unless score $reload$ hp.storeboard matches 1.. run scoreboard players set $limitedlife$ hp.storeboard 1
 execute unless score $reload$ hp.storeboard matches 1.. run scoreboard players set $loud2x2tnt$ hp.storeboard 1
 execute unless score $reload$ hp.storeboard matches 1.. run scoreboard players set $morsecode$ hp.storeboard 1

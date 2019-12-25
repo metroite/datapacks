@@ -9,6 +9,7 @@ scoreboard objectives remove hp.leadcount
 function graves:uninstall
 function hardstone:uninstall
 function heavyarmor:uninstall
+function horsetogether:uninstall
 function limitedlife:uninstall
 function loud2x2tnt:uninstall
 function morsecode:uninstall

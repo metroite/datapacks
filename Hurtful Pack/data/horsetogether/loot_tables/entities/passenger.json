@@ -1,0 +1,14 @@
+{
+    "pools": [
+        {
+            "rolls": 0,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:air",
+                    "weight": 1
+                }
+            ]
+        }
+    ]
+}

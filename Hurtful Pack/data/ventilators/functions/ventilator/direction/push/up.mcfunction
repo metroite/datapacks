@@ -1,3 +1,4 @@
 execute positioned ~-0.5 ~-1 ~-0.5 as @e[type=!minecraft:area_effect_cloud,dy=1,limit=1,sort=nearest] at @s run function ventilators:ventilator/direction/push/motion/up
-execute positioned ~-0.5 ~-1 ~-0.5 as @a[gamemode=!spectator,dy=1,limit=1,sort=nearest,nbt={FallFlying:0b,OnGround:0b},nbt=!{ActiveEffects:[{Id:25b}]}] unless score @s ha.armorcount matches 40.. run effect give @s minecraft:levitation 1 220 true
+execute positioned ~-0.5 ~-1 ~-0.5 as @a[gamemode=!spectator,dy=1,limit=1,sort=nearest,nbt={FallFlying:0b,OnGround:0b}] unless score @s ha.armorcount matches 40.. run effect clear @s minecraft:levitation
+execute positioned ~-0.5 ~-1 ~-0.5 as @a[gamemode=!spectator,dy=1,limit=1,sort=nearest,nbt={FallFlying:0b,OnGround:0b}] unless score @s ha.armorcount matches 40.. run effect give @s minecraft:levitation 1 220 true
 execute positioned ~-0.5 ~-1 ~-0.5 as @a[gamemode=!spectator,dy=1,limit=1,sort=nearest,nbt={FallFlying:1b}] unless score @s ha.armorcount matches 40.. at @s if block ~ ~-0.35 ~ #ventilators:nocollision run tp @s ~ ~-0.125 ~

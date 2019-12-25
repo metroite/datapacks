@@ -21,13 +21,6 @@ execute as @a[scores={sp.so.pa.fail=1..}] at @s run function sapphire:sapphire_o
 #feature-compatibility: torchout
 function torchout:sapphire/tick
 
-#calls placement (for polishing glass) and effects, also particles (needs to be above placement-API, because of the place score being used in order to fix the piston-dupe-glitch (could just use own objective if necessary))
-scoreboard players add _global_ sp.glass_placed 1
-execute as @e[tag=sp.sapphire_glass] at @s run function sapphire:sapphire_glass/block/effects
-execute as @e[type=minecraft:item,tag=sp.spawnsquid] at @s run function sapphire:sapphire_glass/block/placement
-execute if score _global_ sp.glass_placed >= 10 sp.glass_placed run scoreboard players set _global_ sp.glass_placed 0
-scoreboard players reset @a sp.sg.piston
-
 ####placement-API for the sapphire_glass
 #calling effects if item is selected
 execute as @a[tag=sp.glass_block] at @s run function sapphire:sapphire_glass/placement-api/effects
@@ -37,6 +30,13 @@ execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:light_blue_stained_glass
 scoreboard players reset @a[tag=!sp.glass_block] sp.glass_placed
 #fallback mechanic: returns lost items if the API failed
 execute as @a[scores={sp.sg.pa.fail=1..}] at @s run function sapphire:sapphire_glass/placement-api/fallback
+
+#calls placement (for polishing glass) and effects, also particles (needs to be above placement-API, because of the place score being used in order to fix the piston-dupe-glitch (could just use own objective if necessary))
+scoreboard players add _global_ sp.glass_placed 1
+execute as @e[tag=sp.sapphire_glass] at @s run function sapphire:sapphire_glass/block/effects
+execute as @e[type=minecraft:item,tag=sp.spawnsquid] at @s run function sapphire:sapphire_glass/block/placement
+execute if score _global_ sp.glass_placed >= 10 sp.glass_placed run scoreboard players set _global_ sp.glass_placed 0
+scoreboard players reset @a sp.sg.piston
 
 #calls particle_generator
 execute as @e[tag=sp.particle] at @s run function sapphire:particle_generator/particle/main

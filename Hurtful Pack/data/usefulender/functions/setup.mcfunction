@@ -1,3 +1,5 @@
+schedule function usefulender:main100 52t
+#scoreboard
 scoreboard objectives add ue.pearlthrow minecraft.used:minecraft.ender_pearl
 scoreboard objectives add ue.ea.shoot minecraft.used:minecraft.bow
 execute unless score $enderarrows$ ue.ea.shoot matches 0.. run scoreboard players set $enderarrows$ ue.ea.shoot 1

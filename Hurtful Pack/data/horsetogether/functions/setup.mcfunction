@@ -1,4 +1,4 @@
-schedule function horsetogether:main50 27
+schedule function horsetogether:main50 27t
 #scoreboards
 scoreboard objectives add ht.rotation dummy
 scoreboard objectives add ht.speed minecraft.custom:minecraft.horse_one_cm

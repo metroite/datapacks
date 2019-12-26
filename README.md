@@ -72,7 +72,7 @@ All datapacks are available for [1.13 (outdated)](https://github.com/Metroite/da
 
 Please report any **bugs** you may find, any **suggestions** you might have and any possible **feedback** you could think of on the [Issues](https://github.com/Metroite/datapacks/issues) page! They are all welcome.
 
-If you want to messsage me directly or follow this project more conveniently, then just join the [Discord Server](https://discord.gg/vBgb85N)!
+If you like what I do, consider checking out my [Patreon page](https://www.patreon.com/metroite)! Messsage me directly or follow this project more conveniently on the [Discord Server](https://discord.gg/vBgb85N)!
 
 ## Authors
 
@@ -82,5 +82,9 @@ If you want to messsage me directly or follow this project more conveniently, th
 
 ## License
 
-This project is licensed under the GNU GENERAL PUBLIC License - see the [LICENSE](https://github.com/Metroite/datapacks/blob/master/LICENSE) file for details.
-Reminder: always make sure to credit me if you use my work! Thank you!
+* You are allowed to edit the files and claim only your edits as yours, which you may then distribute through another fork of this project on GitHub.
+* You are not allowed to redistribute the files of this project, only exception is descibed above.
+* You are not allowed to remove the "loaded" messages under any circumstances.
+* You are not allowed to claim this project as yours and you must fully credit me, "Metroite".
+
+**Everything else** is handled by the GNU GENERAL PUBLIC License v3.0 - see the [LICENSE](https://github.com/Metroite/datapacks/blob/master/LICENSE) file for details.

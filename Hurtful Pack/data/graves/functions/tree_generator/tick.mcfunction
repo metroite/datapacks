@@ -1,5 +1,5 @@
 data merge entity @s {Motion:[0.0,-5.0,0.0]}
-execute if entity @s[tag=g.oak] if entity @e[tag=g.birch,distance=..20] run kill @e[tag=g.sapling_drop,limit=2,distance=..20,sort=random]
+execute if entity @s[tag=g.oak] if entity @e[type=minecraft:armor_stand,distance=..20,tag=g.birch] run kill @e[type=minecraft:armor_stand,distance=..20,limit=2,sort=random,tag=g.sapling_drop]
 execute if entity @s[tag=g.acacia,nbt={OnGround:1b}] if block ~ ~-1 ~ #graves:treeable if block ~ ~ ~ #graves:space if block ~ ~1 ~ #graves:space run summon minecraft:item ~ ~ ~ {Motion:[0.0,0.25,0.0],Tags:["g.skull_dusty","g.acacia"],Item:{id:"minecraft:bone_meal",Count:1b,tag:{RepairCost:99999999,CanPlaceOn:["minecraft:void_air"],HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:1}],display:{Name:"{\"text\":\"Skull Dusty\",\"color\":\"yellow\",\"italic\":false}"}}},PickupDelay:-1}
 execute if entity @s[tag=g.birch,nbt={OnGround:1b}] if block ~ ~-1 ~ #graves:treeable if block ~ ~ ~ #graves:space if block ~ ~1 ~ #graves:space run summon minecraft:item ~ ~ ~ {Motion:[0.0,0.25,0.0],Tags:["g.skull_dusty","g.birch"],Item:{id:"minecraft:bone_meal",Count:1b,tag:{RepairCost:99999999,CanPlaceOn:["minecraft:void_air"],HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:1}],display:{Name:"{\"text\":\"Skull Dusty\",\"color\":\"yellow\",\"italic\":false}"}}},PickupDelay:-1}
 execute if entity @s[tag=g.dark_oak,nbt={OnGround:1b}] if block ~ ~-1 ~ #graves:treeable if block ~ ~ ~ #graves:space if block ~ ~1 ~ #graves:space run summon minecraft:item ~ ~ ~ {Motion:[0.0,0.25,0.0],Tags:["g.skull_dusty","g.dark_oak"],Item:{id:"minecraft:bone_meal",Count:1b,tag:{RepairCost:99999999,CanPlaceOn:["minecraft:void_air"],HideFlags:17,Enchantments:[{id:"minecraft:unbreaking",lvl:1}],display:{Name:"{\"text\":\"Skull Dusty\",\"color\":\"yellow\",\"italic\":false}"}}},PickupDelay:-1}
@@ -12,4 +12,4 @@ execute if entity @s[nbt={OnGround:1b}] run summon area_effect_cloud ~ ~ ~-48 {D
 execute if entity @s[nbt={OnGround:1b}] run summon area_effect_cloud ~-48 ~ ~ {Duration:2147483637,Tags:["g.notree"]}
 #kill if OnGround or if another tree is close
 kill @s[nbt={OnGround:1b}]
-execute if entity @e[tag=g.notree,distance=..280] run kill @s
+execute if entity @e[type=minecraft:area_effect_cloud,distance=..280,tag=g.notree] run kill @s

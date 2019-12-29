@@ -72,7 +72,7 @@ All datapacks are available for [1.13 (outdated)](https://github.com/Metroite/da
 
 Please report any **bugs** you may find, any **suggestions** you might have and any possible **feedback** you could think of on the [Issues](https://github.com/Metroite/datapacks/issues) page! They are all welcome.
 
-If you like what I do, consider checking out my [Patreon page](https://www.patreon.com/metroite)! Messsage me directly or follow this project more conveniently on the [Discord Server](https://discord.gg/vBgb85N)!
+If you like what I do, consider checking out my [Patreon page](https://www.patreon.com/metroite)! Messsage me directly or follow this project more conveniently through the [Discord Server](https://discord.gg/vBgb85N)!
 
 ## Authors
 

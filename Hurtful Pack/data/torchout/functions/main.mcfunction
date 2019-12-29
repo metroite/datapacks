@@ -12,4 +12,4 @@ execute as @e[type=minecraft:area_effect_cloud,tag=to.tag.torch,tag=!sp.to.torch
 #tick player and determine bow or crossbow
 execute if score $torcharrows$ to.ta.shoot matches 1.. as @a at @s run function torchout:torcharrow/determine
 #tick arrow
-execute if score $torcharrows$ to.ta.shoot matches 1.. as @e[tag=to.ta.arrow] at @s run function torchout:torcharrow/arrow
+execute if score $torcharrows$ to.ta.shoot matches 1.. as @e[type=minecraft:arrow,tag=to.ta.arrow] at @s run function torchout:torcharrow/arrow

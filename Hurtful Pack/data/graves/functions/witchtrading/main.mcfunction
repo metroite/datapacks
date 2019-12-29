@@ -1,7 +1,7 @@
 #calling shinigami
-execute as @e[tag=wt.shinigami,type=minecraft:witch] at @s run function graves:witchtrading/shinigami/witch
+execute as @e[type=minecraft:witch,tag=wt.shinigami] at @s run function graves:witchtrading/shinigami/witch
 #reallocating the shinigami_wing
-execute as @e[tag=wt.shinigami_wing] at @s unless entity @e[tag=wt.shinigami,type=minecraft:witch,distance=..2] run kill @s
+execute as @e[type=minecraft:armor_stand,tag=wt.shinigami_wing] at @s unless entity @e[type=minecraft:witch,distance=..2,tag=wt.shinigami] run kill @s
 
 #unleashing the shinigami_wing contract
 execute as @e[type=minecraft:item,limit=1,sort=random,nbt={Item:{id:"minecraft:elytra",Count:1b,tag:{HideFlags:1,display:{Name:"{\"text\":\"Shinigami Wings [setup]\",\"color\":\"yellow\",\"italic\":false}",Lore:["{\"text\":\"...a contract until eternity\"}"]}}}}] at @s run function graves:witchtrading/shinigami/wing/item_setup

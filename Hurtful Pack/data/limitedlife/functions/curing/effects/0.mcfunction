@@ -9,4 +9,4 @@ execute if score @s ll.cooking matches 900.. run particle minecraft:bubble_pop ~
 execute if score @s ll.cooking matches 1000.. run particle minecraft:bubble_pop ~ ~-0.12 ~ 0.24 0 0.24 0.1 1
 execute if score @s ll.cooking matches 1100.. run particle minecraft:bubble_pop ~ ~-0.12 ~ 0.25 0 0.25 0.1 1
 execute if score @s ll.cooking matches 1200.. run particle minecraft:bubble_pop ~ ~-0.12 ~ 0.26 0 0.26 0.1 1
-execute if score @s ll.cooking matches 1200.. at @e[type=minecraft:end_crystal,distance=..1] run particle minecraft:dragon_breath ~ ~0.5 ~ 0.1 0.25 0.1 0.0001 1
+execute if score @s ll.cooking matches 1200.. at @e[type=minecraft:end_crystal,distance=..0.05,limit=1] run particle minecraft:dragon_breath ~ ~0.5 ~ 0.1 0.25 0.1 0.0001 1

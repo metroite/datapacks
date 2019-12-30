@@ -1,6 +1,7 @@
 #initial effects
 scoreboard players remove @s ll.deaths 1
 tag @s add ll.cured
+function limitedlife:helmet/helmet
 #actual tp-command (first one is for chain a revive)
 execute at @e[type=minecraft:bat,tag=ll.curedvoid,limit=1] run tp @s ~ ~ ~
 execute at @e[type=minecraft:item,scores={ll.cooking=3000},tag=ll.healingredient,limit=1] at @e[type=minecraft:bat,tag=ll.bat,limit=1,sort=nearest] run tp @s ~ ~ ~

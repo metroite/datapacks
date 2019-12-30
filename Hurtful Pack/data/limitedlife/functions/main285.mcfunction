@@ -5,13 +5,13 @@ execute if score $limitedlife$ hp.storeboard matches 1.. run schedule function l
 execute as @a unless score @s ll.deaths matches 0.. run function hurtfulpack:compatibility/limitedlife
 scoreboard players remove @a[scores={ll.deaths=11..}] ll.deaths 1
 
+#Compatibility for keepInventory=true##
+tag @a[scores={ll.deaths=1..,ll.health=20,ll.sincedeath=..300}] add ll.cured
 #helmet##
 execute as @a[nbt=!{Inventory:[{Slot:103b,Count:1b,tag:{Enchantments:[{lvl:1s,id:"minecraft:binding_curse"},{lvl:1s,id:"minecraft:vanishing_curse"}]}}]}] run function limitedlife:helmet/helmet
 execute as @a[tag=ll.cured] run function limitedlife:helmet/helmet
 #players need to be damaged to update to their real health value##
-effect give @a[scores={ll.deaths=1..9,ll.health=20,ll.sincedeath=..1000}] minecraft:wither 1 1 true
-#Compatibility for keepInventory=true##
-tag @a[scores={ll.deaths=1..,ll.health=20,ll.sincedeath=..1000}] add ll.cured
+effect give @a[scores={ll.deaths=1..9,ll.health=20,ll.sincedeath=300..600}] minecraft:wither 1 1 true
 
 #calling tired if global exceeds individual score##
 scoreboard players add $global$ ll.cooking 1

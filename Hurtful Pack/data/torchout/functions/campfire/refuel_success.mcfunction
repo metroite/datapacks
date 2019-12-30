@@ -1,8 +1,7 @@
-#burntime
-scoreboard players operation @s to.torch = $global$ to.torch
-scoreboard players operation @s to.torch += $burntime$ to.torch
-scoreboard players operation @s to.torch += $burntime$ to.torch
-scoreboard players operation @s to.torch += $burntime$ to.torch
+#refuel effects
+particle minecraft:lava ~ ~0.75 ~ 0 0 0 0.5 6 normal
+playsound minecraft:block.fire.extinguish ambient @a ~ ~ ~ 0.5 2
+#add burntime
 scoreboard players operation @s to.torch += $burntime$ to.torch
 #particles/effects
 particle minecraft:flame ~ ~0.75 ~ 0 0 0 0.01 12 normal

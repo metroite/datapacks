@@ -4,7 +4,7 @@ execute unless score $mode$ wop.mode matches 0.. run scoreboard players set $mod
 scoreboard objectives add wop.validitem dummy
 scoreboard objectives add wop.extend dummy
 execute unless score $extend$ wop.extend matches 0.. run scoreboard players set $extend$ wop.extend 5
-execute unless score $oldmethod$ wop.extend matches 0.. run scoreboard players set $oldmethod$ wop.extend 0
+execute unless score $oldmethod$ wop.extend matches 0.. run scoreboard players set $oldmethod$ wop.extend 1
 execute unless score $attribute$ wop.extend matches 0.. run scoreboard players set $attribute$ wop.extend 0
 execute unless score $mustsneak$ wop.extend matches 0.. run scoreboard players set $mustsneak$ wop.extend 1
 scoreboard objectives add wop.health health

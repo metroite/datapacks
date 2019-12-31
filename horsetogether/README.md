@@ -2,7 +2,7 @@
 
 Ever imagined riding on a horse together with your loved ones? Basically, now with this datapack its possible for armored horses.
 
-![horsetogether](horsetogether.png?raw=true "Tree plopping the player into heaven")
+![horsetogether](horsetogether.png?raw=true "Me and the boys on Old Town Road")
 
 ## Version
 

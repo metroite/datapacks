@@ -3,6 +3,8 @@ execute unless score $display_name$ g.deaths matches 0.. run scoreboard players 
 execute if score $display_name$ g.deaths matches 1.. run setblock 32 1 11 minecraft:bedrock
 execute if score $display_name$ g.deaths matches 1.. run setblock 32 0 11 minecraft:oak_sign
 scoreboard objectives add g.usebonemeal minecraft.used:minecraft.bone_meal
-scoreboard players set ZERO g.deaths 0
 scoreboard objectives add g.sapling_height dummy
 scoreboard objectives add g.sapling_rng dummy
+#scheduled functions
+schedule function graves:main20 12t
+schedule function graves:main100 23t

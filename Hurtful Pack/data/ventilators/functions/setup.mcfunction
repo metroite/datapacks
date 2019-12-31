@@ -6,3 +6,5 @@ scoreboard players set 3 v.ventilator 3
 scoreboard players set 4 v.ventilator 4
 scoreboard players set 5 v.ventilator 5
 scoreboard players set 6 v.ventilator 6
+#scheduled functions
+schedule function ventilators:main20 8t

@@ -5,8 +5,6 @@ function loud2x2tnt:graves
 
 #detecting direction
 execute as @a[scores={g.deaths=1..}] at @s run function graves:skull/direction_detect
-#particles for g.skull (AoEC)
-execute as @e[type=minecraft:area_effect_cloud,tag=g.skull] at @s run function graves:skull/particles
 #global playound if a player dies
 execute as @p[scores={g.deaths=1..}] run playsound minecraft:item.elytra.flying block @a ~ ~ ~ 0.25 0.5 0.25
 scoreboard players set @p[scores={g.deaths=1..}] g.deaths 0

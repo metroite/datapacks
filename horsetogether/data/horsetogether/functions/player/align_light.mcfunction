@@ -1,0 +1,2 @@
+execute if score @s ht.rotation matches 1750.. positioned ^ ^ ^-0.5 align y positioned ~ ~-0.3 ~ as @e[type=minecraft:pig,tag=ht.passenger,distance=..8,limit=1,sort=nearest] run function horsetogether:horse/passenger/tp_light
+execute if score @s ht.rotation matches ..1750 positioned ^ ^ ^-0.5 align y positioned ~ ~0.7 ~ as @e[type=minecraft:pig,tag=ht.passenger,distance=..8,limit=1,sort=nearest] run function horsetogether:horse/passenger/tp_light

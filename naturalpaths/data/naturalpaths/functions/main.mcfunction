@@ -1,8 +1,4 @@
 #re-schedule function
-schedule function naturalpaths:main 6s
-#test if moving 2sec after reset
-scoreboard players reset @a np.walking
-scoreboard players reset @a np.running
-schedule function naturalpaths:path/determine 1s
-#replace block
-execute as @a[scores={np.global=1..}] at @s if block ~ ~ ~ #naturalpaths:air run function naturalpaths:path/replace
+schedule function naturalpaths:main 241t
+#run path functions through trigger.mcfunction, which determines which kind of replacing should happen and how frequent
+function naturalpaths:path/trigger

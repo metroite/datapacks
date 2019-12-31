@@ -2,7 +2,7 @@
 
 As the name suggests, this datapacks makes leather armor actually worth crafting. Leather boots bring a buff with them!
 
-#Crafting
+# Crafting
 
 */ - Stick*
 

@@ -5,4 +5,5 @@ execute if block ~ ~-0.6 ~ #torchout:no_torcharrow unless block ~-0.6 ~ ~ #torch
 execute if block ~ ~-0.6 ~ #torchout:no_torcharrow unless block ~ ~ ~0.6 #torchout:no_torcharrow run setblock ~ ~ ~ minecraft:wall_torch[facing=north] replace
 execute if block ~ ~-0.6 ~ #torchout:no_torcharrow unless block ~ ~ ~-0.6 #torchout:no_torcharrow run setblock ~ ~ ~ minecraft:wall_torch[facing=south] replace
 #make a torchout torch out of the defaut torch
+execute unless block ~ ~ ~ #torchout:torch run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:torch",Count:1b}}
 execute if block ~ ~ ~ #torchout:torch run function torchout:placement-api_torch/success

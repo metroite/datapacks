@@ -10,4 +10,4 @@ scoreboard objectives remove to.pa.fail
 scoreboard objectives remove to.campfire
 
 #tick
-kill @e[tag=to.tag.torch]
+kill @e[type=minecraft:area_effect_cloud,tag=to.tag.torch]

@@ -5,7 +5,7 @@ Also, you can craft a different kind of Elytra using *Batwings* (tip: burns on d
 
 Recommended to use with graves (*Batwings* will be replaced with *Skull Dust*), ventilators (more uses for *Batwings*) and sapphire (to be able to turn your *Life Support Glass* into *Life Support Sapphire Glass* by holding it in your offhand).
 
-#Crafting
+# Crafting
 
 *M - Phantom Membrane*
 

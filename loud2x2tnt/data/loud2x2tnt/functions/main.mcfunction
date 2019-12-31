@@ -1,2 +1,2 @@
-#detects if tnt is placed 2x2x2. Execution for each of the tnt:
-execute as @e[type=minecraft:tnt] at @s run function loud2x2tnt:check
+#detected tnts replace with creepers
+execute as @e[type=minecraft:tnt,tag=l2t.fused] at @s run function loud2x2tnt:effects

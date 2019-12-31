@@ -3,4 +3,5 @@ execute if entity @s[scores={to.campfire=1..7}] positioned ^ ^0.5 ^ align xyz if
 #repeat if unsuccessful
 scoreboard players add @s[scores={to.campfire=1..7}] to.campfire 1
 execute if entity @s[scores={to.campfire=1..7}] positioned ^ ^ ^1 run function torchout:placement-api_campfire/detection/1
-execute at @s[scores={to.campfire=8..}] positioned ~ ~1.5 ~ run function torchout:placement-api_campfire/detection/2
+execute at @s[scores={to.campfire=8..}] positioned ~ ~1.5 ~ run scoreboard players set @s to.campfire 29
+execute at @s[scores={to.campfire=8..}] positioned ~ ~1.5 ~ run function torchout:placement-api_campfire/detection/5

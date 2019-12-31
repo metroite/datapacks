@@ -1,5 +1,5 @@
 #main function (which is scheduled)
-schedule function naturalpaths:main 5t
+schedule function naturalpaths:main 31t
 #scoreboard
 scoreboard objectives add np.global dummy
 scoreboard objectives add np.running minecraft.custom:minecraft.sprint_one_cm

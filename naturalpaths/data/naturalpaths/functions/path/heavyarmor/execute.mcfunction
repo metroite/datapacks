@@ -1,0 +1,1 @@
+execute as @a[scores={np.global=1..}] if score @s ha.armorcount matches 40.. at @s if block ~ ~-0.1 ~ #naturalpaths:compressable if block ~ ~ ~ #naturalpaths:air run function naturalpaths:path/heavyarmor/replace

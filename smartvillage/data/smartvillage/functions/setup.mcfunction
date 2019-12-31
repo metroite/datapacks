@@ -1,5 +1,5 @@
 #main function (which is scheduled)
-schedule function smartvillage:main20 16t
+schedule function smartvillage:main20 6t
 #scoreboards
 scoreboard objectives add sv.center_x dummy
 scoreboard objectives add sv.center_y dummy

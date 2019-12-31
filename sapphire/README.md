@@ -4,7 +4,7 @@
 
 Recommended to use with limitedlife, as you will be able to use *Sapphire Glass* as *Life Support Glass* turning it into *Life Support Sapphire Glass*.
 
-#Crafting
+# Crafting
 
 *S - Sapphire (Squid Spawn Egg)*
 

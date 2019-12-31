@@ -1,5 +1,8 @@
 scoreboard objectives add ll.deaths deathCount
+scoreboard objectives add ll.beamtargetY dummy
 scoreboard objectives add ll.cooking dummy
+execute unless score $tired_time$ ll.cooking matches 0.. run scoreboard players set $tired_time$ ll.cooking 50
+execute unless score $interval$ ll.cooking matches 0.. run scoreboard players set $interval$ ll.cooking 3
 scoreboard objectives add ll.health health "❤"
 scoreboard objectives setdisplay belowName ll.health
 scoreboard objectives add ll.sincedeath minecraft.custom:minecraft.time_since_death
@@ -7,11 +10,18 @@ scoreboard players set max_daytime ll.sincedeath 12999
 scoreboard objectives add ll.craftbatwing minecraft.crafted:minecraft.milk_bucket
 scoreboard objectives add ll.wa.shoot minecraft.used:minecraft.bow
 scoreboard objectives add ll.wa.shootc minecraft.used:minecraft.crossbow
-scoreboard players set 0 ll.deaths 0
+execute unless score $wingedarrows$ ll.wa.shoot matches 0.. run scoreboard players set $wingedarrows$ ll.wa.shoot 1
 scoreboard objectives add ll.batwingflap minecraft.custom:minecraft.sneak_time
 scoreboard objectives add ll.end_gateway dummy
 scoreboard objectives add ll.batwingeat dummy
 scoreboard players set 20 ll.batwingeat 20
+scoreboard objectives add ll.wa.bind dummy
+scoreboard players set 2 ll.wa.bind 2
+execute unless score $bindtime$ ll.wa.bind matches 0.. run scoreboard players set $bindtime$ ll.wa.bind 30
+#scheduled functions
+schedule function limitedlife:main18 7t
+schedule function limitedlife:main100 4t
+schedule function limitedlife:main285 26t
 
 #The Void
 #air

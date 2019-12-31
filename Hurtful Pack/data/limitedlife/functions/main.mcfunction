@@ -1,5 +1,5 @@
 #feature-compatibility: ventilators
-execute unless score 9 v.ventilator = 9 v.ventilator as @e[type=minecraft:item,tag=ll.spawnbat] at @s run function limitedlife:items/batwing_recover
+execute unless score 9 v.ventilator = 9 v.ventilator unless score $ventilators$ hp.storeboard matches 1.. as @e[type=minecraft:item,tag=ll.spawnbat] at @s run function limitedlife:items/batwing_recover
 
 #batwing eating
 execute if entity @p[scores={ll.batwingeat=1..}] run function limitedlife:items/batwing_eat_tick

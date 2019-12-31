@@ -19,7 +19,7 @@ scoreboard players reset @a[tag=!sp.so.pa.tag] sp.so.pa.ore
 execute as @a[scores={sp.so.pa.fail=1..}] at @s run function sapphire:sapphire_ore/fallback
 
 #feature-compatibility: torchout
-function torchout:sapphire/tick
+execute if score $torchout$ hp.storeboard matches 1.. run function torchout:sapphire/tick
 
 ####placement-API for the sapphire_glass
 #calling effects if item is selected

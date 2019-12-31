@@ -20,4 +20,4 @@ execute at @s[tag=g.acacia_branched] run fill ~4 ~ ~4 ~-4 ~2 ~-4 minecraft:acaci
 kill @s[tag=g.acacia_branched]
 
 #feature-compatibility to growontoptree
-function growontoptree:graves
+execute if score $sapphire$ hp.storeboard matches 1.. run function growontoptree:graves

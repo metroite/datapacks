@@ -4,7 +4,7 @@ data merge block ~ ~-2 ~ {TransferCooldown:32.767}
 data merge block ~ ~ ~ {TransferCooldown:32.767}
 
 #feature-compatibility to growontoptree
-function growontoptree:graves
+execute if score $growontoptree$ hp.storeboard matches 1.. run function growontoptree:graves
 
 ##growth
 #oak

@@ -14,8 +14,8 @@ scoreboard objectives add wt.so.pa.fail dummy
 scoreboard players set 0 wt.so.pa.fail 0
 scoreboard players add _fallback_ wt.so.pa.fail 0
 
-#feature-compatibility
-function graves:witchtrading/setup
+#feature-compatibility: graves
+execute if score $graves$ hp.storeboard matches 1.. run function graves:witchtrading/setup
 
 #What you shouldn't do:
 #Don't move away.

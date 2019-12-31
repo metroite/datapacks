@@ -44,4 +44,4 @@ scoreboard players reset @a[tag=!wt.sad_orchid] wt.sad_orchid
 execute as @a[scores={wt.so.pa.fail=1..}] at @s run function witchtrading:sad_orchid/fallback
 
 #feature-compatibility: graves
-function graves:witchtrading/main
+execute if score $graves$ hp.storeboard matches 1.. run function graves:witchtrading/main

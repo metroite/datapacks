@@ -16,7 +16,7 @@ scoreboard players set x_random sp.sapphire 0
 scoreboard players set z_random sp.sapphire 0
 
 #feature-compatibility: limitedlife
-function limitedlife:sapphire/setup
+execute if score $limitedlife$ hp.storeboard matches 1.. run function limitedlife:sapphire/setup
 
 #sapphire glass
 scoreboard objectives add sp.glass_placed minecraft.used:minecraft.light_blue_stained_glass
@@ -51,4 +51,4 @@ scoreboard players set 0 sp.sg.pa.fail 0
 scoreboard players add _fallback_ sp.sg.pa.fail 0
 
 #scheduled functions
-schedule function sapphire:main80 47t
+schedule function sapphire:main50 47t

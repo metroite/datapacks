@@ -9,6 +9,7 @@
 * [growontoptree](https://github.com/Metroite/datapacks/tree/master/growontoptree)
 * [hardstone](https://github.com/Metroite/datapacks/tree/master/hardstone)
 * [heavyarmor](https://github.com/Metroite/datapacks/tree/master/heavyarmor)
+* [horsetogether](https://github.com/Metroite/datapacks/tree/master/horsetogether)
 * [limitedlife](https://github.com/Metroite/datapacks/tree/master/limitedlife)
 * [loud2x2tnt](https://github.com/Metroite/datapacks/tree/master/loud2x2tnt)
 * [morsecode](https://github.com/Metroite/datapacks/tree/master/morsecode)
@@ -25,7 +26,7 @@
 * [witchtrading](https://github.com/Metroite/datapacks/tree/master/witchtrading)
 * [worseoldpvp](https://github.com/Metroite/datapacks/tree/master/worseoldpvp)
 
-**Every Datapack is included in the [Hurtful Pack](https://github.com/Metroite/datapacks/tree/master/Hurtful%20Pack)!** Available in [**1.14** and 1.13 (outdated)](https://github.com/Metroite/datapacks#version)!
+**A bundle of the survival oriented datapacks is included in the [Hurtful Pack](https://github.com/Metroite/datapacks/tree/master/Hurtful%20Pack)!** Available in [**1.14/1.15** and 1.13 (unsupported)](https://github.com/Metroite/datapacks#version)!
 
 **Download links and more useful information can be found inside of every datapack** ([above](https://github.com/Metroite/datapacks#metroites-datapacks)) and chronologically inside of every [release post](https://github.com/Metroite/datapacks/releases) ([below](https://github.com/Metroite/datapacks#releases)).
 
@@ -34,12 +35,12 @@
 **Most publication effort goes into those!**
 
 * [r1](https://github.com/Metroite/datapacks/releases/tag/r1)
-* [r2](https://github.com/Metroite/datapacks/projects/2) (coming in november)
+* [r2](https://github.com/Metroite/datapacks/releases/tag/r2)
 
 ### To-Do-List:
 
 * [r2](https://github.com/Metroite/datapacks/projects/2)
-* [Minecraft 1.14 Port](https://github.com/Metroite/datapacks/projects/1)
+* [Porting](https://github.com/Metroite/datapacks/projects/1)
 
 ## Getting Started
 
@@ -55,24 +56,23 @@ Move the datapack(s) you wish to use inside your "datapacks" folder of your save
 C:\Users\<User>\AppData\Roaming\.minecraft\saves\<world name>\datapacks
 ```
 
-Now just join the world you put the datapacks in and execute the following operator command (autocompletion [TAB] will be your friend here):
+Now just join the world you put the datapacks in and execute the following operator command:
 
 ```
-/datapack enable <name of the added datapack>
+/reload
 ```
-A "loaded"-text should appear, assuring you that its up and running.
 
-Have fun trying out the new stuff you have added!
+A "loaded" message should appear, assuring you that its up and running. Have fun trying out the new stuff!
 
 ## Version
 
-All datapacks are available for [1.13 (outdated)](https://github.com/Metroite/datapacks/tree/1.13) and [1.14](https://github.com/Metroite/datapacks/tree/master). **This is  the 1.14 branch**, click on [1.13 (outdated)](https://github.com/Metroite/datapacks/tree/1.13) to switch to its branch. I aim to provide 100% multiplayer-proof datapacks.
+All datapacks are available for [1.13 (unsupported)](https://github.com/Metroite/datapacks/tree/1.13), [1.14](https://github.com/Metroite/datapacks/tree/master) and [1.15](https://github.com/Metroite/datapacks/tree/master). **This is  the 1.14/1.15 branch**, click on [1.13 (unsupported)](https://github.com/Metroite/datapacks/tree/1.13) to switch to its branch. I aim to provide 100% multiplayer-proof datapacks.
 
 ## [Feedback](https://github.com/Metroite/datapacks/issues)
 
 Please report any **bugs** you may find, any **suggestions** you might have and any possible **feedback** you could think of on the [Issues](https://github.com/Metroite/datapacks/issues) page! They are all welcome.
 
-If you like what I do, consider checking out my [Patreon page](https://www.patreon.com/metroite)! Messsage me directly or follow this project more conveniently through the [Discord Server](https://discord.gg/vBgb85N)!
+If you like what I do, consider checking out my [Patreon page](https://www.patreon.com/metroite)! Messsage me directly or follow this project more conveniently by joining the [Discord Server](https://discord.gg/vBgb85N)!
 
 ## Authors
 
@@ -83,7 +83,7 @@ If you like what I do, consider checking out my [Patreon page](https://www.patre
 ## License
 
 * You are allowed to edit the files and claim only your edits as yours, which you may then distribute through another fork of this project on GitHub.
-* You are not allowed to redistribute the files of this project, only exception is descibed above.
+* You are not allowed to redistribute the files of this project, only exception is described above.
 * You are not allowed to remove the "loaded" messages under any circumstances.
 * You are not allowed to claim this project as yours and you must fully credit me, "Metroite".
 

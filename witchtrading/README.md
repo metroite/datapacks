@@ -1,13 +1,16 @@
 ## [witchtrading](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Metroite/datapacks/tree/master/witchtrading&rootDirectory=false)
 
 Trade your poisonous potatoes with witches. Don't try to hurt their feelings though!
-Recommended to use with graves.
+
+Recommended to use with graves, which will introduce Shinigamis into your world!
+
+![witchtrading](witchtrading.png?raw=true "Very nice potato you got there!")
 
 ## Version
 
-Minecraft 1.14
+Minecraft 1.14/1.15
 
-## Performance
+## Performance Impact
 
 Tier 4/5
 

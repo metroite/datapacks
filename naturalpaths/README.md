@@ -2,15 +2,17 @@
 
 Paths generate beneath your feet.
 
-Feature-compatable with heavyarmor.
+If heavyarmor is installed, it will generate them more frequently.
 
 Disable speed on grass path blocks by setting *$speedpaths$* in *np.global* to 0 (1 is default): `/scoreboard players set $speedpaths$ np.global 0`
 
+![naturalpaths](naturalpaths.png?raw=true "Annoying or a blessing?")
+
 ## Version
 
-Minecraft 1.14
+Minecraft 1.14/1.15
 
-## Performance
+## Performance Impact
 
 Tier 2/5
 

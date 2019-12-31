@@ -2,11 +2,13 @@
 
 Removed buttery consistency out of stone/grass/sandstone/netherrack. Caving might be a better option than stip mining. Craft cobblestone slabs together into cobblestone. Cobblestone tools have become flint tools. Iron and Gold now drop Raw Iron/Gold instead, which can be smelted into the corresponding nugget. Diamonds might pling away. Be careful in the nether!
 
+![hardstone](hardstone.png?raw=true "Destroy!!!")
+
 ## Version
 
-Minecraft 1.14
+Minecraft 1.14/1.15
 
-## Performance
+## Performance Impact
 
 Tier 2/5
 

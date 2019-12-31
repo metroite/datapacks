@@ -3,11 +3,15 @@
 Tracks villages smartly and puts nearby players into adventure mode. NO RAIDING!
 Give Villages names by naming their Iron Golem then hitting the bell, built up standing by protecting them from raids or traiding with them and be careful if you want to raid them, they might hit back!
 
+![smartvillagegood](smartvillagegood.png?raw=true "Villages can love you!")
+
+![smartvillagebad](smartvillagebad.png?raw=true "Villages will also hit back!")
+
 ## Version
 
-Minecraft 1.14
+Minecraft 1.14/1.15
 
-## Performance
+## Performance Impact
 
 Tier 4/5
 

@@ -1,14 +1,18 @@
 ## [torchout](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Metroite/datapacks/tree/master/torchout&rootDirectory=false)
 
-Torches burn out with this datapack installed. Ignite torches using Flint and Steel!
+Torches and campfires (can be fueled with logs, drop them ontop) burn out after a defined while with this datapack installed. Ignite torches using *flint and steel*!
 
 Change *$burntime$* in *to.torch* to redefine the time until torches burn out in ticks (20 ticks = 1 second) (24000 (20 minutes) is default): `/scoreboard players set $burntime$ to.torch 24000`
 
+Change *$uses$* in *to.damage* to set the durability of flint_and_steel when lighting up torches (64 is default): `/scoreboard players set $uses$ to.damage 64`
+
+![torchout](torchout.png?raw=true "Torches... a not-so everlasting light source")
+
 ## Version
 
-Minecraft 1.14
+Minecraft 1.14/1.15
 
-## Performance
+## Performance Impact
 
 Tier 1/5
 

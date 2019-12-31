@@ -1,11 +1,12 @@
 ## [sapphire](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Metroite/datapacks/tree/master/sapphire&rootDirectory=false)
 
-Sapphire gems will be generated in the colder oceans, deep down. Detect water, attract lightning and create decorative particles.
-Recommended to use with limitedlife.
+*Sapphire Ores* will be generated in deep cold oceans and you can use the *Sapphire* gems to detect water, create decorative particles by empowering observers and attract lightnings.
 
-**Crafting:**
+Recommended to use with limitedlife, as you will be able to use *Sapphire Glass* as *Life Support Glass* turning it into *Life Support Sapphire Glass*.
 
-*S - Sapphire*
+#Crafting
+
+*S - Sapphire (Squid Spawn Egg)*
 
 *G - Glass*
 
@@ -29,11 +30,13 @@ ISI
 ISI
 ```
 
+![sapphire](sapphire.png?raw=true "What a beautiful sight")
+
 ## Version
 
-Minecraft 1.14
+Minecraft 1.14/1.15
 
-## Performance
+## Performance Impact
 
 Tier 3/5
 

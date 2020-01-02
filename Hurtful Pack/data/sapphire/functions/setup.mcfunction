@@ -20,10 +20,10 @@ execute if score $limitedlife$ hp.storeboard matches 1.. run function limitedlif
 
 #sapphire glass
 scoreboard objectives add sp.glass_placed minecraft.used:minecraft.light_blue_stained_glass
+scoreboard objectives add sp.sg.place minecraft.used:minecraft.light_blue_stained_glass
 scoreboard players add _global_ sp.glass_placed 0
 scoreboard players set 10 sp.glass_placed 10
 scoreboard objectives add sp.glass_broken minecraft.mined:minecraft.light_blue_stained_glass
-scoreboard objectives add sp.sg.piston minecraft.used:minecraft.light_blue_stained_glass
 
 #crafting
 scoreboard objectives add sp.craftdetector minecraft.crafted:minecraft.water_bucket
@@ -52,3 +52,4 @@ scoreboard players add _fallback_ sp.sg.pa.fail 0
 
 #scheduled functions
 schedule function sapphire:main50 47t
+schedule function sapphire:main20 11t

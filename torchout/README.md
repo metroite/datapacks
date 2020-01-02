@@ -1,6 +1,6 @@
 ## [torchout](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Metroite/datapacks/tree/master/torchout&rootDirectory=false)
 
-Torches and campfires (can be fueled with logs, drop them ontop) burn out after a defined while with this datapack installed. Ignite torches using *flint and steel*!
+Torches and campfires burn out after a defined while with this datapack installed. Ignite torches using *flint and steel* and fuel campfires by dropping logs onto them!
 
 Change *$burntime$* in *to.torch* to redefine the time until torches burn out in ticks (20 ticks = 1 second) (24000 (20 minutes) is default): `/scoreboard players set $burntime$ to.torch 24000`
 

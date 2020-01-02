@@ -23,7 +23,7 @@ ISI
 ILI
 ```
 
-**Lightning Rod:** (Recipe Book: Redstone Ore)
+**Lightning Rod:** (Recipe Book: Lapis Ore)
 ```
  S
 ISI

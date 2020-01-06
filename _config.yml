@@ -1,1 +1,4 @@
 theme: jekyll-theme-cayman
+markdown: GFM
+show_downloads: true
+google_analytics: UA-155327203-1

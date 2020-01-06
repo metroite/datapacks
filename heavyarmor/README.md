@@ -4,7 +4,7 @@ Armor got so heavy it might slow you down. Gold is uneffected... how unrealistic
 
 If ventilators is installed, ventilators won't be able to push you if your armor is too heavy.
 
-![heavyarmor](heavyarmor.png?raw=true "Armor realistically slowing down the player")
+<a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Metroite/datapacks/tree/master/heavyarmor&rootDirectory=false" rel="Armor realistically slowing down the player">![heavyarmor](heavyarmor.png?raw=true "Armor realistically slowing down the player")</a>
 
 ## Version
 

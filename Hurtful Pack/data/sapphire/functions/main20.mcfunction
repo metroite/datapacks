@@ -9,4 +9,4 @@ execute as @a[scores={sp.craftlight=1..}] run function sapphire:lightning_rod/cr
 #crafting water_detector (Inventory)
 execute as @a[scores={sp.craftdetector=1..}] run function sapphire:water_detector/craft
 #particle for sapphire_glass
-execute as @e[type=minecraft:area_effect_cloud,tag=sp.sapphire_glass] at @s run particle minecraft:dust 0.25 0.1 1 1.25 ~ ~0.5 ~ 0.3 0.3 0.3 0.05 10
+execute as @e[type=minecraft:area_effect_cloud,tag=sp.sapphire_glass] at @s run particle minecraft:dust 0.25 0.1 1 1.25 ~ ~0.5 ~ 0.3 0.3 0.3 0.05 5

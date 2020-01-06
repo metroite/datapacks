@@ -1,10 +1,10 @@
 ## [growontoptree](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Metroite/datapacks/tree/master/growontoptree&rootDirectory=false)
 
-If players are inside wood, they get teleported up recursively!
+Players get pushed upwards by growing saplings!
 
-If graves is installed, the big trees will also be affected!.
+If graves is installed, the big trees will also be affected.
 
-![growontoptree](growontoptree.png?raw=true "Tree plopping the player into heaven")
+<a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Metroite/datapacks/tree/master/growontoptree&rootDirectory=false" rel="Tree growing with a player">![growontoptree](growontoptree.png?raw=true "Tree growing with a player")</a>
 
 ## Version
 

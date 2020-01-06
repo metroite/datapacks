@@ -4,7 +4,13 @@
 
 Recommended to use with limitedlife, as you will be able to use *Sapphire Glass* as *Life Support Glass* turning it into *Life Support Sapphire Glass*.
 
-# Crafting
+### Crafting
+
+<details>
+<summary>
+Recipes
+</summary>
+<br>
 
 *S - Sapphire (Squid Spawn Egg)*
 
@@ -30,7 +36,9 @@ ISI
 ISI
 ```
 
-![sapphire](sapphire.png?raw=true "What a beautiful sight")
+</details>
+
+<a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Metroite/datapacks/tree/master/sapphire&rootDirectory=false" rel="Deep cold oceans">![sapphire](sapphire.png?raw=true "Deep cold oceans")</a>
 
 ## Version
 

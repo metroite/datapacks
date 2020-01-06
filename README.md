@@ -1,34 +1,41 @@
 # [Metroites Datapacks](https://github.com/Metroite/datapacks/archive/master.zip)
 
-[Discord Server](https://discord.gg/vBgb85N) to follow this project more conveniently!
+The [Discord Server](https://discord.gg/vBgb85N) allowing **you** to follow this project more conveniently!
 
 ### Datapack-List & Download:
 
-* [earlyleatherarmor](https://github.com/Metroite/datapacks/tree/master/earlyleatherarmor)
-* [graves](https://github.com/Metroite/datapacks/tree/master/graves)
-* [growontoptree](https://github.com/Metroite/datapacks/tree/master/growontoptree)
-* [hardstone](https://github.com/Metroite/datapacks/tree/master/hardstone)
-* [heavyarmor](https://github.com/Metroite/datapacks/tree/master/heavyarmor)
-* [horsetogether](https://github.com/Metroite/datapacks/tree/master/horsetogether)
-* [limitedlife](https://github.com/Metroite/datapacks/tree/master/limitedlife)
-* [loud2x2tnt](https://github.com/Metroite/datapacks/tree/master/loud2x2tnt)
-* [morsecode](https://github.com/Metroite/datapacks/tree/master/morsecode)
-* [naturalpaths](https://github.com/Metroite/datapacks/tree/master/naturalpaths)
-* [reforestation](https://github.com/Metroite/datapacks/tree/master/reforestation)
-* [sapphire](https://github.com/Metroite/datapacks/tree/master/sapphire)
-* [signalfire](https://github.com/Metroite/datapacks/tree/master/signalfire)
-* [smartvillage](https://github.com/Metroite/datapacks/tree/master/smartvillage)
-* [spectatorrevive](https://github.com/Metroite/datapacks/tree/master/spectatorrevive)
-* [torchout](https://github.com/Metroite/datapacks/tree/master/torchout)
-* [usefulender](https://github.com/Metroite/datapacks/tree/master/usefulender)
-* [ventilators](https://github.com/Metroite/datapacks/tree/master/ventilators)
-* [voiddimension](https://github.com/Metroite/datapacks/tree/master/voiddimension)
-* [witchtrading](https://github.com/Metroite/datapacks/tree/master/witchtrading)
-* [worseoldpvp](https://github.com/Metroite/datapacks/tree/master/worseoldpvp)
+<details open>
+<summary>Datapacks</summary>
+<br>
 
-**A bundle of the survival oriented datapacks is included in the [Hurtful Pack](https://github.com/Metroite/datapacks/tree/master/Hurtful%20Pack)!** Available in [**1.14/1.15** and 1.13 (unsupported)](https://github.com/Metroite/datapacks#version)!
++ [earlyleatherarmor](https://www.metroite.de/earlyleatherarmor)
++ [graves](https://www.metroite.de/graves)
++ [growontoptree](https://www.metroite.de/growontoptree)
++ [hardstone](https://www.metroite.de/hardstone)
++ [heavyarmor](https://www.metroite.de/heavyarmor)
++ [horsetogether](https://www.metroite.de/horsetogether)
++ [limitedlife](https://www.metroite.de/limitedlife)
++ [loud2x2tnt](https://www.metroite.de/loud2x2tnt)
++ [morsecode](https://www.metroite.de/morsecode)
++ [naturalpaths](https://www.metroite.de/naturalpaths)
++ [reforestation](https://www.metroite.de/reforestation)
++ [sapphire](https://www.metroite.de/sapphire)
++ [signalfire](https://www.metroite.de/signalfire)
++ [smartvillage](https://www.metroite.de/smartvillage)
++ [spectatorrevive](https://www.metroite.de/spectatorrevive)
++ [torchout](https://www.metroite.de/torchout)
++ [usefulender](https://www.metroite.de/usefulender)
++ [ventilators](https://www.metroite.de/ventilators)
++ [voiddimension](https://www.metroite.de/voiddimension)
++ [witchtrading](https://www.metroite.de/witchtrading)
++ [worseoldpvp](https://www.metroite.de/worseoldpvp)
 
-**Download links and more useful information can be found inside of every datapack** ([above](https://github.com/Metroite/datapacks#metroites-datapacks)) and chronologically inside of every [release post](https://github.com/Metroite/datapacks/releases) ([below](https://github.com/Metroite/datapacks#releases)).
+</details>
+<br>
+
+**The [Hurtful Pack](https://www.metroite.de/Hurtful%20Pack), a bundle of the survival oriented datapacks!** Available in [**1.14/1.15** and 1.13 (unsupported)](https://github.com/Metroite/datapacks#version)!
+
+**Pictures, Download links and descriptions can be found inside of every datapack** and inside of every [release post](https://github.com/Metroite/datapacks/releases).
 
 ### [Releases:](https://github.com/Metroite/datapacks/releases)
 
@@ -37,7 +44,7 @@
 * [r1](https://github.com/Metroite/datapacks/releases/tag/r1)
 * [r2](https://github.com/Metroite/datapacks/releases/tag/r2)
 
-### To-Do-List:
+### Roadmaps:
 
 * [r2](https://github.com/Metroite/datapacks/projects/2)
 * [Porting](https://github.com/Metroite/datapacks/projects/1)
@@ -64,9 +71,11 @@ Now just join the world you put the datapacks in and execute the following opera
 
 A "loaded" message should appear, assuring you that its up and running. Have fun trying out the new stuff!
 
-## Version
+### Version
 
-All datapacks are available for [1.13 (unsupported)](https://github.com/Metroite/datapacks/tree/1.13), [1.14](https://github.com/Metroite/datapacks/tree/master) and [1.15](https://github.com/Metroite/datapacks/tree/master). **This is  the 1.14/1.15 branch**, click on [1.13 (unsupported)](https://github.com/Metroite/datapacks/tree/1.13) to switch to its branch. I aim to provide 100% multiplayer-proof datapacks.
+All datapacks are available for [1.13 (unsupported)](https://github.com/Metroite/datapacks/tree/1.13), [1.14](https://github.com/Metroite/datapacks/tree/master) and [1.15](https://github.com/Metroite/datapacks/tree/master). **This is  the 1.14/1.15 branch**, click on [1.13 (unsupported)](https://github.com/Metroite/datapacks/tree/1.13) to switch to its branch.
+
+I aim to provide 100% multiplayer-proof datapacks.
 
 ## [Feedback](https://github.com/Metroite/datapacks/issues)
 
@@ -81,6 +90,9 @@ If you like what I do, consider checking out my [Patreon page](https://www.patre
 ![Metroite](Metroite.png?raw=true "Metroite")
 
 ## License
+<details>
+<summary>Rules + GNU v3.0</summary>
+<br>
 
 * You are allowed to edit the files and claim only your edits as yours, which you may then distribute through another fork of this project on GitHub.
 * You are not allowed to redistribute the files of this project, only exception is described above.
@@ -88,3 +100,5 @@ If you like what I do, consider checking out my [Patreon page](https://www.patre
 * You are not allowed to claim this project as yours and you must fully credit me, "Metroite".
 
 **Everything else** is handled by the GNU GENERAL PUBLIC License v3.0 - see the [LICENSE](https://github.com/Metroite/datapacks/blob/master/LICENSE) file for details.
+
+</details>

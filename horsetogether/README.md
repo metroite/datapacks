@@ -2,7 +2,7 @@
 
 Ever imagined riding on a horse together with your loved ones? Basically, now with this datapack its possible for armored horses.
 
-![horsetogether](horsetogether.png?raw=true "Me and the boys on Old Town Road")
+<a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Metroite/datapacks/tree/master/horsetogether&rootDirectory=false" rel="Me and the boys on Old Town Road">![horsetogether](horsetogether.png?raw=true "Me and the boys on Old Town Road")</a>
 
 ## Version
 

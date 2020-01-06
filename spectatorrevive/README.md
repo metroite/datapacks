@@ -2,7 +2,7 @@
 
 As a spectator fly into a dropped golden apple to revive into survival mode! Useful for hardcore servers.
 
-![spectatorrevive](spectatorrevive.png?raw=true "Unvanish from the dead")
+<a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Metroite/datapacks/tree/master/spectatorrevive&rootDirectory=false" rel="Unvanish from the dead">![spectatorrevive](spectatorrevive.png?raw=true "Unvanish from the dead")</a>
 
 ## Version
 

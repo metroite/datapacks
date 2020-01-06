@@ -1,8 +1,8 @@
 ## [signalfire](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Metroite/datapacks/tree/master/signalfire&rootDirectory=false)
 
-Throw leaves into a burning log block and a very strong smoke will rise up, visually notifying closeby players.
+Throw leaves into a burning log block and a very strong smoke will rise up, visually notifying close by players.
 
-![signalfire](signalfire.png?raw=true "Smoke for attention!")
+<a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Metroite/datapacks/tree/master/signalfire&rootDirectory=false" rel="Smoke for attention! How cool.">![signalfire](signalfire.png?raw=true "Smoke for attention! How cool.")</a>
 
 ## Version
 

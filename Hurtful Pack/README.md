@@ -4,9 +4,24 @@ Many datapacks packed into one aiming to make survival harder... a datapack pack
 
 Included are all survival oriented datapacks found in this repository. They might have slight changes to them. Don't forget to move the "Hurtful Resourcepack" folder into your Resourcepack folder of Minecraft!
 
-Specific datapacks can be turned off by setting *$datapackname$* in *hp.storeboard* to 0 (1 is default): `/scoreboard players set $datapackname$ hp.storeboard 0`
+<details>
+<summary>Excluded Datapacks</summary>
+<br>
 
-![Hurtfulpack](Hurtfulpack.png?raw=true "HeEelLp!")
++ [spectatorrevive](https://www.metroite.de/spectatorrevive)
++ [voiddimension](https://www.metroite.de/voiddimension)
++ [worseoldpvp](https://www.metroite.de/worseoldpvp)
+
+</details>
+<details>
+<summary>Configuration</summary>
+<br>
+
+Specific datapacks can be turned off by setting *$\<name of the datapack\>$* in *hp.storeboard* to 0 (1 is default): `/scoreboard players set $<name of the datapack>$ hp.storeboard 0`
+
+</details>
+
+<a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Metroite/datapacks/tree/master/Hurtful%20Pack&rootDirectory=false" rel="HeEelLp!">![Hurtfulpack](Hurtfulpack.png?raw=true "HeEelLp!")</a>
 
 ## Version
 

@@ -1,8 +1,14 @@
 ## [earlyleatherarmor](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Metroite/datapacks/tree/master/earlyleatherarmor&rootDirectory=false)
 
-As the name suggests, this datapacks makes leather armor actually worth crafting. Leather boots bring a buff with them!
+As the name suggests, this datapacks makes leather armor actually worth crafting. Leather boots bring a little speed buff with them!
 
-# Crafting
+### Crafting
+
+<details>
+<summary>
+Recipes
+</summary>
+<br>
 
 */ - Stick*
 
@@ -35,6 +41,10 @@ As the name suggests, this datapacks makes leather armor actually worth crafting
 / /
 L L
 ```
+
+</details>
+
+<a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Metroite/datapacks/tree/master/earlyleatherarmor&rootDirectory=false" rel="All recipes">![earlyleatherarmor](earlyleatherarmor.png?raw=true "All recipes")</a>
 
 ## Version
 

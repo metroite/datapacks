@@ -4,7 +4,7 @@ Trade your poisonous potatoes with witches. Don't try to hurt their feelings tho
 
 Recommended to use with graves, which will introduce Shinigamis into your world!
 
-![witchtrading](witchtrading.png?raw=true "Very nice potato you got there!")
+<a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Metroite/datapacks/tree/master/witchtrading&rootDirectory=false" rel="Very nice potato you got there!">![witchtrading](witchtrading.png?raw=true "Very nice potato you got there!")</a>
 
 ## Version
 

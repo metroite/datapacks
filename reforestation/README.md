@@ -1,8 +1,8 @@
 ## [reforestation](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Metroite/datapacks/tree/master/reforestation&rootDirectory=false)
 
-Saplings plant themselfs. Woho.
+Saplings plant themselfs. Wohoo.
 
-![reforestation](reforestation.png?raw=true "Saplings just plant themselfs! #teamtrees")
+<a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Metroite/datapacks/tree/master/reforestation&rootDirectory=false" rel="Saplings just plant themselfs! #teamtrees">![reforestation](reforestation.png?raw=true "Saplings just plant themselfs! #teamtrees")</a>
 
 ## Version
 

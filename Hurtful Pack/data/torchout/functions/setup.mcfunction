@@ -9,7 +9,7 @@ scoreboard players set 2 to.ta.bind 2
 execute unless score $bindtime$ to.ta.bind matches 0.. run scoreboard players set $bindtime$ to.ta.bind 30
 ###placement-api_torch
 scoreboard objectives add to.torch minecraft.used:minecraft.torch
-execute unless score $burntime$ to.torch > 0 to.pa.fail run scoreboard players set $burntime$ to.torch 45
+execute unless score $burntime$ to.torch > 0 to.pa.fail run scoreboard players set $burntime$ to.torch 60
 scoreboard objectives add to.pa.fail dummy
 scoreboard players set 0 to.pa.fail 0
 scoreboard players add €fallback€ to.pa.fail 0

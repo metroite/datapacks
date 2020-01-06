@@ -1,12 +1,18 @@
 ## [graves](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Metroite/datapacks/tree/master/graves&rootDirectory=false)
 
-Skulls and bones can be found on locations where players died! Has extensive support in feature compatiblity with other datapacks of mine.
+Skulls and bones can be found on locations where players died! Has extensive support in feature compatibility with other datapacks of mine.
 
 If witchtrading is installed, Shinigamis will also be introduced. Sounds kind of crazy right?
 
+<details>
+<summary>Configuration</summary>
+<br>
+
 To disable hover-over names, set *$display_name$* in *g.deaths* to 0 (1 is default, in the hurtfulpack 0 is default): `/scoreboard players set $display_name$ g.deaths 8`
 
-![graves](graves.png?raw=true "Skulls appear followed by bones")
+</details>
+
+<a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Metroite/datapacks/tree/master/graves&rootDirectory=false" rel="Skulls and bones drop">![graves](graves.png?raw=true "Skulls and bones drop")</a>
 
 ## Version
 

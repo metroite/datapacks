@@ -3,3 +3,4 @@ execute as @e[tag=sv.marked] unless entity @s[scores={sv.center_x=0,sv.center_y=
 execute unless entity @e[tag=sv.marked,distance=..200] run function smartvillage:village/common/center_get
 #initial iron_golem
 execute unless entity @e[type=minecraft:iron_golem,distance=..30] run summon minecraft:iron_golem ~ ~ ~ {PersistenceRequired:1b}
+tag @s add sv.summoned

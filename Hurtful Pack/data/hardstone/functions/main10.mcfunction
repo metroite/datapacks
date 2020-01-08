@@ -2,7 +2,7 @@
 execute if score $hardstone$ hp.storeboard matches 1.. run schedule function hardstone:main10 10t
 #remove tags
 tag @a[gamemode=survival] remove hs.silk_touch
-tag @a[gamemode=survival] remove hs.vaild
+tag @a[gamemode=survival] remove hs.valid
 #silk touch tagging
 tag @a[gamemode=survival,nbt={SelectedItem:{tag:{Enchantments:[{id:"minecraft:silk_touch"}]}}}] add hs.silk_touch
 #hardstone valid tagging

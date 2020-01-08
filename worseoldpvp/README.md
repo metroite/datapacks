@@ -16,14 +16,13 @@ Alternatively you can change ones mode individually by changing the palyers *wop
 
 Enable the new method, which is only compatible with 1.14, by setting *$oldmethod$* in *wop.extend* to 0 (1 is default): `/scoreboard players set $oldmethod$ wop.extend 0`
 
-If you decided not to use the old method, tools will need to be modified once instead, by for example damaging them. Sword-blocking works by right clicking (and sneaking in the new method if $m
-  ustsneak$ is turned on).
+If you decided not to use the old method, tools will need to be modified once instead, by for example damaging them. Sword-blocking works by right clicking and sneaking.
 
 ## These settings currently only apply to the new method:
 
-If you want to be able to block while not sneaking set *$mustsneak$* in *wop.extend* to 0 (1 is default): `/scoreboard players set $mustsneak$ wop.extend 1`
+If you also want to be able to block while not sneaking set *$mustsneak$* in *wop.extend* to 0 (1 is default): `/scoreboard players set $mustsneak$ wop.extend 1`
 
-If you want to have item attributes rather than player effects set *$attribute$* in *wop.extend* to 1 (0 is default): `/scoreboard players set $attribute$ wop.extend 0`
+If you prefer item attributes rather than player effects set *$attribute$* in *wop.extend* to 1 (0 is default): `/scoreboard players set $attribute$ wop.extend 0`
 
 </details>
 

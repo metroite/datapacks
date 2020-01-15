@@ -5,9 +5,7 @@ As the name suggests, this datapacks makes leather armor actually worth crafting
 ### Crafting
 
 <details>
-<summary>
-Recipes
-</summary>
+<summary>Recipes</summary>
 <br>
 
 */ - Stick*

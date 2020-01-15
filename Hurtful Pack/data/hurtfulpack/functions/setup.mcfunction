@@ -44,6 +44,7 @@ execute unless score $reload$ hp.storeboard matches 1.. run scoreboard players s
 #optional changes
 execute unless score $reload$ hp.storeboard matches 1.. run scoreboard players set $noskulldustfromgraves$ l2t.storeboard 0
 execute unless score $reload$ hp.storeboard matches 1.. run scoreboard players set $mode$ wop.extend 1
+execute unless score $reload$ hp.storeboard matches 1.. run scoreboard players set $wirelessredstone$ mc.itemrotation 0
 execute unless score $reload$ hp.storeboard matches 1.. run scoreboard players set $distance$ ue.pearlthrow 14
 execute unless score $reload$ hp.storeboard matches 1.. run scoreboard players set $display_name$ g.deaths 0
 #run above commands only once
@@ -58,6 +59,7 @@ datapack disable "file/graves"
 datapack disable "file/growontoptree"
 datapack disable "file/hardstone"
 datapack disable "file/heavyarmor"
+datapack disable "file/horsetogether"
 datapack disable "file/limitedlife"
 datapack disable "file/loud2x2tnt"
 datapack disable "file/morsecode"

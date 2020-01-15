@@ -7,9 +7,7 @@ Recommended to use with limitedlife, as you will be able to use *Sapphire Glass*
 ### Crafting
 
 <details>
-<summary>
-Recipes
-</summary>
+<summary>Recipes</summary>
 <br>
 
 *S - Sapphire (Squid Spawn Egg)*

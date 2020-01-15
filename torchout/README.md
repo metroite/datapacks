@@ -1,6 +1,6 @@
 ## [torchout](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Metroite/datapacks/tree/master/torchout&rootDirectory=false)
 
-Torches and campfires burn out after a defined while with this datapack installed. Ignite torches using *flint and steel* and fuel campfires by dropping logs onto them!
+Torches and campfires burn out after a defined while - very realistic. Ignite torches using *flint and steel* and fuel campfires by dropping logs onto them!
 
 <details>
 <summary>Configuration</summary>

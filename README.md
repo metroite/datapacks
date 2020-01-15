@@ -91,7 +91,7 @@ If you like what I do, consider checking out my [Patreon page](https://www.patre
 
 ## License
 <details>
-<summary>Rules + GNU v3.0</summary>
+<summary>Rules + GPL-3.0</summary>
 <br>
 
 * You are allowed to edit the files and claim only your edits as yours, which you may then distribute through another fork of this project on GitHub.

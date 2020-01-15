@@ -1,6 +1,6 @@
 ## [usefulender](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Metroite/datapacks/tree/master/usefulender&rootDirectory=false)
 
-Ender Pearls won't deal damage if this datapack is installed! On top of that, if they're thrown at a Dragon Egg, the player will be teleported someplace far away. They don't need to be thrown either, just hold them with your offhand and shoot with a (cross)bow!
+Ender Pearls won't deal damage anymore! On top of that, if they're thrown at a Dragon Egg, the player will be teleported someplace far away. They don't need to be thrown either, just hold them in your offhand and shoot with a (cross)bow!
 
 <details>
 <summary>Configuration</summary>

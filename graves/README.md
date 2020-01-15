@@ -10,6 +10,8 @@ If witchtrading is installed, Shinigamis will also be introduced. Sounds kind of
 
 To disable hover-over names, set *$display_name$* in *g.deaths* to 0 (1 is default, in the hurtfulpack 0 is default): `/scoreboard players set $display_name$ g.deaths 8`
 
+To disable the generation of big trees, set *$generate_trees$* in *g.usebonemeal* to 0 (1 is default): `/scoreboard players set $generate_trees$ g.usebonemeal 0`
+
 </details>
 
 <a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Metroite/datapacks/tree/master/graves&rootDirectory=false" rel="Skulls and bones drop">![graves](graves.png?raw=true "Skulls and bones drop")</a>

@@ -9,9 +9,7 @@ Recommended to use with graves (*Batwing* will be replaced with *Skull Dust* as 
 ### Crafting
 
 <details>
-<summary>
-Recipes
-</summary>
+<summary>Recipes</summary>
 <br>
 
 *M - Phantom Membrane*

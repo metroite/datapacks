@@ -8,7 +8,7 @@
             "translate": "Shinigami Wing"
         },
         "description": {
-            "translate": "Kill a Shinigami and wear its wings"
+            "translate": "Kill a Shinigami and wear its wings, you might want to test it on armor stands first"
         },
         "frame": "challenge",
         "show_toast": true,

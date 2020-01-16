@@ -35,7 +35,7 @@ execute unless score $reload$ hp.storeboard matches 1.. run scoreboard players s
 execute unless score $reload$ hp.storeboard matches 1.. run scoreboard players set $naturalpaths$ hp.storeboard 1
 execute unless score $reload$ hp.storeboard matches 1.. run scoreboard players set $reforestation$ hp.storeboard 1
 execute unless score $reload$ hp.storeboard matches 1.. run scoreboard players set $sapphire$ hp.storeboard 1
-execute unless score $reload$ hp.storeboard matches 1.. run scoreboard players set $signalfire$ hp.storeboard 1
+execute unless score $reload$ hp.storeboard matches 1.. run scoreboard players set $smokesignal$ hp.storeboard 1
 execute unless score $reload$ hp.storeboard matches 1.. run scoreboard players set $torchout$ hp.storeboard 1
 execute unless score $reload$ hp.storeboard matches 1.. run scoreboard players set $usefulender$ hp.storeboard 1
 execute unless score $reload$ hp.storeboard matches 1.. run scoreboard players set $ventilators$ hp.storeboard 1
@@ -66,7 +66,7 @@ datapack disable "file/morsecode"
 datapack disable "file/naturalpaths"
 datapack disable "file/reforestation"
 datapack disable "file/sapphire"
-datapack disable "file/signalfire"
+datapack disable "file/smokesignal"
 datapack disable "file/torchout"
 datapack disable "file/usefulender"
 datapack disable "file/ventilators"

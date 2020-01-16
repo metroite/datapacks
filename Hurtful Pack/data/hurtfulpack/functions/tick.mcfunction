@@ -7,7 +7,7 @@ execute if score $limitedlife$ hp.storeboard matches 1.. run function limitedlif
 execute if score $loud2x2tnt$ hp.storeboard matches 1.. run function loud2x2tnt:main
 execute if score $morsecode$ hp.storeboard matches 1.. run function morsecode:main
 execute if score $sapphire$ hp.storeboard matches 1.. run function sapphire:main
-execute if score $signalfire$ hp.storeboard matches 1.. run function signalfire:main
+execute if score $smokesignal$ hp.storeboard matches 1.. run function smokesignal:main
 execute if score $smartvillage$ hp.storeboard matches 1.. run function smartvillage:main
 execute if score $torchout$ hp.storeboard matches 1.. run function torchout:main
 execute if score $usefulender$ hp.storeboard matches 1.. run function usefulender:main

@@ -140,7 +140,7 @@ Pictures will be added later to this changelog!
   * feature-compatibile to torchout: empowering a torch with a <i>Sapphire</i> gem will create a never extinguishing torch, the <i>Sapphire</i> gem will be dropped if the torch is broken
 </details>
 
-* <details><summary><b>signalfire</b> updated</summary>
+* <details><summary><b>smokesignal</b> updated (formerly known as <i>signalfire</i>)</summary>
 
   * the duration will be multiplied by the amount of haybale blocks under the campfire (max. 3)
 </details>

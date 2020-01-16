@@ -20,7 +20,7 @@ The [Discord Server](https://discord.gg/vBgb85N) allowing **you** to follow this
 + [naturalpaths](https://www.metroite.de/naturalpaths)
 + [reforestation](https://www.metroite.de/reforestation)
 + [sapphire](https://www.metroite.de/sapphire)
-+ [signalfire](https://www.metroite.de/signalfire)
++ [smokesignal](https://www.metroite.de/smokesignal)
 + [smartvillage](https://www.metroite.de/smartvillage)
 + [spectatorrevive](https://www.metroite.de/spectatorrevive)
 + [torchout](https://www.metroite.de/torchout)
@@ -41,14 +41,15 @@ The [Discord Server](https://discord.gg/vBgb85N) allowing **you** to follow this
 
 **Most publication effort goes into those!**
 
-* [r1](https://www.Metroite.de/Releases/r1) - released 2018
-* [r2](https://www.Metroite.de/Releases/r2) - released 2020
+* [r1](https://www.Metroite.de/releases/r1) - released 2018
+* [r2](https://www.Metroite.de/releases/r2) - released 2020
 * [r3](https://github.com/Metroite/datapacks/projects/3) - hypothetical
 
 ### Roadmaps:
 
-* [r2](https://github.com/Metroite/datapacks/projects/2)
 * [Porting](https://github.com/Metroite/datapacks/projects/1)
+* [r2](https://github.com/Metroite/datapacks/projects/2)
+* [r2](https://github.com/Metroite/datapacks/projects/3)
 
 ## Getting Started
 

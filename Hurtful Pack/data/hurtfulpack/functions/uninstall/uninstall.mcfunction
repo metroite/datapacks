@@ -15,7 +15,7 @@ function loud2x2tnt:uninstall
 function morsecode:uninstall
 function naturalpaths:uninstall
 function sapphire:uninstall
-function signalfire:uninstall
+function smokesignal:uninstall
 function torchout:uninstall
 function usefulender:uninstall
 function ventilators:uninstall

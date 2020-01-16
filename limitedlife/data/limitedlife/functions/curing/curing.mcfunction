@@ -14,7 +14,7 @@ execute if score @s ll.cooking matches 2000..2020 run function limitedlife:curin
 execute if score @s ll.cooking matches 2000.. at @p[distance=..50,tag=ll.bat] run particle minecraft:end_rod ~ ~1 ~ 0.1 0.25 0.1 0.1 1 force
 execute if score @s ll.cooking matches 2000.. at @e[type=minecraft:bat,distance=..50,limit=1,sort=nearest,tag=ll.bat] run particle minecraft:end_rod ~ ~1 ~ 0 0 0 0.01 1 force
 #transfering ll.bat to player
-execute if score @s ll.cooking matches 2100.. as @e[type=minecraft:bat,distance=..50,limit=1,sort=nearest,tag=ll.bat] at @s if entity @p[distance=..1.5,scores={ll.deaths=1..},tag=!ll.bat,nbt={ActiveEffects:[{Id:22b}]}] run function limitedlife:curing/beam/transfer
+execute if score @s ll.cooking matches 2100.. as @e[type=minecraft:bat,distance=..50,limit=1,sort=nearest,tag=ll.bat] at @s if entity @p[distance=..1.5,scores={ll.deaths=1..},tag=!ll.bat] run function limitedlife:curing/beam/transfer
 #ll.bat is BeamTarget of end_crystal
 execute if score @s ll.cooking matches 2000.. run function limitedlife:curing/beam/tick
 

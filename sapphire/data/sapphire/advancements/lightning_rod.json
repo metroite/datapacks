@@ -8,7 +8,7 @@
             "translate": "Lightning Rod"
         },
         "description": {
-            "translate": "Craft a Lightning Rod which can be found in the recipe book as a redstone ore"
+            "translate": "Craft a Lightning Rod which can be found in the recipe book as a lapis ore"
         },
         "show_toast": true,
         "announce_to_chat": true

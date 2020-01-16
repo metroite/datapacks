@@ -4,10 +4,10 @@
             "item": "minecraft:end_crystal"
         },
         "title": {
-            "translate": "eat a golden apple and catch the beam!"
+            "translate": "catch the end of the beam!"
         },
         "description": {
-            "translate": "Bring someone forever lost back to life... by messing up?"
+            "translate": "Don't mess it up! Or maybe do mess it up?"
         },
         "show_toast": true,
         "hidden": true,

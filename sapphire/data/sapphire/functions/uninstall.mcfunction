@@ -15,7 +15,7 @@ scoreboard objectives remove sp.lr.pa.torch
 scoreboard objectives remove sp.so.pa.ore
 scoreboard objectives remove sp.wd.pa.detec
 scoreboard objectives remove sp.glass_placed
-scoreboard objectives remove sp.sg.piston
+scoreboard objectives remove sp.sg.place
 scoreboard objectives remove sp.glass_broken
 
 scoreboard objectives remove sp.lr.pa.fail

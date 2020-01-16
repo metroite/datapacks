@@ -20,10 +20,10 @@ function limitedlife:sapphire/setup
 
 #sapphire glass
 scoreboard objectives add sp.glass_placed minecraft.used:minecraft.light_blue_stained_glass
+scoreboard objectives add sp.sg.place minecraft.used:minecraft.light_blue_stained_glass
 scoreboard players add _global_ sp.glass_placed 0
 scoreboard players set 10 sp.glass_placed 10
 scoreboard objectives add sp.glass_broken minecraft.mined:minecraft.light_blue_stained_glass
-scoreboard objectives add sp.sg.piston minecraft.used:minecraft.light_blue_stained_glass
 
 #crafting
 scoreboard objectives add sp.craftdetector minecraft.crafted:minecraft.water_bucket
@@ -51,6 +51,7 @@ scoreboard players set 0 sp.sg.pa.fail 0
 scoreboard players add _fallback_ sp.sg.pa.fail 0
 
 #scheduled functions
-schedule function sapphire:main80 47t
+schedule function sapphire:main50 47t
+schedule function sapphire:main20 11t
 #"datapack loaded": Please don't remove this message, if it annoys you make sure to credit me otherwise. Thank you!
 tellraw @a ["",{"text":"sapphire","color":"green","clickEvent":{"action":"open_url","value":"https://www.metroite.de/sapphire"},"hoverEvent":{"action":"show_text","value":"find sapphire ores in the deep cold oceans and detect water, create decorative particles by empowering observers and attract lightning with them"}},{"text":" by "},{"text":"Metroite","color":"aqua","clickEvent":{"action":"open_url","value":"https://github.com/Metroite"}},{"text":" loaded!"},{"text":" loaded!"},{"text":" [","color":"dark_red"},{"text":"!","color":"red","bold":"true","clickEvent":{"action":"run_command","value":"/function sapphire:uninstall"},"hoverEvent":{"action":"show_text","value":"click and delete files to uninstall"}},{"text":"]","color":"dark_red"}]

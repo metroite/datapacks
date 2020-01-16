@@ -41,8 +41,9 @@ The [Discord Server](https://discord.gg/vBgb85N) allowing **you** to follow this
 
 **Most publication effort goes into those!**
 
-* [r1](https://github.com/Metroite/datapacks/releases/tag/r1)
-* [r2](https://github.com/Metroite/datapacks/releases/tag/r2)
+* [r1](https://www.Metroite.de/Releases/r1) - released 2018
+* [r2](https://www.Metroite.de/Releases/r2) - released 2020
+* [r3](https://github.com/Metroite/datapacks/projects/3) - hypothetical
 
 ### Roadmaps:
 

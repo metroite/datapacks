@@ -6,5 +6,7 @@ scoreboard players set 3 v.ventilator 3
 scoreboard players set 4 v.ventilator 4
 scoreboard players set 5 v.ventilator 5
 scoreboard players set 6 v.ventilator 6
+#scheduled functions
+schedule function ventilators:main20 8t
 #"datapack loaded": Please don't remove this message, if it annoys you make sure to credit me otherwise. Thank you!
 tellraw @a ["",{"text":"ventilators","color":"green","clickEvent":{"action":"open_url","value":"https://www.metroite.de/ventilators"},"hoverEvent":{"action":"show_text","value":"build yourself some blowing ventilators"}},{"text":" by "},{"text":"Metroite","color":"aqua","clickEvent":{"action":"open_url","value":"https://github.com/Metroite"}},{"text":" loaded!"},{"text":" [","color":"dark_red"},{"text":"!","color":"red","bold":"true","clickEvent":{"action":"run_command","value":"/function ventilators:uninstall"},"hoverEvent":{"action":"show_text","value":"click and delete files to uninstall"}},{"text":"]","color":"dark_red"}]

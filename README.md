@@ -49,7 +49,7 @@ The [Discord Server](https://discord.gg/vBgb85N) allowing **you** to follow this
 
 * [Porting](https://github.com/Metroite/datapacks/projects/1)
 * [r2](https://github.com/Metroite/datapacks/projects/2)
-* [r2](https://github.com/Metroite/datapacks/projects/3)
+* [r3](https://github.com/Metroite/datapacks/projects/3)
 
 ## Getting Started
 

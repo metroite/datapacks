@@ -1,4 +1,5 @@
 function worseoldpvp:sword-block/init
+execute if entity @s[scores={wop.damage=2031..},nbt={SelectedItem:{id:"minecraft:netherite_sword"}}] run function worseoldpvp:sword-block/damage/break
 execute if entity @s[scores={wop.damage=1561..},nbt={SelectedItem:{id:"minecraft:diamond_sword"}}] run function worseoldpvp:sword-block/damage/break
 execute if entity @s[scores={wop.damage=250..},nbt={SelectedItem:{id:"minecraft:iron_sword"}}] run function worseoldpvp:sword-block/damage/break
 execute if entity @s[scores={wop.damage=32..},nbt={SelectedItem:{id:"minecraft:golden_sword"}}] run function worseoldpvp:sword-block/damage/break

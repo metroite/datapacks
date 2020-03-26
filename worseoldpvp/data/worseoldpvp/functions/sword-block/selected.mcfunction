@@ -7,7 +7,10 @@ scoreboard players operation @s[scores={wop.usecarrot=1..}] wop.extend = $extend
 execute if score $attribute$ wop.extend matches 1.. if score $mustsneak$ wop.extend matches 1.. if entity @s[scores={wop.extend=1..}] run function worseoldpvp:sword-block/trigger/attribute_sneak
 execute if score $attribute$ wop.extend matches 1.. if score $mustsneak$ wop.extend matches ..0 if entity @s[scores={wop.extend=1..}] run function worseoldpvp:sword-block/trigger/attribute
 execute if score $attribute$ wop.extend matches ..0 if entity @s[scores={wop.extend=1..}] run function worseoldpvp:sword-block/trigger/effect
-#if SelectedItemSlot changes reset wop.extend
+#replace carrot_on_a_stick
+execute if score $mustsneak$ wop.extend matches 1.. if score @s wop.sneaking matches 1.. if score @s wop.extend matches 0 run function worseoldpvp:sword-block/reset
+execute if score $mustsneak$ wop.extend matches ..0 if score @s wop.extend matches 0 run function worseoldpvp:sword-block/reset
+#if SelectedItemSlot changes, reset wop.extend
 execute store result score @s wop.itemslottemp run data get entity @s SelectedItemSlot
 execute unless score @s wop.itemslottemp = @s wop.itemslot run function worseoldpvp:sword-block/sneak/remove_attribute
 #pigs don't respond to the carrot_on_a_stick

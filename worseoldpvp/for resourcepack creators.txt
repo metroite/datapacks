@@ -6,3 +6,4 @@ CustomModelData, Item, Id
 6830,	blocking golden_sword         ,	golden_sword
 6831,	blocking wooden_sword         ,	wooden_sword
 6832,	blocking stone_sword          ,	stone_sword
+6833,	blocking netherite_sword      ,	netherite_sword

@@ -6,8 +6,6 @@ execute unless score @s wop.mode matches 1 run title @s[nbt={SelectedItem:{tag:{
 #re-prepare blocking effects (fast if just unsneaked)
 execute if score $mustsneak$ wop.extend matches 1.. if score $attribute$ wop.extend matches ..0 if score @s wop.extend matches 1.. unless score @s wop.sneaking matches 1.. run function worseoldpvp:sword-block/sneak/remove_effect
 execute if score $mustsneak$ wop.extend matches 1.. if score $attribute$ wop.extend matches 1.. unless score @s wop.sneaking matches 1.. run scoreboard players set @s wop.extend 0
-execute if score $mustsneak$ wop.extend matches 1.. if score @s wop.sneaking matches 1.. if score @s wop.extend matches 0 run function worseoldpvp:sword-block/reset
-execute if score $mustsneak$ wop.extend matches ..0 if score @s wop.extend matches 0 run function worseoldpvp:sword-block/reset
 #sword-blocking
 execute if score $mustsneak$ wop.extend matches 1.. if entity @s[scores={wop.sneaking=1..},nbt={SelectedItem:{tag:{wopsword:1}}}] run function worseoldpvp:sword-block/selected
 execute if score $mustsneak$ wop.extend matches ..0 if entity @s[nbt={SelectedItem:{tag:{wopsword:1}}}] run function worseoldpvp:sword-block/selected

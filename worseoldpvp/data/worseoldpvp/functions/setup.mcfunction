@@ -11,5 +11,6 @@ scoreboard objectives add wop.sneaking minecraft.custom:minecraft.sneak_time
 scoreboard objectives add wop.damage dummy
 scoreboard objectives add wop.itemslot dummy
 scoreboard objectives add wop.itemslottemp dummy
+scoreboard objectives add wop.drop minecraft.custom:minecraft.drop
 #"datapack loaded": Please don't remove this message, if it annoys you make sure to credit me otherwise. Thank you!
 tellraw @a ["",{"text":"worseoldpvp","color":"green","clickEvent":{"action":"open_url","value":"https://www.metroite.de/worseoldpvp"},"hoverEvent":{"action":"show_text","value":"reverts the combat system to the worse one back in 1.8"}},{"text":" by "},{"text":"Metroite","color":"aqua","clickEvent":{"action":"open_url","value":"https://github.com/Metroite"}},{"text":" loaded!"},{"text":" [","color":"dark_red"},{"text":"!","color":"red","bold":"true","clickEvent":{"action":"run_command","value":"/function worseoldpvp:uninstall"},"hoverEvent":{"action":"show_text","value":"click and delete files to uninstall"}},{"text":"]","color":"dark_red"}]

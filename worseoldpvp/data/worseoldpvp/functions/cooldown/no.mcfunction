@@ -30,5 +30,5 @@ data merge entity @s[nbt={Item:{id:"minecraft:wooden_hoe"}}] {PickupDelay:0,Item
 data merge entity @s[nbt={Item:{id:"minecraft:stone_hoe"}}] {PickupDelay:0,Item:{tag:{wopdone:1,wopcooldown:0,AttributeModifiers:[{AttributeName:"generic.attackSpeed",Amount:100,Operation:0,UUIDMost:81202,UUIDLeast:187255,Slot:"mainhand"},{AttributeName:"generic.attackDamage",Amount:1,Operation:0,UUIDMost:81202,UUIDLeast:187255,Slot:"mainhand"}]}}}
 
 data merge entity @s[nbt={Item:{id:"minecraft:trident"}}] {PickupDelay:0,Item:{tag:{wopdone:1,wopcooldown:0,AttributeModifiers:[{AttributeName:"generic.attackSpeed",Amount:100,Operation:0,UUIDMost:81202,UUIDLeast:187255,Slot:"mainhand"},{AttributeName:"generic.attackDamage",Amount:7.5,Operation:0,UUIDMost:81202,UUIDLeast:187255,Slot:"mainhand"}]}}}
-
-execute at @s[nbt={Item:{tag:{wopcooldown:0}}}] run particle minecraft:totem_of_undying ~ ~0.75 ~ 0 0 0 0.2 10 force
+#add tag to prevent looping
+tag @s add wop.no

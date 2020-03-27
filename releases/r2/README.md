@@ -38,8 +38,7 @@ Pictures will be added later to this changelog!
     * <details><summary>special witch spawns with special trades and a special drop</summary><dl><dt><details><summary>"Shinigami Rem" Witch</summary><img src="https://user-images.githubusercontent.com/22453965/44302121-22ede900-a323-11e8-8969-cffe714eada4.png" alt="The Shinigami Rem"></details></dt><dd>has a 1 in 16 chance to appear</dd></dl><dl><dt><details><summary>Shinigami Wing</summary><img src="https://user-images.githubusercontent.com/22453965/44302121-22ede900-a323-11e8-8969-cffe714eada4.png" alt="Wearing the Shinigami Wing"></details></dt><dd>Elytra that can't be unequipped and should be tested on armor stands first, 50% chance for it to be dropped</dd></dl><dl><dt>Shinigami Power</dt><dd><b>While flying:</b> <i>primary:</i> allows for infinite flight, <i>secondary:</i> debuffs an right-clicked area, <i>tertiary</i> can be shot using crossbows</dd></dl><dl><dt>Scroll of Shinigami</dt><dd>can be bought by a Shinigami, repairs worn <i>Shinigami Wing</i> if dropped close to the Shinigami</dd></dl></details>
   * <i>Skull Dust</i> now meals appropriately
     * <details><summary>tall grass and tall flowers grow upon use</summary><img src="https://user-images.githubusercontent.com/22453965/44302121-22ede900-a323-11e8-8969-cffe714eada4.png" alt="Giant tree variants"></details>
-      <b>these also generate in the world (can be configured):</b>
-    * <details><summary>saplings grow into their corresponding custom giant tree</summary><img src="https://user-images.githubusercontent.com/22453965/44302121-22ede900-a323-11e8-8969-cffe714eada4.png" alt="Giant tree variants"></details>
+    * <details><summary>saplings grow into their corresponding custom giant tree which can also generate naturally</summary><img src="https://user-images.githubusercontent.com/22453965/44302121-22ede900-a323-11e8-8969-cffe714eada4.png" alt="Giant tree variants"></details>
     * <details><summary>mushrooms spread and pop out of the ground</summary><img src="https://user-images.githubusercontent.com/22453965/44302121-22ede900-a323-11e8-8969-cffe714eada4.png" alt="Popping mushrooms"></details>
   * added feature-compatibility to growontoptree
     * giant trees cause players to "grow" up with the tree
@@ -84,7 +83,7 @@ Pictures will be added later to this changelog!
   * added feature-compatibility to sapphire
     * <details><summary>upgrade your <i>Life Support Glass</i> into a <i>Life Support Sapphire Glass</i> by holding a <i>Sapphire Glass</i> in your offhand</summary><img src="https://user-images.githubusercontent.com/22453965/44302121-22ede900-a323-11e8-8969-cffe714eada4.png" alt="Player wearing the Life Support Sapphire Glass"></details>
   * added winged arrows, which are not affected by gravity (hold a <i>Batwing</i> in your offhand while shooting)
-  * eat <i>Batwing</i> for health regeneration and night vision
+  * eat a <i>Batwing</i> for health regeneration and night vision
   * <details><summary>reduced crafting cost of the <i>Batwing Suit</i></summary><img src="https://user-images.githubusercontent.com/22453965/44302121-22ede900-a323-11e8-8969-cffe714eada4.png" alt="Crafting recipe of the Batwing Suit"></details>
   * QoL: throwing an end_crystal into a cauldron now summons an end_crystal entity above it
 </details>
@@ -118,7 +117,7 @@ Pictures will be added later to this changelog!
 
   * <details><summary>a new ore, the <i>Sapphire Ore</i> generates in deep cold oceans and drops <i>Sapphire</i> gems</summary><img src="https://user-images.githubusercontent.com/22453965/44302121-22ede900-a323-11e8-8969-cffe714eada4.png" alt="Sapphire Ore generated in the cold deep ocean"></details>
 
-  it enable the following:
+  it enables the following:
     * <details><summary>Lightning Rod</summary><img src="https://user-images.githubusercontent.com/22453965/44302121-22ede900-a323-11e8-8969-cffe714eada4.png" alt="Active and unactive lightning rods"></details>
 
       * attracts lightning occasionally
@@ -169,21 +168,22 @@ Pictures will be added later to this changelog!
 * <details><summary>introducing <b>usefulender</b></summary>
 
   * ender pearls won't deal damage
-    * if they're thrown at a dragon egg, the player will be teleported someplace far away
-    * they don't need to be thrown either, just hold them in your offhand and shoot with a (cross)bow
+  * if ender pearls are thrown at a dragon egg, the player will be teleported someplace far away
+  * ender pearls can be bound to arrows (hold an ender pearl in your offhand while shooting)
 </details>
 
 * <details><summary>introducing <b>ventilators</b></summary>
 
   * <details><summary>ventilators push entities in certain directions</summary><img src="https://user-images.githubusercontent.com/22453965/44302121-22ede900-a323-11e8-8969-cffe714eada4.png" alt="active and inactive ventilators"></details>
+
     * a <i>Batwing</i> dropped by bats will be needed to empower an observer into a ventilator by righclicking onto it
     * greatly affects arrows and ender pearls
 </details>
 
 * <details><summary><b>witchtrading</b> updated</summary>
 
-  * actually made functional
-  * approach while holding then trading poisonous potatoes with witches
+  * actually made it functional
+  * approach witches while holding poisonous potatoes, then trade them
 </details>
 
 ### Not part of the Hurtful Pack:
@@ -198,7 +198,7 @@ Pictures will be added later to this changelog!
 
   * not made for the consumer, feel free to use it as a developer
   * a dimension set in the end dimension inter connected with the overworld
-    * travelling 1 block in <i>the Void</i> equals to travelling 16 blocks in the overworld
+    * travelling 1 block in <i>the Void</i> equals to travelling 16 blocks in the overworld (configurable)
 </details>
 
 * <details><summary>introducing <b>worseoldpvp</b></summary>

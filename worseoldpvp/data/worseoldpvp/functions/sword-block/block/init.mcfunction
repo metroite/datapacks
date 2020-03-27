@@ -9,3 +9,5 @@ execute if entity @s[nbt={SelectedItem:{id:"minecraft:stone_sword"}}] run playso
 execute store result score @s wop.damage run data get entity @s SelectedItem.tag.Damage
 #Recognize if selected slot has changed (exploitable if not in place)
 execute store result score @s wop.itemslot run data get entity @s SelectedItemSlot
+#part of removing blocking effects
+execute if score $attribute$ wop.extend matches ..0 run tag @s add wop.removeeffect

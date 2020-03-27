@@ -3,4 +3,4 @@ effect clear @s[nbt={ActiveEffects:[{Id:11b,Amplifier:0b}]}] minecraft:resistanc
 effect clear @s[nbt={ActiveEffects:[{Id:11b,Amplifier:1b}]}] minecraft:resistance
 effect clear @s[nbt={ActiveEffects:[{Id:11b,Amplifier:2b}]}] minecraft:resistance
 effect clear @s[nbt={ActiveEffects:[{Id:18b,Amplifier:100b}]}] minecraft:weakness
-scoreboard players set @s wop.extend 0
+tag @s remove wop.removeeffect

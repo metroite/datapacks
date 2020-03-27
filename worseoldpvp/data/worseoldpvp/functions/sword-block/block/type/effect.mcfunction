@@ -1,5 +1,3 @@
-effect give @s[nbt=!{ActiveEffects:[{Id:11b}]},nbt={SelectedItem:{id:"minecraft:netherite_sword"}}] minecraft:resistance 1 1 true
-data modify entity @s[nbt={SelectedItem:{id:"minecraft:netherite_sword"}}] SelectedItem.tag.CustomModelData set value 6833
 effect give @s[nbt=!{ActiveEffects:[{Id:11b}]},nbt={SelectedItem:{id:"minecraft:diamond_sword"}}] minecraft:resistance 1 1 true
 data modify entity @s[nbt={SelectedItem:{id:"minecraft:diamond_sword"}}] SelectedItem.tag.CustomModelData set value 6828
 effect give @s[nbt=!{ActiveEffects:[{Id:11b}]},nbt={SelectedItem:{id:"minecraft:iron_sword"}}] minecraft:resistance 1 1 true

@@ -1,9 +1,11 @@
 CustomModelData, Item, Id
 
 6827,	invisible right click detector,	carrot_on_a_stick
-6828,	blocking diamond_sword        ,	diamond_sword
-6829,	blocking iron_sword           ,	iron_sword
-6830,	blocking golden_sword         ,	golden_sword
-6831,	blocking wooden_sword         ,	wooden_sword
-6832,	blocking stone_sword          ,	stone_sword
-6833,	blocking netherite_sword      ,	netherite_sword
+6828,	blocking diamond_sword        ,	carrot_on_a_stick
+6829,	blocking iron_sword           ,	carrot_on_a_stick
+6830,	blocking golden_sword         ,	carrot_on_a_stick
+6831,	blocking wooden_sword         ,	carrot_on_a_stick
+6832,	blocking stone_sword          ,	carrot_on_a_stick
+6833,	blocking netherite_sword      ,	carrot_on_a_stick
+
+it is enough just changing the textures in your resourcepack, this resourcepack doesn't touch textures

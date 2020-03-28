@@ -77,7 +77,7 @@ A "loaded" message should appear, assuring you that its up and running. Have fun
 
 The master branch is developed for the latest version of Minecraft! I aim to provide 100% multiplayer-proof datapacks.
 
-All datapacks are available for Minecraft [1.13 (unsupported)](https://github.com/Metroite/datapacks/tree/1.13), [1.14](https://github.com/Metroite/datapacks/tree/1.14), [1.15](https://github.com/Metroite/datapacks/tree/1.14) and possibly for even [later versions on the master branch](https://github.com/Metroite/datapacks/tree/master).
+All datapacks are available for Minecraft [1.13 (unsupported)](https://github.com/Metroite/datapacks/tree/1.13), [1.14/1.15](https://github.com/Metroite/datapacks/tree/1.14) and possibly for even [later versions on the master branch](https://github.com/Metroite/datapacks/tree/master).
 
 **This is the master branch**. Switch branches to get to the respective versions.
 

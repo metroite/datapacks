@@ -5,7 +5,3 @@ execute if entity @s[nbt={SelectedItem:{id:"minecraft:iron_sword"}}] run playsou
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:golden_sword"}}] run playsound minecraft:item.armor.equip_gold player @a ~ ~ ~ 1 2
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:wooden_sword"}}] run playsound minecraft:item.armor.equip_generic player @a ~ ~ ~ 1 2
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:stone_sword"}}] run playsound minecraft:item.armor.equip_chain player @a ~ ~ ~ 1 2
-#Recognize if selected slot has changed (exploitable if not in place)
-execute store result score @s wop.itemslot run data get entity @s SelectedItemSlot
-#part of removing blocking effects
-execute if score $attribute$ wop.extend matches ..0 run tag @s add wop.removeeffect

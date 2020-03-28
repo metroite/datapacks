@@ -1,5 +1,3 @@
-#players have to be defined!
-scoreboard players add @s wop.extend 0
 #data merge @e item
 execute if score @s wop.drop matches 1.. positioned ~ ~1 ~ run function worseoldpvp:cooldown/determine
 #effects when holding wopdone in mainhand

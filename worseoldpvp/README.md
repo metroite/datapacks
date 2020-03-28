@@ -1,6 +1,6 @@
 # [worseoldpvp](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Metroite/datapacks/1.14/master/worseoldpvp&rootDirectory=false)
 
-You want the worse, old PvP back? Worry no more, this datapack will fulfill your wishes! Just drop your tools once onto the ground and enjoy your eZ, no-skill version of PvP!
+You want the worse, old PvP from 1.8 back? Worry no more, this datapack will fulfill your wishes! Just drop your tools once and enjoy your eZ, no-skill version of PvP!
 
 It is **recommended** to set `Dynamic FOV` to off in **Optifine** if a zooming effect is experienced.
 

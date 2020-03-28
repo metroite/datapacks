@@ -1,6 +1,6 @@
 # [worseoldpvp](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Metroite/datapacks/tree/master/worseoldpvp&rootDirectory=false)
 
-You want the worse, old PvP back? Worry no more, this datapack will fulfill your wishes! Just drop your tools once onto the ground and enjoy your eZ, no-skill version of PvP!
+You want the worse, old PvP from 1.8 back? Worry no more, this datapack will fulfill your wishes! Just drop your tools once and enjoy your eZ, no-skill version of PvP!
 
 It is **recommended** to set `Dynamic FOV` to off in **Optifine** if a zooming effect is experienced.
 
@@ -24,11 +24,11 @@ If you prefer status effects over item attributes set *$attribute$* in *wop.exte
 
 ## Version
 
-Minecraft 1.16. Available from Minecraft 1.13 to Minecraft 1.16. Switch to according branches to get other versions.
+Minecraft 1.16. Available from Minecraft 1.13 to Minecraft 1.16. Switch branches to get to the respective versions.
 
 ## Performance Impact
 
-Tier 3/5
+Tier 2/5
 
 ## Authors
 

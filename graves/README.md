@@ -1,4 +1,4 @@
-## [graves](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Metroite/datapacks/tree/master/graves&rootDirectory=false)
+## [graves](https://download.metroite.de/#/home?url=https://github.com/Metroite/datapacks/tree/master/graves&rootDirectory=false)
 
 Skulls and bones can be found on locations where players died! Has extensive support in feature compatibility with other datapacks of mine.
 
@@ -14,7 +14,7 @@ To disable the generation of big trees, set *$generate_trees$* in *g.usebonemeal
 
 </details>
 
-<a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Metroite/datapacks/tree/master/graves&rootDirectory=false" rel="Skulls and bones drop">![graves](graves.png?raw=true "Skulls and bones drop")</a>
+<a href="https://download.metroite.de/#/home?url=https://github.com/Metroite/datapacks/tree/master/graves&rootDirectory=false" rel="Skulls and bones drop">![graves](graves.png?raw=true "Skulls and bones drop")</a>
 
 ## Version
 

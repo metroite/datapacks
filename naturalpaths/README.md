@@ -1,4 +1,4 @@
-## [naturalpaths](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Metroite/datapacks/tree/master/naturalpaths&rootDirectory=false)
+## [naturalpaths](https://download.metroite.de/#/home?url=https://github.com/Metroite/datapacks/tree/master/naturalpaths&rootDirectory=false)
 
 You trample the ground. Grass paths provide an optional speed bonus!
 
@@ -12,7 +12,7 @@ Disable speed on grass path blocks by setting *$speedpaths$* in *np.global* to 0
 
 </details>
 
-<a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Metroite/datapacks/tree/master/naturalpaths&rootDirectory=false" rel="Annoying or a blessing?">![naturalpaths](naturalpaths.png?raw=true "Annoying or a blessing?")</a>
+<a href="https://download.metroite.de/#/home?url=https://github.com/Metroite/datapacks/tree/master/naturalpaths&rootDirectory=false" rel="Annoying or a blessing?">![naturalpaths](naturalpaths.png?raw=true "Annoying or a blessing?")</a>
 
 ## Version
 

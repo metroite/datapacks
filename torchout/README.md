@@ -1,4 +1,4 @@
-## [torchout](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Metroite/datapacks/tree/master/torchout&rootDirectory=false)
+## [torchout](https://download.metroite.de/#/home?url=https://github.com/Metroite/datapacks/tree/master/torchout&rootDirectory=false)
 
 Torches and campfires burn out after a defined while - very realistic. Ignite torches using *flint and steel* and fuel campfires by dropping logs onto them!
 
@@ -12,7 +12,7 @@ Change *$uses$* in *to.damage* to set the durability of flint_and_steel when lig
 
 </details>
 
-<a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Metroite/datapacks/tree/master/torchout&rootDirectory=false" rel="Torches... a not-so everlasting light source">![torchout](torchout.png?raw=true "Torches... a not-so everlasting light source")</a>
+<a href="https://download.metroite.de/#/home?url=https://github.com/Metroite/datapacks/tree/master/torchout&rootDirectory=false" rel="Torches... a not-so everlasting light source">![torchout](torchout.png?raw=true "Torches... a not-so everlasting light source")</a>
 
 ## Version
 

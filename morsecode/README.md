@@ -1,4 +1,4 @@
-## [morsecode](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Metroite/datapacks/tree/master/morsecode&rootDirectory=false)
+## [morsecode](https://download.metroite.de/#/home?url=https://github.com/Metroite/datapacks/tree/master/morsecode&rootDirectory=false)
 
 A very smooth way of wireless communication.
 
@@ -35,7 +35,7 @@ IEI
 
 </details>
 
-<a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Metroite/datapacks/tree/master/morsecode&rootDirectory=false" rel="Transmitting over interdimensional frequencies">![morsecode](morsecode.png?raw=true "Transmitting over interdimensional frequencies")</a>
+<a href="https://download.metroite.de/#/home?url=https://github.com/Metroite/datapacks/tree/master/morsecode&rootDirectory=false" rel="Transmitting over interdimensional frequencies">![morsecode](morsecode.png?raw=true "Transmitting over interdimensional frequencies")</a>
 
 ## Version
 

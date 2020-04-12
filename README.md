@@ -11,8 +11,6 @@
             alt="chat on Discord"></a>
 </ul>
 
-The [Discord Server](https://discord.gg/vBgb85N) allowing **you** to follow this project more conveniently!
-
 ### Datapack-List & Download:
 
 <details open>
@@ -98,13 +96,15 @@ Please report any **bugs** you may find, any **suggestions** you might have and 
 
 <a href="https://discord.gg/vBgb85N"><img src="https://i.vgy.me/YrTrsE.png"></a>
 
-<a href="https://www.patreon.com/metroite"><img src="https://i.imgur.com/n4HGX0s.png"></a>
-
 ## Authors
 
 [**Metroite**](https://github.com/Metroite)
 
-![Metroite](metroite.png?raw=true "Metroite")
+![Metroite](Metroite.png?raw=true "Metroite")
+
+<a href="https://www.patreon.com/metroite">
+    <img src="https://img.shields.io/endpoint.svg?url=https%3A%2F%2Fshieldsio-patreon.herokuapp.com%2FMetroite&style=for-the-badge"
+        alt="pledge on Patreon"></a>
 
 ## License
 <details>

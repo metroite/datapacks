@@ -1,4 +1,4 @@
-## [sapphire](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Metroite/datapacks/tree/master/sapphire&rootDirectory=false)
+## [sapphire](https://download.metroite.de/#/home?url=https://github.com/Metroite/datapacks/tree/1.14/sapphire&rootDirectory=false)
 
 *Sapphire Ores* will be generated in deep cold oceans and you can use the *Sapphire* gems to detect water, create decorative particles by empowering observers and attract lightnings.
 
@@ -36,7 +36,7 @@ ISI
 
 </details>
 
-<a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Metroite/datapacks/tree/master/sapphire&rootDirectory=false" rel="Deep cold oceans">![sapphire](sapphire.png?raw=true "Deep cold oceans")</a>
+<a href="https://download.metroite.de/#/home?url=https://github.com/Metroite/datapacks/tree/1.14/sapphire&rootDirectory=false" rel="Deep cold oceans">![sapphire](sapphire.png?raw=true "Deep cold oceans")</a>
 
 ## Version
 

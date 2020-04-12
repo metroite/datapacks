@@ -1,4 +1,4 @@
-# [worseoldpvp](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Metroite/datapacks/1.14/master/worseoldpvp&rootDirectory=false)
+# [worseoldpvp](https://download.metroite.de/#/home?url=https://github.com/Metroite/datapacks/1.14/worseoldpvp&rootDirectory=false)
 
 You want the worse, old PvP from 1.8 back? Worry no more, this datapack will fulfill your wishes! Just drop your tools once and enjoy your eZ, no-skill version of PvP!
 
@@ -22,7 +22,7 @@ Enable cooldown for sword-blocking if hit by setting *$cooldown$* in *wop.extend
 
 </details>
 
-<a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Metroite/datapacks/tree/1.14/worseoldpvp&rootDirectory=false" rel="The worse, old PvP">![worseoldpvp](worseoldpvp.png?raw=true "The worse, old PvP")</a>
+<a href="https://download.metroite.de/#/home?url=https://github.com/Metroite/datapacks/tree/1.14/worseoldpvp&rootDirectory=false" rel="The worse, old PvP">![worseoldpvp](worseoldpvp.png?raw=true "The worse, old PvP")</a>
 
 ## Version
 

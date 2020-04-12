@@ -1,8 +1,8 @@
-## [smokesignal](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Metroite/datapacks/tree/master/smokesignal&rootDirectory=false)
+## [smokesignal](https://download.metroite.de/#/home?url=https://github.com/Metroite/datapacks/tree/1.14/smokesignal&rootDirectory=false)
 
 Throw leaves into a burning log block and a very strong smoke will rise up, visually notifying close by players.
 
-<a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Metroite/datapacks/tree/master/smokesignal&rootDirectory=false" rel="Smoke for attention! How cool.">![smokesignal](smokesignal.png?raw=true "Smoke for attention! How cool.")</a>
+<a href="https://download.metroite.de/#/home?url=https://github.com/Metroite/datapacks/tree/1.14/smokesignal&rootDirectory=false" rel="Smoke for attention! How cool.">![smokesignal](smokesignal.png?raw=true "Smoke for attention! How cool.")</a>
 
 ## Version
 

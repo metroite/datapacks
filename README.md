@@ -1,4 +1,15 @@
-# [Metroites Datapacks](https://github.com/Metroite/datapacks/archive/master.zip)
+# [Metroites Datapacks](https://github.com/Metroite/datapacks/archive/1.14.zip)
+<ul id="parent">
+    <a href="https://github.com/Metroite/datapacks/blob/master/LICENSE" alt="License">
+        <img src="https://img.shields.io/github/license/Metroite/datapacks" /></a>
+    <a href="https://github.com/Metroite/datapacks/releases" alt="Tag">
+        <img src="https://img.shields.io/github/tag/Metroite/datapacks" /></a>
+    <a href="https://github.com/Metroite/datapacks" alt="Activity">
+        <img src="https://img.shields.io/github/commit-activity/m/Metroite/datapacks?foo=bar" /></a>
+    <a href="https://discord.gg/vBgb85N">
+        <img src="https://img.shields.io/discord/568512487473938482?logo=discord"
+            alt="chat on Discord"></a>
+</ul>
 
 The [Discord Server](https://discord.gg/vBgb85N) allowing **you** to follow this project more conveniently!
 
@@ -87,11 +98,13 @@ Please report any **bugs** you may find, any **suggestions** you might have and 
 
 If you like what I do, consider checking out my [Patreon page](https://www.patreon.com/metroite)! Messsage me directly or follow this project more conveniently by joining the [Discord Server](https://discord.gg/vBgb85N)!
 
+<a href="https://discord.gg/vBgb85N"><img src="https://i.vgy.me/YrTrsE.png"></a>
+
 ## Authors
 
 [**Metroite**](https://github.com/Metroite)
 
-![Metroite](Metroite.png?raw=true "Metroite")
+![Metroite](metroite.png?raw=true "Metroite")
 
 ## License
 <details>
@@ -100,7 +113,7 @@ If you like what I do, consider checking out my [Patreon page](https://www.patre
 
 * You are allowed to edit the files and claim only your edits as yours, which you may then distribute through another fork of this project on GitHub.
 * You are not allowed to redistribute the files of this project, only exception is described above.
-* You are not allowed to remove the "loaded" messages under any circumstances.
+* You are not allowed to remove or modify the "loaded" messages under any circumstances.
 * You are not allowed to claim this project as yours and you must fully credit me, "Metroite".
 
 **Everything else** is handled by the GNU GENERAL PUBLIC License v3.0 - see the [LICENSE](https://github.com/Metroite/datapacks/blob/master/LICENSE) file for details.

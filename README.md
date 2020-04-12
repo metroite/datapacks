@@ -79,7 +79,7 @@ The master branch is developed for the latest version of Minecraft! I aim to pro
 
 All datapacks are available for Minecraft [1.13 (unsupported)](https://github.com/Metroite/datapacks/tree/1.13), [1.14/1.15](https://github.com/Metroite/datapacks/tree/1.14) and possibly for even [later versions on the master branch](https://github.com/Metroite/datapacks/tree/master).
 
-**This is the master branch**. Switch branches to get to the respective versions.
+**This is  the 1.14/1.15 branch**. Switch branches to get to the respective versions.
 
 ## [Feedback](https://github.com/Metroite/datapacks/issues)
 

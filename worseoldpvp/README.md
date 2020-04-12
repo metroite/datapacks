@@ -2,13 +2,13 @@
 
 You want the worse, old PvP from 1.8 back? Worry no more, this datapack will fulfill your wishes! Just drop your tools once and enjoy your eZ, no-skill version of PvP!
 
-It is **recommended** to set `Dynamic FOV` to off in **Optifine** if a zooming effect is experienced.
+It is **recommended** to disable `Dynamic FOV` in **Optifine** if a zooming effect (decreasing FOV) is experienced.
 
 <details>
 <summary>Configuration</summary>
 <br>
 
-Set *$extend$* in *wop.extend* higher, the more the server is lagging (5 is default): `/scoreboard players set $extend$ wop.extend 7`
+Set *$extend$* in *wop.extend* higher, the more the server is lagging (6 is default): `/scoreboard players set $extend$ wop.extend 8`
 
 Use one of the mode funtions numbered from 0 to 2 if only the sword-block (1) or the no-cooldown (2) is wanted (0 is default): `/function worseoldpvp:mode/0`
 

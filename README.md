@@ -96,9 +96,9 @@ All datapacks are available for Minecraft [1.13 (unsupported)](https://github.co
 
 Please report any **bugs** you may find, any **suggestions** you might have and any possible **feedback** you could think of on the [Issues](https://github.com/Metroite/datapacks/issues) page! They are all welcome.
 
-If you like what I do, consider checking out my [Patreon page](https://www.patreon.com/metroite)! Messsage me directly or follow this project more conveniently by joining the [Discord Server](https://discord.gg/vBgb85N)!
-
 <a href="https://discord.gg/vBgb85N"><img src="https://i.vgy.me/YrTrsE.png"></a>
+
+<a href="https://www.patreon.com/metroite"><img src="https://i.imgur.com/n4HGX0s.png"></a>
 
 ## Authors
 

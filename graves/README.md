@@ -1,4 +1,4 @@
-## [graves](https://download.metroite.de/#/home?url=https://github.com/Metroite/datapacks/tree/1.14/graves&rootDirectory=false)
+## [<img src="https://i.imgur.com/BjfNPDg.gif"> graves](https://download.metroite.de/#/home?url=https://github.com/Metroite/datapacks/tree/1.14/graves&rootDirectory=false)
 
 Skulls and bones can be found on locations where players died! Has extensive support in feature compatibility with other datapacks of mine.
 

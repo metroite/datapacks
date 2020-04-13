@@ -1,4 +1,4 @@
-## [hardstone](https://download.metroite.de/#/home?url=https://github.com/Metroite/datapacks/tree/1.14/hardstone&rootDirectory=false)
+## [<img src="https://i.imgur.com/BjfNPDg.gif"> hardstone](https://download.metroite.de/#/home?url=https://github.com/Metroite/datapacks/tree/1.14/hardstone&rootDirectory=false)
 
 Removed buttery consistency out of stone/grass/sandstone/netherrack. Caving might be a better option than strip-mining. Craft cobblestone slabs together into cobblestone. Cobblestone tools have become flint tools. Iron and Gold now drop *Raw Iron/Gold* instead, which can be smelted into the corresponding nugget. Diamonds might pling away. Be careful in the nether!
 

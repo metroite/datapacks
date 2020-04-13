@@ -1,4 +1,4 @@
-## [smokesignal](https://download.metroite.de/#/home?url=https://github.com/Metroite/datapacks/tree/1.14/smokesignal&rootDirectory=false)
+## [<img src="https://i.imgur.com/BjfNPDg.gif"> smokesignal](https://download.metroite.de/#/home?url=https://github.com/Metroite/datapacks/tree/1.14/smokesignal&rootDirectory=false)
 
 Throw leaves into a burning log block and a very strong smoke will rise up, visually notifying close by players.
 

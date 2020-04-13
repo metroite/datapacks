@@ -1,4 +1,4 @@
-## [growontoptree](https://download.metroite.de/#/home?url=https://github.com/Metroite/datapacks/tree/1.14/growontoptree&rootDirectory=false)
+## [<img src="https://i.imgur.com/BjfNPDg.gif"> growontoptree](https://download.metroite.de/#/home?url=https://github.com/Metroite/datapacks/tree/1.14/growontoptree&rootDirectory=false)
 
 Players get pushed upwards by growing saplings!
 

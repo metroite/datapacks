@@ -1,4 +1,4 @@
-## [earlyleatherarmor](https://download.metroite.de/#/home?url=https://github.com/Metroite/datapacks/tree/1.14/earlyleatherarmor&rootDirectory=false)
+## [<img src="https://i.imgur.com/BjfNPDg.gif"> earlyleatherarmor](https://download.metroite.de/#/home?url=https://github.com/Metroite/datapacks/tree/1.14/earlyleatherarmor&rootDirectory=false)
 
 As the name suggests, this datapacks makes leather armor actually worth crafting. Leather boots bring a little speed buff with them!
 

@@ -1,4 +1,4 @@
-## [Hurtful Pack](https://download.metroite.de/#/home?url=https://github.com/Metroite/datapacks/tree/1.14/Hurtful%20Pack&rootDirectory=false)
+## [<img src="https://i.imgur.com/BjfNPDg.gif"> Hurtful Pack](https://download.metroite.de/#/home?url=https://github.com/Metroite/datapacks/tree/1.14/Hurtful%20Pack&rootDirectory=false)
 
 Many datapacks packed into one aiming to make survival harder... a datapack pack?
 

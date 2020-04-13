@@ -1,4 +1,4 @@
-## [limitedlife](https://download.metroite.de/#/home?url=https://github.com/Metroite/datapacks/tree/1.14/limitedlife&rootDirectory=false)
+## [<img src="https://i.imgur.com/BjfNPDg.gif"> limitedlife](https://download.metroite.de/#/home?url=https://github.com/Metroite/datapacks/tree/1.14/limitedlife&rootDirectory=false)
 
 limitedlife limits the max health of a player by a heart every death. Max health can be restored if a *Batwing* is cooked in a water-filled cauldron under an End Crystal. You can throw an end_crystal item into the cauldron to summon it. The "Absorption" effect will be needed in order to catch the resulting beam!
 

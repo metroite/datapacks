@@ -1,4 +1,4 @@
-## [smartvillage](https://download.metroite.de/#/home?url=https://github.com/Metroite/datapacks/tree/1.14/smartvillage&rootDirectory=false)
+## [<img src="https://i.imgur.com/BjfNPDg.gif"> smartvillage](https://download.metroite.de/#/home?url=https://github.com/Metroite/datapacks/tree/1.14/smartvillage&rootDirectory=false)
 
 Tracks villages smartly and puts nearby players into adventure mode. NO RAIDING!
 

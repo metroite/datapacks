@@ -1,4 +1,4 @@
-## [horsetogether](https://download.metroite.de/#/home?url=https://github.com/Metroite/datapacks/tree/1.14/horsetogether&rootDirectory=false)
+## [<img src="https://i.imgur.com/BjfNPDg.gif"> horsetogether](https://download.metroite.de/#/home?url=https://github.com/Metroite/datapacks/tree/1.14/horsetogether&rootDirectory=false)
 
 Ever imagined riding on a horse together with your loved ones? Basically, now with this datapack its possible for armored horses.
 

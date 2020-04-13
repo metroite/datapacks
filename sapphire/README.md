@@ -1,4 +1,4 @@
-## [sapphire](https://download.metroite.de/#/home?url=https://github.com/Metroite/datapacks/tree/1.14/sapphire&rootDirectory=false)
+## [<img src="https://i.imgur.com/BjfNPDg.gif"> sapphire](https://download.metroite.de/#/home?url=https://github.com/Metroite/datapacks/tree/1.14/sapphire&rootDirectory=false)
 
 *Sapphire Ores* will be generated in deep cold oceans and you can use the *Sapphire* gems to detect water, create decorative particles by empowering observers and attract lightnings.
 

@@ -1,4 +1,4 @@
-# [worseoldpvp](https://download.metroite.de/#/home?url=https://github.com/Metroite/datapacks/1.14/worseoldpvp&rootDirectory=false)
+# [<img src="https://i.imgur.com/BjfNPDg.gif"> worseoldpvp](https://download.metroite.de/#/home?url=https://github.com/Metroite/datapacks/1.14/worseoldpvp&rootDirectory=false)
 
 You want the worse, old PvP from 1.8 back? Worry no more, this datapack will fulfill your wishes! Just drop your tools once and enjoy your eZ, no-skill version of PvP!
 

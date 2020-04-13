@@ -17,34 +17,34 @@
 <summary>Datapacks</summary>
 <br>
 
-+ [earlyleatherarmor](https://www.metroite.de/earlyleatherarmor)
-+ [graves](https://www.metroite.de/graves)
-+ [growontoptree](https://www.metroite.de/growontoptree)
-+ [hardstone](https://www.metroite.de/hardstone)
-+ [heavyarmor](https://www.metroite.de/heavyarmor)
-+ [horsetogether](https://www.metroite.de/horsetogether)
-+ [limitedlife](https://www.metroite.de/limitedlife)
-+ [loud2x2tnt](https://www.metroite.de/loud2x2tnt)
-+ [morsecode](https://www.metroite.de/morsecode)
-+ [naturalpaths](https://www.metroite.de/naturalpaths)
-+ [reforestation](https://www.metroite.de/reforestation)
-+ [sapphire](https://www.metroite.de/sapphire)
-+ [smokesignal](https://www.metroite.de/smokesignal)
-+ [smartvillage](https://www.metroite.de/smartvillage)
-+ [spectatorrevive](https://www.metroite.de/spectatorrevive)
-+ [torchout](https://www.metroite.de/torchout)
-+ [usefulender](https://www.metroite.de/usefulender)
-+ [ventilators](https://www.metroite.de/ventilators)
-+ [voiddimension](https://www.metroite.de/voiddimension)
-+ [witchtrading](https://www.metroite.de/witchtrading)
-+ [worseoldpvp](https://www.metroite.de/worseoldpvp)
++ [**Hurtful Pack**, a bundle of the survival oriented datapacks!](https://www.metroite.de/Hurtful%20Pack)
 
+  + [earlyleatherarmor](https://www.metroite.de/earlyleatherarmor)
+  + [graves](https://www.metroite.de/graves)
+  + [growontoptree](https://www.metroite.de/growontoptree)
+  + [hardstone](https://www.metroite.de/hardstone)
+  + [heavyarmor](https://www.metroite.de/heavyarmor)
+  + [horsetogether](https://www.metroite.de/horsetogether)
+  + [limitedlife](https://www.metroite.de/limitedlife)
+  + [loud2x2tnt](https://www.metroite.de/loud2x2tnt)
+  + [morsecode](https://www.metroite.de/morsecode)
+  + [naturalpaths](https://www.metroite.de/naturalpaths)
+  + [reforestation](https://www.metroite.de/reforestation)
+  + [sapphire](https://www.metroite.de/sapphire)
+  + [smokesignal](https://www.metroite.de/smokesignal)
+  + [smartvillage](https://www.metroite.de/smartvillage)
+  + [torchout](https://www.metroite.de/torchout)
+  + [usefulender](https://www.metroite.de/usefulender)
+  + [ventilators](https://www.metroite.de/ventilators)
+  + [witchtrading](https://www.metroite.de/witchtrading)
+
++ [spectatorrevive](https://www.metroite.de/spectatorrevive)
++ [voiddimension](https://www.metroite.de/voiddimension)
++ [worseoldpvp](https://www.metroite.de/worseoldpvp)
 </details>
 <br>
 
-**The [Hurtful Pack](https://www.metroite.de/Hurtful%20Pack), a bundle of the survival oriented datapacks!** Available in [**1.14/1.15** and 1.13 (unsupported)](https://github.com/Metroite/datapacks#version)!
-
-**Pictures, Download links and descriptions can be found inside of every datapack** and inside of every [release post](https://github.com/Metroite/datapacks/releases).
+**Pictures, download links and descriptions can be found inside of every datapack** and inside of every [release post](https://github.com/Metroite/datapacks/releases).
 
 ### [Releases:](https://github.com/Metroite/datapacks/releases)
 
@@ -94,7 +94,7 @@ All datapacks are available for Minecraft [1.13 (unsupported)](https://github.co
 
 Please report any **bugs** you may find, any **suggestions** you might have and any possible **feedback** you could think of on the [Issues](https://github.com/Metroite/datapacks/issues) page! They are all welcome.
 
-<a href="https://discord.gg/vBgb85N"><img src="https://i.vgy.me/YrTrsE.png"></a>
+<a href="https://discord.gg/vBgb85N"><img src="https://i.vgy.me/YrTrsE.png" alt="join my Discord"></a>
 
 ## Authors
 

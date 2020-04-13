@@ -1,4 +1,4 @@
-## [ventilators](https://download.metroite.de/#/home?url=https://github.com/Metroite/datapacks/tree/master/ventilators&rootDirectory=false)
+## [<img src="https://i.imgur.com/BjfNPDg.gif"> ventilators](https://download.metroite.de/#/home?url=https://github.com/Metroite/datapacks/tree/master/ventilators&rootDirectory=false)
 
 ventilators allows you to build ventilators (suprise!) which push entities in certain directions! A Batwing dropped by bats will be needed to empower an observer into a ventilator.
 

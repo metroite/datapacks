@@ -1,4 +1,4 @@
-## [morsecode](https://download.metroite.de/#/home?url=https://github.com/Metroite/datapacks/tree/master/morsecode&rootDirectory=false)
+## [<img src="https://i.imgur.com/BjfNPDg.gif"> morsecode](https://download.metroite.de/#/home?url=https://github.com/Metroite/datapacks/tree/master/morsecode&rootDirectory=false)
 
 A very smooth way of wireless communication.
 

@@ -1,4 +1,4 @@
-## [torchout](https://download.metroite.de/#/home?url=https://github.com/Metroite/datapacks/tree/master/torchout&rootDirectory=false)
+## [<img src="https://i.imgur.com/BjfNPDg.gif"> torchout](https://download.metroite.de/#/home?url=https://github.com/Metroite/datapacks/tree/master/torchout&rootDirectory=false)
 
 Torches and campfires burn out after a defined while - very realistic. Ignite torches using *flint and steel* and fuel campfires by dropping logs onto them!
 

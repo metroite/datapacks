@@ -1,4 +1,4 @@
-## [witchtrading](https://download.metroite.de/#/home?url=https://github.com/Metroite/datapacks/tree/master/witchtrading&rootDirectory=false)
+## [<img src="https://i.imgur.com/BjfNPDg.gif"> witchtrading](https://download.metroite.de/#/home?url=https://github.com/Metroite/datapacks/tree/master/witchtrading&rootDirectory=false)
 
 Trade your poisonous potatoes with witches. Don't try to hurt their feelings though!
 

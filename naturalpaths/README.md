@@ -1,4 +1,4 @@
-## [naturalpaths](https://download.metroite.de/#/home?url=https://github.com/Metroite/datapacks/tree/master/naturalpaths&rootDirectory=false)
+## [<img src="https://i.imgur.com/BjfNPDg.gif"> naturalpaths](https://download.metroite.de/#/home?url=https://github.com/Metroite/datapacks/tree/master/naturalpaths&rootDirectory=false)
 
 You trample the ground. Grass paths provide an optional speed bonus!
 

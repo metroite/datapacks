@@ -1,4 +1,4 @@
-## [heavyarmor](https://download.metroite.de/#/home?url=https://github.com/Metroite/datapacks/tree/master/heavyarmor&rootDirectory=false)
+## [<img src="https://i.imgur.com/BjfNPDg.gif"> heavyarmor](https://download.metroite.de/#/home?url=https://github.com/Metroite/datapacks/tree/master/heavyarmor&rootDirectory=false)
 
 Armor got so heavy it might slow you down. Gold is uneffected... how unrealistic right? Recommended to use in conjunction with earlyleatherarmor!
 

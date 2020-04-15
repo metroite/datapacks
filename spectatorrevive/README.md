@@ -1,8 +1,8 @@
-## [spectatorrevive](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Metroite/datapacks/tree/master/spectatorrevive&rootDirectory=false)
+## [<img src="https://i.imgur.com/BjfNPDg.gif"> spectatorrevive](https://download.metroite.de/#/home?url=https://github.com/Metroite/datapacks/tree/1.14/spectatorrevive&rootDirectory=false)
 
 As a spectator fly into a dropped golden apple to revive into survival mode! Useful for hardcore servers.
 
-<a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Metroite/datapacks/tree/master/spectatorrevive&rootDirectory=false" rel="Unvanish from the dead">![spectatorrevive](spectatorrevive.png?raw=true "Unvanish from the dead")</a>
+<a href="https://download.metroite.de/#/home?url=https://github.com/Metroite/datapacks/tree/1.14/spectatorrevive&rootDirectory=false" rel="Unvanish from the dead">![spectatorrevive](spectatorrevive.png?raw=true "Unvanish from the dead")</a>
 
 ## Version
 

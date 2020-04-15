@@ -1,8 +1,8 @@
-## [horsetogether](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Metroite/datapacks/tree/master/horsetogether&rootDirectory=false)
+## [<img src="https://i.imgur.com/BjfNPDg.gif"> horsetogether](https://download.metroite.de/#/home?url=https://github.com/Metroite/datapacks/tree/1.14/horsetogether&rootDirectory=false)
 
 Ever imagined riding on a horse together with your loved ones? Basically, now with this datapack its possible for armored horses.
 
-<a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Metroite/datapacks/tree/master/horsetogether&rootDirectory=false" rel="Me and the boys on Old Town Road">![horsetogether](horsetogether.png?raw=true "Me and the boys on Old Town Road")</a>
+<a href="https://download.metroite.de/#/home?url=https://github.com/Metroite/datapacks/tree/1.14/horsetogether&rootDirectory=false" rel="Me and the boys on Old Town Road">![horsetogether](horsetogether.png?raw=true "Me and the boys on Old Town Road")</a>
 
 ## Version
 

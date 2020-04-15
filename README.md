@@ -1,6 +1,15 @@
-# [Metroites Datapacks](https://github.com/Metroite/datapacks/archive/master.zip)
-
-The [Discord Server](https://discord.gg/vBgb85N) allowing **you** to follow this project more conveniently!
+# [Metroites Datapacks](https://github.com/Metroite/datapacks/archive/1.14.zip)
+<ul id="parent">
+    <a href="https://github.com/Metroite/datapacks/blob/master/LICENSE" alt="License">
+        <img src="https://img.shields.io/github/license/Metroite/datapacks" /></a>
+    <a href="https://github.com/Metroite/datapacks/releases" alt="Tag">
+        <img src="https://img.shields.io/github/tag/Metroite/datapacks" /></a>
+    <a href="https://github.com/Metroite/datapacks" alt="Activity">
+        <img src="https://img.shields.io/github/commit-activity/m/Metroite/datapacks?foo=bar" /></a>
+    <a href="https://discord.gg/vBgb85N">
+        <img src="https://img.shields.io/discord/568512487473938482?logo=discord"
+            alt="chat on Discord"></a>
+</ul>
 
 ### Datapack-List & Download:
 
@@ -8,34 +17,34 @@ The [Discord Server](https://discord.gg/vBgb85N) allowing **you** to follow this
 <summary>Datapacks</summary>
 <br>
 
-+ [earlyleatherarmor](https://www.metroite.de/earlyleatherarmor)
-+ [graves](https://www.metroite.de/graves)
-+ [growontoptree](https://www.metroite.de/growontoptree)
-+ [hardstone](https://www.metroite.de/hardstone)
-+ [heavyarmor](https://www.metroite.de/heavyarmor)
-+ [horsetogether](https://www.metroite.de/horsetogether)
-+ [limitedlife](https://www.metroite.de/limitedlife)
-+ [loud2x2tnt](https://www.metroite.de/loud2x2tnt)
-+ [morsecode](https://www.metroite.de/morsecode)
-+ [naturalpaths](https://www.metroite.de/naturalpaths)
-+ [reforestation](https://www.metroite.de/reforestation)
-+ [sapphire](https://www.metroite.de/sapphire)
-+ [smokesignal](https://www.metroite.de/smokesignal)
-+ [smartvillage](https://www.metroite.de/smartvillage)
-+ [spectatorrevive](https://www.metroite.de/spectatorrevive)
-+ [torchout](https://www.metroite.de/torchout)
-+ [usefulender](https://www.metroite.de/usefulender)
-+ [ventilators](https://www.metroite.de/ventilators)
-+ [voiddimension](https://www.metroite.de/voiddimension)
-+ [witchtrading](https://www.metroite.de/witchtrading)
-+ [worseoldpvp](https://www.metroite.de/worseoldpvp)
++ [**Hurtful Pack**, a bundle of the survival oriented datapacks!](https://github.com/Metroite/datapacks/tree/1.14/Hurtful%20Pack)
 
+  + [earlyleatherarmor](https://github.com/Metroite/datapacks/tree/1.14/earlyleatherarmor)
+  + [graves](https://github.com/Metroite/datapacks/tree/1.14/graves)
+  + [growontoptree](https://github.com/Metroite/datapacks/tree/1.14/growontoptree)
+  + [hardstone](https://github.com/Metroite/datapacks/tree/1.14/hardstone)
+  + [heavyarmor](https://github.com/Metroite/datapacks/tree/1.14/heavyarmor)
+  + [horsetogether](https://github.com/Metroite/datapacks/tree/1.14/horsetogether)
+  + [limitedlife](https://github.com/Metroite/datapacks/tree/1.14/limitedlife)
+  + [loud2x2tnt](https://github.com/Metroite/datapacks/tree/1.14/loud2x2tnt)
+  + [morsecode](https://github.com/Metroite/datapacks/tree/1.14/morsecode)
+  + [naturalpaths](https://github.com/Metroite/datapacks/tree/1.14/naturalpaths)
+  + [reforestation](https://github.com/Metroite/datapacks/tree/1.14/reforestation)
+  + [sapphire](https://github.com/Metroite/datapacks/tree/1.14/sapphire)
+  + [smokesignal](https://github.com/Metroite/datapacks/tree/1.14/smokesignal)
+  + [smartvillage](https://github.com/Metroite/datapacks/tree/1.14/smartvillage)
+  + [torchout](https://github.com/Metroite/datapacks/tree/1.14/torchout)
+  + [usefulender](https://github.com/Metroite/datapacks/tree/1.14/usefulender)
+  + [ventilators](https://github.com/Metroite/datapacks/tree/1.14/ventilators)
+  + [witchtrading](https://github.com/Metroite/datapacks/tree/1.14/witchtrading)
+<br></br>
++ [spectatorrevive](https://github.com/Metroite/datapacks/tree/1.14/spectatorrevive)
++ [voiddimension](https://github.com/Metroite/datapacks/tree/1.14/voiddimension)
++ [worseoldpvp](https://github.com/Metroite/datapacks/tree/1.14/worseoldpvp)
 </details>
 <br>
 
-**The [Hurtful Pack](https://www.metroite.de/Hurtful%20Pack), a bundle of the survival oriented datapacks!** Available in [**1.14/1.15** and 1.13 (unsupported)](https://github.com/Metroite/datapacks#version)!
-
-**Pictures, Download links and descriptions can be found inside of every datapack** and inside of every [release post](https://github.com/Metroite/datapacks/releases).
+**Pictures, download links and descriptions can be found inside of every datapack** and inside of every [release post](https://github.com/Metroite/datapacks/releases).
 
 ### [Releases:](https://github.com/Metroite/datapacks/releases)
 
@@ -65,7 +74,7 @@ Move the datapack(s) you wish to use inside your "datapacks" folder of your save
 C:\Users\<User>\AppData\Roaming\.minecraft\saves\<world name>\datapacks
 ```
 
-Now just join the world you put the datapacks in and execute the following operator command:
+Now just join the world you put the datapack(s) in and execute the following operator command:
 
 ```
 /reload
@@ -85,13 +94,19 @@ All datapacks are available for Minecraft [1.13 (unsupported)](https://github.co
 
 Please report any **bugs** you may find, any **suggestions** you might have and any possible **feedback** you could think of on the [Issues](https://github.com/Metroite/datapacks/issues) page! They are all welcome.
 
-If you like what I do, consider checking out my [Patreon page](https://www.patreon.com/metroite)! Messsage me directly or follow this project more conveniently by joining the [Discord Server](https://discord.gg/vBgb85N)!
+<a href="https://discord.gg/vBgb85N"><img src="https://i.vgy.me/YrTrsE.png" alt="join my Discord"></a>
 
 ## Authors
 
-[**Metroite**](https://github.com/Metroite)
+<a href="https://github.com/Metroite">
+    <img src="https://img.shields.io/badge/Author-Metroite-blue"
+        alt="Author: Metroite"></a>
 
-![Metroite](Metroite.png?raw=true "Metroite")
+[![Metroite](Metroite.png?raw=true "Metroite")](https://www.youtube.com/channel/UCfdVx0XNqSwuoftDcLgiXfg)
+
+<a href="https://www.patreon.com/metroite">
+    <img src="https://img.shields.io/endpoint.svg?url=https%3A%2F%2Fshieldsio-patreon.herokuapp.com%2FMetroite&style=for-the-badge"
+        alt="pledge on Patreon"></a>
 
 ## License
 <details>
@@ -100,7 +115,7 @@ If you like what I do, consider checking out my [Patreon page](https://www.patre
 
 * You are allowed to edit the files and claim only your edits as yours, which you may then distribute through another fork of this project on GitHub.
 * You are not allowed to redistribute the files of this project, only exception is described above.
-* You are not allowed to remove the "loaded" messages under any circumstances.
+* You are not allowed to remove or modify the "loaded" messages under any circumstances.
 * You are not allowed to claim this project as yours and you must fully credit me, "Metroite".
 
 **Everything else** is handled by the GNU GENERAL PUBLIC License v3.0 - see the [LICENSE](https://github.com/Metroite/datapacks/blob/master/LICENSE) file for details.

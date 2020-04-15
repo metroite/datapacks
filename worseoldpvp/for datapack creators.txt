@@ -1,0 +1,2 @@
+if you want your custom tools/swords to be compatible with this datapack, you will have to assign the "wopno:1" nbt tag to your item, which will disable them being modified
+if you used CustomModelData, you'll have to merge resourcepacks. there might be a tool out there to do this, but it should be easy anyways. look into "for resourcepack creators.txt" to know which tools my resourcepack affects

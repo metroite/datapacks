@@ -14,7 +14,7 @@ Use one of the mode funtions numbered from 0 to 2 if only the sword-block (1) or
 
 Alternatively you can change ones mode individually by changing the palyers *wop.mode* score (0 is default): `/scoreboard players set <player> wop.mode 0`
 
-If you also want to be able to block while not sneaking set *$mustsneak$* in *wop.extend* to 0 (1 is default): `/scoreboard players set $mustsneak$ wop.extend 1`
+If you also want to be able to block while not sneaking set *$mustsneak$* in *wop.extend* to 0 (1 is default): `/scoreboard players set $mustsneak$ wop.extend 0`
 
 If you prefer status effects over item attributes set *$attribute$* in *wop.extend* to 0 (1 is default): `/scoreboard players set $attribute$ wop.extend 0`
 

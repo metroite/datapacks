@@ -37,7 +37,7 @@
   + [usefulender](https://www.metroite.de/usefulender)
   + [ventilators](https://www.metroite.de/ventilators)
   + [witchtrading](https://www.metroite.de/witchtrading)
-
+<br></br>
 + [spectatorrevive](https://www.metroite.de/spectatorrevive)
 + [voiddimension](https://www.metroite.de/voiddimension)
 + [worseoldpvp](https://www.metroite.de/worseoldpvp)
@@ -74,7 +74,7 @@ Move the datapack(s) you wish to use inside your "datapacks" folder of your save
 C:\Users\<User>\AppData\Roaming\.minecraft\saves\<world name>\datapacks
 ```
 
-Now just join the world you put the datapacks in and execute the following operator command:
+Now just join the world you put the datapack(s) in and execute the following operator command:
 
 ```
 /reload

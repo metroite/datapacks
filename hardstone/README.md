@@ -4,9 +4,13 @@ Removed buttery consistency out of stone/grass/sandstone/netherrack. Caving migh
 
 <a href="https://download.metroite.de/#/home?url=https://github.com/Metroite/datapacks/tree/master/hardstone&rootDirectory=false" rel="Breaking stone into cobblestone, then into cobblestone slab and finally breaking it">![hardstone](hardstone.png?raw=true "Breaking stone into cobblestone, then into cobblestone slab and finally breaking it")</a>
 
-## Version
+## Minecraft Versions
 
-Minecraft 1.14/1.15
+Current file for Minecraft 1.14/1.15
+
+[1.13 (unsupported)](https://github.com/Metroite/datapacks/tree/1.13), [1.14/1.15 (stable)](https://stable.metroite.de/) and possibly for even [later versions on the master branch](https://www.metroite.de/).
+
+**This is the master branch**. Switch branches to get to the respective versions.
 
 ## Performance Impact
 
@@ -14,4 +18,4 @@ Tier 2/5
 
 ## Authors
 
-**Metroite**
+<a href="https://github.com/Metroite"><img src="https://img.shields.io/badge/Author-Metroite-blue" alt="Author: Metroite"></a>

@@ -4,14 +4,16 @@ Another dimension will be added set in the End dimension. This dimension will la
 
 <a href="https://download.metroite.de/#/home?url=https://github.com/Metroite/datapacks/tree/master/voiddimension&rootDirectory=false" rel="Wow, so mystical">![voiddimension](voiddimension.png?raw=true "Wow, so mystical")</a>
 
-## Version
+## Minecraft Versions
 
-Minecraft 1.14/1.15
+Current file for Minecraft 1.14/1.15
 
-## Performance Impact
+[1.13 (unsupported)](https://github.com/Metroite/datapacks/tree/1.13), [1.14/1.15 (stable)](https://stable.metroite.de/) and possibly for even [later versions on the master branch](https://www.metroite.de/).
 
-Tier 1/5
+**This is the master branch**. Switch branches to get to the respective versions.
+
+## Performance Impact &#x1F534;1/5
 
 ## Authors
 
-**Metroite**
+<a href="https://github.com/Metroite"><img src="https://img.shields.io/badge/Author-Metroite-blue" alt="Author: Metroite"></a>

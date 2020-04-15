@@ -9,7 +9,7 @@ Recommended to use with graves (*Batwing* will be replaced with *Skull Dust* as 
 ### Crafting
 
 <details>
-<summary>Recipes</summary>
+<summary><b>Recipes</b></summary>
 <br>
 
 *M - Phantom Membrane*
@@ -29,14 +29,16 @@ BUB
 
 <a href="https://download.metroite.de/#/home?url=https://github.com/Metroite/datapacks/tree/1.14/limitedlife&rootDirectory=false" rel="A crystal beam healing the player">![limitedlife](limitedlife.png?raw=true "A crystal beam healing the player")</a>
 
-## Version
+## Minecraft Versions
 
-Minecraft 1.14/1.15
+Current file for Minecraft 1.14/1.15
 
-## Performance Impact
+[1.13 (unsupported)](https://github.com/Metroite/datapacks/tree/1.13), [1.14/1.15 (stable)](https://stable.metroite.de/) and possibly for even [later versions on the master branch](https://www.metroite.de/).
 
-Tier 4/5
+**This is the 1.14/1.15 branch**. Switch branches to get to the respective versions.
+
+## Performance Impact &#x1F534;4/5
 
 ## Authors
 
-**Metroite**
+<a href="https://github.com/Metroite"><img src="https://img.shields.io/badge/Author-Metroite-blue" alt="Author: Metroite"></a>

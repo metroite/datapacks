@@ -11,48 +11,53 @@
             alt="chat on Discord"></a>
 </ul>
 
-### Datapack-List & Download:
+### Minecraft Versions
+
+All datapacks are available for Minecraft [1.13 (unsupported)](https://github.com/Metroite/datapacks/tree/1.13), [1.14/1.15 (stable)](https://stable.metroite.de/) and possibly for even [later versions on the master branch](https://www.metroite.de/).
+
+**This is the 1.14/1.15 branch**. Switch branches to get to the respective versions.
+
+## Datapack-List & Download:
 
 <details open>
-<summary>Datapacks</summary>
+<summary><b>Datapacks</b></summary>
 <br>
 
-+ [**Hurtful Pack**, a bundle of the survival oriented datapacks!](https://github.com/Metroite/datapacks/tree/1.14/Hurtful%20Pack)
++ [**Hurtful Pack**, a bundle of the survival oriented datapacks!](https://stable.metroite.de/Hurtful%20Pack)
 
-  + [earlyleatherarmor](https://github.com/Metroite/datapacks/tree/1.14/earlyleatherarmor)
-  + [graves](https://github.com/Metroite/datapacks/tree/1.14/graves)
-  + [growontoptree](https://github.com/Metroite/datapacks/tree/1.14/growontoptree)
-  + [hardstone](https://github.com/Metroite/datapacks/tree/1.14/hardstone)
-  + [heavyarmor](https://github.com/Metroite/datapacks/tree/1.14/heavyarmor)
-  + [horsetogether](https://github.com/Metroite/datapacks/tree/1.14/horsetogether)
-  + [limitedlife](https://github.com/Metroite/datapacks/tree/1.14/limitedlife)
-  + [loud2x2tnt](https://github.com/Metroite/datapacks/tree/1.14/loud2x2tnt)
-  + [morsecode](https://github.com/Metroite/datapacks/tree/1.14/morsecode)
-  + [naturalpaths](https://github.com/Metroite/datapacks/tree/1.14/naturalpaths)
-  + [reforestation](https://github.com/Metroite/datapacks/tree/1.14/reforestation)
-  + [sapphire](https://github.com/Metroite/datapacks/tree/1.14/sapphire)
-  + [smokesignal](https://github.com/Metroite/datapacks/tree/1.14/smokesignal)
-  + [smartvillage](https://github.com/Metroite/datapacks/tree/1.14/smartvillage)
-  + [torchout](https://github.com/Metroite/datapacks/tree/1.14/torchout)
-  + [usefulender](https://github.com/Metroite/datapacks/tree/1.14/usefulender)
-  + [ventilators](https://github.com/Metroite/datapacks/tree/1.14/ventilators)
-  + [witchtrading](https://github.com/Metroite/datapacks/tree/1.14/witchtrading)
+  + [earlyleatherarmor](https://stable.metroite.de/earlyleatherarmor)
+  + [graves](https://stable.metroite.de/graves)
+  + [growontoptree](https://stable.metroite.de/growontoptree)
+  + [hardstone](https://stable.metroite.de/hardstone)
+  + [heavyarmor](https://stable.metroite.de/heavyarmor)
+  + [horsetogether](https://stable.metroite.de/horsetogether)
+  + [limitedlife](https://stable.metroite.de/limitedlife)
+  + [loud2x2tnt](https://stable.metroite.de/loud2x2tnt)
+  + [morsecode](https://stable.metroite.de/morsecode)
+  + [naturalpaths](https://stable.metroite.de/naturalpaths)
+  + [reforestation](https://stable.metroite.de/reforestation)
+  + [sapphire](https://stable.metroite.de/sapphire)
+  + [smokesignal](https://stable.metroite.de/smokesignal)
+  + [smartvillage](https://stable.metroite.de/smartvillage)
+  + [torchout](https://stable.metroite.de/torchout)
+  + [usefulender](https://stable.metroite.de/usefulender)
+  + [ventilators](https://stable.metroite.de/ventilators)
+  + [witchtrading](https://stable.metroite.de/witchtrading)
 <br></br>
-+ [spectatorrevive](https://github.com/Metroite/datapacks/tree/1.14/spectatorrevive)
-+ [voiddimension](https://github.com/Metroite/datapacks/tree/1.14/voiddimension)
-+ [worseoldpvp](https://github.com/Metroite/datapacks/tree/1.14/worseoldpvp)
++ [spectatorrevive](https://stable.metroite.de/spectatorrevive)
++ [voiddimension](https://stable.metroite.de/voiddimension)
++ [worseoldpvp](https://stable.metroite.de/worseoldpvp)
 </details>
 <br>
 
-**Pictures, download links and descriptions can be found inside of every datapack** and inside of every [release post](https://github.com/Metroite/datapacks/releases).
+**Click on the desired datapacks** listed above!
 
-### [Releases:](https://github.com/Metroite/datapacks/releases)
+### [Releases:](https://www.metroite.de/releases/)
 
-**Most publication effort goes into those!**
+**High publication effort!**
 
 * [r1](https://www.Metroite.de/releases/r1) - released 2018
 * [r2](https://www.Metroite.de/releases/r2) - released 2020
-* [r3](https://github.com/Metroite/datapacks/projects/3) - hypothetical
 
 ### Roadmaps:
 
@@ -82,14 +87,6 @@ Now just join the world you put the datapack(s) in and execute the following ope
 
 A "loaded" message should appear, assuring you that its up and running. Have fun trying out the new stuff!
 
-### Version
-
-The master branch is developed for the latest version of Minecraft! I aim to provide 100% multiplayer-proof datapacks.
-
-All datapacks are available for Minecraft [1.13 (unsupported)](https://github.com/Metroite/datapacks/tree/1.13), [1.14/1.15](https://github.com/Metroite/datapacks/tree/1.14) and possibly for even [later versions on the master branch](https://github.com/Metroite/datapacks/tree/master).
-
-**This is  the 1.14/1.15 branch**. Switch branches to get to the respective versions.
-
 ## [Feedback](https://github.com/Metroite/datapacks/issues)
 
 Please report any **bugs** you may find, any **suggestions** you might have and any possible **feedback** you could think of on the [Issues](https://github.com/Metroite/datapacks/issues) page! They are all welcome.
@@ -110,7 +107,7 @@ Please report any **bugs** you may find, any **suggestions** you might have and 
 
 ## License
 <details>
-<summary>Rules + GPL-3.0</summary>
+<summary><b>Rules + GPL-3.0</b></summary>
 <br>
 
 * You are allowed to edit the files and claim only your edits as yours, which you may then distribute through another fork of this project on GitHub.

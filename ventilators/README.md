@@ -4,14 +4,16 @@ ventilators allows you to build ventilators (suprise!) which push entities in ce
 
 <a href="https://download.metroite.de/#/home?url=https://github.com/Metroite/datapacks/tree/1.14/ventilators&rootDirectory=false" rel="Did you just push me?!">![ventilators](ventilators.png?raw=true "Did you just push me?!")</a>
 
-## Version
+## Minecraft Versions
 
-Minecraft 1.14/1.15
+Current file for Minecraft 1.14/1.15
 
-## Performance Impact
+[1.13 (unsupported)](https://github.com/Metroite/datapacks/tree/1.13), [1.14/1.15 (stable)](https://stable.metroite.de/) and possibly for even [later versions on the master branch](https://www.metroite.de/).
 
-Tier 2/5
+**This is the 1.14/1.15 branch**. Switch branches to get to the respective versions.
+
+## Performance Impact &#x1F534;2/5
 
 ## Authors
 
-**Metroite**
+<a href="https://github.com/Metroite"><img src="https://img.shields.io/badge/Author-Metroite-blue" alt="Author: Metroite"></a>

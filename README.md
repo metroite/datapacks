@@ -59,11 +59,9 @@ All datapacks are available for Minecraft [1.13 (unsupported)](https://github.co
 * [r1](https://www.Metroite.de/releases/r1) - released 2018
 * [r2](https://www.Metroite.de/releases/r2) - released 2020
 
-### Roadmaps:
+## [Useful Scripts](https://www.metroite.de/Useful%20Scripts/)
 
-* [Porting](https://github.com/Metroite/datapacks/projects/1)
-* [r2](https://github.com/Metroite/datapacks/projects/2)
-* [r3](https://github.com/Metroite/datapacks/projects/3)
+Scripts that might prove useful for different projects in regards to Minecraft can be found [there](https://www.metroite.de/Useful%20Scripts/)!
 
 ## Getting Started
 

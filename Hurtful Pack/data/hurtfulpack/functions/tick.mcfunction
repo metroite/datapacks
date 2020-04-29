@@ -1,4 +1,3 @@
-execute if score $earlyleatherarmor$ hp.storeboard matches 1.. run function earlyleatherarmor:main
 execute if score $graves$ hp.storeboard matches 1.. run function graves:main
 execute if score $growontoptree$ hp.storeboard matches 1.. run function growontoptree:main
 execute if score $hardstone$ hp.storeboard matches 1.. run function hardstone:main

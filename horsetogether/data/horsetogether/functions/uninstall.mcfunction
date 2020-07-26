@@ -1,6 +1,6 @@
 #scoreboards
 scoreboard objectives remove ht.rotation
-scoreboard objectives remove ht.speed
+scoreboard objectives remove ht.sneak
 
 #tick
 kill @e[type=minecraft:pig,tag=ht.passenger]

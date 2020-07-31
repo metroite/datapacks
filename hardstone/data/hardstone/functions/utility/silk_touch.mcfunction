@@ -1,8 +1,4 @@
-#effects
-effect give @s minecraft:mining_fatigue 1 0 true
+#effects while holding something enchanted with silk_touch
+effect give @s minecraft:mining_fatigue 1 1 true
 #reset scores
-scoreboard players reset @s hs.minegrass
-scoreboard players reset @s hs.minestone
-scoreboard players reset @s hs.minecobble
-scoreboard players reset @s hs.minesand
-scoreboard players reset @s hs.minerack
+function hardstone:utility/reset_score

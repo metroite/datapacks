@@ -1,8 +1,14 @@
 #determine block
-execute if score $active$ hs.minestone matches 1.. as @a[scores={hs.minestone=1..}] at @s run function hardstone:stone/detect
-execute if score $active$ hs.minecobble matches 1.. as @a[scores={hs.minecobble=1..}] at @s run function hardstone:cobblestone/detect
-execute if score $active$ hs.minesand matches 1.. as @a[scores={hs.minesand=1..}] at @s run function hardstone:sandstone/detect
-execute if score $active$ hs.minegrass matches 1.. as @a[scores={hs.minegrass=1..}] at @s run function hardstone:grass/detect
-execute if score $active$ hs.minerack matches 1.. as @a[scores={hs.minerack=1..},nbt={Dimension:"minecraft:the_nether"}] at @s run function hardstone:netherrack/detect
-execute if score $active$ hs.minedia matches 1.. as @a[scores={hs.minedia=1..}] at @s run function hardstone:cobblestone/detect
-execute unless score $active$ hs.minedia matches 1.. as @a[scores={hs.minedia=1..}] at @s run function hardstone:diamond/restore
+execute if score $active$ hs.coal matches 1.. as @a[scores={hs.coal=1..}] at @s run function hardstone:blocks/coal/detect
+execute if score $active$ hs.cobblestone matches 1.. as @a[scores={hs.cobblestone=1..}] at @s run function hardstone:blocks/cobblestone/detect
+execute if score $active$ hs.diamond matches 1.. as @a[scores={hs.diamond=1..}] at @s run function hardstone:blocks/diamond/detect
+execute if score $active$ hs.emerald matches 1.. as @a[scores={hs.emerald=1..}] at @s run function hardstone:blocks/emerald/detect
+execute if score $active$ hs.gold matches 1.. as @a[scores={hs.gold=1..}] at @s run function hardstone:blocks/gold/detect
+execute if score $active$ hs.grassblock matches 1.. as @a[scores={hs.grassblock=1..}] at @s run function hardstone:blocks/grassblock/detect
+execute if score $active$ hs.iron matches 1.. as @a[scores={hs.iron=1..}] at @s run function hardstone:blocks/iron/detect
+execute if score $active$ hs.lapis matches 1.. as @a[scores={hs.lapis=1..}] at @s run function hardstone:blocks/lapis/detect
+execute if score $active$ hs.redstone matches 1.. as @a[scores={hs.redstone=1..}] at @s run function hardstone:blocks/redstone/detect
+execute if score $active$ hs.sandstone matches 1.. as @a[scores={hs.sandstone=1..}] at @s run function hardstone:blocks/sandstone/detect
+execute if score $active$ hs.stone matches 1.. as @a[scores={hs.stone=1..}] at @s run function hardstone:blocks/stone/detect
+
+execute unless score $active$ hs.diamond matches 1.. as @a[scores={hs.diamond=1..}] at @s run function hardstone:blocks/diamond/restore

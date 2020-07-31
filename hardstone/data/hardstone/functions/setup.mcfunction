@@ -7,6 +7,9 @@ scoreboard objectives add hs.gold minecraft.mined:minecraft.gold_ore
 scoreboard objectives add hs.grassblock minecraft.mined:minecraft.grass_block
 scoreboard objectives add hs.iron minecraft.mined:minecraft.iron_ore
 scoreboard objectives add hs.lapis minecraft.mined:minecraft.lapis_ore
+scoreboard objectives add hs.n_gold minecraft.mined:minecraft.nether_gold_ore
+scoreboard objectives add hs.n_quartz minecraft.mined:minecraft.nether_quartz_ore
+scoreboard objectives add hs.n_rack minecraft.mined:minecraft.netherrack
 scoreboard objectives add hs.redstone minecraft.mined:minecraft.redstone_ore
 scoreboard objectives add hs.sandstone minecraft.mined:minecraft.sandstone
 scoreboard objectives add hs.stone minecraft.mined:minecraft.stone
@@ -23,6 +26,9 @@ execute unless score $active$ hs.gold matches 0.. run scoreboard players set $ac
 execute unless score $active$ hs.grassblock matches 0.. run scoreboard players set $active$ hs.grassblock 1
 execute unless score $active$ hs.iron matches 0.. run scoreboard players set $active$ hs.iron 1
 execute unless score $active$ hs.lapis matches 0.. run scoreboard players set $active$ hs.lapis 1
+execute unless score $active$ hs.n_gold matches 0.. run scoreboard players set $active$ hs.n_gold 1
+execute unless score $active$ hs.n_quartz matches 0.. run scoreboard players set $active$ hs.n_quartz 1
+execute unless score $active$ hs.n_rack matches 0.. run scoreboard players set $active$ hs.n_rack 1
 execute unless score $active$ hs.redstone matches 0.. run scoreboard players set $active$ hs.redstone 1
 execute unless score $active$ hs.sandstone matches 0.. run scoreboard players set $active$ hs.sandstone 1
 execute unless score $active$ hs.stone matches 0.. run scoreboard players set $active$ hs.stone 1

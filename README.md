@@ -13,7 +13,7 @@
 
 ### Minecraft Versions
 
-All datapacks are available for Minecraft [1.13 (unsupported)](https://github.com/Metroite/datapacks/tree/1.13), [1.14/1.15 (stable)](https://stable.metroite.de/) and possibly for even [later versions on the master branch](https://www.metroite.de/).
+Almost all datapacks are available for Minecraft [1.13 (unsupported)](https://github.com/Metroite/datapacks/tree/1.13), [1.14/1.15](https://stable.metroite.de/) and [1.16](https://www.metroite.de/).
 
 **This is the master branch**. Switch branches to get to the respective versions.
 
@@ -111,7 +111,7 @@ Please report any **bugs** you may find, any **suggestions** you might have and 
 * You are allowed to edit the files and claim only your edits as yours, which you may then distribute through another fork of this project on GitHub.
 * You are not allowed to redistribute the files of this project, only exception is described above.
 * You are not allowed to remove or modify the "loaded" messages under any circumstances.
-* You are not allowed to claim this project as yours and you must fully credit me, "Metroite".
+* You are not allowed to claim this project as yours and you must fully credit the contributors.
 
 **Everything else** is handled by the GNU GENERAL PUBLIC License v3.0 - see the [LICENSE](https://github.com/Metroite/datapacks/blob/master/LICENSE) file for details.
 

@@ -21,6 +21,11 @@ scoreboard players add @s[nbt={Inventory:[{Slot:102b,id:"minecraft:diamond_chest
 scoreboard players add @s[nbt={Inventory:[{Slot:101b,id:"minecraft:diamond_leggings"}]}] ha.armorcount 18
 scoreboard players add @s[nbt={Inventory:[{Slot:100b,id:"minecraft:diamond_boots"}]}] ha.armorcount 6
 
+scoreboard players add @s[nbt={Inventory:[{Slot:103b,id:"minecraft:netherite_helmet"}]}] ha.armorcount 8
+scoreboard players add @s[nbt={Inventory:[{Slot:102b,id:"minecraft:netherite_chestplate"}]}] ha.armorcount 27
+scoreboard players add @s[nbt={Inventory:[{Slot:101b,id:"minecraft:netherite_leggings"}]}] ha.armorcount 18
+scoreboard players add @s[nbt={Inventory:[{Slot:100b,id:"minecraft:netherite_boots"}]}] ha.armorcount 6
+
 scoreboard players add @s[nbt={Inventory:[{Slot:102b,id:"minecraft:elytra"}]}] ha.armorcount 9
 
 scoreboard players add @s[nbt={Inventory:[{Slot:103b,id:"minecraft:turtle_helmet"}]}] ha.armorcount 5

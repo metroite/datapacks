@@ -7,6 +7,9 @@ scoreboard objectives remove hs.gold
 scoreboard objectives remove hs.grassblock
 scoreboard objectives remove hs.iron
 scoreboard objectives remove hs.lapis
+scoreboard objectives remove hs.n_gold
+scoreboard objectives remove hs.n_quartz
+scoreboard objectives remove hs.n_rack
 scoreboard objectives remove hs.redstone
 scoreboard objectives remove hs.sandstone
 scoreboard objectives remove hs.stone

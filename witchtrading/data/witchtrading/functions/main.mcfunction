@@ -12,8 +12,8 @@ execute as @e[type=minecraft:area_effect_cloud,tag=wt.sad_orchid] at @s unless b
 #calling effects if item is selected
 execute as @a[tag=wt.sad_orchid] at @s run function witchtrading:sad_orchid/effects
 #tagging if item is selected
-tag @a[nbt={SelectedItem:{id:"minecraft:blue_orchid",tag:{HideFlags:1,AttributeModifiers:[{Slot:"offhand",AttributeName:"generic.luck",Name:"generic.luck",Amount:1,Operation:0,UUIDLeast:848934,UUIDMost:433777},{Slot:"mainhand",AttributeName:"generic.luck",Name:"generic.luck",Amount:2,Operation:0,UUIDLeast:848934,UUIDMost:433777}]}}}] add wt.sad_orchid
-execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:blue_orchid",tag:{HideFlags:1,AttributeModifiers:[{Slot:"offhand",AttributeName:"generic.luck",Name:"generic.luck",Amount:1,Operation:0,UUIDLeast:848934,UUIDMost:433777},{Slot:"mainhand",AttributeName:"generic.luck",Name:"generic.luck",Amount:2,Operation:0,UUIDLeast:848934,UUIDMost:433777}]}}]}] unless entity @s[nbt={SelectedItem:{id:"minecraft:blue_orchid"}}] run tag @s add wt.sad_orchid
+tag @a[nbt={SelectedItem:{id:"minecraft:blue_orchid",tag:{HideFlags:1,AttributeModifiers:[{Slot:"offhand",AttributeName:"generic.luck",Name:"generic.luck",Amount:1,Operation:0,UUID:[I;0,81202,0,187255]},{Slot:"mainhand",AttributeName:"generic.luck",Name:"generic.luck",Amount:2,Operation:0,UUID:[I;0,81202,0,187255]}]}}}] add wt.sad_orchid
+execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:blue_orchid",tag:{HideFlags:1,AttributeModifiers:[{Slot:"offhand",AttributeName:"generic.luck",Name:"generic.luck",Amount:1,Operation:0,UUID:[I;0,81202,0,187255]},{Slot:"mainhand",AttributeName:"generic.luck",Name:"generic.luck",Amount:2,Operation:0,UUID:[I;0,81202,0,187255]}]}}]}] unless entity @s[nbt={SelectedItem:{id:"minecraft:blue_orchid"}}] run tag @s add wt.sad_orchid
 scoreboard players reset @a[tag=!wt.sad_orchid] wt.sad_orchid
 #fallback mechanic: returns lost items if the API failed
 execute as @a[scores={wt.so.pa.fail=1..}] at @s run function witchtrading:sad_orchid/fallback

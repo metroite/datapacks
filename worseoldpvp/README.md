@@ -20,13 +20,9 @@ Enable cooldown for sword-blocking if hit by setting *$cooldown$* in *wop.extend
 
 </details>
 
-<<<<<<< HEAD
 <a href="https://download.metroite.de/#/home?url=https://github.com/Metroite/datapacks/tree/1.14/worseoldpvp&rootDirectory=false" rel="The worse, old PvP">![worseoldpvp](worseoldpvp.png?raw=true "The worse, old PvP")</a>
-=======
-It is **recommended** to disable `Dynamic FOV` in [**Optifine**](https://optifine.net/downloads) if a zooming effect (decreasing FOV) is experienced. **Alternatives:** **Fabric** - [**FovLock**](https://github.com/ChloeDawn/FovLock/releases), **Forge** - [**Custom FoV**](https://www.curseforge.com/minecraft/mc-mods/custom-fov)
 
-<a href="https://download.metroite.de/#/home?url=https://github.com/Metroite/datapacks/tree/master/worseoldpvp&rootDirectory=false" rel="The worse, old PvP">![worseoldpvp](worseoldpvp.png?raw=true "The worse, old PvP")</a>
->>>>>>> 8b2df0c... heavyarmor: added weight values to helmets
+It is **recommended** to disable `Dynamic FOV` in [**Optifine**](https://optifine.net/downloads) if a zooming effect (decreasing FOV) is experienced. **Alternatives:** **Fabric** - [**FovLock**](https://github.com/ChloeDawn/FovLock/releases), **Forge** - [**Custom FoV**](https://www.curseforge.com/minecraft/mc-mods/custom-fov)
 
 ## Minecraft Versions
 

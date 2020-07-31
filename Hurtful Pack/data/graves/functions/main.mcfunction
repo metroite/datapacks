@@ -3,6 +3,8 @@ scoreboard players reset @a[scores={ll.deaths=10..},dx=5,dy=5,dz=-5] g.deaths
 #compatibility to loud2x2tnt
 function loud2x2tnt:graves
 
+#particles for g.skull (AoEC)
+execute as @e[type=minecraft:area_effect_cloud,tag=g.skull] at @s run function graves:skull/particles
 #detecting direction
 execute as @a[scores={g.deaths=1..}] at @s run function graves:skull/direction_detect
 #global playound if a player dies

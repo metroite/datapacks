@@ -10,5 +10,5 @@ replaceitem entity @s[scores={ll.deaths=7}] armor.head minecraft:white_stained_g
 replaceitem entity @s[scores={ll.deaths=8}] armor.head minecraft:white_stained_glass{display:{Name:"{\"text\":\"Life Support Glass\",\"color\":\"aqua\",\"italic\":false}"},llhelmet:1b,AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:-3,Operation:0,UUID:[I;0,81202,0,187255],Slot:"head"},{AttributeName:"generic.max_health",Name:"generic.max_health",Slot:"head",Amount:-0.8,Operation:1,UUID:[I;0,81202,0,187255]}],Unbreakable:1b} 1
 replaceitem entity @s[scores={ll.deaths=9}] armor.head minecraft:white_stained_glass{display:{Name:"{\"text\":\"Life Support Glass\",\"color\":\"aqua\",\"italic\":false}"},llhelmet:1b,AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:-3,Operation:0,UUID:[I;0,81202,0,187255],Slot:"head"},{AttributeName:"generic.max_health",Name:"generic.max_health",Slot:"head",Amount:-0.9,Operation:1,UUID:[I;0,81202,0,187255]}],Unbreakable:1b} 1
 replaceitem entity @s[scores={ll.deaths=10}] armor.head minecraft:air 1
-#ll.cured mechanic is needed if ll.deaths changes while alive or when keepInventory is true - prevents looping
+#ll.cured is needed if ll.deaths changes while alive or when keepInventory is true - prevents looping
 tag @s remove ll.cured

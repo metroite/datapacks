@@ -39,7 +39,7 @@
                 },
                 {
                     "function": "set_nbt",
-                    "tag": "{display:{Name:\"{\\\"text\\\":\\\"Raw Iron Ingot\\\",\\\"color\\\":\\\"white\\\",\\\"italic\\\":false}\"},CustomModelData:7044}"
+                    "tag": "{display:{Name:\"{\\\"text\\\":\\\"Raw Iron Nugget\\\",\\\"color\\\":\\\"white\\\",\\\"italic\\\":false}\"},CustomModelData:7044}"
                 },
                 {
                   "function": "minecraft:apply_bonus",

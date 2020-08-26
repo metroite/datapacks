@@ -39,7 +39,7 @@
                 },
                 {
                     "function": "set_nbt",
-                    "tag": "{display:{Name:\"{\\\"text\\\":\\\"Raw Gold Ingot\\\",\\\"color\\\":\\\"white\\\",\\\"italic\\\":false}\"},CustomModelData:7043}"
+                    "tag": "{display:{Name:\"{\\\"text\\\":\\\"Raw Gold Nugget\\\",\\\"color\\\":\\\"white\\\",\\\"italic\\\":false}\"},CustomModelData:7043}"
                 },
                 {
                   "function": "minecraft:apply_bonus",

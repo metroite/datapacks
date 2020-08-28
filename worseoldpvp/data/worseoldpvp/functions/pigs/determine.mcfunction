@@ -1,4 +1,4 @@
-###called by main.mcfunction, implements own ai and conditions to regain pig ai
+#called by main.mcfunction, implements own ai and conditions to regain pig ai
 #no riding
 effect give @s[nbt={NoAI:1b}] minecraft:slowness 1 255 true
 #if far regain ai

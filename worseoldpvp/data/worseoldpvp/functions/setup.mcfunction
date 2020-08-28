@@ -12,7 +12,6 @@ scoreboard objectives add wop.sneaking minecraft.custom:minecraft.sneak_time
 scoreboard objectives add wop.damage dummy
 scoreboard objectives add wop.itemslot dummy
 scoreboard objectives add wop.itemslottemp dummy
-scoreboard objectives add wop.drop minecraft.custom:minecraft.drop
 
 #scheduled functions
 schedule function worseoldpvp:main9 2t

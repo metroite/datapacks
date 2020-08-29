@@ -1,6 +1,6 @@
 # [<img src="https://i.imgur.com/BjfNPDg.gif"> worseoldpvp](https://download.metroite.de/#/home?url=https://github.com/Metroite/datapacks/tree/master/worseoldpvp&rootDirectory=false)
 
-You want the worse, old PvP from 1.8 back? Worry no more, this datapack will fulfill your wishes! Just drop your tools once and enjoy your eZ, no-skill version of PvP!
+You want the worse, old PvP from 1.8 back? Worry no more, this datapack will fulfill your wishes! Just install this datapack and enjoy your eZ, no-skill version of PvP!
 
 <details>
 <summary><b>Configuration</b></summary>
@@ -12,15 +12,15 @@ Use one of the mode funtions numbered from 0 to 2 if only the sword-block (1) or
 
 Alternatively you can change ones mode individually by changing the palyers *wop.mode* score (0 is default): `/scoreboard players set <player> wop.mode 0`
 
-If you also want to be able to block while not sneaking set *$mustsneak$* in *wop.extend* to 0 (1 is default): `/scoreboard players set $mustsneak$ wop.extend 0`
+If you want to be able to block while not sneaking set *$mustsneak$* in *wop.extend* to 0 (1 is default): `/scoreboard players set $mustsneak$ wop.extend 0`
 
 If you prefer status effects over item attributes set *$attribute$* in *wop.extend* to 0 (1 is default): `/scoreboard players set $attribute$ wop.extend 0`
 
-Enable cooldown for sword-blocking if hit by setting *$cooldown$* in *wop.extend* to any value above 0 ticks (0 is default): `/scoreboard players set $cooldown$ wop.extend 10`
+Enable cooldown for sword-blocking after every hit by setting *$cooldown$* in *wop.extend* to any value above 0 ticks (0 is default): `/scoreboard players set $cooldown$ wop.extend 10`
 
 </details>
 
-It is **recommended** to disable `Dynamic FOV` in [**Optifine**](https://optifine.net/downloads) if a zooming effect (decreasing FOV) is experienced. **Alternatives:** **Fabric** - [**FovLock**](https://github.com/ChloeDawn/FovLock/releases), **Forge** - [**Custom FoV**](https://www.curseforge.com/minecraft/mc-mods/custom-fov)
+It is **recommended** to disable `FOV Effects` in the `Accessibility Settings` if a zooming effect (decreasing FOV) is experienced.
 
 <a href="https://download.metroite.de/#/home?url=https://github.com/Metroite/datapacks/tree/master/worseoldpvp&rootDirectory=false" rel="The worse, old PvP">![worseoldpvp](worseoldpvp.png?raw=true "The worse, old PvP")</a>
 

@@ -25,7 +25,7 @@ Specific datapacks can be turned off by setting *$\<name of the datapack\>$* in 
 
 <a href="https://download.metroite.de/#/home?url=https://github.com/Metroite/datapacks/tree/master/Hurtful%20Pack&rootDirectory=false" rel="HeEelLp!">![Hurtfulpack](Hurtfulpack.png?raw=true "HeEelLp!")</a>
 
-It is **recommended** to disable `Dynamic FOV` in [**Optifine**](https://optifine.net/downloads) if a zooming effect (decreasing FOV) is experienced. **Alternatives:** **Fabric** - [**FovLock**](https://github.com/ChloeDawn/FovLock/releases), **Forge** - [**Custom FoV**](https://www.curseforge.com/minecraft/mc-mods/custom-fov)
+It is **recommended** to disable `FOV Effects` in the `Accessibility Settings` if a zooming effect (decreasing FOV) is experienced.
 
 ## Minecraft Versions
 

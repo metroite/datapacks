@@ -6,7 +6,7 @@ If ventilators is installed, ventilators won't be able to push you if your armor
 
 <a href="https://download.metroite.de/#/home?url=https://github.com/Metroite/datapacks/tree/master/heavyarmor&rootDirectory=false" rel="Armor realistically slowing down the player">![heavyarmor](heavyarmor.png?raw=true "Armor realistically slowing down the player")</a>
 
-It is **recommended** to disable `Dynamic FOV` in [**Optifine**](https://optifine.net/downloads) if a zooming effect (decreasing FOV) is experienced. **Alternatives:** **Fabric** - [**FovLock**](https://github.com/ChloeDawn/FovLock/releases), **Forge** - [**Custom FoV**](https://www.curseforge.com/minecraft/mc-mods/custom-fov)
+It is **recommended** to disable `FOV Effects` in the `Accessibility Settings` if a zooming effect (decreasing FOV) is experienced.
 
 ## Minecraft Versions
 

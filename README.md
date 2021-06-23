@@ -13,7 +13,7 @@
 
 ### Minecraft Versions
 
-Almost all datapacks are available for Minecraft [1.13 (unsupported)](https://github.com/Metroite/datapacks/tree/1.13), [1.14/1.15](https://stable.metroite.de/) and [1.16](https://www.metroite.de/).
+Almost all datapacks are available for Minecraft [1.13](https://github.com/Metroite/datapacks/tree/1.13), [1.14/1.15](https://github.com/Metroite/datapacks/tree/1.14), [1.16](https://github.com/Metroite/datapacks/tree/1.16) and worseoldpvp is also available for [1.17](https://github.com/Metroite/datapacks).
 
 **This is the master branch**. Switch branches to get to the respective versions.
 

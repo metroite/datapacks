@@ -26,9 +26,9 @@ It is **recommended** to disable `FOV Effects` in the `Accessibility Settings` i
 
 ## Minecraft Versions
 
-Current file for Minecraft 1.16
+Current file for Minecraft 1.17
 
-[1.13 (unsupported)](https://github.com/Metroite/datapacks/tree/1.13), [1.14/1.15 (stable)](https://stable.metroite.de/) and possibly for even [later versions on the master branch](https://www.metroite.de/).
+[1.13](https://github.com/Metroite/datapacks/tree/1.13/worseoldpvp), [1.14/1.15](https://github.com/Metroite/datapacks/tree/1.14/worseoldpvp), [1.16](https://github.com/Metroite/datapacks/tree/1.16/worseoldpvp) and for [1.17](https://github.com/Metroite/datapacks/tree/master/worseoldpvp).
 
 **This is the master branch**. Switch branches to get to the respective versions.
 

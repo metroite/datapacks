@@ -1,0 +1,32 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:player_head",
+            "nbt": "{SkullOwner:{Name:'Fox',Id:[I;595207761,2108179834,-1427491052,-1128163678],Properties:{textures:[{Value:'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDg5NTRhNDJlNjllMDg4MWFlNmQyNGQ0MjgxNDU5YzE0NGEwZDVhOTY4YWVkMzVkNmQzZDczYTNjNjVkMjZhIn19fQ=='}]}}}"
+        },
+        "title": {
+            "translate": "A fox was killed!"
+        },
+        "description": {
+            "translate": "Kill a fox"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "hidden": false,
+        "announce_to_chat": false
+    },
+    "criteria": {
+      "kill": {
+          "trigger": "minecraft:player_killed_entity",
+          "conditions": {
+              "entity": {
+                  "type": "minecraft:fox"
+              }
+          }
+      }
+    },
+    "parent":"kill-all:mobs/donkey",
+    "rewards": {
+        "function": "kill-all:mobs/fox"
+    }
+}

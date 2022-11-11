@@ -1,0 +1,32 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:player_head",
+            "nbt": "{SkullOwner:{Id:[I;534109024,849300941,-1634894518,-597098711],Name:'Mule',Properties:{textures:[{Value:'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTA0ODZhNzQyZTdkZGEwYmFlNjFjZTJmNTVmYTEzNTI3ZjFjM2IzMzRjNTdjMDM0YmI0Y2YxMzJmYjVmNWYifX19'}]}}}"
+        },
+        "title": {
+            "translate": "A mule was killed!"
+        },
+        "description": {
+            "translate": "Kill a mule"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "hidden": false,
+        "announce_to_chat": false
+    },
+    "criteria": {
+      "kill": {
+          "trigger": "minecraft:player_killed_entity",
+          "conditions": {
+              "entity": {
+                  "type": "minecraft:mule"
+              }
+          }
+      }
+    },
+    "parent":"kill-all:mobs/mooshroom",
+    "rewards": {
+        "function": "kill-all:mobs/mule"
+    }
+}

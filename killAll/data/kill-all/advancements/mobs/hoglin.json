@@ -1,0 +1,32 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:player_head",
+            "nbt": "{SkullOwner:{Name:'Hoglin',Id:[I;-2120826304,-378911692,-1238340839,485405824],Properties:{textures:[{Value:'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWJiOWJjMGYwMWRiZDc2MmEwOGQ5ZTc3YzA4MDY5ZWQ3Yzk1MzY0YWEzMGNhMTA3MjIwODU2MWI3MzBlOGQ3NSJ9fX0='}]}}}"
+        },
+        "title": {
+            "translate": "A hoglin was killed!"
+        },
+        "description": {
+            "translate": "Kill a hoglin"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "hidden": false,
+        "announce_to_chat": false
+    },
+    "criteria": {
+      "kill": {
+          "trigger": "minecraft:player_killed_entity",
+          "conditions": {
+              "entity": {
+                  "type": "minecraft:hoglin"
+              }
+          }
+      }
+    },
+    "parent":"kill-all:mobs/guardian",
+    "rewards": {
+        "function": "kill-all:mobs/hoglin"
+    }
+}

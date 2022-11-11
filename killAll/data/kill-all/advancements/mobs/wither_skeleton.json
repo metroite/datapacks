@@ -1,0 +1,31 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:wither_skeleton_skull"
+        },
+        "title": {
+            "translate": "A wither skeleton was killed!"
+        },
+        "description": {
+            "translate": "Kill a wither skeleton"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "hidden": false,
+        "announce_to_chat": false
+    },
+    "criteria": {
+      "kill": {
+          "trigger": "minecraft:player_killed_entity",
+          "conditions": {
+              "entity": {
+                  "type": "minecraft:wither_skeleton"
+              }
+          }
+      }
+    },
+    "parent":"kill-all:mobs/witch",
+    "rewards": {
+        "function": "kill-all:mobs/wither_skeleton"
+    }
+}

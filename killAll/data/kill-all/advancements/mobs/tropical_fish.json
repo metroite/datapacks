@@ -1,0 +1,32 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:player_head",
+            "nbt": "{SkullOwner:{Id:[I;2066829242,162220726,-1185493306,-1510162731],Name:'Tropical Fish',Properties:{textures:[{Value:'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzZkMTQ5ZTRkNDk5OTI5NjcyZTI3Njg5NDllNjQ3Nzk1OWMyMWU2NTI1NDYxM2IzMjdiNTM4ZGYxZTRkZiJ9fX0='}]}}}"
+        },
+        "title": {
+            "translate": "A tropical fish was killed!"
+        },
+        "description": {
+            "translate": "Kill a tropical fish"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "hidden": false,
+        "announce_to_chat": false
+    },
+    "criteria": {
+      "kill": {
+          "trigger": "minecraft:player_killed_entity",
+          "conditions": {
+              "entity": {
+                  "type": "minecraft:tropical_fish"
+              }
+          }
+      }
+    },
+    "parent":"kill-all:mobs/strider",
+    "rewards": {
+        "function": "kill-all:mobs/tropical_fish"
+    }
+}

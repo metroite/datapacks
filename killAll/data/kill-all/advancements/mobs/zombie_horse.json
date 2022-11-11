@@ -1,0 +1,32 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:player_head",
+            "nbt": "{SkullOwner:{Id:[I;-1415667668,1339115669,-2050370892,131454706],Name:'Zombie Horse',Properties:{textures:[{Value:'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDIyOTUwZjJkM2VmZGRiMThkZTg2ZjhmNTVhYzUxOGRjZTczZjEyYTZlMGY4NjM2ZDU1MWQ4ZWI0ODBjZWVjIn19fQ=='}]}}}"
+        },
+        "title": {
+            "translate": "A zombie horse was killed!"
+        },
+        "description": {
+            "translate": "Kill a zombie horse"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "hidden": false,
+        "announce_to_chat": false
+    },
+    "criteria": {
+      "kill": {
+          "trigger": "minecraft:player_killed_entity",
+          "conditions": {
+              "entity": {
+                  "type": "minecraft:zombie_horse"
+              }
+          }
+      }
+    },
+    "parent":"kill-all:mobs/wandering_trader",
+    "rewards": {
+        "function": "kill-all:mobs/zombie_horse"
+    }
+}

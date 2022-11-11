@@ -1,0 +1,32 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:player_head",
+            "nbt": "{SkullOwner:{Name:'White Horse',Id:[I;-649999512,-2008920200,-1107796195,1013873344],Properties:{textures:[{Value:'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjBhMmRiMmYxZWI5M2U1OTc4ZDJkYzkxYTc0ZGY0M2Q3Yjc1ZDllYzBlNjk0ZmQ3ZjJhNjUyZmJkMTUifX19'}]}}}"
+        },
+        "title": {
+            "translate": "A horse was killed!"
+        },
+        "description": {
+            "translate": "Kill a horse"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "hidden": false,
+        "announce_to_chat": false
+    },
+    "criteria": {
+      "kill": {
+          "trigger": "minecraft:player_killed_entity",
+          "conditions": {
+              "entity": {
+                  "type": "minecraft:horse"
+              }
+          }
+      }
+    },
+    "parent":"kill-all:mobs/fox",
+    "rewards": {
+        "function": "kill-all:mobs/horse"
+    }
+}

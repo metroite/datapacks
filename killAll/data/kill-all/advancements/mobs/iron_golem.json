@@ -1,0 +1,32 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:player_head",
+            "nbt": "{SkullOwner:{Id:[I;2092362149,-1722859307,-1677964379,-677981666],Name:'Iron Golem',Properties:{textures:[{Value:'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODkwOTFkNzllYTBmNTllZjdlZjk0ZDdiYmE2ZTVmMTdmMmY3ZDQ1NzJjNDRmOTBmNzZjNDgxOWE3MTQifX19'}]}}}"
+        },
+        "title": {
+            "translate": "An iron golem was killed!"
+        },
+        "description": {
+            "translate": "Kill an iron golem"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "hidden": false,
+        "announce_to_chat": false
+    },
+    "criteria": {
+      "kill": {
+          "trigger": "minecraft:player_killed_entity",
+          "conditions": {
+              "entity": {
+                  "type": "minecraft:iron_golem"
+              }
+          }
+      }
+    },
+    "parent":"kill-all:mobs/bee",
+    "rewards": {
+        "function": "kill-all:mobs/iron_golem"
+    }
+}

@@ -1,0 +1,4 @@
+execute unless entity @a[distance=0.001..,advancements={kill-all:mobs/tropical_fish=true}] run tellraw @a ["",{"selector":"@s"},{"text":" killed a "},{"text":"[tropical_fish]","color":"green"}]
+execute unless entity @a[distance=0.001..,advancements={kill-all:mobs/tropical_fish=true}] run scoreboard players add @a ka.score 1
+execute unless entity @a[distance=0.001..,advancements={kill-all:mobs/tropical_fish=true}] run scoreboard players add $Team ka.score 1
+advancement grant @a only kill-all:mobs/tropical_fish

@@ -1,0 +1,31 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:creeper_head"
+        },
+        "title": {
+            "translate": "A creeper was killed!"
+        },
+        "description": {
+            "translate": "Kill a creeper"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "hidden": false,
+        "announce_to_chat": false
+    },
+    "criteria": {
+      "kill": {
+          "trigger": "minecraft:player_killed_entity",
+          "conditions": {
+              "entity": {
+                  "type": "minecraft:creeper"
+              }
+          }
+      }
+    },
+    "parent":"kill-all:mobs/cave_spider",
+    "rewards": {
+        "function": "kill-all:mobs/creeper"
+    }
+}
